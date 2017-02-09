@@ -1,0 +1,109 @@
+Nessuna pat. non infettiva
+
+
+Aneurisma/MAV con sanguinamento
+Aneurisma/MAV senza sanguinamento
+Ascesso cerebrale
+Crisi epilettiche
+Danno diffuso post-traumatico
+Edema cerebrale NON traumatico
+Encefalite e/o meningite
+Encefalopatia metabolica/postanossica
+Ictus
+Lesioni midollari
+Neoplasia intracranica
+Patologia degenerativa del SNC
+Polineuropatia/miopatia
+Sanguinamento intracranico
+
+Ventricolo sinistro a doppia uscita
+Ventricolo destro a doppia uscita
+Anomalie cuore sinistro
+Anomalie cuore destro
+Miscellanea
+Anomalie ritorno venoso polmonare
+Difetti del setto
+Ventricolo unico
+Anomalie vene sistemiche
+Trasposizione grosse arterie
+Anomalie vene arterie toraciche
+Ipertensione polmonare
+Crisi ipertensiva
+Aneurisma
+Aneurisma rotto, fissurato
+Aritmia grave acuta
+Arresto cardiaco ripreso
+Edema polmonare
+Endocardite
+Infarto miocardio acuto
+Ischemia acuta
+Miocardiopatia dilatativa
+Patologia dei vasi coronarici
+Patologia dei vasi coronarici non congenita
+Patologia valvolare
+Patologia vascolare trombo/embolica
+Patologia vascolare periferica
+Scompenso cardiaco
+Scompenso cardiaco destro
+Scompenso cardiaco sinistro
+Valvulopatia acuta
+Valvulopatia acuta non congenita
+Versamento pericardico e/o pericardite
+Versamento pericardico
+Fibrillazione atriale
+BAV III grado
+
+RDS del neonato
+
+
+Contusione polmonare
+Neoplasia polmonare
+Patologia tracheale
+Pneumopatia cronica riacutizzata
+Polmonite
+Versamento pleurico
+
+Ascesso addominale
+Deiscenza anastomosi
+Ematoma retroperitoneale
+Emoperitoneo
+Enterocolite necrotizzante
+Infarto intestinale
+Neoplasia epatica
+Neoplasia pancreatica
+Neoplasia tratto digerente
+Occlusione intestinale
+Patologia pancreatica
+Patologia epatica/vie biliari
+Patologia infiammatoria intestinale
+Perforazione tratto digerente
+Peritonite
+Sanguinamento tratto digerente
+Altre patologie
+Squilibrio metabolico
+HELLP Syndrome/eclampsia
+Intossicazione acuta
+Malattia autoimmunitaria
+Malattia ematologica
+Patologia cute e/o tessuti molli
+Patologia oculistica
+Patologia ORL/maxillo facciale
+Patologia ortopedica
+Patologia ostetrico/ginecologica
+Patologia nefro/urologica
+Mediastinite
+
+
+
+Ab ingestis
+Ostruzione alte vie aeree
+Pneumotorace, pneumomediastino
+Bronchiolite
+Bronchiolite obliterante
+Tracheobronco malacia
+Asma acuto/broncospasmo
+Atelettasia
+Embolia polmonare
+Emotorace
+ARDS
+ALI (Acute Lung Injury)

@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<pages crf="domus" version="1.0.0">
+
+  <page name="Anagrafica">
+    <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <column>
+      <interface>
+        <column><label color="blue">Tipologia di paziente</label></column>
+      </interface>
+      <interface class="patientType" name="default" />
+      <interface>
+        <column><label color="blue">Dati personali</label></column>
+      </interface>
+      <interface class="name" name="default" />
+      <interface class="sex" name="default" />
+      <interface class="birthDate" name="default" />
+      <interface class="fiscalCode" name="default" />
+      <!--<interface class="age" name="default" />-->
+      <interface><spacer/></interface>
+      <interface class="placeOfBirth" name="default" />
+      <interface><spacer/></interface>
+      <interface class="address" name="default" />
+      <interface><spacer/></interface>
+      <interface class="phone" name="default" />
+      <interface><spacer/></interface>
+      <interface class="gpName" name="default" />
+      <interface><spacer/></interface>
+      <interface>
+        <column><label color="blue">Informazioni sanitarie</label></column>
+      </interface>
+      <interface class="asl" name="default" />
+      <interface class="nhsNumber" name="default" />
+      <interface class="exemptionNumber" name="default" />
+      <interface class="crnNumber" name="default" />
+      <interface class="sedeErogazioneNED" name="default" />
+     </column>
+  </page>
+
+  <page name="Inquadramento oncologico" parentname="Inquadramento clinico alla presa in carico" visible="result = |domus.patientType.patientType| and |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.oncologicType'">
+    <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <column>
+			<interface class="oncologicPatientType" name="default" />
+			<interface><spacer size="10"/></interface>
+			<interface class="tumorPrimitiveSite" name="default" />
+			<interface class="otherTumorPrimitiveSite" name="default" />
+			<interface><spacer size="10"/></interface>
+			<interface class="metastasis" name="default" />
+			<interface><spacer size="10"/></interface>
+			<interface class="peritonealCarcinomatosis" name="default" />
+			<interface><spacer size="10"/></interface>
+			<interface class="tumorStage" name="default" />  
+			<interface class="tumorStageNotAvailable" name="default" />
+		</column>
+  </page>
+  
+  <page name="Dati relativi alla insufficienza intestinale" parentname="Inquadramento clinico alla presa in carico"  visible="result = |domus.patientType.patientType| and (|domus.patientType.patientType|[0] == 'domus.patientTypeCodification.iicbType' or |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.nedType')" >
+    <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <interface class="malattiaDiBase" name="default" />
+    <interface class="altraMalattiaDiBase" name="default" />
+    <interface><spacer/></interface>
+    <interface class="dataDiagnosiMalattiaDiBase" name="default" />
+    <interface class="etaAllaDiagnosiMalattiaDiBase" name="default" />
+    <interface><spacer/></interface>
+    <interface class="causaPrincipaleInsuffIntestinale" name="default" />
+    <interface><spacer/></interface>
+    <interface class="tipoIntestinoCorto" name="default" />
+    <interface><spacer/></interface>
+    <interface class="lunghezzaTenueResiduo" name="default" />
+    <interface><spacer/></interface>
+    <interface class="modalitaMisurazione" name="default" />
+    <interface><spacer/></interface>
+    <interface class="%ColonResiduo" name="default" />
+    <interface><spacer/></interface>
+    <interface class="presenzaStomia" name="default" />
+    <interface><spacer/></interface>
+    <interface class="sedeStomia" name="default" />
+    <interface><spacer/></interface>
+    <row>
+      <interface class="presenzaDiControindicazioniLabel" name="default" />
+      <!--<interface><column ><label width="200" color="blue" >Presenza di controindicazioni al trapianto di intestino (risposta multipla)</label></column></interface>-->
+      <column>      
+        <interface class="nessunaControindicazione" name="default" />  
+        <interface class="controindicazioniAssoluteTrapianto" name="default" />  
+        <interface class="controindicazioniRelativeTrapianto" name="default" />    
+      </column>
+    </row>
+  </page>
+  
+  <page name="Riabilitazione socio-lavorativa-familiare" parentname="Inquadramento clinico alla presa in carico" visible="result = |domus.patientType.patientType| and |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.iicbType'" >
+    <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <interface class="statoCivile" name="default" />
+  	<interface><spacer/></interface>
+  	<interface class="figliDopoInizioNPD" name="default" />
+  	<interface><spacer/></interface>
+  	<interface class="attivitaLavorativa" name="default" />
+  	<interface><spacer/></interface>
+  	<interface class="gradoDiAutonomia" name="default" />
+  	<interface><spacer/></interface>
+  	<interface class="karnofsky" name="default" />
+  </page>
+
+<!--  <page name="Inquadramento clinico alla presa in carico" parentname="Scheda di ingresso"> -->
+  <page name="Inquadramento clinico alla presa in carico" visible="result = |domus.patientType.patientType|" >
+    <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <column>
+      <interface>
+        <row>
+          <column>
+            <pagelink pagename="Inquadramento oncologico" visible="result = |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.oncologicType'" />
+            <interface><spacer/></interface>
+            <pagelink pagename="Dati relativi alla insufficienza intestinale" visible="result = |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.iicbType'"/>
+            <interface><spacer/></interface>
+            <pagelink pagename="Riabilitazione socio-lavorativa-familiare" visible="result = |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.iicbType'"/>
+            <interface><spacer/></interface>
+            <pagelink pagename="Organi e sistemi" visible="result = |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.iicbType'"/>
+          </column>
+          <column>
+            <readonly basevalue="Tipo di paziente oncologico: " linebreaks="0" evaluate="domus.oncologicPatientType.oncologicPatientType" />
+            <readonly basevalue="Sede primitiva: " linebreaks="0" evaluate="domus.tumorPrimitiveSite.tumorPrimitiveSite" />
+            <readonly basevalue="Metastasi: " linebreaks="0" evaluate="domus.metastasis.metastasis" />
+            <readonly basevalue="Carcinosi peritoneale: " linebreaks="0" evaluate="domus.peritonealCarcinomatosis.peritonealCarcinomatosis" />
+            <readonly basevalue="Stadio: " linebreaks="0" evaluate="domus.tumorStage.tumorStage" />
+          </column>
+        </row>
+      </interface>
+    </column>
+    <column>
+      <interface><spacer size="10"/></interface>
+      <interface class="admissionDate" name="default" />
+      <interface><spacer size="10"/></interface>
+      <!-- TODO: Karnofsky slider -->
+      <interface class="karnofsky" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface class="organInsufficiency" name="default" />
+      <row>
+        <interface class="terapiaAttivaLabel" name="default" />
+      </row>
+      <interface class="chemotherapy" name="default" />
+      <interface class="radiotherapy" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface class="vieDiNutrizione" name="default" />
+      
+      <interface>
+        <row><column><label color="blue">Esami di laboratorio alla prescrizione della NAD (massimo dei 2 mesi precedenti)</label></column></row>
+      </interface>
+
+      <row>
+        <column width="500">
+          <interface class="glicemia" name="default" />
+        </column>
+        <column width="100">
+          <interface class="glicemiaNotAvailable" name="default" />
+        </column>
+      </row>
+      <row>
+        <column width="500">
+          <interface class="creatinina" name="default" />
+        </column>
+        <column width="100">
+          <interface class="creatininaNotAvailable" name="default" />
+        </column>
+      </row>
+      <row>
+        <column width="500">
+          <interface class="azotemia" name="default" />
+        </column>
+        <column width="100">
+          <interface class="azotemiaNotAvailable" name="default" />
+        </column>
+      </row>
+      <row>
+        <column width="500">
+          <interface class="albumin" name="default" />
+        </column>
+        <column width="100">
+          <interface class="albuminNotAvailable" name="default" />
+        </column>
+      </row>
+      <row>
+        <column width="500">
+          <interface class="prealbumin" name="default" />
+        </column>
+        <column width="100">
+          <interface class="prealbuminNotAvailable" name="default" />
+        </column>
+      </row>
+      <row>
+        <column width="500">
+          <interface class="transferrin" name="default" />
+        </column>
+        <column width="100">
+          <interface class="transferrinNotAvailable" name="default" />
+        </column>
+      </row>
+      <row>
+        <column width="500">
+          <interface class="crp" name="default" />
+        </column>
+        <column width="100">
+          <interface class="crpNotAvailable" name="default" />
+        </column>
+      </row>
+      <interface><spacer size="10"/></interface>
+      <interface class="cvc" name="default" />
+      <interface><spacer size="30" /></interface>
+      <!--<interface class="nutritionalNeeds" name="default" />
+      <interface class="indicazioneAllaNED" name="default" />
+      <interface class="prescrizioneDellaNEDLabel" name="default" />
+      <interface class="caloriePrescrizione" name="default" />
+      <interface class="proteinePrescrizione" name="default" />
+      <interface class="acquaPrescrizione" name="default" />-->
+    </column>
+  </page>
+  
+  <page name="Organi e sistemi" parentname="Inquadramento clinico alla presa in carico" visible="result = |domus.patientType.patientType| and |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.iicbType'" >
+    <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <interface class="funzioneEpatica" name="default" />
+    <interface><spacer/></interface>
+    <interface class="colecisti" name="default" />
+    <interface><spacer/></interface>
+    <interface class="funzioneRenale" name="default" />
+    <interface><spacer/></interface>
+    <interface class="litiasiRenale" name="default" />
+    <interface><spacer/></interface>
+    <interface class="densitaMineraleOssea" name="default" />
+    <interface><spacer size="15"/></interface>
+    <interface class="trombosiVenosaProfonda" name="default" />
+  </page>
+
+  <page name="Stato nutrizionale" visible = "result = |domus.patientType.patientType|" >
+    <column>
+      <interface class="infoPatientType" name="default" />
+    <!--</column>
+    <column>-->
+      <interface>
+        <column><label color="blue">Calo ponderale e BMI</label></column>
+      </interface>
+      <interface class="weight" name="default" />
+      <interface class="height" name="default" />
+      <interface class="bmi" name="default" />
+      <row>
+        <interface class="habitualWeightOncologicLabel" name="default" />
+        <interface class="habitualWeightIICBLabel" name="default" />
+        <interface class="habitualWeight" name="default" />  
+      </row>
+      <interface class="weightLoss" name="default" />
+      <interface class="weightLossRate" name="default" />
+      <interface><spacer size="10"/></interface>
+    </column>    
+		<row>
+			<interface class="diuresiDelle24Ore" name="default" />
+			<interface class="diuresiDelle24OreNonDisponibile" name="default" />
+		</row>
+    <column>
+      <interface>
+        <column><label color="blue">Punteggio dello screening nutrizionale</label></column>
+      </interface>
+      <interface class="malnutritionGrade" name="default" />
+      <interface class="clinicalConditionsSeverity" name="default" />
+      <interface class="nrs" name="default" />
+      <interface class="sinpeNutritionalEvaluation" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface class="nedStartDatePrescription" name="default" />
+      <interface class="indicazioneAllaNED" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface>
+        <column><label color="blue">Fabbisogni</label></column>
+      </interface>
+      <interface class="estimatedNutritionalNeeds" name="default" />
+      <!--<interface class="nutritionalNeeds" name="default" />-->
+      <interface class="fabbisognoIdricoGiornaliero" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface class="totalLastWeekCaloricOralNutritionLabel" name="default" />
+      <row><interface class="totalLastWeekCaloricOralNutrition" name="default" />
+      <interface class="totalLastWeekCaloricOralNutritionNotAvailable" name="default" /></row>
+      <interface class="percentLastWeekOralNutrition" name="default" />
+      <row><interface class="totalLastWeekProteicOralNutrition" name="default" />
+      <interface class="totalLastWeekProteicOralNutritionNotAvailable" name="default" /></row>
+      <!--<interface class="oralNutritionToNutritionalNeedsRatio" name="default" />-->
+      <interface class="nutritionalNeeds" name="default" />
+      <interface class="nutrizioneOraleResiduaLabel" name="default" />
+      <interface class="nutrizioneOraleResidua" name="default" />
+      <interface class="calorieResidue" name="default" />
+      <interface class="proteineResidue" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface class="prescrizioneDellaNEDLabel" name="default" />
+      <interface class="caloriePrescrizione" name="default" />
+      <interface class="proteinePrescrizione" name="default" />
+      <interface class="acquaPrescrizione" name="default" />
+    </column>
+  </page>
+  
+  <page name="Dati relativi al programma nutrizionale" visible="result = |domus.patientType.patientType| and |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.iicbType'" >
+    <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <interface class="dataInizioNPD" name="default" />
+    <interface class="etaAllaDataInizioNPD" name="default" />
+    <interface><spacer/></interface>
+    <interface class="tipoAlimentazioneOrale" name="default" />
+    <interface><spacer/></interface>
+    <interface class="alimentazioneEnterale" name="default" />
+    <interface><spacer/></interface>
+    <interface class="energiaTotale%BEE" name="default" />
+    <interface><spacer/></interface>
+    <interface class="accessoVenosoCV" name="default" />
+    <interface><spacer/></interface>
+    <interface class="tipoMiscelaPerNP" name="default" />
+    <interface><spacer/></interface>
+    <interface class="gestioneNPD" name="default" />
+    <interface><spacer/></interface>
+    <interface class="volumeDellaMiscela" name="default" />
+    <interface><spacer/></interface>
+    <interface class="energiaTotale" name="default" />
+    <interface><spacer/></interface>
+    <interface class="frequenzaSettimanaleInfusione" name="default" />
+    <interface><spacer/></interface>
+    <interface class="frequenzaSettimanaleInfusioneLipidi" name="default" />
+    <interface><spacer/></interface>
+    <interface class="volumeTotaleSettimanale" name="default" />
+    <interface><spacer/></interface>
+    <interface class="energiaTotaleSettimanale" name="default" />
+  </page>
+  
+  <page name="Indicatori di esito" visible="result = |domus.patientType.patientType| and (|domus.patientType.patientType|[0] == 'domus.patientTypeCodification.iicbType' or |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.nedType')">
+    <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <interface class="dataAggiornamento" name="default" />
+    <interface class="statoNutrizioneNPD" name="default" />
+    <interface><spacer/></interface>
+    <interface class="indicatoriEfficaciaLabel" name="default" />
+    <interface class="durataNED" name="default" />
+    <interface class="indicatoriSicurezzaLabel" name="default" />
+    <interface class="complicanzeSonda" name="default" />
+    <interface class="listaComplicanzeSonda" name="default" />
+    <row>
+      <interface>
+        <pagelink pagename="Sospensione" width="150" />
+      </interface>
+    </row>
+  </page>
+
+<!--  <page name="Nutrizione artificiale" parentname="Scheda di ingresso"> -->
+  <page name="Nutrizione artificiale" visible="result = |domus.patientType.patientType| and |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.oncologicType' ">
+    <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <column>
+      <interface>
+        <column><label color="blue">Indicazioni alla NAD</label></column>
+      </interface>
+      <interface class="intestinalInsufficiency" name="default" />
+      <interface class="intestinalInsufficiencyDetail" name="default" />
+      <interface class="enteralNutritionIntolerance" name="default" />
+      <interface class="enteralNutritionRefusal" name="default" />
+      <interface class="danOtherIndicationsDetail" name="default" />
+      <interface><spacer size="20"/></interface>
+      <interface class="pdnPrescription" name="default" />
+      <interface class="pdnStartDatePrescription" name="default" />
+    </column>
+  </page>
+
+<!--  <page name="Scheda di ingresso">
+    <column>
+      <interface>
+        <pagelink pagename="Inquadramento clinico alla presa in carico"/>
+      </interface>
+      <interface>
+        <pagelink pagename="Stato nutrizionale"/>
+      </interface>
+      <interface>
+        <pagelink pagename="Nutrizione artificiale"/>
+      </interface>
+    </column>
+  </page>-->
+
+  <page name="Lista visite" visible="result = |domus.patientType.patientType|">
+    <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <interface>
+      <row><column><label color="blue">Lista visite</label></column></row>
+    </interface>
+    <interface>
+      <historywidget attributes="domus.visitDate.visitDate" timeStamp="domus.timeStamp.timeStamp" counter="1" counterLabel="Visita" pagelink="Visita" minTimeStamp="2" width="600"/>
+    </interface>
+    <interface>
+      <row>
+      <button label="Nuova visita" onclick="'''
+        timeStamps = helperMainLogic.dataSession.getAllTimeStampsForClass('domus','dynPage')
+        timeStamp = 2
+        if timeStamps:
+            timeStamp = max(timeStamps) + 1
+        helperMainLogic.dataSession.registerTimeStampForClass('domus','dynPage',timeStamp)
+        helperMainLogic.dataSession.updateDataNoNotify('domus','timeStamp',1,'timeStamp',timeStamp)
+        helperMainLogic.dataSession.updateDataNoNotify('domus','visitDate',1,'visitDate',nowdateiso())
+        helperMainLogic.dataSession.updateData('domus','dynPage',1,'dynPage','domus.pageCodification.followUp')
+        userInfo = {'crfName': 'domus'}
+        helperMainLogic.notificationCenter.postNotification('DynPageHasChanged',self,userInfo)
+      '''"/>
+      <button label="Rimuovi visita" onclick="'''
+        currentTimeStamp = helperMainLogic.dataSession.getAttributeValuesForObject('domus','timeStamp',1,'timeStamp')
+        if not currentTimeStamp:
+            raise BaseException
+        currentTimeStamp = currentTimeStamp[0]
+        timeStamps = helperMainLogic.dataSession.getAllTimeStampsForClass('domus','dynPage')
+        timeStamps.sort()
+        try:
+            index = timeStamps.index(currentTimeStamp)
+        except:
+            raise
+        if len(timeStamps) == 1:
+            timeStamp = 1
+        elif index+1 < len(timeStamps):
+            timeStamp = timeStamps[index+1]
+        else:
+            timeStamp = timeStamps[index-1]
+        for (crfName,className) in helperMainLogic.dataSession.classNamesToTimeStamps:
+            timeStampAttributeFullName = helperMainLogic.crfData.getPropertyForClass(crfName,className,'timeStamp')
+            if timeStampAttributeFullName != '%s.%s.%s' % ('domus','timeStamp','timeStamp'):
+                continue
+            attributeNames = helperMainLogic.crfData.getAttributeNamesForClass(crfName,className)
+            for attributeName in attributeNames:
+                multiInstance = helperMainLogic.dataSession.isMultiInstance(crfName,className,attributeName)
+                if multiInstance:
+                    helperMainLogic.dataSession.updateData(crfName,className,1,attributeName,[])
+                else:
+                    helperMainLogic.dataSession.updateData(crfName,className,1,attributeName,None)
+            helperMainLogic.dataSession.unregisterInstanceNumberForClass(crfName,className,currentTimeStamp)
+            helperMainLogic.dataSession.unregisterTimeStampForClass(crfName,className,currentTimeStamp)
+        helperMainLogic.dataSession.updateDataNoNotify(psc.coreCrfName,'timeStamp',1,'timeStamp',timeStamp)
+        userInfo = {'crfName': 'domus'}
+        helperMainLogic.notificationCenter.postNotification('DynPageHasChanged',self,userInfo)
+      '''"/>
+      </row>
+    </interface>
+  </page>
+  
+  <dynpage parentname="Lista visite" attribute="domus.dynPage.dynPage" appendtoname="domus.visitDate.visitDate" appendtonamedefault="" currentonly="1" visible="result = |domus.patientType.patientType|"/>
+
+<!--  <page name="Ricoveri ordinari" parentname="Condizioni cliniche" visible="result = bool(|domus.pdnHospitalizationList.pdnHospitalizationList|)">
+      <interface item="pdnHospitalizationList" name="default"/>
+  </page> -->
+
+  <page name="Ricoveri ordinari" parentname="Visita" visible="result = bool(|domus.pdnHospitalizationList.pdnHospitalizationList|)">
+      <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <interface item="pdnHospitalizationList" name="default"/>
+  </page>
+
+<!--  <page name="Condizioni cliniche" parentname="Follow-up" visible="result = |domus.timeStamp.timeStamp| and |domus.timeStamp.timeStamp|[0] > 1"> -->
+<!--  <page name="Condizioni cliniche" parentname="Visita">
+    <column>
+      <interface class="visitDate" name="default" />
+      <interface class="contactType" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface class="pdnStartDate" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface class="anyPDNHospitalizations" name="default" />
+      <interface class="numberOfPDNHospitalizations" name="default" />
+      <interface>
+        <column><row>
+          <label width="300"/>
+          <pagelink pagename="Ricoveri ordinari" visible="result = bool(|domus.pdnHospitalizationList.pdnHospitalizationList|)"/></row>
+        </column>
+      </interface>
+      <interface class="allInfusionsAdministered" name="default" />
+      <interface class="numberOfNonAdministeredInfusions" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface class="karnofskyFollowUp" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface>
+        <row><column><label color="blue">Esami di laboratorio nei 30 giorni precedenti alla visita</label></column></row>
+      </interface>
+      <row>
+        <column width="500">
+          <interface class="albuminFollowUp" name="default" />
+        </column>
+        <column width="100">
+          <interface class="albuminFollowUpNotAvailable" name="default" />
+        </column>
+      </row>
+      <row>
+        <column width="500">
+          <interface class="prealbuminFollowUp" name="default" />
+        </column>
+        <column width="100">
+          <interface class="prealbuminFollowUpNotAvailable" name="default" />
+        </column>
+      </row>
+      <row>
+        <column width="500">
+          <interface class="transferrinFollowUp" name="default" />
+        </column>
+        <column width="100">
+          <interface class="transferrinFollowUpNotAvailable" name="default" />
+        </column>
+      </row>
+      <row>
+        <column width="500">
+          <interface class="crpFollowUp" name="default" />
+        </column>
+        <column width="100">
+          <interface class="crpFollowUpNotAvailable" name="default" />
+        </column>
+      </row>
+    </column>
+  </page>-->
+
+  <page name="Riabilitazione socio-lavorativa-familiare " parentname="Visita" visible="result = |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.iicbType'" >
+    <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <interface class="statoCivileFollowUp" name="default" />
+    <interface><spacer/></interface>
+    <interface class="figliDopoInizioNPDFollowUp" name="default" />
+    <interface><spacer/></interface>
+    <interface class="attivitaLavorativaFollowUp" name="default" />
+    <interface><spacer/></interface>
+    <interface class="gradoDiAutonomiaFollowUp" name="default" />
+    <interface><spacer/></interface>
+    <interface class="karnofskyFollowUp" name="default" />
+    <interface><spacer/></interface>
+    <interface class="vacanzeLontanoDaCasaFollowUp" name="default" />
+    <interface><spacer/></interface>
+    <interface class="attivitaSportivaFollowUp" name="default" />
+  </page>
+  
+  <page name="Complicanze della NDP / insufficienza intestinale" parentname="Visita" visible="result = |domus.patientType.patientType| and |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.iicbType' " >
+		<column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+		<interface>
+			<row><column><label color="blue">Complicanze Metaboliche</label></column></row>
+		</interface>
+		<interface class="funzioneEpaticaFollowUp" name="default" />
+		<interface><spacer/></interface>
+		<interface class="colecistiFollowUp" name="default" />
+		<interface><spacer/></interface>
+		<interface class="funzioneRenaleFollowUp" name="default" />
+		<interface><spacer/></interface>
+		<interface class="litiasiRenaleFollowUp" name="default" />
+		<interface><spacer/></interface>
+		<interface class="densitaMineraleOsseaFollowUp" name="default" />
+		<interface><spacer/></interface>
+		<interface class="doloriOsseiFollowUp" name="default" />
+		<interface><spacer/></interface>
+		<interface class="fratturaOsseaSpontaneaFollowUp" name="default" />
+		<interface><spacer/></interface>
+		<interface class="deficitIntossicazioneDiMicronutrientiClinicamenteRilevanteFollowUp" name="default" />
+		<interface><spacer size="20" /></interface>
+		<interface>
+			<row><column><label color="blue">Complicanze Meccaniche</label></column></row>
+		</interface>
+		<interface class="complicanzaMeccanicaNPFollowUp" name="default" />
+		<interface><spacer/></interface>
+		<interface class="infezioneCVCFollowUp" name="default" />
+  </page>
+
+  <page name="Dati relativi al programma nutrizionale " parentname="Visita" visible="result = |domus.patientType.patientType| and |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.iicbType'" >
+    <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <column>
+      <interface>
+        <row><column><label color="blue">Alimentazione orale</label></column></row>
+      </interface>
+      <interface class="tipoAlimentazioneOraleFollowUp" name="default" />
+       <interface><spacer/></interface>
+      <interface class="alimentazioneEnteraleFollowUp" name="default" />
+      <interface><spacer/></interface>
+      <interface class="energiaTotale%BEEFollowUp" name="default" />
+      <interface><spacer size="20"/></interface>
+      <interface>
+        <row><column><label color="blue">CVC</label></column></row>
+      </interface>
+      <interface class="accessoVenosoCVFollowUp" name="default" />
+      <interface><spacer size="20"/></interface>
+      <interface>
+        <row><column><label color="blue">Miscela nutrizionale</label></column></row>
+      </interface>
+      <interface class="tipoMiscelaPerNPFollowUp" name="default" />
+      <interface><spacer/></interface>
+      <interface class="volumeDellaMiscelaFollowUp" name="default" />
+      <interface><spacer/></interface>
+      <interface class="energiaTotaleFollowUp" name="default" />
+      <interface><spacer/></interface>
+      <interface class="frequenzaSettimanaleInfusioneFollowUp" name="default" />
+      <interface><spacer/></interface>
+      <interface class="frequenzaSettimanaleInfusioneLipidiFollowUp" name="default" />
+      <interface><spacer/></interface>
+      <interface class="volumeTotaleSettimanaleFollowUp" name="default" />
+      <interface><spacer/></interface>
+      <interface class="energiaTotaleSettimanaleFollowUp" name="default" />
+    </column>
+  </page>
+
+<!--  <page name="Stato nutrizione artificiale" parentname="Follow-up" visible="result = |domus.timeStamp.timeStamp| and |domus.timeStamp.timeStamp|[0] > 1"> -->
+  <page name="Stato nutrizionale " parentname="Visita" visible="result = |domus.patientType.patientType| ">
+    <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <column>
+      <interface>
+        <row><column><label color="blue">Calo ponderale e BMI</label></column></row>
+      </interface>
+      <!--<interface class="pdnDuration" name="default" />-->
+      <interface class="weightFollowUp" name="default" />
+      <interface class="bmiFollowUp" name="default" />
+      <interface><spacer size="10"/></interface>
+      <row>
+				<interface class="diuresiDelle24OreFollowUp" name="default" />
+				<interface class="diuresiDelle24OreFollowUpNonDisponibile" name="default" />
+			</row>
+      <!--<interface class="lastWeekOralNutritionFollowUp" name="default" />-->
+      <interface>
+        <column><label color="blue" valuefrom="domus.totalLastWeekCaloricOralNutrition"></label></column>
+      </interface>
+      <row><interface class="totalLastWeekCaloricOralNutritionFollowUp" name="default" />
+      <interface class="totalLastWeekCaloricOralNutritionFollowUpNotAvailable" name="default" /></row>
+      <row><interface class="totalLastWeekProteicOralNutritionFollowUp" name="default" />
+      <interface class="totalLastWeekProteicOralNutritionFollowUpNotAvailable" name="default" /></row>
+      <interface><spacer size="10"/></interface>
+      <!--<interface class="nutritionalNeedsCoverage" name="default" />-->
+      <interface class="cvcComplications" name="default" />
+      <interface class="cvcRemoval" name="default" />
+      <interface class="pdnPrescriptionChanged" name="default" />
+      <interface class="pdnPrescriptionFollowUp" name="default" />      
+    </column>
+  </page>
+
+  <page name="Visita" dynamic="1" timeStamps="domus.timeStamp.timeStamp" visible="result = |domus.patientType.patientType|">
+    <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <interface>
+      <row>
+        <column>
+          <interface><spacer/></interface>
+          <pagelink pagename="Riabilitazione socio-lavorativa-familiare " visible="result = |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.iicbType'"/>
+          <interface><spacer/></interface>
+          <pagelink pagename="Complicanze della NDP / insufficienza intestinale"
+          visible="result = |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.iicbType'"/>
+          <interface><spacer/></interface>
+          <pagelink pagename="Dati relativi al programma nutrizionale " visible="result = |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.iicbType'"/>
+          <pagelink pagename="Stato nutrizionale " />
+          <interface><spacer/></interface>
+        </column>
+      </row>
+    </interface>
+    <column>
+      <interface class="visitDate" name="default" />
+      <interface class="contactType" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface class="pdnStartDate" name="default" />
+      <interface class="nedStartDate" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface class="anyPDNHospitalizations" name="default" />
+      <interface class="numberOfPDNHospitalizations" name="default" />
+      <interface>
+        <column><row>
+          <label width="300"/>
+          <pagelink pagename="Ricoveri ordinari" visible="result = bool(|domus.pdnHospitalizationList.pdnHospitalizationList|)"/></row>
+        </column>
+      </interface>
+      <interface class="allInfusionsAdministered" name="default" />
+      <interface class="numberOfNonAdministeredInfusions" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface class="eventiAbIngestis" name="default" />
+      <interface class="numeroAbIngestis" name="default" />
+      <interface class="karnofskyFollowUp" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface class="organInsufficiencyFollowUp" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface class="activeTreatmentResponseFollowUp" name="default" />
+      <interface><spacer size="10"/></interface>
+      <interface>
+        <row><column><label color="blue">Esami di laboratorio nei 30 giorni precedenti alla visita</label></column></row>
+      </interface>
+      <row>
+        <column width="500">
+          <interface class="glicemiaFollowUp" name="default" />
+        </column>
+        <column width="100">
+          <interface class="glicemiaFollowUpNotAvailable" name="default" />
+        </column>
+      </row>
+      <row>
+        <column width="500">
+          <interface class="creatininaFollowUp" name="default" />
+        </column>
+        <column width="100">
+          <interface class="creatininaFollowUpNotAvailable" name="default" />
+        </column>
+      </row>
+      <row>
+        <column width="500">
+          <interface class="azotemiaFollowUp" name="default" />
+        </column>
+        <column width="100">
+          <interface class="azotemiaFollowUpNotAvailable" name="default" />
+        </column>
+      </row>
+      <row>
+        <column width="500">
+          <interface class="albuminFollowUp" name="default" />
+        </column>
+        <column width="100">
+          <interface class="albuminFollowUpNotAvailable" name="default" />
+        </column>
+      </row>
+      <row>
+        <column width="500">
+          <interface class="prealbuminFollowUp" name="default" />
+        </column>
+        <column width="100">
+          <interface class="prealbuminFollowUpNotAvailable" name="default" />
+        </column>
+      </row>
+      <row>
+        <column width="500">
+          <interface class="transferrinFollowUp" name="default" />
+        </column>
+        <column width="100">
+          <interface class="transferrinFollowUpNotAvailable" name="default" />
+        </column>
+      </row>
+      <row>
+        <column width="500">
+          <interface class="crpFollowUp" name="default" />
+        </column>
+        <column width="100">
+          <interface class="crpFollowUpNotAvailable" name="default" />
+        </column>
+      </row>
+    </column>    
+  </page>
+  
+  <page name="Sospensione" visible="result = |domus.patientType.patientType|">
+    <column>
+      <interface class="infoPatientType" name="default" />
+    </column>
+    <column>
+      <interface class="pdnSuspensionDate" name="default" />
+      <interface class="pdnSuspensionReason" name="default" />
+      <interface class="karnofskySuspension" name="default" />
+      <interface class="deathCause" name="default" />
+      <row><interface class="deathDate" name="default" />
+      <interface class="deathDateNotAvailable" name="default" /></row>
+      <interface class="transferralDestination" name="default" />
+    </column>
+  </page>
+
+</pages>

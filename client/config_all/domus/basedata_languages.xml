@@ -1,0 +1,38 @@
+<languages crf="domus" basedata="1" version="1.0.0">
+  <language name="English">
+    <translations>
+      <translation textId="1" text="Patient personal data"/>
+      <translation textId="2" text="Firstname"/>
+      <translation textId="3" text="Lastname"/>
+      <translation textId="4" text="Gender"/>
+      <translation textId="5" text="Male"/>
+      <translation textId="6" text="Female"/>
+      <translation textId="7" text="Birthdate"/>
+      <translation textId="8" text="yyyy-mm-dd"/>
+      <translation textId="298" text="EHR id"/>
+      <translation textId="299" text="Electronic health record number"/>
+      <translation textId="300" text="Hospital admission date"/>
+      <translation textId="301" text="ICU admission date"/>
+      <translation textId="1783" text="ICU Discharge date"/>
+      <translation textId="1811" text="Hospital Discharge Date"/>
+    </translations>
+  </language>
+  <language name="Italiano">
+    <translations>
+      <translation textId="1" text="Dati personali del paziente"/>
+      <translation textId="2" text="Nome"/>
+      <translation textId="3" text="Cognome"/>
+      <translation textId="4" text="Sesso"/>
+      <translation textId="5" text="Maschio"/>
+      <translation textId="6" text="Femmina"/>
+      <translation textId="7" text="Data di nascita"/>
+      <translation textId="8" text="aaaa-mm-gg"/>
+      <translation textId="298" text="N&#176; cartella clinica"/>
+      <translation textId="299" text="Numero cartella clinica elettronica"/>
+      <translation textId="300" text="Data ingresso in ospedale"/>
+      <translation textId="301" text="Data ingresso in TI"/>
+      <translation textId="1783" text="Data di dimissione da TI"/>
+      <translation textId="1811" text="Data di dimissione da ospedale"/>
+    </translations>
+  </language>
+</languages>

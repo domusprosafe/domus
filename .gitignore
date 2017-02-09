@@ -1,0 +1,8 @@
+*.sql
+*.pyc
+*.bkp
+/diffs.txt
+/tatu
+/test.txt
+/.project
+/.pydevproject

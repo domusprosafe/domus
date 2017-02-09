@@ -1,0 +1,294 @@
+<languages crf="domus" version="1.5.0">
+  <language name="English">
+    <translations>
+      <translation textId="901001" text="Almeno una indicazione alla NAD deve essere selezionata"/>
+      <translation textId="901002" text="Stadio tumorale non disponibile"/>
+      <translation textId="901003" text="Albumina fuori range"/>
+      <translation textId="901004" text="Prealbumina fuori range"/>
+      <translation textId="901005" text="Transferrina fuori range"/>
+      <translation textId="901006" text="PCR fuori range"/>
+      <translation textId="901011" text="Paziente in trattamento attivo o palliativo con stadio tumorale inferiore al III"/>
+    </translations>
+  </language>
+  <language name="Italiano">
+    <translations>
+      <translation textId="Yes" text="S&#236;" />
+      <translation textId="No" text="No" />
+          <translation textId="9014" text="Afghanistan" />
+      <translation textId="9015" text="Isole &#197;land" />
+      <translation textId="9016" text="Albania" />
+      <translation textId="9017" text="Algeria" />
+      <translation textId="9018" text="Samoa Americane" />
+      <translation textId="9019" text="Andorra" />
+      <translation textId="9020" text="Angola" />
+      <translation textId="9021" text="Anguilla" />
+      <translation textId="9022" text="Antartide" />
+      <translation textId="9023" text="Antigua e Barbuda" />
+      <translation textId="9024" text="Argentina" />
+      <translation textId="9025" text="Armenia" />
+      <translation textId="9026" text="Aruba" />
+      <translation textId="9027" text="Australia" />
+      <translation textId="9028" text="Austria" />
+      <translation textId="9029" text="Azerbaigian" />
+      <translation textId="9030" text="Bahamas" />
+      <translation textId="9031" text="Bahrain" />
+      <translation textId="9032" text="Bangladesh" />
+      <translation textId="9033" text="Barbados" />
+      <translation textId="9034" text="Bielorussia" />
+      <translation textId="9035" text="Belgio" />
+      <translation textId="9036" text="Belize" />
+      <translation textId="9037" text="Benin" />
+      <translation textId="9038" text="Bermuda" />
+      <translation textId="9039" text="Bhutan" />
+      <translation textId="9040" text="Bolivia" />
+      <translation textId="9041" text="Bosnia-Erzegovina" />
+      <translation textId="9042" text="Botswana" />
+      <translation textId="9043" text="Isola Bouvet" />
+      <translation textId="9044" text="Brasile" />
+      <translation textId="9045" text="Territori Britannici dell&#39;Oceano Indiano" />
+      <translation textId="9046" text="Brunei" />
+      <translation textId="9047" text="Bulgaria" />
+      <translation textId="9048" text="Burkina Faso" />
+      <translation textId="9049" text="Burundi" />
+      <translation textId="9050" text="Cambogia" />
+      <translation textId="9051" text="Camerun" />
+      <translation textId="9052" text="Canada" />
+      <translation textId="9053" text="Capo Verde" />
+      <translation textId="9054" text="Isole Cayman" />
+      <translation textId="9055" text="Repubblica Centrafricana" />
+      <translation textId="9056" text="Ciad" />
+      <translation textId="9057" text="Cile" />
+      <translation textId="9058" text="Cina" />
+      <translation textId="9059" text="Isola Christmas" />
+      <translation textId="9060" text="Isole Cocos" />
+      <translation textId="9061" text="Colombia" />
+      <translation textId="9062" text="Comore" />
+      <translation textId="9063" text="Repubblica del Congo" />
+      <translation textId="9064" text="Repubblica Democratica del Congo" />
+      <translation textId="9065" text="Isole Cook" />
+      <translation textId="9066" text="Costa Rica" />
+      <translation textId="9067" text="Costa d&#39;Avorio" />
+      <translation textId="9068" text="Croazia" />
+      <translation textId="9069" text="Cuba" />
+      <translation textId="9070" text="Cipro" />
+      <translation textId="9071" text="Repubblica Ceca" />
+      <translation textId="9072" text="Danimarca" />
+      <translation textId="9073" text="Gibuti" />
+      <translation textId="9074" text="Dominica" />
+      <translation textId="9075" text="Repubblica Dominicana" />
+      <translation textId="9076" text="Ecuador" />
+      <translation textId="9077" text="Egitto" />
+      <translation textId="9078" text="El Salvador" />
+      <translation textId="9079" text="Guinea Equatoriale" />
+      <translation textId="9080" text="Eritrea" />
+      <translation textId="9081" text="Estonia" />
+      <translation textId="9082" text="Etiopia" />
+      <translation textId="9083" text="Isole Falkland" />
+      <translation textId="9084" text="Isole F&#230;r&#216;er" />
+      <translation textId="9085" text="Figi" />
+      <translation textId="9086" text="Finlandia" />
+      <translation textId="9087" text="Francia" />
+      <translation textId="9088" text="Guyana Francese" />
+      <translation textId="9089" text="Polinesia Francese" />
+      <translation textId="9090" text="Territori Francesi del Sud" />
+      <translation textId="9091" text="Gabon" />
+      <translation textId="9092" text="Gambia" />
+      <translation textId="9093" text="Georgia" />
+      <translation textId="9094" text="Germania" />
+      <translation textId="9095" text="Ghana" />
+      <translation textId="9096" text="Gibilterra" />
+      <translation textId="9097" text="Grecia" />
+      <translation textId="9098" text="Groenlandia" />
+      <translation textId="9099" text="Grenada" />
+      <translation textId="90100" text="Guadalupa" />
+      <translation textId="90101" text="Guam" />
+      <translation textId="90102" text="Guatemala" />
+      <translation textId="90103" text="Guernsey" />
+      <translation textId="90104" text="Guinea" />
+      <translation textId="90105" text="Guinea-Bissau" />
+      <translation textId="90106" text="Guyana" />
+      <translation textId="90107" text="Haiti" />
+      <translation textId="90108" text="Isole Heard e McDonald" />
+      <translation textId="90109" text="Citt&#224; del Vaticano" />
+      <translation textId="90110" text="Honduras" />
+      <translation textId="90111" text="Hong Kong" />
+      <translation textId="90112" text="Ungheria" />
+      <translation textId="90113" text="Islanda" />
+      <translation textId="90114" text="India" />
+      <translation textId="90115" text="Indonesia" />
+      <translation textId="90116" text="Iran" />
+      <translation textId="90117" text="Iraq" />
+      <translation textId="90118" text="Irlanda" />
+      <translation textId="90119" text="Isola di Man" />
+      <translation textId="90120" text="Israele" />
+      <translation textId="90121" text="Italia" />
+      <translation textId="90122" text="Giamaica" />
+      <translation textId="90123" text="Giappone" />
+      <translation textId="90124" text="Jersey" />
+      <translation textId="90125" text="Giordania" />
+      <translation textId="90126" text="Kazakistan" />
+      <translation textId="90127" text="Kenya" />
+      <translation textId="90128" text="Kiribati" />
+      <translation textId="90130" text="Corea del Nord" />
+      <translation textId="90131" text="Kuwait" />
+      <translation textId="90132" text="Kirghizistan" />
+      <translation textId="90133" text="Laos" />
+      <translation textId="90134" text="Lettonia" />
+      <translation textId="90135" text="Libano" />
+      <translation textId="90136" text="Lesotho" />
+      <translation textId="90137" text="Liberia" />
+      <translation textId="90138" text="Libia" />
+      <translation textId="90139" text="Liechtenstein" />
+      <translation textId="90140" text="Lituania" />
+      <translation textId="90141" text="Lussemburgo" />
+      <translation textId="90142" text="Macao" />
+      <translation textId="90143" text="Macedonia" />
+      <translation textId="90144" text="Madagascar" />
+      <translation textId="90145" text="Malawi" />
+      <translation textId="90146" text="Malesia" />
+      <translation textId="90147" text="Maldive" />
+      <translation textId="90148" text="Mali" />
+      <translation textId="90149" text="Malta" />
+      <translation textId="90150" text="Isole Marshall" />
+      <translation textId="90151" text="Martinica" />
+      <translation textId="90152" text="Mauritania" />
+      <translation textId="90153" text="Mauritius" />
+      <translation textId="90154" text="Mayotte" />
+      <translation textId="90155" text="Messico" />
+      <translation textId="90156" text="Stati Federati di Micronesia" />
+      <translation textId="90157" text="Moldavia" />
+      <translation textId="90158" text="Monaco" />
+      <translation textId="90159" text="Mongolia" />
+      <translation textId="90160" text="Montenegro" />
+      <translation textId="90161" text="Montserrat" />
+      <translation textId="90162" text="Marocco" />
+      <translation textId="90163" text="Mozambico" />
+      <translation textId="90164" text="Birmania" />
+      <translation textId="90165" text="Namibia" />
+      <translation textId="90166" text="Nauru" />
+      <translation textId="90167" text="Nepal" />
+      <translation textId="90168" text="Olanda" />
+      <translation textId="90169" text="Antille Olandesi" />
+      <translation textId="90170" text="Nuova Caledonia" />
+      <translation textId="90171" text="Nuova Zelanda" />
+      <translation textId="90172" text="Nicaragua" />
+      <translation textId="90173" text="Niger" />
+      <translation textId="90174" text="Nigeria" />
+      <translation textId="90175" text="Niue" />
+      <translation textId="90176" text="Isola Norfolk" />
+      <translation textId="90177" text="Isole Marianne Settentrionali" />
+      <translation textId="90178" text="Norvegia" />
+      <translation textId="90179" text="Oman" />
+      <translation textId="90180" text="Pakistan" />
+      <translation textId="90181" text="Palau" />
+      <translation textId="90182" text="Territori Palestinesi Occupati" />
+      <translation textId="90183" text="Panam&#225;" />
+      <translation textId="90184" text="Papua Nuova Guinea" />
+      <translation textId="90185" text="Paraguay" />
+      <translation textId="90186" text="Per&#249;" />
+      <translation textId="90187" text="Filippine" />
+      <translation textId="90188" text="Isole Pitcairn" />
+      <translation textId="90189" text="Polonia" />
+      <translation textId="90190" text="Portogallo" />
+      <translation textId="90191" text="Porto Rico" />
+      <translation textId="90192" text="Qatar" />
+      <translation textId="90193" text="R&#233;union" />
+      <translation textId="90194" text="Romania" />
+      <translation textId="90195" text="Russia" />
+      <translation textId="90196" text="Ruanda" />
+      <translation textId="90197" text="Saint-Barth&#233;lemy" />
+      <translation textId="90198" text="Sant&#39;Elena" />
+      <translation textId="90199" text="Saint Kitts e Nevis" />
+      <translation textId="90200" text="Santa Lucia" />
+      <translation textId="90201" text="Saint-Martin" />
+      <translation textId="90202" text="Saint Pierre e Miquelon" />
+      <translation textId="90203" text="Saint Vincent e Grenadine" />
+      <translation textId="90204" text="Samoa" />
+      <translation textId="90205" text="San Marino" />
+      <translation textId="90206" text="S&#227;o Tom&#233; e Pr&#237;ncipe" />
+      <translation textId="90207" text="Arabia Saudita" />
+      <translation textId="90208" text="Senegal" />
+      <translation textId="90209" text="Serbia" />
+      <translation textId="90210" text="Seychelles" />
+      <translation textId="90211" text="Sierra Leone" />
+      <translation textId="90212" text="Singapore" />
+      <translation textId="90213" text="Slovacchia" />
+      <translation textId="90214" text="Slovenia" />
+      <translation textId="90215" text="Isole Salomone" />
+      <translation textId="90216" text="Somalia" />
+      <translation textId="90217" text="Sudafrica" />
+      <translation textId="90218" text="Georgia del Sud e isole Sandwich meridionali" />
+      <translation textId="90219" text="Spagna" />
+      <translation textId="90220" text="Sri Lanka" />
+      <translation textId="90221" text="Sudan" />
+      <translation textId="90222" text="Suriname" />
+      <translation textId="90223" text="Svalbard" />
+      <translation textId="90224" text="Swaziland" />
+      <translation textId="90225" text="Svezia" />
+      <translation textId="90226" text="Svizzera" />
+      <translation textId="90227" text="Siria" />
+      <translation textId="90228" text="Repubblica di Cina" />
+      <translation textId="90229" text="Tagikistan" />
+      <translation textId="90230" text="Tanzania" />
+      <translation textId="90231" text="Thailandia" />
+      <translation textId="90232" text="Timor Est" />
+      <translation textId="90233" text="Togo" />
+      <translation textId="90234" text="Tokelau" />
+      <translation textId="90235" text="Tonga" />
+      <translation textId="90236" text="Trinidad e Tobago" />
+      <translation textId="90237" text="Tunisia" />
+      <translation textId="90238" text="Turchia" />
+      <translation textId="90239" text="Turkmenistan" />
+      <translation textId="90240" text="Isole Turks e Caicos" />
+      <translation textId="90241" text="Tuvalu" />
+      <translation textId="90242" text="Uganda" />
+      <translation textId="90243" text="Ucraina" />
+      <translation textId="90244" text="Emirati Arabi Uniti" />
+      <translation textId="90245" text="Regno Unito" />
+      <translation textId="90246" text="Stati Uniti d&#39;America" />
+      <translation textId="90247" text="Isole minori esterne degli Stati Uniti" />
+      <translation textId="90248" text="Uruguay" />
+      <translation textId="90249" text="Uzbekistan" />
+      <translation textId="90250" text="Vanuatu" />
+      <translation textId="90251" text="Venezuela" />
+      <translation textId="90252" text="Vietnam" />
+      <translation textId="90253" text="Isole Vergini Britanniche" />
+      <translation textId="90254" text="Isole Vergini Americane" />
+      <translation textId="90255" text="Wallis e Futuna" />
+      <translation textId="90256" text="Sahara Occidentale" />
+      <translation textId="90257" text="Yemen" />
+      <translation textId="90258" text="Zambia" />
+      <translation textId="90259" text="Zimbabwe" />
+      <translation textId="901001" text="Almeno una indicazione alla NAD deve essere selezionata"/>
+      <translation textId="901002" text="Stadio tumorale non disponibile"/>
+      <translation textId="901003" text="Albumina fuori range"/>
+      <translation textId="901004" text="Prealbumina fuori range"/>
+      <translation textId="901005" text="Transferrina fuori range"/>
+      <translation textId="901006" text="PCR fuori range"/>
+      <translation textId="901011" text="Paziente in trattamento attivo o palliativo con stadio tumorale inferiore al III"/>
+    </translations>
+    <formats>
+      <format class="name" label="Nome" expression="result = '%s, %s' % (|lastName|,|firstName|)"/>
+      <format class="birthDate" label="Data di nascita" expression="result = |birthDate|"/>
+      <format class="age" label="Età" expression="result = '%s' % |age|"/>
+      <format class="sex" label="Sesso" expression="result = |sex|"/>
+      <format class="placeOfBirth" label="Luogo di nascita" expression="result = '%s (%s), %s' % (|town|,|province|,|country|)"/>
+      <format class="address" label="Indirizzo" expression="result = '%s, %s %s (%s), %s' % (|street|,|postalCode|,|town|,|province|,|country|)"/>
+      <format class="habitualWeight" label="Peso abituale" expression="result = '%s kg' % |habitualWeight|"/>
+      <format class="currentWeight" label="Peso attuale" expression="result = '%s kg' % |habitualWeight|"/>
+      <format class="height" label="Altezza" expression="result = '%s m' % |height|"/>
+      <format class="admissionDate" label="Data di presa in carico" expression="result = |admissionDate|"/>
+      <format class="pdnPrescription" label="Prescrizione" expression="'''
+          text = ''
+          text += 'Calorie per infusione: %s kcal\n' % |caloriesPerInfusion|
+          text += 'Aminoacidi per infusione: %s g\n' % |aminoacidsPerInfusion|
+          text += 'Numero di infusioni a settimana: %s \n' % |infusionsPerWeek|
+          text += 'Data di inizio: %s \n' % |startDate|
+          result = text
+      '''"/>
+    </formats>
+  </language>
+</languages>
+
+
+

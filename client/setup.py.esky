@@ -1,0 +1,44 @@
+# setup.py
+import sys
+from distutils.core import setup
+#import py2exe
+import os
+import glob
+from esky import bdist_esky      
+from psversion import PROSAFE_VERSION
+import sqlite3
+from sqlalchemy.dialects import sqlite
+
+
+sys.path.append('./gui')
+sys.path.append('./locale')
+sys.path.append('./utils')
+sys.path.append('./dlls')
+sys.path.append('./master')
+sys.path.append('./master/jsonstore')
+sys.path.append('./config_master')
+sys.path.append('./GivitiMapper')
+
+setup(
+    name = "Prosafe",
+    version = PROSAFE_VERSION,
+     
+    windows = [{"script": "prosafe.pyw","icon_resources": [(1, "images/man2.ico")],}],
+    options = {  "bdist_esky":{}},
+    data_files=[
+        ("images",glob.glob("images/*.*")),
+        ("images/PROSAFEManual_166_IT_file",glob.glob("images/PROSAFEManual_166_IT_file/*.*")),
+        ("images/dischargeLetterInstruction",glob.glob("images/dischargeLetterInstruction/*.*")),
+        ("images/dischargeLetterModelInstruction",glob.glob("images/dischargeLetterModelInstruction/*.*")),
+         #("./config",glob.glob("config/*.*")), 
+        ("./config_master",glob.glob("config_master/*.xml")), 
+        ("./config_master",glob.glob("config_master/*.png")), 
+        ("./GivitiMapper_master",glob.glob("GivitiMapper_master/*.*")), 
+        ("./dletters_master",glob.glob("dletters_master/*.*")), 
+        ("./xlsmodels_master",glob.glob("xlsmodels_master/*.*")), 
+        ("./currentupdate",glob.glob("currentupdate/*.*")), 
+    ],                                    
+   
+    scripts = ["prosafe.pyw"]
+)
+

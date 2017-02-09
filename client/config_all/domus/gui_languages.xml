@@ -1,0 +1,599 @@
+<languages crf="gui" basedata="1" version="1.0.0">
+    <language name="English">
+        <translations>  
+            <translation textId="PRIVATE_KEY_MESSAGE" text="This centre private key is:&#xD;&#xA;&#xD;&#xA;%s&#xD;&#xA;&#xD;&#xA;This key is the encryption key for patient personal data in the PROSAFE database.&#xD;&#xA;&#xD;&#xA;It is of paramount importance to take note of this key in the eventuality of hardware failures, as it will be the only way for the centre to access patient personal data in future PROSAFE installations.&#xD;&#xA;&#xD;&#xA;Please also note that the key should be kept secret to ensure patient privacy." />
+            <translation textId="USER_TYPE_DESCRIPTION_STRING" text="Administrator: privilege to create new Users, enable and disable existing Users, assign the Users their own Profile, enter, modify and view the data&#10;DataManager: privilege to enter, modify and view the data, close and re-open records.&#10;DataEditor: privilege to enter, modify and view the data.&#10;DataViewer: privilege to view already entered data."/>
+            <translation textId="Discharge letter" text="Clinical stay summary" />    
+            <translation textId="Discharge letter model" text="Clinical stay summary model" /> 
+            <translation textId="Click to edit discharge letter for the current admission" text="Click to edit the clinical stay summary for the current admission" /> 
+            <translation textId="Click to edit the discharge letter model" text="Click to edit the clinical stay summary model" /> 
+            <translation textId="Errors or unaccepted warnings present" text="Errors and/or unsolved warnings" />  
+            <translation textId="Compilation incomplete" text="Missing data" />  
+            <translation textId="Compilation complete (except discharge date)" text="All data except hospital outcome are filled in" />
+            <translation textId="Compilation complete (including discharge date)" text="Data collection is complete and correct" />
+            <translation textId="Compilation complete" text="Data collection is complete and correct" />
+            <translation textId="Admission closed" text="Missing data are unrecoverable" />
+            <translation textId="Readmission question" text="In the previous record, the hospital discharge data are not completed. Do you confirm the patient is going to be readmitted to your ICU without having been discharged from the hospital?" />
+            <translation textId="candidate for admission patient is dead" text="In the previous admission this patient was dead. Please correct previous admission data in order to admit it again." />
+            <translation textId="Formats usage instruction" text="To add a PROSAFE DOMUS variable to the model it is necessary to copy  and paste the variable name ( including $: $variable name$) &#xA;into the model in the exact position where you would like to visualize data." />
+            <translation textId="Instruction" text="Help" />
+            <translation textId="Description" text="Description" />
+            <translation textId="Format name" text="Variable name" />
+            <translation textId="Extension" text="Document format" />
+            <translation textId="New file name" text="File name (optional)" />
+            <translation textId="Created letters" text="Patient's letters" />
+            <translation textId="Browse created letters" text="Browse patient's letters" />
+            <translation textId="Create new letter" text="Create a new letter" />
+            <translation textId="Select model" text="Select model to be used" />
+            <translation textId="Avalaible models" text="Available default models" />
+            <translation textId="Create" text="Create" />
+            <translation textId="Modify hint" text="Administrator could modify PROSAFE DOMUS default models using the associated editor. &#xA; It is possible to customize the model (inserting a new header or footer, adding title or sentences, formatting characters) and save modifications. &#xA; It is possible also to add or delete variables which are automatically completed by the system when a new patient letter is created&#10;&#10;-  to delete a variable, please delete in the model the string $variable name$ &#10;&#10;- to add a variable it is necessary to copy the choosen variable name ($variable name$) from the variable list -&gt; press button &quot;PROSAFE DOMUS variables list&quot;)&#10;&#10; P.S. It is strictly important do not modify the strings $variable name$ otherwise the automatic data import in the PROSAFE DOMUS clinical stay summary would not work properly" />
+            <translation textId="Formats" text="PROSAFE DOMUS variables list" />
+            <translation textId="docx" text="MS Word 2007 and next (docx)" />
+            <translation textId="rtf" text="Text editor (rtf)" />
+            <translation textId="odt" text="Open Office (odt)" />
+            <translation textId="Discharge model advice" text="All data included in a clinical stay summary" />
+            <translation textId="Admission model advice" text="Patient admission information (usually used as first page of clinical record)" />
+            <translation textId="No model was selected." text="None selected model" />
+            <translation textId="Select model to be used" text="Select model to be used" />
+            <translation textId="Select model" text="Select model" />
+            <translation textId="Usable model added succesfully!" text="Model succesfully added!" />
+            <translation textId="No model was found. Please contact your PROSAFE DOMUS administrator." text="WARNING! To compose the clinical stay summary, the Prosafe administrator should have chosen the template to use. Currently, no template has been selected, so that this feature is not working. We invite you to prompt the Prosafe administrator to take the necessary steps, described in the manual." />
+            <translation textId="Remember you cannot use the new PROSAFE DOMUS discharge letter with patient admitted before 2011-09-07" text="Remember you cannot use the new PROSAFE DOMUS discharge letter with patient admitted before 2011-09-07" />
+            <translation textId="Select and use model" text="Select model to be used" />
+            <translation textId="Usable models" text="Modify available models" />
+            <translation textId="Browse usable models" text="Browse available models" />
+            <translation textId="Old system" text="Open letter with previous system" />
+            <translation textId="Update discharge letter notes" text="Update discharge letter notes" />
+            <translation textId="Warning before create letter" text="The generated letter reflects the current status of the information entered in PROSAFE DOMUS.&#xA;When data are modified or updated, a new letter needs to be created.&#xA;Any modifications to previously created letters will not be imported into subsequently created letters." />
+            <translation textId="Create letter advice" text="This utility is no longer supported and will shortly go out of use. You should use the new models. Do you wish to continue?" />
+            <translation textId="Cannot close admission with errors" text="It is not allowed to close an admission if errors of warnings not yet solved are present!" />
+            <translation textId="Close admission error" text="Close admission error" />
+            <translation textId="Default compilation" text="Standard insert modality" />
+            <translation textId="Quick compilation" text="Quick insert" />
+            <translation textId="Quick compilation intro" text="The utility &quot;Quick insert&quot; allows to rapidly enter&#xA;an information in all patients in whom it is still missing.&#xA;When such a modality is active, the software automatically&#xA;filters eligible patients and, as they are opened,&#xA;it directs to the right page." /> 
+            <translation textId="Overview table advice" text="The overview table is available for 2011 patients only." />
+            <translation textId="No patient selected." text="No patient selected." />
+			<!-- #################################### BEGING PERSONNALISATION #################################### -->
+			
+			<translation textId="closing" text="Confirm closing customization" />
+			
+			<translation textId="Msgclosing" text=" Unsaved data will be lost. Confirm to exit ?" />
+			<translation textId="bt_ok" text="Yes" />
+			<translation textId="bt_no" text="Cancel" />
+			
+			
+			<translation textId="fabric" text="Fabrics taken" />
+			<translation textId="organs" text="Organs taken" />
+			<translation textId="prelieve" text="Organi / Fabrics taken" />
+			
+			<translation textId="msg prelievi" text="Select the group you want to see samples in the core.&#10;WARNING! Once selected, the items will no longer be deleted." />
+			<translation textId="organi / tessuti" text="Output / Outcome &#42; Withdrawal" />
+			
+			<!-- translation textId="reni" text="        - Kidney                                                             " />
+			<translation textId="cuore" text="        - Heart" />
+			<translation textId="fegato" text="        - Liver" />
+			<translation textId="polmoni" text="        - Lungs" />
+			<translation textId="pancreas" text="        - Pancreas" />
+			<translation textId="intestino" text="        - Intestine" />
+			
+			<translation textId="cornee" text="        - Corneas" />
+			<translation textId="valvole cardiache" text="        - Heart valves" />
+			<translation textId="vasi sanguigni" text="        - Blood vessels" />
+			<translation textId="cute" text="        - Cute" />
+			<translation textId="ossa" text="        - Bones" />
+			<translation textId="tendini" text="        - Tendons" />
+			<translation textId="cartilagini" text="        - Cartilages" />
+			<translation textId="arti" text="        - Arts" / -->
+			
+			
+			<translation textId="save to exit" text="save to exit" />
+			<translation textId="exit without to save" text="Exit without to save" />
+			<translation textId="Trattamenti" text="Treatments" />
+			<translation textId="msg Trattementi" text="Select the treatments to be displayed in Core.ATTENZIONE! Una volta selezionate, le voci non potranno pi&#249; essere cancellate." />
+			<translation textId="Salva Modifiche" text="Save Changes" />
+			<translation textId="Tipologia  di" text="Type of" />
+			<translation textId="Nome della" text="Name of" />
+			<translation textId="modif" text="Changed" />
+			<translation textId="Elimina" text="Cancel" />
+			
+			<translation textId="Provenienza" text="Source admition / Outcome" />
+			<translation textId="Procedure non chirurgiche" text="Not surgical procedures" />
+			
+			<translation textId="Procedure chirurgiche  " text="Surgical procedures" />
+			
+			<translation textId="msg procd" text=" Add custom entries by entering the name and type.&#10;WARNING! Once saved, the items will no longer be erased but only modified." />
+			<translation textId="msg esito" text="WARNING! Once selected, the items can not be over-erased .." />
+			<translation textId="Nome lis" text="Name" />
+			<translation textId="Tipologia di Procedura" text="Type of Procedure" />
+			
+			<translation textId="def_description" text="With this feature you can customize some fields to meet the needs of&#10;your individual center.&#10;For example, you can add the name of the department of origin or &#10;transfer for internal statistics. Pay attention. &#10;Customized fields will NOT be analyzed by the GiViTI Coordination Centre,&#10;but could be evaluated by the single center through data extraction." />
+			<translation textId="Altro ospedale" text="    - Other Hospital" />
+			<translation textId="Altra TI dello stesso ospedale" text="    - Other TI the same hospital" />
+			<translation textId="Reparto chirurgico dello stesso ospedale" text="    - Department of Surgical same hospital" />
+			<translation textId="Terapia sub intensiva dello stesso ospedale" text="    - The same hospital intensive sub therapy" />
+			<translation textId="Reparto medico dello stesso ospedale" text="    - The same hospital ward doctor" />
+			
+			
+			
+			<translation textId="NON_CHIRURGICHE" text="    &#42; NOT SURGICAL PROCEDURES                                 " />
+			<translation textId="CHIRURGICHE" text="    &#42; SURGICAL PROCEDURES" />
+			<translation textId="PRESIDI E/O TRATTAMENTI" text="    &#42; PRESIDI AND / OR TREATMENT" />
+			
+			
+			<translation textId="CAMPI PERSONAZZABILI" text="Description" />
+			<translation textId="provenienza e esito ti" text="&#42; SOURCE AND OUTPUT / OUTCOME" />
+			<translation textId="cch" text="Cardiac Surgery" />
+			<translation textId="infection" text="Infections" />
+			<translation textId="degenze in ti" text="&#42; STAY IN IT" />
+			<translation textId="alestimento" text="BY WAY OF ARRANGEMENT" />
+			<translation textId="personazzazione" text="CUSTOMIZATION" />
+			<translation textId="msg doppio" text="PERSONALIZZAZIONE" />
+			
+			<translation textId="Info" text="Info" />
+			<translation textId="msginfo" text=" WARNING! The change will be applied to all patients in whom this item was selected.&#10;  And therefore should NOT change the meaning of the voice so as not altering the data already entered." />
+			<translation textId="Group_Name" text="Type of Procedure" />
+			<translation textId="Old_name" text="Old procedur name " />
+			<translation textId="Newn_Name" text="New procedure name" />
+			<translation textId="save" text="Save" />
+			<translation textId="close" text="Close" />
+			
+			
+			
+			<!-- #################################### END PERSONNALISATION #################################### -->
+        </translations>  
+    </language>
+    <language name="Italiano">
+        <translations>
+          <translation textId="WARNING_EXPORT" text="L&#39;estrazione dei dati pu&#242; durare diversi minuti a seconda della configurazione del sistema e del numero di pazienti. Vuoi proseguire?" />
+            <translation textId="PRIVATE_KEY_MESSAGE" text="This centre private key is:&#xD;&#xA;&#xD;&#xA;%s&#xD;&#xA;&#xD;&#xA;This key is the encryption key for patient personal data in the PROSAFE database.&#xD;&#xA;&#xD;&#xA;It is of paramount importance to take note of this key in the eventuality of hardware failures, as it will be the only way for the centre to access patient personal data in future PROSAFE installations.&#xD;&#xA;&#xD;&#xA;Please also note that the key should be kept secret to ensure patient privacy." />
+			<!-- #################################### BEGING PERSONNALISATION #################################### -->
+			<translation textId="closing" text="Conferma chiusura personalizzazione" />
+			<translation textId="User type error" text="Errore tipo utente" />
+			<translation textId="You cannot create a user without setting a user type." text="Non puoi creare un utente senza impostare il tipo di utenza" />
+			
+			<translation textId="Msgclosing" text=" I dati non salvati verranno persi. Confermate la chiusura ?" />
+			<translation textId="bt_ok" text="Si" />
+			<translation textId="bt_no" text="Annulla" />
+			
+			
+			<translation textId="Info" text="Attenzione" />
+
+			<translation textId="msginfo" text=" ATTENZIONE! La modifica verr&#224; applicata su tutti i pazienti nei quali questa voce &#39; stata selezionata.&#10;E' quindi opportuno NON modificare il significato della voce per non alterare i dati gi&#224; inseriti." />
+
+			<translation textId="Customization" text="Personalizzazioni" />
+			<translation textId="Group_Name" text="Tipologia della procedura" />
+			<translation textId="Old_name" text="Nome attuale procedure" />
+			<translation textId="Newn_Name" text="Nuovo nome procedura" />
+			<translation textId="save" text="Salva" />
+			<translation textId="close" text="Chiudere" />
+			
+			
+			
+			<translation textId="fabric" text="Tessuti prelevati" />
+			<translation textId="organs" text="Organi prelevati" />
+			<translation textId="prelieve" text="Organi / Tessuti prelevati" />
+			
+			<translation textId="msg prelievi" text="Selezionare il gruppo di prelievi che desidera vedere nel del core.&#10;ATTENZIONE! Una volta selezionate, le voci non potranno pi&#249; essere cancellate." />
+			<translation textId="organi / tessuti" text="Uscita/Esito  &#42; Prelievo " />
+			
+			<translation textId="reni" text="        - Reni                                                             " />
+			<translation textId="cuore" text="        - Cuore" />
+			<translation textId="fegato" text="        - Fegato" />
+			<translation textId="polmoni" text="        - Polmoni" />
+			<translation textId="pancreas" text="        - Pancreas" />
+			<translation textId="intestino" text="        - Intestino" />
+			
+			<translation textId="cornee" text="        - Cornee" />
+			<translation textId="valvole cardiache" text="        - Valvole cardiache" />
+			<translation textId="vasi sanguigni" text="        - vasi sanguigni" />
+			<translation textId="cute" text="        - Cute" />
+			<translation textId="ossa" text="        - Ossa" />
+			<translation textId="tendini" text="        - Tendini" />
+			<translation textId="cartilagini" text="        - Cartilagini" />
+			<translation textId="arti" text="        - Arti" />
+			
+			<translation textId="save to exit" text="Salva per uscire" />
+			<translation textId="exit without to save" text="Uscire senza salvare" />
+			<translation textId="Trattamenti" text="Trattamenti" />
+			<translation textId="msg Trattementi" text="Selezionare i trattamenti da visualizzare nel Core&#10;ATTENZIONE! Una volta selezionate, le voci non potranno pi&#249; essere cancellate." />
+			<translation textId="Salva Modifiche" text="Salva Modifiche" />
+			<translation textId="Tipologia  di" text="Tipologia  di" />
+			<translation textId="Nome della" text="Nome della" />
+			<translation textId="modif" text="Modifica" />
+			<translation textId="Elimina" text="Annulla" />
+			<translation textId="Aggiungi" text="Aggiungi" />
+			<translation textId="msg procd" text=" Aggiungere le voci personalizzate inserendo il nome e la tipologia.&#10;  ATTENZIONE&#33; Una volta salvate, le voci non potranno pi&#249; essere cancellate ma solo modificate" />
+			<translation textId="msg esito" text="ATTENZIONE! Una volta selezionate, le voci non potranno pi&#249; essere cancellate. " />
+			<translation textId="Nome lis" text="Nome" />
+			<translation textId="Tipologia di Procedura" text="Tipologia di Procedura" />
+			<translation textId="def_description" text="Con questa funzionalit&#224; &#232; possibile personalizzare alcuni campi per&#10;andare incontro alle esigenze dei singoli centri.&#10;Ad esempio &#232; possibile aggiungere il nome dei reparti di trasferimento&#10;o di provenienza, per statistiche interne.&#10;Attenzione. Le voci personalizzate non verranno analizzate dal Centro di&#10;Coordinamento GiViTI, ma potranno essere valutate&#10;dal singolo centro attraverso l'estrazione dei dati." />
+			
+			<translation textId="Altro ospedale" text="    - Altro ospedale                               " />
+			<translation textId="Altra TI dello stesso ospedale" text="    - Altra TI dello stesso ospedale" />
+			<translation textId="Reparto chirurgico dello stesso ospedale" text="    - Reparto chirurgico dello stesso ospedale" />
+			<translation textId="Terapia sub intensiva dello stesso ospedale" text="    - Terapia sub intensiva dello stesso ospedale" />
+			<translation textId="Reparto medico dello stesso ospedale" text="    - Reparto medico dello stesso ospedale" />
+			
+			<translation textId="Provenienza" text="provenienza / Esito IT" />
+			<translation textId="Procedure chirurgiche  " text="Procedure chirurgiche" />
+			<translation textId="Procedure non chirurgiche" text="Procedure non chirurgiche" />
+			
+			<translation textId="campi degenza" text="&#42; PROCEDURE CHIRURGICHE&#xD;&#xD;&#42; PRESIDI E/O TRATTAMENTI" />
+			<translation textId="NON_CHIRURGICHE" text="    &#42; PROCEDURE NON CHIRURGICHE                            " />
+			<translation textId="CHIRURGICHE" text="    &#42; PROCEDURE CHIRURGICHE" />
+			<translation textId="PRESIDI E/O TRATTAMENTI" text="    &#42; PRESIDI E/O TRATTAMENTI" />
+			
+			<translation textId="CAMPI PERSONAZZABILI" text="Descrizione" />
+		
+			<translation textId="provenienza e esito ti" text="&#42; PROVENIENZA  E USCITA / ESITO" />
+			<translation textId="cch" text="Cardiochirurgia" />
+			<translation textId="infection" text="Infezioni" />
+			<translation textId="degenze in ti" text="&#42; DEGENZA IN TI" />
+			<translation textId="alestimento" text="IN VIA DI ALLESTIMENTO" />
+			<translation textId="personazzazione" text="PERSONALIZZAZIONE" />
+			<translation textId="msg doppio" text="PERSONALIZZAZIONE" />
+			
+			
+			
+			<!-- #################################### END PERSONNALISATION #################################### -->
+            <translation textId="Male" text="Maschio" />
+            <translation textId="Female" text="Femmina" />
+
+            <translation textId="First Name" text="Nome" />
+            <translation textId="Last Name" text="Cognome" />
+            <translation textId="ICU Admission date" text="Data di ammissione in TI" />
+            <translation textId="ICU Discharge date" text="Data di dimissione dalla TI" />
+            <translation textId="Print current list" text="Salva lista pazienti" />
+            <translation textId="Manage configuration" text="Configurazioni" />
+            <translation textId="No patient selected." text="Nessun paziente &#232; stato selezionato." />
+            <translation textId="Overview table advice" text="La tabella descrittiva &#232; attualmente disponibile solo per i pazienti del 2011" />
+            <translation textId="Quick compilation" text="Compilazione veloce" />
+            <translation textId="Default compilation" text="Compilazione normale" />
+            <translation textId="Quick compilation intro" text="La funzionalit&#224; &quot;Compilazione veloce&quot; consente di inserire &#xA;rapidamente un'informazione in tutti i pazienti in cui questa&#xA;risulta ancora mancante.&#xA;Quando si attiva questa modalit&#224;, il programma&#xA;filtra automaticamente i pazienti eleggibili e, alla loro apertura,&#xA;porta immediatamente alla pagina di interesse." /> 
+            <translation textId="Remember you cannot use the new PROSAFE DOMUS discharge letter with patient admitted before 2011-09-07" text="La nuova sintesi del decorso clinico di PROSAFE DOMUS pu&#242; essere utilizzata solo per pazienti ammessi dopo il 07-09-2011" />
+            <translation textId="Cannot close admission with errors" text="Non &#232; possibile chiudere un ricovero se sono presenti errori o warning non risolti" />
+            <translation textId="Close admission error" text="Errore nella chiusura del ricovero" />
+            <translation textId="Formats usage instruction" text="Per aggiungere le variabili ad un modello, copiare il nome della variabile&#xA;(inclusi i dollari: $nome variabile$) ed incollarla nel documento relativo al modello che si sta modificando, nella posizione desiderata." />
+            <translation textId="Instruction" text="Manuale" />
+            <translation textId="Get overview table" text="Tabella descrittiva" />
+            <translation textId="Click to get an overview table in excel format" text="Clicca per creare una tabella descrittiva" />
+            <translation textId="Description" text="Descrizione" />
+            <translation textId="Format name" text="Nome variabile" />
+            <translation textId="Extension" text="Formato del documento" />
+            <translation textId="New file name" text="Nome del file (opzionale)" />
+            <translation textId="Created letters" text="Lettere create per questo paziente" />
+            <translation textId="Browse created letters" text="Sfoglia lettere create per questo paziente" />
+            <translation textId="Create new letter" text="Crea nuova lettera" />
+            <translation textId="Select model" text="Seleziona il modello da utilizzare" />
+            <translation textId="Avalaible models" text="Modelli disponibili di default" />
+            <translation textId="Create" text="Crea" />
+            <translation textId="Modify hint" text="L'amministratore pu&#242; modificare i modelli di default di PROSAFE DOMUS aprendo il file con l'editor associato.&#xA;E' possibile personalizzare il modello (mettendo un'intestazione, un pi&#232; di pagina, aggiungendo titoli o frasi e inserendo formattazioni personalizzate dei caratteri) e salvare le modifiche effettuate.&#xA;Inoltre &#232; possibile aggiungere o eliminare le variabili che il modello importa e riempie automaticamente da PROSAFE DOMUS quando viene generata la lettera del paziente:&#10;&#10;-          Per eliminare la variabile &#232; sufficiente cancellare, nel modello, la stringa composta da $nome variabile$&#10;&#10;-          Per aggiungere una variabile &#232; necessario copiare il nome della variabile scelta (sempre nel formato $nome variabile$) tra la lista delle variabili disponibili -&gt; premere il tasto &quot;lista variabili disponibili&quot;)&#10;&#10;N.B. E' molto importante non modificare le stringhe $nome variabile$ affinch&#232; l'importazione automatica dei dati da PROSAFE DOMUS nella sintesi decorso clinico funzioni correttamente." />
+            <translation textId="Formats" text="Lista variabili disponibili" />
+            <translation textId="docx" text="MS Word 2007 e successivi (docx)" />
+            <translation textId="rtf" text="Editor di testo generico (rtf)" />
+            <translation textId="odt" text="Open Office (odt)" />
+            <translation textId="Discharge model advice" text="Sintesi contenente tutti i dati che viene usata generalmente come lettera di dimissione ospedaliera" />
+            <translation textId="Admission model advice" text="Sintesi delle informazioni all'ammissione del paziente che viene usata generalmente come frontespizio della cartella clinica cartacea" />
+            <translation textId="No model was selected." text="Non &#232; stato selezionato alcun modello." />
+            <translation textId="Select model to be used" text="Seleziona modello per l'uso" />
+            <translation textId="Select model" text="Seleziona modello" />
+            <translation textId="Usable model added succesfully!" text="Modello utilizzabile aggiunto con successo!" />
+            <translation textId="No model was found. Please contact your PROSAFE DOMUS administrator." text="ATTENZIONE! Per poter comporre la sintesi del decorso clinico &#232; necessario che l'amministratore di PROSAFE DOMUS abbia scelto il modello da utilizzare. Attualmente nessun modello &#232; stato selezionato e di conseguenza questa funzionalit&#224; non &#232; operativa. Si invita a contattare l'amministratore affinch&#233; faccia i passi necessari, descritti sul manuale d'uso." />
+            <translation textId="Select and use model" text="Seleziona modello per l'uso" />
+            <translation textId="Usable models" text="Modifica modelli utilizzabili" />
+            <translation textId="Browse usable models" text="Sfoglia modelli utilizzabili" />
+            <translation textId="Old system" text="Apri lettera con vecchio sistema" />
+            <translation textId="Load admission" text="Carica ricovero" />
+            <translation textId="Update discharge letter notes" text="Aggiorna note del decorso clinico" />
+            <translation textId="Warning before create letter" text="La lettera generata rispecchia lo stato attuale delle informazioni contenute in PROSAFE DOMUS.&#xA;In caso di modifiche o aggiornamenti dei dati, sar&#224; necessario creare una nuova lettera.&#xA;Le modifiche eventualmente apportate alle lettere gi&#224; create non verranno mantenute nelle lettere create successivamente" />
+            <translation textId="Create letter advice" text="Questa funzionalit&#224; non &#232; pi&#249; supportata e sar&#224; dismessa a breve. Dovresti utilizzare i nuovi modelli. Vuoi continuare ?" />
+            <translation textId="Open patient" text="Apri paziente" />
+
+            <translation textId="Click to add note" text="Clicca per aggiungere una nota" />
+            <translation textId="Click to delete procedure" text="Clicca per cancellare la procedura" />
+            <translation textId="Clear" text="Cancella" />
+            <translation textId="Undo" text="Annulla" />
+            <translation textId="ICU admission date cannot be prior to hospital admission date of the previous admission." text="La data di ammissione in TI non deve essere precedente alla data di ingresso in ospedale del precedente ricovero." />
+            <translation textId="ICU admission date cannot be prior to icu admission date of the previous admission." text="La data di ammissione in TI non deve essere precedente alla data di ammissione in TI del precedente ricovero." />
+            <translation textId="ICU admission date cannot be prior to icu discharge date of the previous admission." text="La data di ammissione in TI non deve essere precedente alla data di uscita dalla TI del precedente ricovero." />
+            <translation textId="candidate for admission patient is dead" text="Nel ricovero precedente questo paziente risulta deceduto. Si prega di correggere il dato precedente qualora si volesse ammettere questo paziente nuovamente." />
+            <translation textId="Please, do not forget to fill in the hospital discharge data in the previous record of this patient" text="Ricordati di completare i dati di esito ospedaliero nel ricovero precedente di questo paziente" />
+            <translation textId="Readmission question" text="Nel ricovero precedente, i dati di esito ospedaliero di questo paziente non sono completi. Confermi che il paziente viene riammesso in TI senza essere stato dimesso dall'ospedale?" />
+            <translation textId="Data export failed." text="Esportazione dati fallita." />
+            <translation textId="Data has been successfully exported." text="I dati sono stati esportati con successo." />
+            <translation textId="Cannot export data while admissions are being updated." text="Non &#232; possibile esportare dati mentre i ricoveri sono in aggiornamento." />
+            <translation textId ="Choose export groups" text="Scegli i gruppi da esportare" />
+            <translation textId="Click to export data in CSV format" text="Clicca per esportare i dati in formato CSV" />
+            <translation textId="Export data" text="Esportazione" />
+            <translation textId="Yes" text="S&#236;"/>
+            <translation textId="No" text="No"/>
+            <translation textId="Clinical record number" text="N. cartella clinica"/>
+            <translation textId="Petals complete" text="Petali completi"/>
+            <translation textId="Go to the summary page" text="Vai alla lista del compilato/non compilato"/>
+            <translation textId="Go to the upper page" text="Vai a livello superiore"/>
+            <translation textId="PROSAFE DOMUS Manual is still missing. Coming soon!!" text="Il manuale di PROSAFE DOMUS non &#232; ancora presente. &#200; in arrivo!!"/>
+            <translation textId="Welcome to PROSAFE DOMUS - Version " text="Benvenuto in PROSAFE DOMUS - Versione "/>
+            <translation textId="Please log in with your username and password" text="Accedi inserendo la tua username e la tua password"/>
+            <translation textId="summary page" text="Lista compilato/non compilato" />
+            <translation textId="Login" text="Accedi"/>
+            <translation textId="Exit" text="Esci"/>
+            <translation textId="updating" text="in aggiornamento"/>
+            <translation textId="Logging in" text="Accesso in corso"/>
+            <translation textId="New admission" text="Nuova ammissione"/>
+            <translation textId="User preferences" text="Preferenze dell'utente"/>
+            <translation textId="Upload data" text="Upload data"/>
+            <translation textId="Logout" text="Logout"/>
+            <translation textId="Data filter" text="Filtro dati"/>
+            <translation textId="Admission code" text="Codice ammissione"/>
+            <translation textId="Admission date" text="Data di ammissione"/>
+            <translation textId="Last name" text="Cognome"/>
+            <translation textId="First name" text="Nome"/>
+            <translation textId="Date of birth" text="Data di nascita"/>
+            <translation textId="Discharge date" text="Data di dimissione"/>
+            <translation textId="Status" text="Status"/>
+            <translation textId="Core status" text="Status core"/>
+            <translation textId="Petal status" text="Status petalo"/>
+            <translation textId="Remove quick filters" text="Rimuovi filtri rapidi"/>
+            <translation textId="Admission year" text="Anno ricovero"/>
+            <translation textId="Admission statistics" text="Statistiche ricoveri"/>
+            <translation textId="Save" text="Salva"/>
+            <translation textId="Errors" text="Errori"/>
+            <translation textId="Warnings" text="Avvisi"/>
+            <translation textId="Info" text="Informazioni"/>
+            <translation textId="from" text="da"/>
+            <translation textId="to" text="a"/>
+            <translation textId="Hover the mouse on the item of interest to display its definition" text="Posiziona il mouse sull'elemento di interesse per mostrare la sua definizione"/>
+            <translation textId="Do you really want to logout?" text="Vuoi veramente uscire?"/>
+            <translation textId="Do you really want to quit?" text="Vuoi veramente chiudere?"/>
+            <translation textId="Confirm logout" text="Conferma uscita"/>
+            <translation textId="Confirm quit" text="Conferma chiusura"/>
+            <translation textId="Confirm save" text="Conferma salvataggio"/>
+            <translation textId="Your PROSAFE DOMUS client activation is completed." text=""/>
+            <translation textId="Activation completed!" text=""/>
+            <translation textId="The activation key is not valid. Please try again." text=""/>
+            <translation textId="Activation NOT completed!" text=""/>
+            <translation textId="Please register your PROSAFE DOMUS client with the Centre Code and the Activation Key you received via mail." text=""/>
+            <translation textId="Welcome to PROSAFE DOMUS" text="Benvenuto in PROSAFE DOMUS!"/>
+            <translation textId="Centre code" text="Codice centro"/>
+            <translation textId="Activation key" text="Chiave di attivazione"/>
+            <translation textId="Verify activation key" text="Verifica chiave di attivazione"/>
+            <translation textId="Connection Error" text="Errore di connessione"/>
+            <translation textId="A connection could not be established. Please check that a network connection is available, and eventually enter proxy settings in the next dialog." text="La connessione non pu&#242; essere stabilita. Controlla che la connessione ad internet sia disponibile ed eventualmente inserisci le impostazioni del proxy nella finestra seguente."/>                                 
+            <translation textId="Please wait until update is completed. This process may take several minutes." text="Si prega di attendere finch&#233; l'aggiornamento non sar&#224;; completato. Questo processo pu&#242; durare diversi minuti."/>
+            <translation textId="Updating.." text="Aggiornamento in corso.."/>
+            <translation textId="Editor" text="Editor"/>
+            <translation textId="Admission error: this patient is still present in ICU. Please fill ICU discharge date before adding a new admission for this patient." text="Errore nell'ammisione: questo paziente &#232; ancora presente in TI. Si prega di completare la dimissione dalla TI prima di aggiungere una nuova ammissione per questo paziente."/>                                
+            <translation textId="Admission Error" text="Errore nell'ammissione"/>
+            <translation textId="Is it a readmission?" text="Si tratta di una riammissione?"/>
+            <translation textId="Readmission" text="Riammissione"/>
+            <translation textId="PROSAFE DOMUS - Editor" text="PROSAFE DOMUS - Editor"/>
+            <translation textId="Login error!" text="Errore di login!"/>
+            <translation textId="Login error.\n\nYou are repeatedly inserting a wrong username or password.\nIf you are a user, contact your PROSAFE DOMUS administrator and ask for a new password.\nIf you are the administrator, please send an email to giviti@marionegri.it and ask for instructions." text="Errore di login.\n\nStai ripetutamente inserendo una username o password errata.\nSe sei un utente, contatta l'amministratore di PROSAFE DOMUS e chiedi per una nuova password.\nSe sei l'amministratore, invia una mail a giviti@marionegri.it e chiedi supporto."/>                                
+            <translation textId="Login Error" text="Errore di login"/>
+            <translation textId="This software is provided by Mario Negri Institute 'as is' and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall Mario Negri Institute be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage." text=""/>
+            <translation textId="Close" text="Chiudi"/>
+            <translation textId="Another instance of PROSAFE DOMUS is currently running" text="Un'altra istanza di PROSAFE DOMUS &#232; attualmente in uso."/>
+            <translation textId="ERROR" text="ERRORE"/>
+            <translation textId="Establishing network connection." text="Connessione in corso"/>
+            <translation textId="Connection" text="Connessione"/>
+            <translation textId="User manager" text="Gestione utenti"/>
+            <translation textId="This is a list of the users for this centre. Create a new user or double click on an existing user to edit it." text="Questa &#232; una lista degli utenti di questo centro. Crea un nuovo utente o fai doppio click su un utente esistente per modificarlo."/>
+            <translation textId="Create new user" text="Crea nuovo utente"/>
+            <translation textId="Activation" text="Attivazione"/>
+            <translation textId="User preferences" text="Preferenze dell'utente"/>
+            <translation textId="Language" text="Lingua"/>
+            <translation textId="Save and exit" text="Salva ed esci"/>
+            <translation textId="Cancel" text="Annulla"/>
+            <translation textId="Language preferences saved" text="La lingua &#232; stata salvata"/>
+            <translation textId="Errors occured while saving language preferences" text="Si &#232; verificato un errore nel cambiare lingua."/>
+            <translation textId="Language preferences NOT saved!" text="Lingua NON salvata"/>
+            <translation textId="Blank fields" text="Campi vuoti"/>
+            <translation textId="Please fill each field" text="Si prega di riempire ogni campo"/>
+            <translation textId="New password saved" text="Nuova password salvata"/>
+            <translation textId="Errors occured while saving new password." text="Si &#232; verificato un errore nel salvare la nuova password."/>
+            <translation textId="New password not saved" text="Nuova password non salvata."/>
+            <translation textId="New password must be different from old password" text="La nuova password deve essere differente dalla vecchia password."/>
+            <translation textId="Old password is wrong" text="Vecchia password errata."/>
+            <translation textId="Old Password" text="Vecchia password"/>
+            <translation textId="New password" text="Nuova password"/>
+            <translation textId="Confirm password" text="Conferma nuova password"/>
+            <translation textId="Language" text="Lingua"/>
+            <translation textId="Click to logout" text="Clicca per uscire" />
+            <translation textId="Click to edit software configuration" text="Clicca per modificare le configurazioni del software" />
+            <translation textId="Configuration" text="Configurazione" />
+            <translation textId="Manage users" text="Gestisci gli utenti" />
+            <translation textId="Click to manage users" text="Clicca qui per gestire gli utenti" />
+            <translation textId="Click to upload data to PROSAFE DOMUS central server" text="Clicca per fare l'upload dei dati di PROSAFE DOMUS al server centrale" />
+            <translation textId="Click to manage preferences" text="Clicca per gestire le preferenze" />
+            <translation textId="Click to open a new admission" text="Clicca per aprire un nuovo ricovero" />
+            <translation textId="Data upload failed, check network connection." text="Upload dei dati fallito, controlla la connessione alla rete." />
+            <translation textId="Success" text="Successo" />
+            <translation textId="Data has been successfully uploaded." text="L'upload dei dati &#232; avvenuto con successo." />
+            <translation textId="Upload in progress" text="Upload in corso" />
+            <translation textId="Please wait" text="Attendere" />
+            <translation textId="The search filter is active" text="Il filtro di ricerca &#232; attivo" />
+            <translation textId="  Age: " text="  Et&#224; :" />
+            <translation textId="Patient: " text="Paziente: " />
+            <translation textId="  Admitted: " text="  Ammesso il: " />
+            <translation textId="  Status: " text="  Status: " />
+            <translation textId="Duration of admission (hours)" text="Durata del ricovero (ore)" />
+            <translation textId="Cannot modify data in Status 4 or 5." text="Non si possono modificare i dati di ricoveri in Status 4 o 5." />
+            <translation textId="There are errors and unaccepted warnings. Please review and correct." text="Ci sono errori e avvisi non confermati. Si prega di controllare e correggere." />
+            <translation textId="There are errors. Please review and correct." text="Ci sono errori. Si prega di controllare e correggere." />
+            <translation textId="There are unaccepted warnings. Please review, correct or accept." text="Ci sono avvisi non confermati. Si prega di controllare, correggere oppure accettare." />
+            <translation textId="Data saved." text="Dati salvati." />
+            <translation textId="Data has changed. Save now?" text="I dati sono stati cambiati. Salvare ora?" />
+            <translation textId="Click to go back to admissions list" text="Clicca per tornare alla lista delle ammissioni" />
+            <translation textId="Click to show info" text="Clicca per mostrare le definizioni" />
+            <translation textId="Click to show warnings" text="Clicca per mostrare gli avvisi" />
+            <translation textId="Click to show errors" text="Clicca per mostrare gli errori" />
+            <translation textId="Click to save" text="Clicca per salvare" />
+            <translation textId="Last name(*)" text="Cognome(*)" />
+            <translation textId="First name(*)" text="Nome(*)" />
+            <translation textId="Date of birth(*)" text="Data di nascita(*)" />
+            <translation textId="Sex" text="Sesso" />
+            <translation textId="Admission date(*)" text="Data di ammissione(*)" />
+            <translation textId="In order to open a new admission, please fill in the following information. Fields marked with an asterisk (*) are required." text="Per aprire un nuovo ricovero, inseguire le seguenti informazioni. I campi contrassegnati da un asterisco (*) sono obbligatori." />                                        
+            <translation textId="Apply filter" text="Applica filtro" />
+            <translation textId="Remove filter" text="Rimuovi filtro" />
+            <translation textId="Update filter" text="Aggiorna filtro" />
+            <translation textId="Medical record id" text="N&#176; cartella clinica" />
+            <translation textId="Shown/Total: " text="Mostrati/Totali: " />
+            <translation textId="is" text="&#232; uguale a" />
+            <translation textId="is not" text="&#232; diverso da" />
+            <translation textId="is filled" text="&#232; completo" />
+            <translation textId="is not filled" text="non &#232; completo " />
+            <translation textId="before" text="" />
+            <translation textId="after" text="" />
+            <translation textId="between" text="" />
+            <translation textId="Close Admission" text="Chiudi ricovero" />
+            <translation textId="Close" text="Chiudi" />
+            <translation textId="You are closing this admission. Are you sure?" text="Stai chiudendo questo ricovero. Sei sicuro?" />
+            <translation textId="Delete Admission" text="Cancella ricovero" />
+            <translation textId="Delete" text="Cancella" />
+            <translation textId="You are DELETING this admission. Are you sure?" text="Stai cancellando questo ricovero. Sei sicuro?" />
+            <translation textId="Re-Open Admission" text="Riapri ricovero" />
+            <translation textId="Re-Open" text="Riapri" />
+            <translation textId="You are re-opening this admission. Are you sure?" text="Stai riaprendo questo ricovero. Sei sicuro?" />
+            <translation textId="New admission" text="Nuovo ricovero" />
+            <translation textId="In order to open a new admission, please fill in the following information. Fields marked with an asterisk (*) are required." text="Per aprire un nuovo ricovero, completare le seguenti informazioni. I campi segnati con un asterisco sono obbligatori." />            
+            <translation textId="Last name(*)" text="Cognome(*)" />
+            <translation textId="First name(*)" text="Nome(*)" />
+            <translation textId="Date of birth(*)" text="Data di nascita(*)" />
+            <translation textId="Sex" text="Sesso" />
+            <translation textId="Admission date(*)" text="Data di ingresso(*)" />
+            <translation textId="&amp;Log Out" text="&amp;Log Out" />
+            <translation textId="&amp;Exit" text="&amp;Esci" />
+            <translation textId="&amp;File" text="&amp;File" />
+            <translation textId="&amp;Application Help" text="&amp;Guida all'applicazione" />
+            <translation textId="&amp;About" text="&amp;About" />
+            <translation textId="&amp;Help" text="&amp;Help" />
+            <translation textId="New password" text="Nuova password" />            
+            <translation textId="Confirm password" text="Conferma password" />    
+            <translation textId="You must enter a new password" text="Devi inserire una nuova password" />    
+            <translation textId="New password and confirmed password do not match" text="La password non coincide con quella impostata" />    
+            <translation textId="Success" text="Operazione effettuata con successo" />    
+            <translation textId="New password saved" text="Nuova password salvata" />    
+            <translation textId="Password save failed" text="Salvataggio password fallito" />  
+            <translation textId="&amp;Administration" text="&amp;Amministrazione" />  
+            <translation textId="&amp;Encryption" text="&amp;Criptatura" />  
+            <translation textId="&amp;Proxy settings" text="&amp;Impostazioni proxy" />
+            <translation textId="&amp;Show private key" text="&amp;Visualizza chiave privata" />  
+            <translation textId="User manager" text="Amministratore utenti" />  
+            <translation textId="Initial state" text="Abilitazione" />  
+            <translation textId="Enabled" text="Abilitato" />  
+            <translation textId="Disabled" text="Disabilitato" />  
+            <translation textId="User language" text="Lingua utente" />  
+            <translation textId="User type" text="Tipo utente" />  
+            <translation textId="Confirm password" text="Conferma password" />  
+            <translation textId="Name" text="Nome" />  
+            <translation textId="Surname" text="Cognome" />  
+            <translation textId="Create new User" text="Crea nuovo utente" />  
+            <translation textId="Language" text="Lingua" />  
+            <translation textId="User state" text="Stato utente" />  
+            <translation textId="Password error" text="Errore password" />  
+            <translation textId="New password and confirmed password do not match." text="La nuova password non coincide con la password confermata." />  
+            <translation textId="You cannot enable a user without setting a new password." text="Non puoi abilitare un utente senza assegnargli una nuova password." />
+            <translation textId="Properties" text="Propriet&#224;" />  
+            <translation textId="Edit User" text="Modifica utente" />  
+            <translation textId="Type" text="Tipo" />  
+            <translation textId="DataViewer" text="Visualizzazione dati" />
+            <translation textId="DataEditor" text="Modifica dati" />  
+            <translation textId="DataManager" text="Amministrazione dati" />  
+            <translation textId="Administrator" text="Amministrazione utenti" />  
+            <translation textId="User saved" text="Utente salvato" />
+            <translation textId="Cannot save" text="Impossibile salvare" />  
+            <!--translation textId="Errors or unaccepted warnings present" text="Presenti errori o warning non accettati" />  
+            <translation textId="Compilation incomplete" text="Compilazione incompleta" />  
+            <translation textId="Compilation complete (except discharge date)" text="Compilazione completa (eccetto data di dimissione)" />
+            <translation textId="Compilation complete (including discharge date)" text="Compilazione completa (inclusa data di dimissione)" />
+            <translation textId="Compilation complete" text="Compilazione completa" /-->
+            <translation textId="Errors or unaccepted warnings present" text="Presenza di errori e/o warning non risolti" />  
+            <translation textId="Compilation incomplete" text="Dati non completi" />  
+            <translation textId="Compilation complete (except discharge date)" text="Dati completi ad esclusione dell'esito ospedaliero" />
+            <translation textId="Compilation complete (including discharge date)" text="Dati completi e corretti" />
+            <translation textId="Compilation complete" text="Dati completi e corretti" />
+            <translation textId="Petal disabled" text="Petalo disabilitato" />
+            <!--translation textId="Admission closed" text="Ricovero chiuso" /-->
+            <translation textId="Admission closed" text="Dati non completi, ma non recuperabili" />
+            <translation textId="Please read carefully" text="ATTENZIONE" />
+            <translation textId="This centre private key is:&#10;&#10;%s&#10;&#10;This key is the encryption key for patient personal data in the PROSAFE DOMUS database.&#10;&#10;It is of paramount importance to take note of this key in the eventuality of hardware failures, as it will be the only way for the centre to access patient personal data in future PROSAFE DOMUS installations.&#10;&#10;Please also note that the key should be kept secret to ensure patient privacy." text="La chiave privata di questo centro &#232;:&#10;&#10;%s&#10;&#10;Questa &#232; la chiave di criptatura per i dati personali dei pazienti nel database di PROSAFE DOMUS.&#10;&#10;Risulta di importanza fondamentale annotarla nell'eventualit&#224; di problemi hardware, in quanto sar&#224; l'unico modo per il centro di accedere ai dati personali del paziente in una successiva installazione di PROSAFE DOMUS.&#10;&#10;Si fa notare che la chiave dovrebbe essere tenuta segreta per assicurare la privacy del paziente." />  
+            <translation textId="&amp;Admission" text="&amp;Ricovero" />
+            <translation textId="&amp;Delete admission" text="&amp;Cancella ricovero" />  
+            <translation textId="&amp;Re-Open admission" text="&amp;Riapri ricovero" />  
+            <translation textId="&amp;Close admission" text="&amp;Chiudi ricovero" />  
+            <translation textId="Creating new admission" text="Creazione nuovo ricovero in corso" />  
+            <translation textId="Loading admission" text="Caricamento ricovero in corso" />  
+            <translation textId="Closing admission" text="Chiusura ricovero in corso" />  
+            <translation textId="Saving data" text="Salvataggio in corso" />  
+            <translation textId="USER_TYPE_DESCRIPTION_STRING" text="Administrator: privilegio di creare nuovi utenti, abilitare e disabilitare gli utenti esistenti, assegnare agli utenti il tipo di utenza, inserire, modificare e visualizzare i dati.&#10;DataManager: privilegio di inserire, modificare e visualizzare i dati, aprire e chiudere ricoveri aperti.&#10;DataEditor: privilegio di inserire, modificare e visualizzare i dati.&#10;DataViewer: privilegio di vedere dati gi&#224; inseriti." />  
+            <translation textId="Exit" text="Esci" />
+            <translation textId="User type description" text="Descrizione tipi di utente" />  
+            <translation textId="PROSAFE DOMUS shutting down" text="Chiusura programma" />  
+            <translation textId="Request new admin password" text="Richiedi nuova password di amministrazione" />
+            <translation textId="Really request a new password for user 'admin'?" text="Vuoi davvero richiedere una nuova password per l'utente 'admin'?" />
+            <translation textId="Confirm" text="Conferma" />            
+            <translation textId="Request sent" text="Richiesta inviata" />    
+            <translation textId="A new password has been sent to the admin email address as specified in the PROSAFE DOMUS Web Center. The old password will be working as usual until it is changed." text="La password &#232; stata inviata all'indirizzo email del referente specificato nel PROSAFE DOMUS Web Center. La vecchia password rimarr&#224; attiva finch&#232; non ne verr&#224; impostata una nuova." />    
+            <translation textId="Error sending request to server. Internet connection might be down or unreacheable." text="Errore nel'inviare la richiesta al server. La connessione ad internet potrebbe essere assente o non utilizzabile." />  
+            <translation textId="Request error" text="Errore nella richiesta" />    
+            <translation textId="Discharge letter" text="Sintesi decorso clinico" />    
+            <translation textId="Discharge letter model" text="Modello di sintesi decorso clinico" /> 
+            <translation textId="Starting PROSAFE DOMUS" text="Caricamento in corso" /> 
+            <translation textId="Insert variable" text="Inserisci variabile" /> 
+            <translation textId="Remove variable" text="Rimuovi variabile" /> 
+            <translation textId="Add image" text="Aggiungi immagine" /> 
+            <translation textId="Reset" text="Reset" /> 
+            <translation textId="Choose image file" text="Scegli immagine" /> 
+            <translation textId="Update status" text="Aggiorna status" /> 
+            <translation textId="Click to update status" text="Clicca per aggiornare lo status" /> 
+            <translation textId="Discharge letter" text="Sintesi decorso clinico" /> 
+            <translation textId="Click to edit discharge letter for the current admission" text="Clicca per modificare la sintesi del decorso clinico per questo ricovero" /> 
+            <translation textId="Username exists, please provide a different one." text="La username esiste gi&#224;, si prega di inserirne una diversa." /> 
+            <translation textId="Username error" text="Errore username" /> 
+            <translation textId="PROSAFE DOMUS PRIVATE KEY - KEEP CONFIDENTIAL" text="CHIAVE PRIVATA DI PROSAFE DOMUS - TENERE SEGRETA" /> 
+            <translation textId="Save location" text="Salva" /> 
+            <translation textId="Save error" text="Errore nel salvataggio" /> 
+            <translation textId="&amp;Modify private key" text="&amp;Modifica chiave privata" /> 
+            <translation textId="Crf" text="Crf" /> 
+            <translation textId="Error" text="Errore" /> 
+            <translation textId="Warning" text="Avviso" /> 
+            <translation textId="Accepted" text="Accettato" /> 
+            <translation textId="Select..." text="Scegli" /> 
+            <translation textId="Previous" text="Prossimo" /> 
+            <translation textId="Next" text="Successivo" /> 
+            <translation textId="Loading admission" text="Caricamento ricovero" /> 
+            <translation textId="This admission is already open on another PROSAFE DOMUS client." text="Questo ricovero &#232; gi&#224; aperto su un altro PROSAFE DOMUS client." /> 
+            <translation textId="Load Admission Error" text="Errore nel caricamento del ricovero" /> 
+            <translation textId="Creating new admission" text="Creazione nuovo ricovero" /> 
+            <translation textId="ENCRYPTED" text="CRIPTATO" /> 
+            <translation textId="Click to edit the discharge letter model" text="Clicca per modificare il modello di sintesi del decorso clinico" /> 
+            <translation textId="Username and password can be left blank when not needed." text="Username e password possono essere lasciate vuote quando non necessarie." />
+            <translation textId="Prosafe may not be able to solve the proxy name. You can eventually set the ip address instead of the proxy name." text="Prosafe pu&#242; non essere in grado di risolvere il nome del proxy. Nel caso &#232; possibile inserire l'indirizzo IP invece del nome del proxy." />
+            <translation textId="Address format example with port: http://proxynameexample:port (http://proxy.name.com:8080)" text="Esempio di indirizzo con porta : http://proxynameexample:port (http://proxy.name.com:8080)" />
+            <translation textId="Address format example: http://proxynameexample (http://proxy.name.com)" text="Esempio di indirizzo: http://proxynameexample (http://proxy.name.com)" />
+            <translation textId="There are clients currently connected to this PROSAFE DOMUS Master. Continue?" text="Ci sono altri client connessi a questo PROSAFE DOMUS Master. Continuare?"/>
+            <translation textId="PROSAFE DOMUS Master needs to restart.&#10;&#10;Complete current operations within the next 10 seconds after pressing the button." text="PROSAFE DOMUS Master richede un riavvio.\n\nUna volta cliccato il bottone, completare le operazioni correnti entro 10 secondi." /> 
+            <translation textId="Only show admissions for the current year" text="Mostra solo i ricoveri relativi all'anno corrente" />
+            <translation textId="Only admissions for the current year are shown" text="Solo i ricoveri relativi all'anno corrente sono attualmente visualizzati" />
+            <translation textId="Show complete" text="Mostra campi completi" />
+            <translation textId="Show incomplete" text="Mostra campi incompleti" />
+            <translation textId="In case you are admin and you lost your password:" text="Se sei admin e hai smarrito la password:" />
+            <translation textId="NA" text="ND" />
+            <translation textId="Do you really want to reset the document and discard your edits?" text="Sei sicuro di voler scartare le modifiche apportate al documento?" />
+            <translation textId="Do you really want to revert the document to your previous version?" text="Sei sicuro di voler ripristinare il documento alla versione precedente?" />
+            <translation textId="Do you really want to quit? All unsaved changes will be lost" text="Sei sicuro di voler uscire? Tutte le modifiche apportate al documento dall'ultimo salvataggio verranno perse" />
+            <translation textId="Confirm reset" text="Conferma" />
+            <translation textId="Confirm quit" text="Conferma" />
+            <translation textId="Admissions update" text="Aggiornamento ricoveri" />
+            <translation textId="There are %d admissions that need to be updated. Proceed?" text="In seguito ad aggiornamento, %d ricoveri necessitano di essere rivalutati.&#10;L'operazione potrebbe richiedere qualche minuto. Procedere?" />
+            <translation textId="Update" text="Aggiorna" />
+            <translation textId="Updated %d admissions, %d left." text="Aggiornati %d ricoveri, %d rimanenti." />
+            <translation textId="Warning! PROSAFE DOMUS is currently Offline.&#10;As such, PROSAFE DOMUS cannot update or transmit data to the GiViTI Coordinating Centre." text="Attenzione! Stai utilizzando PROSAFE DOMUS in modalit&#224; OFFLINE.&#10;Il programma, in questa modalit&#224;, non &#232; in grado di aggiornarsi autonomamente e di trasmettere i dati al CdC GiViTI." />
+            <translation textId="Verify that the Internet connection settings in the Administration, Proxy settings menu are correct.&#10;Please contact the Coordinating Centre +390354535313 for further support." text="Verifica la corretta connessione ad Internet del software dal menu Amministrazione, Impostazioni proxy.&#10;Contatta il Centro di Coordinamento al numero +390354535313 se hai bisogno di aiuto." />
+            <translation textId="Contact your PROSAFE DOMUS Administrator to check that the Internet connection settings in the Administration, Proxy settings menu are correct.\nPlease contact the Coordinating Centre +390354535313 for further support." text="Chiedi all'Amministratore di accedere a PROSAFE DOMUS e di verificare, sul PC eletto come Master, la corretta connessione ad Internet del software dal menu Amministrazione, Impostazioni proxy.&#10;Contatta il Centro di Coordinamento al numero +390354535313 se hai bisogno di aiuto." />
+        </translations>
+    </language>    
+</languages>
+

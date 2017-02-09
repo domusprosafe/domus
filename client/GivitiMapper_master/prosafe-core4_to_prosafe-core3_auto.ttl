@@ -1,0 +1,2852 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prosafe-core3: <http://giviti.marionegri.it/knowledgebase/prosafe-core3#> .
+@prefix prosafe-core4: <http://giviti.marionegri.it/knowledgebase/prosafe-core4#> .
+
+prosafe-core4:core__address__country owl:equivalentProperty prosafe-core3:core__address__country .
+
+prosafe-core4:core__address__phoneNumber owl:equivalentProperty prosafe-core3:core__address__phoneNumber .
+
+prosafe-core4:core__address__postalCode owl:equivalentProperty prosafe-core3:core__address__postalCode .
+
+prosafe-core4:core__address__province owl:equivalentProperty prosafe-core3:core__address__province .
+
+prosafe-core4:core__address__street owl:equivalentProperty prosafe-core3:core__address__street .
+
+prosafe-core4:core__address__town owl:equivalentProperty prosafe-core3:core__address__town .
+
+prosafe-core4:core__admCardioSupportReas owl:equivalentProperty prosafe-core3:core__admCardioSupportReas .
+
+prosafe-core4:core__admCardioSupportReas__value owl:equivalentProperty prosafe-core3:core__admCardioSupportReas__value .
+
+prosafe-core4:core__admCardioSupport__value owl:equivalentProperty prosafe-core3:core__admCardioSupport__value .
+
+prosafe-core4:core__admCondNote__admCondNote owl:equivalentProperty prosafe-core3:core__admCondNote__admCondNote .
+
+prosafe-core4:core__admDiseasCodification__ALI owl:sameAs prosafe-core3:core__admDiseasCodification__ALI .
+
+prosafe-core4:core__admDiseasCodification__ARDS owl:sameAs prosafe-core3:core__admDiseasCodification__ARDS .
+
+prosafe-core4:core__admDiseasCodification__abdCompSynd owl:sameAs prosafe-core3:core__admDiseasCodification__abdCompSynd .
+
+prosafe-core4:core__admDiseasCodification__acExCOPD owl:sameAs prosafe-core3:core__admDiseasCodification__acExCOPD .
+
+prosafe-core4:core__admDiseasCodification__acExRestrLung owl:sameAs prosafe-core3:core__admDiseasCodification__acExRestrLung .
+
+prosafe-core4:core__admDiseasCodification__acuAsthma owl:sameAs prosafe-core3:core__admDiseasCodification__acuAsthma .
+
+prosafe-core4:core__admDiseasCodification__acuBilDis owl:sameAs prosafe-core3:core__admDiseasCodification__acuBilDis .
+
+prosafe-core4:core__admDiseasCodification__acuInflBowDis owl:sameAs prosafe-core3:core__admDiseasCodification__acuInflBowDis .
+
+prosafe-core4:core__admDiseasCodification__acuIntox owl:sameAs prosafe-core3:core__admDiseasCodification__acuIntox .
+
+prosafe-core4:core__admDiseasCodification__acuIschemia owl:sameAs prosafe-core3:core__admDiseasCodification__acuIschemia .
+
+prosafe-core4:core__admDiseasCodification__acuLivDis owl:sameAs prosafe-core3:core__admDiseasCodification__acuLivDis .
+
+prosafe-core4:core__admDiseasCodification__acuMyocInfarct owl:sameAs prosafe-core3:core__admDiseasCodification__acuMyocInfarct .
+
+prosafe-core4:core__admDiseasCodification__acuPancr owl:sameAs prosafe-core3:core__admDiseasCodification__acuPancr .
+
+prosafe-core4:core__admDiseasCodification__acuSkinDis owl:sameAs prosafe-core3:core__admDiseasCodification__acuSkinDis .
+
+prosafe-core4:core__admDiseasCodification__admInfections owl:sameAs prosafe-core3:core__admDiseasCodification__admInfections .
+
+prosafe-core4:core__admDiseasCodification__admPostTransp owl:sameAs prosafe-core3:core__admDiseasCodification__admPostTransp .
+
+prosafe-core4:core__admDiseasCodification__admTrauma owl:sameAs prosafe-core3:core__admDiseasCodification__admTrauma .
+
+prosafe-core4:core__admDiseasCodification__airBleed owl:sameAs prosafe-core3:core__admDiseasCodification__airBleed .
+
+prosafe-core4:core__admDiseasCodification__anastDehi owl:sameAs prosafe-core3:core__admDiseasCodification__anastDehi .
+
+prosafe-core4:core__admDiseasCodification__ascites owl:sameAs prosafe-core3:core__admDiseasCodification__ascites .
+
+prosafe-core4:core__admDiseasCodification__aspPneum owl:sameAs prosafe-core3:core__admDiseasCodification__aspPneum .
+
+prosafe-core4:core__admDiseasCodification__atelectasis owl:sameAs prosafe-core3:core__admDiseasCodification__atelectasis .
+
+prosafe-core4:core__admDiseasCodification__autoimmDis owl:sameAs prosafe-core3:core__admDiseasCodification__autoimmDis .
+
+prosafe-core4:core__admDiseasCodification__avm owl:sameAs prosafe-core3:core__admDiseasCodification__avm .
+
+prosafe-core4:core__admDiseasCodification__bowIsch owl:sameAs prosafe-core3:core__admDiseasCodification__bowIsch .
+
+prosafe-core4:core__admDiseasCodification__bradi owl:sameAs prosafe-core3:core__admDiseasCodification__bradi .
+
+prosafe-core4:core__admDiseasCodification__brainMalf owl:sameAs prosafe-core3:core__admDiseasCodification__brainMalf .
+
+prosafe-core4:core__admDiseasCodification__braintum owl:sameAs prosafe-core3:core__admDiseasCodification__braintum .
+
+prosafe-core4:core__admDiseasCodification__bronchiol owl:sameAs prosafe-core3:core__admDiseasCodification__bronchiol .
+
+prosafe-core4:core__admDiseasCodification__bronchiolOblit owl:sameAs prosafe-core3:core__admDiseasCodification__bronchiolOblit .
+
+prosafe-core4:core__admDiseasCodification__cardArr owl:sameAs prosafe-core3:core__admDiseasCodification__cardArr .
+
+prosafe-core4:core__admDiseasCodification__cerAneur owl:sameAs prosafe-core3:core__admDiseasCodification__cerAneur .
+
+prosafe-core4:core__admDiseasCodification__cerArtStro owl:sameAs prosafe-core3:core__admDiseasCodification__cerArtStro .
+
+prosafe-core4:core__admDiseasCodification__cnsDegDis owl:sameAs prosafe-core3:core__admDiseasCodification__cnsDegDis .
+
+prosafe-core4:core__admDiseasCodification__coagDiso owl:sameAs prosafe-core3:core__admDiseasCodification__coagDiso .
+
+prosafe-core4:core__admDiseasCodification__corDiseas owl:sameAs prosafe-core3:core__admDiseasCodification__corDiseas .
+
+prosafe-core4:core__admDiseasCodification__deepVenThromb owl:sameAs prosafe-core3:core__admDiseasCodification__deepVenThromb .
+
+prosafe-core4:core__admDiseasCodification__digestMalig owl:sameAs prosafe-core3:core__admDiseasCodification__digestMalig .
+
+prosafe-core4:core__admDiseasCodification__eclampsia owl:sameAs prosafe-core3:core__admDiseasCodification__eclampsia .
+
+prosafe-core4:core__admDiseasCodification__entDis owl:sameAs prosafe-core3:core__admDiseasCodification__entDis .
+
+prosafe-core4:core__admDiseasCodification__fulmHepat owl:sameAs prosafe-core3:core__admDiseasCodification__fulmHepat .
+
+prosafe-core4:core__admDiseasCodification__gastrLoBleed owl:sameAs prosafe-core3:core__admDiseasCodification__gastrLoBleed .
+
+prosafe-core4:core__admDiseasCodification__gastrPerf owl:sameAs prosafe-core3:core__admDiseasCodification__gastrPerf .
+
+prosafe-core4:core__admDiseasCodification__gastrUpBleed owl:sameAs prosafe-core3:core__admDiseasCodification__gastrUpBleed .
+
+prosafe-core4:core__admDiseasCodification__gynaecDis owl:sameAs prosafe-core3:core__admDiseasCodification__gynaecDis .
+
+prosafe-core4:core__admDiseasCodification__haemDis owl:sameAs prosafe-core3:core__admDiseasCodification__haemDis .
+
+prosafe-core4:core__admDiseasCodification__haemothorax owl:sameAs prosafe-core3:core__admDiseasCodification__haemothorax .
+
+prosafe-core4:core__admDiseasCodification__hellp owl:sameAs prosafe-core3:core__admDiseasCodification__hellp .
+
+prosafe-core4:core__admDiseasCodification__hepMalig owl:sameAs prosafe-core3:core__admDiseasCodification__hepMalig .
+
+prosafe-core4:core__admDiseasCodification__hepaPancrBileMalf owl:sameAs prosafe-core3:core__admDiseasCodification__hepaPancrBileMalf .
+
+prosafe-core4:core__admDiseasCodification__intestOccl owl:sameAs prosafe-core3:core__admDiseasCodification__intestOccl .
+
+prosafe-core4:core__admDiseasCodification__intraBleed owl:sameAs prosafe-core3:core__admDiseasCodification__intraBleed .
+
+prosafe-core4:core__admDiseasCodification__intracHyper owl:sameAs prosafe-core3:core__admDiseasCodification__intracHyper .
+
+prosafe-core4:core__admDiseasCodification__leftFailNoPulmEd owl:sameAs prosafe-core3:core__admDiseasCodification__leftFailNoPulmEd .
+
+prosafe-core4:core__admDiseasCodification__leftFailPulmEd owl:sameAs prosafe-core3:core__admDiseasCodification__leftFailPulmEd .
+
+prosafe-core4:core__admDiseasCodification__livDysfSynd owl:sameAs prosafe-core3:core__admDiseasCodification__livDysfSynd .
+
+prosafe-core4:core__admDiseasCodification__lungCancer owl:sameAs prosafe-core3:core__admDiseasCodification__lungCancer .
+
+prosafe-core4:core__admDiseasCodification__lungMalf owl:sameAs prosafe-core3:core__admDiseasCodification__lungMalf .
+
+prosafe-core4:core__admDiseasCodification__metDiso owl:sameAs prosafe-core3:core__admDiseasCodification__metDiso .
+
+prosafe-core4:core__admDiseasCodification__metPostEnceph owl:sameAs prosafe-core3:core__admDiseasCodification__metPostEnceph .
+
+prosafe-core4:core__admDiseasCodification__necEnter owl:sameAs prosafe-core3:core__admDiseasCodification__necEnter .
+
+prosafe-core4:core__admDiseasCodification__neonatRDS owl:sameAs prosafe-core3:core__admDiseasCodification__neonatRDS .
+
+prosafe-core4:core__admDiseasCodification__nepDis owl:sameAs prosafe-core3:core__admDiseasCodification__nepDis .
+
+prosafe-core4:core__admDiseasCodification__noTraumCerEd owl:sameAs prosafe-core3:core__admDiseasCodification__noTraumCerEd .
+
+prosafe-core4:core__admDiseasCodification__nonCongCorDiseas owl:sameAs prosafe-core3:core__admDiseasCodification__nonCongCorDiseas .
+
+prosafe-core4:core__admDiseasCodification__nonRuptAneur owl:sameAs prosafe-core3:core__admDiseasCodification__nonRuptAneur .
+
+prosafe-core4:core__admDiseasCodification__obstDis owl:sameAs prosafe-core3:core__admDiseasCodification__obstDis .
+
+prosafe-core4:core__admDiseasCodification__obstHaemor owl:sameAs prosafe-core3:core__admDiseasCodification__obstHaemor .
+
+prosafe-core4:core__admDiseasCodification__ocularDis owl:sameAs prosafe-core3:core__admDiseasCodification__ocularDis .
+
+prosafe-core4:core__admDiseasCodification__oesoGastIntMalf owl:sameAs prosafe-core3:core__admDiseasCodification__oesoGastIntMalf .
+
+prosafe-core4:core__admDiseasCodification__orthoDis owl:sameAs prosafe-core3:core__admDiseasCodification__orthoDis .
+
+prosafe-core4:core__admDiseasCodification__othDis owl:sameAs prosafe-core3:core__admDiseasCodification__othDis .
+
+prosafe-core4:core__admDiseasCodification__othSkin owl:sameAs prosafe-core3:core__admDiseasCodification__othSkin .
+
+prosafe-core4:core__admDiseasCodification__pancrMalig owl:sameAs prosafe-core3:core__admDiseasCodification__pancrMalig .
+
+prosafe-core4:core__admDiseasCodification__parIle owl:sameAs prosafe-core3:core__admDiseasCodification__parIle .
+
+prosafe-core4:core__admDiseasCodification__perEff owl:sameAs prosafe-core3:core__admDiseasCodification__perEff .
+
+prosafe-core4:core__admDiseasCodification__perVascDiseas owl:sameAs prosafe-core3:core__admDiseasCodification__perVascDiseas .
+
+prosafe-core4:core__admDiseasCodification__pleurEff owl:sameAs prosafe-core3:core__admDiseasCodification__pleurEff .
+
+prosafe-core4:core__admDiseasCodification__pneumothorax owl:sameAs prosafe-core3:core__admDiseasCodification__pneumothorax .
+
+prosafe-core4:core__admDiseasCodification__polynMyop owl:sameAs prosafe-core3:core__admDiseasCodification__polynMyop .
+
+prosafe-core4:core__admDiseasCodification__pulmEmbol owl:sameAs prosafe-core3:core__admDiseasCodification__pulmEmbol .
+
+prosafe-core4:core__admDiseasCodification__pulmHyper owl:sameAs prosafe-core3:core__admDiseasCodification__pulmHyper .
+
+prosafe-core4:core__admDiseasCodification__retroBleed owl:sameAs prosafe-core3:core__admDiseasCodification__retroBleed .
+
+prosafe-core4:core__admDiseasCodification__rightHeartFail owl:sameAs prosafe-core3:core__admDiseasCodification__rightHeartFail .
+
+prosafe-core4:core__admDiseasCodification__ruptAneur owl:sameAs prosafe-core3:core__admDiseasCodification__ruptAneur .
+
+prosafe-core4:core__admDiseasCodification__seizures owl:sameAs prosafe-core3:core__admDiseasCodification__seizures .
+
+prosafe-core4:core__admDiseasCodification__spontHydro owl:sameAs prosafe-core3:core__admDiseasCodification__spontHydro .
+
+prosafe-core4:core__admDiseasCodification__spontIntraBleed owl:sameAs prosafe-core3:core__admDiseasCodification__spontIntraBleed .
+
+prosafe-core4:core__admDiseasCodification__spontSubarHaem owl:sameAs prosafe-core3:core__admDiseasCodification__spontSubarHaem .
+
+prosafe-core4:core__admDiseasCodification__spontSubdHaem owl:sameAs prosafe-core3:core__admDiseasCodification__spontSubdHaem .
+
+prosafe-core4:core__admDiseasCodification__systemHyperCris owl:sameAs prosafe-core3:core__admDiseasCodification__systemHyperCris .
+
+prosafe-core4:core__admDiseasCodification__tachy owl:sameAs prosafe-core3:core__admDiseasCodification__tachy .
+
+prosafe-core4:core__admDiseasCodification__trachobroncho owl:sameAs prosafe-core3:core__admDiseasCodification__trachobroncho .
+
+prosafe-core4:core__admDiseasCodification__upRespDiseas owl:sameAs prosafe-core3:core__admDiseasCodification__upRespDiseas .
+
+prosafe-core4:core__admDiseasCodification__valvulPatho owl:sameAs prosafe-core3:core__admDiseasCodification__valvulPatho .
+
+prosafe-core4:core__admDiseasCodification__vertBasilIschStro owl:sameAs prosafe-core3:core__admDiseasCodification__vertBasilIschStro .
+
+prosafe-core4:core__admOpTheatre__value owl:equivalentProperty prosafe-core3:core__admOpTheatre__value .
+
+prosafe-core4:core__admOtherIcuTransf__value owl:equivalentProperty prosafe-core3:core__admOtherIcuTransf__value .
+
+prosafe-core4:core__admReasCodification__admForProc owl:sameAs prosafe-core3:core__admReasCodification__admForProc .
+
+prosafe-core4:core__admReasCodification__intTreat owl:sameAs prosafe-core3:core__admReasCodification__intTreat .
+
+prosafe-core4:core__admReasCodification__monitWean owl:sameAs prosafe-core3:core__admReasCodification__monitWean .
+
+prosafe-core4:core__admReasCodification__orgDon owl:sameAs prosafe-core3:core__admReasCodification__orgDon .
+
+prosafe-core4:core__admReasCodification__palSed owl:sameAs prosafe-core3:core__admReasCodification__palSed .
+
+prosafe-core4:core__admReas__value owl:equivalentProperty prosafe-core3:core__admReas__value .
+
+prosafe-core4:core__admSource__value owl:equivalentProperty prosafe-core3:core__admSource__value .
+
+prosafe-core4:core__admVenSupportReas owl:equivalentProperty prosafe-core3:core__admVenSupportReas .
+
+prosafe-core4:core__admVenSupportReas__value owl:equivalentProperty prosafe-core3:core__admVenSupportReas__value .
+
+prosafe-core4:core__admVenSupport__value owl:equivalentProperty prosafe-core3:core__admVenSupport__value .
+
+prosafe-core4:core__admWard__value owl:equivalentProperty prosafe-core3:core__admWard__value .
+
+prosafe-core4:core__age__value owl:equivalentProperty prosafe-core3:core__age__value .
+
+prosafe-core4:core__allergie__value owl:equivalentProperty prosafe-core3:core__allergie__value .
+
+prosafe-core4:core__anamnesiFarm__value owl:equivalentProperty prosafe-core3:core__anamnesiFarm__value .
+
+prosafe-core4:core__anamnesiFarmly__value owl:equivalentProperty prosafe-core3:core__anamnesiFarmly__value .
+
+prosafe-core4:core__anamnesiPhy__value owl:equivalentProperty prosafe-core3:core__anamnesiPhy__value .
+
+prosafe-core4:core__anamnesiRemota__value owl:equivalentProperty prosafe-core3:core__anamnesiRemota__value .
+
+prosafe-core4:core__anamnesi__value owl:equivalentProperty prosafe-core3:core__anamnesi__value .
+
+prosafe-core4:core__antibiotici__value owl:equivalentProperty prosafe-core3:core__antibiotici__value .
+
+prosafe-core4:core__birthDate__birthDate owl:equivalentProperty prosafe-core3:core__birthDate__birthDate .
+
+prosafe-core4:core__bloodGroupCodification__0 owl:sameAs prosafe-core3:core__bloodGroupCodification__0 .
+
+prosafe-core4:core__bloodGroupCodification__A owl:sameAs prosafe-core3:core__bloodGroupCodification__A .
+
+prosafe-core4:core__bloodGroupCodification__AB owl:sameAs prosafe-core3:core__bloodGroupCodification__AB .
+
+prosafe-core4:core__bloodGroupCodification__B owl:sameAs prosafe-core3:core__bloodGroupCodification__B .
+
+<http://giviti.marionegri.it/knowledgebase/prosafe-core4#core__bloodRhCodification__+> owl:sameAs <http://giviti.marionegri.it/knowledgebase/prosafe-core3#core__bloodRhCodification__+> .
+
+prosafe-core4:core__bloodRhCodification__- owl:sameAs prosafe-core3:core__bloodRhCodification__- .
+
+prosafe-core4:core__blood__bloodGroup owl:equivalentProperty prosafe-core3:core__blood__bloodGroup .
+
+prosafe-core4:core__blood__bloodRh owl:equivalentProperty prosafe-core3:core__blood__bloodRh .
+
+prosafe-core4:core__bmi__value owl:equivalentProperty prosafe-core3:core__bmi__value .
+
+prosafe-core4:core__camActivationCodification__cam owl:sameAs prosafe-core3:core__camActivationCodification__cam .
+
+prosafe-core4:core__camActivationCodification__noActivation owl:sameAs prosafe-core3:core__camActivationCodification__noActivation .
+
+prosafe-core4:core__camActivationCodification__noCam owl:sameAs prosafe-core3:core__camActivationCodification__noCam .
+
+prosafe-core4:core__camActivationSpecification owl:equivalentProperty prosafe-core3:core__camActivationSpecification .
+
+prosafe-core4:core__camActivationSpecification__value owl:equivalentProperty prosafe-core3:core__camActivationSpecification__value .
+
+prosafe-core4:core__camActivation__value owl:equivalentProperty prosafe-core3:core__camActivation__value .
+
+prosafe-core4:core__camQuick__value owl:equivalentProperty prosafe-core3:core__camQuick__value .
+
+prosafe-core4:core__camSpecificationCodification__fabric owl:sameAs prosafe-core3:core__camSpecificationCodification__fabric .
+
+prosafe-core4:core__camSpecificationCodification__none owl:sameAs prosafe-core3:core__camSpecificationCodification__none .
+
+prosafe-core4:core__camSpecificationCodification__organ owl:sameAs prosafe-core3:core__camSpecificationCodification__organ .
+
+prosafe-core4:core__cardiacBypassIsPresent__value owl:equivalentProperty prosafe-core3:core__cardiacBypassIsPresent__value .
+
+prosafe-core4:core__cardiovascularFailure__admissionValue owl:equivalentProperty prosafe-core3:core__cardiovascularFailure__admissionValue .
+
+prosafe-core4:core__cardiovascularFailure__stayValue owl:equivalentProperty prosafe-core3:core__cardiovascularFailure__stayValue .
+
+prosafe-core4:core__catheterExposure__value owl:equivalentProperty prosafe-core3:core__catheterExposure__value .
+
+prosafe-core4:core__catheterPeriods__value owl:equivalentProperty prosafe-core3:core__catheterPeriods__value .
+
+prosafe-core4:core__clinicalCondAdm owl:equivalentProperty prosafe-core3:core__clinicalCondAdm .
+
+prosafe-core4:core__clinicalCondAdm__value owl:equivalentProperty prosafe-core3:core__clinicalCondAdm__value .
+
+prosafe-core4:core__coagulationFailure__admissionValue owl:equivalentProperty prosafe-core3:core__coagulationFailure__admissionValue .
+
+prosafe-core4:core__coagulationFailure__stayValue owl:equivalentProperty prosafe-core3:core__coagulationFailure__stayValue .
+
+prosafe-core4:core__comaStatusCodification__cerComa owl:sameAs prosafe-core3:core__comaStatusCodification__cerComa .
+
+prosafe-core4:core__comaStatusCodification__metComa owl:sameAs prosafe-core3:core__comaStatusCodification__metComa .
+
+prosafe-core4:core__comaStatusCodification__postanoxComa owl:sameAs prosafe-core3:core__comaStatusCodification__postanoxComa .
+
+prosafe-core4:core__comaStatusCodification__toxComa owl:sameAs prosafe-core3:core__comaStatusCodification__toxComa .
+
+prosafe-core4:core__comorbNote__comorbNote owl:equivalentProperty prosafe-core3:core__comorbNote__comorbNote .
+
+prosafe-core4:core__comorbidities owl:equivalentProperty prosafe-core3:core__comorbidities .
+
+prosafe-core4:core__comorbiditiesCodification__aids owl:sameAs prosafe-core3:core__comorbiditiesCodification__aids .
+
+prosafe-core4:core__comorbiditiesCodification__anyTumour owl:sameAs prosafe-core3:core__comorbiditiesCodification__anyTumour .
+
+prosafe-core4:core__comorbiditiesCodification__arrhythmia owl:sameAs prosafe-core3:core__comorbiditiesCodification__arrhythmia .
+
+prosafe-core4:core__comorbiditiesCodification__asthma owl:sameAs prosafe-core3:core__comorbiditiesCodification__asthma .
+
+prosafe-core4:core__comorbiditiesCodification__automDis owl:sameAs prosafe-core3:core__comorbiditiesCodification__automDis .
+
+prosafe-core4:core__comorbiditiesCodification__bonMarApl owl:sameAs prosafe-core3:core__comorbiditiesCodification__bonMarApl .
+
+prosafe-core4:core__comorbiditiesCodification__brPulmDys owl:sameAs prosafe-core3:core__comorbiditiesCodification__brPulmDys .
+
+prosafe-core4:core__comorbiditiesCodification__brainMalf owl:sameAs prosafe-core3:core__comorbiditiesCodification__brainMalf .
+
+prosafe-core4:core__comorbiditiesCodification__cerDis owl:sameAs prosafe-core3:core__comorbiditiesCodification__cerDis .
+
+prosafe-core4:core__comorbiditiesCodification__chromAnom owl:sameAs prosafe-core3:core__comorbiditiesCodification__chromAnom .
+
+prosafe-core4:core__comorbiditiesCodification__coagDis owl:sameAs prosafe-core3:core__comorbiditiesCodification__coagDis .
+
+prosafe-core4:core__comorbiditiesCodification__congHeartDis owl:sameAs prosafe-core3:core__comorbiditiesCodification__congHeartDis .
+
+prosafe-core4:core__comorbiditiesCodification__congImm owl:sameAs prosafe-core3:core__comorbiditiesCodification__congImm .
+
+prosafe-core4:core__comorbiditiesCodification__dementia owl:sameAs prosafe-core3:core__comorbiditiesCodification__dementia .
+
+prosafe-core4:core__comorbiditiesCodification__diab1 owl:sameAs prosafe-core3:core__comorbiditiesCodification__diab1 .
+
+prosafe-core4:core__comorbiditiesCodification__diab2Ins owl:sameAs prosafe-core3:core__comorbiditiesCodification__diab2Ins .
+
+prosafe-core4:core__comorbiditiesCodification__diab2NoIns owl:sameAs prosafe-core3:core__comorbiditiesCodification__diab2NoIns .
+
+prosafe-core4:core__comorbiditiesCodification__drugIndCoag owl:sameAs prosafe-core3:core__comorbiditiesCodification__drugIndCoag .
+
+prosafe-core4:core__comorbiditiesCodification__encephalopathy owl:sameAs prosafe-core3:core__comorbiditiesCodification__encephalopathy .
+
+prosafe-core4:core__comorbiditiesCodification__endMetDis owl:sameAs prosafe-core3:core__comorbiditiesCodification__endMetDis .
+
+prosafe-core4:core__comorbiditiesCodification__endRenal owl:sameAs prosafe-core3:core__comorbiditiesCodification__endRenal .
+
+prosafe-core4:core__comorbiditiesCodification__gastrMalf owl:sameAs prosafe-core3:core__comorbiditiesCodification__gastrMalf .
+
+prosafe-core4:core__comorbiditiesCodification__gastrMalfSurg owl:sameAs prosafe-core3:core__comorbiditiesCodification__gastrMalfSurg .
+
+prosafe-core4:core__comorbiditiesCodification__genDis owl:sameAs prosafe-core3:core__comorbiditiesCodification__genDis .
+
+prosafe-core4:core__comorbiditiesCodification__heartFail2 owl:sameAs prosafe-core3:core__comorbiditiesCodification__heartFail2 .
+
+prosafe-core4:core__comorbiditiesCodification__heartFail4 owl:sameAs prosafe-core3:core__comorbiditiesCodification__heartFail4 .
+
+prosafe-core4:core__comorbiditiesCodification__hemiParaQuadr owl:sameAs prosafe-core3:core__comorbiditiesCodification__hemiParaQuadr .
+
+prosafe-core4:core__comorbiditiesCodification__hydrocephalus owl:sameAs prosafe-core3:core__comorbiditiesCodification__hydrocephalus .
+
+prosafe-core4:core__comorbiditiesCodification__hypertension owl:sameAs prosafe-core3:core__comorbiditiesCodification__hypertension .
+
+prosafe-core4:core__comorbiditiesCodification__immunosuppression owl:sameAs prosafe-core3:core__comorbiditiesCodification__immunosuppression .
+
+prosafe-core4:core__comorbiditiesCodification__lowAirway owl:sameAs prosafe-core3:core__comorbiditiesCodification__lowAirway .
+
+prosafe-core4:core__comorbiditiesCodification__lungMalf owl:sameAs prosafe-core3:core__comorbiditiesCodification__lungMalf .
+
+prosafe-core4:core__comorbiditiesCodification__malignHaemDis owl:sameAs prosafe-core3:core__comorbiditiesCodification__malignHaemDis .
+
+prosafe-core4:core__comorbiditiesCodification__metCancer owl:sameAs prosafe-core3:core__comorbiditiesCodification__metCancer .
+
+prosafe-core4:core__comorbiditiesCodification__mildLiver owl:sameAs prosafe-core3:core__comorbiditiesCodification__mildLiver .
+
+prosafe-core4:core__comorbiditiesCodification__modCOPD owl:sameAs prosafe-core3:core__comorbiditiesCodification__modCOPD .
+
+prosafe-core4:core__comorbiditiesCodification__modLiver owl:sameAs prosafe-core3:core__comorbiditiesCodification__modLiver .
+
+prosafe-core4:core__comorbiditiesCodification__modRenal owl:sameAs prosafe-core3:core__comorbiditiesCodification__modRenal .
+
+prosafe-core4:core__comorbiditiesCodification__myocard owl:sameAs prosafe-core3:core__comorbiditiesCodification__myocard .
+
+prosafe-core4:core__comorbiditiesCodification__myocardInf owl:sameAs prosafe-core3:core__comorbiditiesCodification__myocardInf .
+
+prosafe-core4:core__comorbiditiesCodification__myopathy owl:sameAs prosafe-core3:core__comorbiditiesCodification__myopathy .
+
+prosafe-core4:core__comorbiditiesCodification__necEnter owl:sameAs prosafe-core3:core__comorbiditiesCodification__necEnter .
+
+prosafe-core4:core__comorbiditiesCodification__neuro owl:sameAs prosafe-core3:core__comorbiditiesCodification__neuro .
+
+prosafe-core4:core__comorbiditiesCodification__none owl:sameAs prosafe-core3:core__comorbiditiesCodification__none .
+
+prosafe-core4:core__comorbiditiesCodification__notCongValv owl:sameAs prosafe-core3:core__comorbiditiesCodification__notCongValv .
+
+prosafe-core4:core__comorbiditiesCodification__peptUlc owl:sameAs prosafe-core3:core__comorbiditiesCodification__peptUlc .
+
+prosafe-core4:core__comorbiditiesCodification__perVascDis owl:sameAs prosafe-core3:core__comorbiditiesCodification__perVascDis .
+
+prosafe-core4:core__comorbiditiesCodification__pulmHyper owl:sameAs prosafe-core3:core__comorbiditiesCodification__pulmHyper .
+
+prosafe-core4:core__comorbiditiesCodification__restLunDis owl:sameAs prosafe-core3:core__comorbiditiesCodification__restLunDis .
+
+prosafe-core4:core__comorbiditiesCodification__retinopathy owl:sameAs prosafe-core3:core__comorbiditiesCodification__retinopathy .
+
+prosafe-core4:core__comorbiditiesCodification__sevCOPD owl:sameAs prosafe-core3:core__comorbiditiesCodification__sevCOPD .
+
+prosafe-core4:core__comorbiditiesCodification__sevMaln owl:sameAs prosafe-core3:core__comorbiditiesCodification__sevMaln .
+
+prosafe-core4:core__comorbiditiesCodification__skelMalf owl:sameAs prosafe-core3:core__comorbiditiesCodification__skelMalf .
+
+prosafe-core4:core__comorbiditiesCodification__sysHyper owl:sameAs prosafe-core3:core__comorbiditiesCodification__sysHyper .
+
+prosafe-core4:core__comorbiditiesCodification__upAirway owl:sameAs prosafe-core3:core__comorbiditiesCodification__upAirway .
+
+prosafe-core4:core__comorbidities__value owl:equivalentProperty prosafe-core3:core__comorbidities__value .
+
+prosafe-core4:core__complCodification__acBileComp owl:sameAs prosafe-core3:core__complCodification__acBileComp .
+
+prosafe-core4:core__complCodification__acInflComp owl:sameAs prosafe-core3:core__complCodification__acInflComp .
+
+prosafe-core4:core__complCodification__acIschaeComp owl:sameAs prosafe-core3:core__complCodification__acIschaeComp .
+
+prosafe-core4:core__complCodification__acLivComp owl:sameAs prosafe-core3:core__complCodification__acLivComp .
+
+prosafe-core4:core__complCodification__acPancrComp owl:sameAs prosafe-core3:core__complCodification__acPancrComp .
+
+prosafe-core4:core__complCodification__acRejComp owl:sameAs prosafe-core3:core__complCodification__acRejComp .
+
+prosafe-core4:core__complCodification__adboComp owl:sameAs prosafe-core3:core__complCodification__adboComp .
+
+prosafe-core4:core__complCodification__aliComp owl:sameAs prosafe-core3:core__complCodification__aliComp .
+
+prosafe-core4:core__complCodification__anDehiComp owl:sameAs prosafe-core3:core__complCodification__anDehiComp .
+
+prosafe-core4:core__complCodification__anStrictComp owl:sameAs prosafe-core3:core__complCodification__anStrictComp .
+
+prosafe-core4:core__complCodification__ardsComp owl:sameAs prosafe-core3:core__complCodification__ardsComp .
+
+prosafe-core4:core__complCodification__ascitesComp owl:sameAs prosafe-core3:core__complCodification__ascitesComp .
+
+prosafe-core4:core__complCodification__aspPneumComp owl:sameAs prosafe-core3:core__complCodification__aspPneumComp .
+
+prosafe-core4:core__complCodification__asthmaComp owl:sameAs prosafe-core3:core__complCodification__asthmaComp .
+
+prosafe-core4:core__complCodification__atelectComp owl:sameAs prosafe-core3:core__complCodification__atelectComp .
+
+prosafe-core4:core__complCodification__bluntCerComp owl:sameAs prosafe-core3:core__complCodification__bluntCerComp .
+
+prosafe-core4:core__complCodification__bowIschComp owl:sameAs prosafe-core3:core__complCodification__bowIschComp .
+
+prosafe-core4:core__complCodification__bradyComp owl:sameAs prosafe-core3:core__complCodification__bradyComp .
+
+prosafe-core4:core__complCodification__brainEdComp owl:sameAs prosafe-core3:core__complCodification__brainEdComp .
+
+prosafe-core4:core__complCodification__bronchComp owl:sameAs prosafe-core3:core__complCodification__bronchComp .
+
+prosafe-core4:core__complCodification__bronchOblComp owl:sameAs prosafe-core3:core__complCodification__bronchOblComp .
+
+prosafe-core4:core__complCodification__cardArrComp owl:sameAs prosafe-core3:core__complCodification__cardArrComp .
+
+prosafe-core4:core__complCodification__chylotComp owl:sameAs prosafe-core3:core__complCodification__chylotComp .
+
+prosafe-core4:core__complCodification__complIcuFailures owl:sameAs prosafe-core3:core__complCodification__complIcuFailures .
+
+prosafe-core4:core__complCodification__complIcuInfections owl:sameAs prosafe-core3:core__complCodification__complIcuInfections .
+
+prosafe-core4:core__complCodification__critIllComp owl:sameAs prosafe-core3:core__complCodification__critIllComp .
+
+prosafe-core4:core__complCodification__deepVenComp owl:sameAs prosafe-core3:core__complCodification__deepVenComp .
+
+prosafe-core4:core__complCodification__delLivComp owl:sameAs prosafe-core3:core__complCodification__delLivComp .
+
+prosafe-core4:core__complCodification__delSplComp owl:sameAs prosafe-core3:core__complCodification__delSplComp .
+
+prosafe-core4:core__complCodification__drowComp owl:sameAs prosafe-core3:core__complCodification__drowComp .
+
+prosafe-core4:core__complCodification__eclamComp owl:sameAs prosafe-core3:core__complCodification__eclamComp .
+
+prosafe-core4:core__complCodification__extremComp owl:sameAs prosafe-core3:core__complCodification__extremComp .
+
+prosafe-core4:core__complCodification__fatEmbComp owl:sameAs prosafe-core3:core__complCodification__fatEmbComp .
+
+prosafe-core4:core__complCodification__gastroBleedLowComp owl:sameAs prosafe-core3:core__complCodification__gastroBleedLowComp .
+
+prosafe-core4:core__complCodification__gastroBleedUpComp owl:sameAs prosafe-core3:core__complCodification__gastroBleedUpComp .
+
+prosafe-core4:core__complCodification__gastroPerfComp owl:sameAs prosafe-core3:core__complCodification__gastroPerfComp .
+
+prosafe-core4:core__complCodification__graftVascComp owl:sameAs prosafe-core3:core__complCodification__graftVascComp .
+
+prosafe-core4:core__complCodification__graftVsHostComp owl:sameAs prosafe-core3:core__complCodification__graftVsHostComp .
+
+prosafe-core4:core__complCodification__haemoptComp owl:sameAs prosafe-core3:core__complCodification__haemoptComp .
+
+prosafe-core4:core__complCodification__haemorTransfComp owl:sameAs prosafe-core3:core__complCodification__haemorTransfComp .
+
+prosafe-core4:core__complCodification__haemotComp owl:sameAs prosafe-core3:core__complCodification__haemotComp .
+
+prosafe-core4:core__complCodification__hellpComp owl:sameAs prosafe-core3:core__complCodification__hellpComp .
+
+prosafe-core4:core__complCodification__hydroComp owl:sameAs prosafe-core3:core__complCodification__hydroComp .
+
+prosafe-core4:core__complCodification__hyperComp owl:sameAs prosafe-core3:core__complCodification__hyperComp .
+
+prosafe-core4:core__complCodification__hyperPostEncComp owl:sameAs prosafe-core3:core__complCodification__hyperPostEncComp .
+
+prosafe-core4:core__complCodification__iatroVessComp owl:sameAs prosafe-core3:core__complCodification__iatroVessComp .
+
+prosafe-core4:core__complCodification__intOcclComp owl:sameAs prosafe-core3:core__complCodification__intOcclComp .
+
+prosafe-core4:core__complCodification__intraHypComp owl:sameAs prosafe-core3:core__complCodification__intraHypComp .
+
+prosafe-core4:core__complCodification__intrabdBleedComp owl:sameAs prosafe-core3:core__complCodification__intrabdBleedComp .
+
+prosafe-core4:core__complCodification__ischStrComp owl:sameAs prosafe-core3:core__complCodification__ischStrComp .
+
+prosafe-core4:core__complCodification__leftNoPulmComp owl:sameAs prosafe-core3:core__complCodification__leftNoPulmComp .
+
+prosafe-core4:core__complCodification__leftPulmComp owl:sameAs prosafe-core3:core__complCodification__leftPulmComp .
+
+prosafe-core4:core__complCodification__livComp owl:sameAs prosafe-core3:core__complCodification__livComp .
+
+prosafe-core4:core__complCodification__metDisComp owl:sameAs prosafe-core3:core__complCodification__metDisComp .
+
+prosafe-core4:core__complCodification__myocInfComp owl:sameAs prosafe-core3:core__complCodification__myocInfComp .
+
+prosafe-core4:core__complCodification__necEntComp owl:sameAs prosafe-core3:core__complCodification__necEntComp .
+
+prosafe-core4:core__complCodification__nepComp owl:sameAs prosafe-core3:core__complCodification__nepComp .
+
+prosafe-core4:core__complCodification__noCompl owl:sameAs prosafe-core3:core__complCodification__noCompl .
+
+prosafe-core4:core__complCodification__noSurgIntrBleedComp owl:sameAs prosafe-core3:core__complCodification__noSurgIntrBleedComp .
+
+prosafe-core4:core__complCodification__othComp owl:sameAs prosafe-core3:core__complCodification__othComp .
+
+prosafe-core4:core__complCodification__parIlComp owl:sameAs prosafe-core3:core__complCodification__parIlComp .
+
+prosafe-core4:core__complCodification__perEffComp owl:sameAs prosafe-core3:core__complCodification__perEffComp .
+
+prosafe-core4:core__complCodification__perVascComp owl:sameAs prosafe-core3:core__complCodification__perVascComp .
+
+prosafe-core4:core__complCodification__pleuEffComp owl:sameAs prosafe-core3:core__complCodification__pleuEffComp .
+
+prosafe-core4:core__complCodification__pneumCom owl:sameAs prosafe-core3:core__complCodification__pneumCom .
+
+prosafe-core4:core__complCodification__postEncComp owl:sameAs prosafe-core3:core__complCodification__postEncComp .
+
+prosafe-core4:core__complCodification__postIchOptComp owl:sameAs prosafe-core3:core__complCodification__postIchOptComp .
+
+prosafe-core4:core__complCodification__postRevEncComp owl:sameAs prosafe-core3:core__complCodification__postRevEncComp .
+
+prosafe-core4:core__complCodification__postSurgIntrBleedComp owl:sameAs prosafe-core3:core__complCodification__postSurgIntrBleedComp .
+
+prosafe-core4:core__complCodification__pulmEmbComp owl:sameAs prosafe-core3:core__complCodification__pulmEmbComp .
+
+prosafe-core4:core__complCodification__pulmHypComp owl:sameAs prosafe-core3:core__complCodification__pulmHypComp .
+
+prosafe-core4:core__complCodification__retroBleedComp owl:sameAs prosafe-core3:core__complCodification__retroBleedComp .
+
+prosafe-core4:core__complCodification__rightHeartComp owl:sameAs prosafe-core3:core__complCodification__rightHeartComp .
+
+prosafe-core4:core__complCodification__seizuresComp owl:sameAs prosafe-core3:core__complCodification__seizuresComp .
+
+prosafe-core4:core__complCodification__sevGraftComp owl:sameAs prosafe-core3:core__complCodification__sevGraftComp .
+
+prosafe-core4:core__complCodification__skinComp owl:sameAs prosafe-core3:core__complCodification__skinComp .
+
+prosafe-core4:core__complCodification__tachyComp owl:sameAs prosafe-core3:core__complCodification__tachyComp .
+
+prosafe-core4:core__complCodification__tracheoComp owl:sameAs prosafe-core3:core__complCodification__tracheoComp .
+
+prosafe-core4:core__complCodification__uppRespComp owl:sameAs prosafe-core3:core__complCodification__uppRespComp .
+
+prosafe-core4:core__complCodification__valvPatComp owl:sameAs prosafe-core3:core__complCodification__valvPatComp .
+
+prosafe-core4:core__complCodification__vasoComp owl:sameAs prosafe-core3:core__complCodification__vasoComp .
+
+prosafe-core4:core__complNote__complNote owl:equivalentProperty prosafe-core3:core__complNote__complNote .
+
+prosafe-core4:core__countryCodification__Afghanistan owl:sameAs prosafe-core3:core__countryCodification__Afghanistan .
+
+prosafe-core4:core__countryCodification__Albania owl:sameAs prosafe-core3:core__countryCodification__Albania .
+
+prosafe-core4:core__countryCodification__Algeria owl:sameAs prosafe-core3:core__countryCodification__Algeria .
+
+prosafe-core4:core__countryCodification__AmericanSamoa owl:sameAs prosafe-core3:core__countryCodification__AmericanSamoa .
+
+prosafe-core4:core__countryCodification__Andorra owl:sameAs prosafe-core3:core__countryCodification__Andorra .
+
+prosafe-core4:core__countryCodification__Angola owl:sameAs prosafe-core3:core__countryCodification__Angola .
+
+prosafe-core4:core__countryCodification__Anguilla owl:sameAs prosafe-core3:core__countryCodification__Anguilla .
+
+prosafe-core4:core__countryCodification__Antarctica owl:sameAs prosafe-core3:core__countryCodification__Antarctica .
+
+prosafe-core4:core__countryCodification__AntiguaandBarbuda owl:sameAs prosafe-core3:core__countryCodification__AntiguaandBarbuda .
+
+prosafe-core4:core__countryCodification__Argentina owl:sameAs prosafe-core3:core__countryCodification__Argentina .
+
+prosafe-core4:core__countryCodification__Armenia owl:sameAs prosafe-core3:core__countryCodification__Armenia .
+
+prosafe-core4:core__countryCodification__Aruba owl:sameAs prosafe-core3:core__countryCodification__Aruba .
+
+prosafe-core4:core__countryCodification__Australia owl:sameAs prosafe-core3:core__countryCodification__Australia .
+
+prosafe-core4:core__countryCodification__Austria owl:sameAs prosafe-core3:core__countryCodification__Austria .
+
+prosafe-core4:core__countryCodification__Azerbaijan owl:sameAs prosafe-core3:core__countryCodification__Azerbaijan .
+
+prosafe-core4:core__countryCodification__Bahamas owl:sameAs prosafe-core3:core__countryCodification__Bahamas .
+
+prosafe-core4:core__countryCodification__Bahrain owl:sameAs prosafe-core3:core__countryCodification__Bahrain .
+
+prosafe-core4:core__countryCodification__Bangladesh owl:sameAs prosafe-core3:core__countryCodification__Bangladesh .
+
+prosafe-core4:core__countryCodification__Barbados owl:sameAs prosafe-core3:core__countryCodification__Barbados .
+
+prosafe-core4:core__countryCodification__Belarus owl:sameAs prosafe-core3:core__countryCodification__Belarus .
+
+prosafe-core4:core__countryCodification__Belgium owl:sameAs prosafe-core3:core__countryCodification__Belgium .
+
+prosafe-core4:core__countryCodification__Belize owl:sameAs prosafe-core3:core__countryCodification__Belize .
+
+prosafe-core4:core__countryCodification__Benin owl:sameAs prosafe-core3:core__countryCodification__Benin .
+
+prosafe-core4:core__countryCodification__Bermuda owl:sameAs prosafe-core3:core__countryCodification__Bermuda .
+
+prosafe-core4:core__countryCodification__Bhutan owl:sameAs prosafe-core3:core__countryCodification__Bhutan .
+
+prosafe-core4:core__countryCodification__Bolivia owl:sameAs prosafe-core3:core__countryCodification__Bolivia .
+
+prosafe-core4:core__countryCodification__BosniaandHerzegovina owl:sameAs prosafe-core3:core__countryCodification__BosniaandHerzegovina .
+
+prosafe-core4:core__countryCodification__Botswana owl:sameAs prosafe-core3:core__countryCodification__Botswana .
+
+prosafe-core4:core__countryCodification__BouvetIsland owl:sameAs prosafe-core3:core__countryCodification__BouvetIsland .
+
+prosafe-core4:core__countryCodification__Brazil owl:sameAs prosafe-core3:core__countryCodification__Brazil .
+
+prosafe-core4:core__countryCodification__BritishIndianOceanTerritory owl:sameAs prosafe-core3:core__countryCodification__BritishIndianOceanTerritory .
+
+prosafe-core4:core__countryCodification__BruneiDarussalam owl:sameAs prosafe-core3:core__countryCodification__BruneiDarussalam .
+
+prosafe-core4:core__countryCodification__Bulgaria owl:sameAs prosafe-core3:core__countryCodification__Bulgaria .
+
+prosafe-core4:core__countryCodification__BurkinaFaso owl:sameAs prosafe-core3:core__countryCodification__BurkinaFaso .
+
+prosafe-core4:core__countryCodification__Burundi owl:sameAs prosafe-core3:core__countryCodification__Burundi .
+
+prosafe-core4:core__countryCodification__Cambodia owl:sameAs prosafe-core3:core__countryCodification__Cambodia .
+
+prosafe-core4:core__countryCodification__Cameroon owl:sameAs prosafe-core3:core__countryCodification__Cameroon .
+
+prosafe-core4:core__countryCodification__Canada owl:sameAs prosafe-core3:core__countryCodification__Canada .
+
+prosafe-core4:core__countryCodification__CapeVerde owl:sameAs prosafe-core3:core__countryCodification__CapeVerde .
+
+prosafe-core4:core__countryCodification__CaymanIslands owl:sameAs prosafe-core3:core__countryCodification__CaymanIslands .
+
+prosafe-core4:core__countryCodification__CentralAfricanRepublic owl:sameAs prosafe-core3:core__countryCodification__CentralAfricanRepublic .
+
+prosafe-core4:core__countryCodification__Chad owl:sameAs prosafe-core3:core__countryCodification__Chad .
+
+prosafe-core4:core__countryCodification__Chile owl:sameAs prosafe-core3:core__countryCodification__Chile .
+
+prosafe-core4:core__countryCodification__China owl:sameAs prosafe-core3:core__countryCodification__China .
+
+prosafe-core4:core__countryCodification__ChristmasIsland owl:sameAs prosafe-core3:core__countryCodification__ChristmasIsland .
+
+prosafe-core4:core__countryCodification__CocosKeelingIslands owl:sameAs prosafe-core3:core__countryCodification__CocosKeelingIslands .
+
+prosafe-core4:core__countryCodification__Colombia owl:sameAs prosafe-core3:core__countryCodification__Colombia .
+
+prosafe-core4:core__countryCodification__Comoros owl:sameAs prosafe-core3:core__countryCodification__Comoros .
+
+prosafe-core4:core__countryCodification__Congo owl:sameAs prosafe-core3:core__countryCodification__Congo .
+
+prosafe-core4:core__countryCodification__CongotheDemocraticRepublicofthe owl:sameAs prosafe-core3:core__countryCodification__CongotheDemocraticRepublicofthe .
+
+prosafe-core4:core__countryCodification__CookIslands owl:sameAs prosafe-core3:core__countryCodification__CookIslands .
+
+prosafe-core4:core__countryCodification__CostaRica owl:sameAs prosafe-core3:core__countryCodification__CostaRica .
+
+prosafe-core4:core__countryCodification__Croatia owl:sameAs prosafe-core3:core__countryCodification__Croatia .
+
+prosafe-core4:core__countryCodification__Cuba owl:sameAs prosafe-core3:core__countryCodification__Cuba .
+
+prosafe-core4:core__countryCodification__Cyprus owl:sameAs prosafe-core3:core__countryCodification__Cyprus .
+
+prosafe-core4:core__countryCodification__CzechRepublic owl:sameAs prosafe-core3:core__countryCodification__CzechRepublic .
+
+prosafe-core4:core__countryCodification__Denmark owl:sameAs prosafe-core3:core__countryCodification__Denmark .
+
+prosafe-core4:core__countryCodification__Djibouti owl:sameAs prosafe-core3:core__countryCodification__Djibouti .
+
+prosafe-core4:core__countryCodification__Dominica owl:sameAs prosafe-core3:core__countryCodification__Dominica .
+
+prosafe-core4:core__countryCodification__DominicanRepublic owl:sameAs prosafe-core3:core__countryCodification__DominicanRepublic .
+
+prosafe-core4:core__countryCodification__Ecuador owl:sameAs prosafe-core3:core__countryCodification__Ecuador .
+
+prosafe-core4:core__countryCodification__Egypt owl:sameAs prosafe-core3:core__countryCodification__Egypt .
+
+prosafe-core4:core__countryCodification__ElSalvador owl:sameAs prosafe-core3:core__countryCodification__ElSalvador .
+
+prosafe-core4:core__countryCodification__EquatorialGuinea owl:sameAs prosafe-core3:core__countryCodification__EquatorialGuinea .
+
+prosafe-core4:core__countryCodification__Eritrea owl:sameAs prosafe-core3:core__countryCodification__Eritrea .
+
+prosafe-core4:core__countryCodification__Estonia owl:sameAs prosafe-core3:core__countryCodification__Estonia .
+
+prosafe-core4:core__countryCodification__Ethiopia owl:sameAs prosafe-core3:core__countryCodification__Ethiopia .
+
+prosafe-core4:core__countryCodification__FalklandIslandsMalvinas owl:sameAs prosafe-core3:core__countryCodification__FalklandIslandsMalvinas .
+
+prosafe-core4:core__countryCodification__FaroeIslands owl:sameAs prosafe-core3:core__countryCodification__FaroeIslands .
+
+prosafe-core4:core__countryCodification__Fiji owl:sameAs prosafe-core3:core__countryCodification__Fiji .
+
+prosafe-core4:core__countryCodification__Finland owl:sameAs prosafe-core3:core__countryCodification__Finland .
+
+prosafe-core4:core__countryCodification__France owl:sameAs prosafe-core3:core__countryCodification__France .
+
+prosafe-core4:core__countryCodification__FrenchGuiana owl:sameAs prosafe-core3:core__countryCodification__FrenchGuiana .
+
+prosafe-core4:core__countryCodification__FrenchPolynesia owl:sameAs prosafe-core3:core__countryCodification__FrenchPolynesia .
+
+prosafe-core4:core__countryCodification__FrenchSouthernTerritories owl:sameAs prosafe-core3:core__countryCodification__FrenchSouthernTerritories .
+
+prosafe-core4:core__countryCodification__Gabon owl:sameAs prosafe-core3:core__countryCodification__Gabon .
+
+prosafe-core4:core__countryCodification__Gambia owl:sameAs prosafe-core3:core__countryCodification__Gambia .
+
+prosafe-core4:core__countryCodification__Georgia owl:sameAs prosafe-core3:core__countryCodification__Georgia .
+
+prosafe-core4:core__countryCodification__Germany owl:sameAs prosafe-core3:core__countryCodification__Germany .
+
+prosafe-core4:core__countryCodification__Ghana owl:sameAs prosafe-core3:core__countryCodification__Ghana .
+
+prosafe-core4:core__countryCodification__Gibraltar owl:sameAs prosafe-core3:core__countryCodification__Gibraltar .
+
+prosafe-core4:core__countryCodification__Greece owl:sameAs prosafe-core3:core__countryCodification__Greece .
+
+prosafe-core4:core__countryCodification__Greenland owl:sameAs prosafe-core3:core__countryCodification__Greenland .
+
+prosafe-core4:core__countryCodification__Grenada owl:sameAs prosafe-core3:core__countryCodification__Grenada .
+
+prosafe-core4:core__countryCodification__Guadeloupe owl:sameAs prosafe-core3:core__countryCodification__Guadeloupe .
+
+prosafe-core4:core__countryCodification__Guam owl:sameAs prosafe-core3:core__countryCodification__Guam .
+
+prosafe-core4:core__countryCodification__Guatemala owl:sameAs prosafe-core3:core__countryCodification__Guatemala .
+
+prosafe-core4:core__countryCodification__Guernsey owl:sameAs prosafe-core3:core__countryCodification__Guernsey .
+
+prosafe-core4:core__countryCodification__Guinea owl:sameAs prosafe-core3:core__countryCodification__Guinea .
+
+prosafe-core4:core__countryCodification__Guinea-Bissau owl:sameAs prosafe-core3:core__countryCodification__Guinea-Bissau .
+
+prosafe-core4:core__countryCodification__Guyana owl:sameAs prosafe-core3:core__countryCodification__Guyana .
+
+prosafe-core4:core__countryCodification__Haiti owl:sameAs prosafe-core3:core__countryCodification__Haiti .
+
+prosafe-core4:core__countryCodification__HeardIslandandMcDonaldIslands owl:sameAs prosafe-core3:core__countryCodification__HeardIslandandMcDonaldIslands .
+
+prosafe-core4:core__countryCodification__HolySeeVaticanCityState owl:sameAs prosafe-core3:core__countryCodification__HolySeeVaticanCityState .
+
+prosafe-core4:core__countryCodification__Honduras owl:sameAs prosafe-core3:core__countryCodification__Honduras .
+
+prosafe-core4:core__countryCodification__HongKong owl:sameAs prosafe-core3:core__countryCodification__HongKong .
+
+prosafe-core4:core__countryCodification__Hungary owl:sameAs prosafe-core3:core__countryCodification__Hungary .
+
+prosafe-core4:core__countryCodification__Iceland owl:sameAs prosafe-core3:core__countryCodification__Iceland .
+
+prosafe-core4:core__countryCodification__India owl:sameAs prosafe-core3:core__countryCodification__India .
+
+prosafe-core4:core__countryCodification__Indonesia owl:sameAs prosafe-core3:core__countryCodification__Indonesia .
+
+prosafe-core4:core__countryCodification__IranIslamicRepublicof owl:sameAs prosafe-core3:core__countryCodification__IranIslamicRepublicof .
+
+prosafe-core4:core__countryCodification__Iraq owl:sameAs prosafe-core3:core__countryCodification__Iraq .
+
+prosafe-core4:core__countryCodification__Ireland owl:sameAs prosafe-core3:core__countryCodification__Ireland .
+
+prosafe-core4:core__countryCodification__IsleofMan owl:sameAs prosafe-core3:core__countryCodification__IsleofMan .
+
+prosafe-core4:core__countryCodification__Israel owl:sameAs prosafe-core3:core__countryCodification__Israel .
+
+prosafe-core4:core__countryCodification__Italy owl:sameAs prosafe-core3:core__countryCodification__Italy .
+
+prosafe-core4:core__countryCodification__Jamaica owl:sameAs prosafe-core3:core__countryCodification__Jamaica .
+
+prosafe-core4:core__countryCodification__Japan owl:sameAs prosafe-core3:core__countryCodification__Japan .
+
+prosafe-core4:core__countryCodification__Jersey owl:sameAs prosafe-core3:core__countryCodification__Jersey .
+
+prosafe-core4:core__countryCodification__Jordan owl:sameAs prosafe-core3:core__countryCodification__Jordan .
+
+prosafe-core4:core__countryCodification__Kazakhstan owl:sameAs prosafe-core3:core__countryCodification__Kazakhstan .
+
+prosafe-core4:core__countryCodification__Kenya owl:sameAs prosafe-core3:core__countryCodification__Kenya .
+
+prosafe-core4:core__countryCodification__Kiribati owl:sameAs prosafe-core3:core__countryCodification__Kiribati .
+
+prosafe-core4:core__countryCodification__KoreaRepublicof owl:sameAs prosafe-core3:core__countryCodification__KoreaRepublicof .
+
+prosafe-core4:core__countryCodification__Kuwait owl:sameAs prosafe-core3:core__countryCodification__Kuwait .
+
+prosafe-core4:core__countryCodification__Kyrgyzstan owl:sameAs prosafe-core3:core__countryCodification__Kyrgyzstan .
+
+prosafe-core4:core__countryCodification__Latvia owl:sameAs prosafe-core3:core__countryCodification__Latvia .
+
+prosafe-core4:core__countryCodification__Lebanon owl:sameAs prosafe-core3:core__countryCodification__Lebanon .
+
+prosafe-core4:core__countryCodification__Lesotho owl:sameAs prosafe-core3:core__countryCodification__Lesotho .
+
+prosafe-core4:core__countryCodification__Liberia owl:sameAs prosafe-core3:core__countryCodification__Liberia .
+
+prosafe-core4:core__countryCodification__LibyanArabJamahiriya owl:sameAs prosafe-core3:core__countryCodification__LibyanArabJamahiriya .
+
+prosafe-core4:core__countryCodification__Liechtenstein owl:sameAs prosafe-core3:core__countryCodification__Liechtenstein .
+
+prosafe-core4:core__countryCodification__Lithuania owl:sameAs prosafe-core3:core__countryCodification__Lithuania .
+
+prosafe-core4:core__countryCodification__Luxembourg owl:sameAs prosafe-core3:core__countryCodification__Luxembourg .
+
+prosafe-core4:core__countryCodification__Macao owl:sameAs prosafe-core3:core__countryCodification__Macao .
+
+prosafe-core4:core__countryCodification__MacedoniatheFormerYugoslavRepublicof owl:sameAs prosafe-core3:core__countryCodification__MacedoniatheFormerYugoslavRepublicof .
+
+prosafe-core4:core__countryCodification__Madagascar owl:sameAs prosafe-core3:core__countryCodification__Madagascar .
+
+prosafe-core4:core__countryCodification__Malawi owl:sameAs prosafe-core3:core__countryCodification__Malawi .
+
+prosafe-core4:core__countryCodification__Malaysia owl:sameAs prosafe-core3:core__countryCodification__Malaysia .
+
+prosafe-core4:core__countryCodification__Maldives owl:sameAs prosafe-core3:core__countryCodification__Maldives .
+
+prosafe-core4:core__countryCodification__Mali owl:sameAs prosafe-core3:core__countryCodification__Mali .
+
+prosafe-core4:core__countryCodification__Malta owl:sameAs prosafe-core3:core__countryCodification__Malta .
+
+prosafe-core4:core__countryCodification__MarshallIslands owl:sameAs prosafe-core3:core__countryCodification__MarshallIslands .
+
+prosafe-core4:core__countryCodification__Martinique owl:sameAs prosafe-core3:core__countryCodification__Martinique .
+
+prosafe-core4:core__countryCodification__Mauritania owl:sameAs prosafe-core3:core__countryCodification__Mauritania .
+
+prosafe-core4:core__countryCodification__Mauritius owl:sameAs prosafe-core3:core__countryCodification__Mauritius .
+
+prosafe-core4:core__countryCodification__Mayotte owl:sameAs prosafe-core3:core__countryCodification__Mayotte .
+
+prosafe-core4:core__countryCodification__Mexico owl:sameAs prosafe-core3:core__countryCodification__Mexico .
+
+prosafe-core4:core__countryCodification__MicronesiaFederatedStatesof owl:sameAs prosafe-core3:core__countryCodification__MicronesiaFederatedStatesof .
+
+prosafe-core4:core__countryCodification__Moldova owl:sameAs prosafe-core3:core__countryCodification__Moldova .
+
+prosafe-core4:core__countryCodification__Monaco owl:sameAs prosafe-core3:core__countryCodification__Monaco .
+
+prosafe-core4:core__countryCodification__Mongolia owl:sameAs prosafe-core3:core__countryCodification__Mongolia .
+
+prosafe-core4:core__countryCodification__Montenegro owl:sameAs prosafe-core3:core__countryCodification__Montenegro .
+
+prosafe-core4:core__countryCodification__Montserrat owl:sameAs prosafe-core3:core__countryCodification__Montserrat .
+
+prosafe-core4:core__countryCodification__Morocco owl:sameAs prosafe-core3:core__countryCodification__Morocco .
+
+prosafe-core4:core__countryCodification__Mozambique owl:sameAs prosafe-core3:core__countryCodification__Mozambique .
+
+prosafe-core4:core__countryCodification__Myanmar owl:sameAs prosafe-core3:core__countryCodification__Myanmar .
+
+prosafe-core4:core__countryCodification__Namibia owl:sameAs prosafe-core3:core__countryCodification__Namibia .
+
+prosafe-core4:core__countryCodification__Nauru owl:sameAs prosafe-core3:core__countryCodification__Nauru .
+
+prosafe-core4:core__countryCodification__Nepal owl:sameAs prosafe-core3:core__countryCodification__Nepal .
+
+prosafe-core4:core__countryCodification__Netherlands owl:sameAs prosafe-core3:core__countryCodification__Netherlands .
+
+prosafe-core4:core__countryCodification__NetherlandsAntilles owl:sameAs prosafe-core3:core__countryCodification__NetherlandsAntilles .
+
+prosafe-core4:core__countryCodification__NewCaledonia owl:sameAs prosafe-core3:core__countryCodification__NewCaledonia .
+
+prosafe-core4:core__countryCodification__NewZealand owl:sameAs prosafe-core3:core__countryCodification__NewZealand .
+
+prosafe-core4:core__countryCodification__Nicaragua owl:sameAs prosafe-core3:core__countryCodification__Nicaragua .
+
+prosafe-core4:core__countryCodification__Niger owl:sameAs prosafe-core3:core__countryCodification__Niger .
+
+prosafe-core4:core__countryCodification__Nigeria owl:sameAs prosafe-core3:core__countryCodification__Nigeria .
+
+prosafe-core4:core__countryCodification__Niue owl:sameAs prosafe-core3:core__countryCodification__Niue .
+
+prosafe-core4:core__countryCodification__None owl:sameAs prosafe-core3:core__countryCodification__None .
+
+prosafe-core4:core__countryCodification__NorfolkIsland owl:sameAs prosafe-core3:core__countryCodification__NorfolkIsland .
+
+prosafe-core4:core__countryCodification__NorthernMarianaIslands owl:sameAs prosafe-core3:core__countryCodification__NorthernMarianaIslands .
+
+prosafe-core4:core__countryCodification__Norway owl:sameAs prosafe-core3:core__countryCodification__Norway .
+
+prosafe-core4:core__countryCodification__Oman owl:sameAs prosafe-core3:core__countryCodification__Oman .
+
+prosafe-core4:core__countryCodification__Pakistan owl:sameAs prosafe-core3:core__countryCodification__Pakistan .
+
+prosafe-core4:core__countryCodification__Palau owl:sameAs prosafe-core3:core__countryCodification__Palau .
+
+prosafe-core4:core__countryCodification__PalestinianTerritoryOccupied owl:sameAs prosafe-core3:core__countryCodification__PalestinianTerritoryOccupied .
+
+prosafe-core4:core__countryCodification__Panama owl:sameAs prosafe-core3:core__countryCodification__Panama .
+
+prosafe-core4:core__countryCodification__PapuaNewGuinea owl:sameAs prosafe-core3:core__countryCodification__PapuaNewGuinea .
+
+prosafe-core4:core__countryCodification__Paraguay owl:sameAs prosafe-core3:core__countryCodification__Paraguay .
+
+prosafe-core4:core__countryCodification__Peru owl:sameAs prosafe-core3:core__countryCodification__Peru .
+
+prosafe-core4:core__countryCodification__Philippines owl:sameAs prosafe-core3:core__countryCodification__Philippines .
+
+prosafe-core4:core__countryCodification__Pitcairn owl:sameAs prosafe-core3:core__countryCodification__Pitcairn .
+
+prosafe-core4:core__countryCodification__Poland owl:sameAs prosafe-core3:core__countryCodification__Poland .
+
+prosafe-core4:core__countryCodification__Portugal owl:sameAs prosafe-core3:core__countryCodification__Portugal .
+
+prosafe-core4:core__countryCodification__PuertoRico owl:sameAs prosafe-core3:core__countryCodification__PuertoRico .
+
+prosafe-core4:core__countryCodification__Qatar owl:sameAs prosafe-core3:core__countryCodification__Qatar .
+
+prosafe-core4:core__countryCodification__Romania owl:sameAs prosafe-core3:core__countryCodification__Romania .
+
+prosafe-core4:core__countryCodification__Runion owl:sameAs prosafe-core3:core__countryCodification__Runion .
+
+prosafe-core4:core__countryCodification__RussianFederation owl:sameAs prosafe-core3:core__countryCodification__RussianFederation .
+
+prosafe-core4:core__countryCodification__Rwanda owl:sameAs prosafe-core3:core__countryCodification__Rwanda .
+
+prosafe-core4:core__countryCodification__SaintBarthlemy owl:sameAs prosafe-core3:core__countryCodification__SaintBarthlemy .
+
+prosafe-core4:core__countryCodification__SaintHelena owl:sameAs prosafe-core3:core__countryCodification__SaintHelena .
+
+prosafe-core4:core__countryCodification__SaintKittsandNevis owl:sameAs prosafe-core3:core__countryCodification__SaintKittsandNevis .
+
+prosafe-core4:core__countryCodification__SaintLucia owl:sameAs prosafe-core3:core__countryCodification__SaintLucia .
+
+prosafe-core4:core__countryCodification__SaintMartin owl:sameAs prosafe-core3:core__countryCodification__SaintMartin .
+
+prosafe-core4:core__countryCodification__SaintPierreandMiquelon owl:sameAs prosafe-core3:core__countryCodification__SaintPierreandMiquelon .
+
+prosafe-core4:core__countryCodification__SaintVincentandtheGrenadines owl:sameAs prosafe-core3:core__countryCodification__SaintVincentandtheGrenadines .
+
+prosafe-core4:core__countryCodification__Samoa owl:sameAs prosafe-core3:core__countryCodification__Samoa .
+
+prosafe-core4:core__countryCodification__SanMarino owl:sameAs prosafe-core3:core__countryCodification__SanMarino .
+
+prosafe-core4:core__countryCodification__SaoTomeandPrincipe owl:sameAs prosafe-core3:core__countryCodification__SaoTomeandPrincipe .
+
+prosafe-core4:core__countryCodification__SaudiArabia owl:sameAs prosafe-core3:core__countryCodification__SaudiArabia .
+
+prosafe-core4:core__countryCodification__Senegal owl:sameAs prosafe-core3:core__countryCodification__Senegal .
+
+prosafe-core4:core__countryCodification__Serbia owl:sameAs prosafe-core3:core__countryCodification__Serbia .
+
+prosafe-core4:core__countryCodification__Seychelles owl:sameAs prosafe-core3:core__countryCodification__Seychelles .
+
+prosafe-core4:core__countryCodification__SierraLeone owl:sameAs prosafe-core3:core__countryCodification__SierraLeone .
+
+prosafe-core4:core__countryCodification__Singapore owl:sameAs prosafe-core3:core__countryCodification__Singapore .
+
+prosafe-core4:core__countryCodification__Slovakia owl:sameAs prosafe-core3:core__countryCodification__Slovakia .
+
+prosafe-core4:core__countryCodification__Slovenia owl:sameAs prosafe-core3:core__countryCodification__Slovenia .
+
+prosafe-core4:core__countryCodification__SolomonIslands owl:sameAs prosafe-core3:core__countryCodification__SolomonIslands .
+
+prosafe-core4:core__countryCodification__Somalia owl:sameAs prosafe-core3:core__countryCodification__Somalia .
+
+prosafe-core4:core__countryCodification__SouthAfrica owl:sameAs prosafe-core3:core__countryCodification__SouthAfrica .
+
+prosafe-core4:core__countryCodification__SouthGeorgiaandtheSouthSandwichIslands owl:sameAs prosafe-core3:core__countryCodification__SouthGeorgiaandtheSouthSandwichIslands .
+
+prosafe-core4:core__countryCodification__Spain owl:sameAs prosafe-core3:core__countryCodification__Spain .
+
+prosafe-core4:core__countryCodification__SriLanka owl:sameAs prosafe-core3:core__countryCodification__SriLanka .
+
+prosafe-core4:core__countryCodification__Sudan owl:sameAs prosafe-core3:core__countryCodification__Sudan .
+
+prosafe-core4:core__countryCodification__Suriname owl:sameAs prosafe-core3:core__countryCodification__Suriname .
+
+prosafe-core4:core__countryCodification__SvalbardandJanMayen owl:sameAs prosafe-core3:core__countryCodification__SvalbardandJanMayen .
+
+prosafe-core4:core__countryCodification__Swaziland owl:sameAs prosafe-core3:core__countryCodification__Swaziland .
+
+prosafe-core4:core__countryCodification__Sweden owl:sameAs prosafe-core3:core__countryCodification__Sweden .
+
+prosafe-core4:core__countryCodification__Switzerland owl:sameAs prosafe-core3:core__countryCodification__Switzerland .
+
+prosafe-core4:core__countryCodification__SyrianArabRepublic owl:sameAs prosafe-core3:core__countryCodification__SyrianArabRepublic .
+
+prosafe-core4:core__countryCodification__TaiwanProvinceofChina owl:sameAs prosafe-core3:core__countryCodification__TaiwanProvinceofChina .
+
+prosafe-core4:core__countryCodification__Tajikistan owl:sameAs prosafe-core3:core__countryCodification__Tajikistan .
+
+prosafe-core4:core__countryCodification__TanzaniaUnitedRepublicof owl:sameAs prosafe-core3:core__countryCodification__TanzaniaUnitedRepublicof .
+
+prosafe-core4:core__countryCodification__Thailand owl:sameAs prosafe-core3:core__countryCodification__Thailand .
+
+prosafe-core4:core__countryCodification__Timor-Leste owl:sameAs prosafe-core3:core__countryCodification__Timor-Leste .
+
+prosafe-core4:core__countryCodification__Togo owl:sameAs prosafe-core3:core__countryCodification__Togo .
+
+prosafe-core4:core__countryCodification__Tokelau owl:sameAs prosafe-core3:core__countryCodification__Tokelau .
+
+prosafe-core4:core__countryCodification__Tonga owl:sameAs prosafe-core3:core__countryCodification__Tonga .
+
+prosafe-core4:core__countryCodification__TrinidadandTobago owl:sameAs prosafe-core3:core__countryCodification__TrinidadandTobago .
+
+prosafe-core4:core__countryCodification__Tunisia owl:sameAs prosafe-core3:core__countryCodification__Tunisia .
+
+prosafe-core4:core__countryCodification__Turkey owl:sameAs prosafe-core3:core__countryCodification__Turkey .
+
+prosafe-core4:core__countryCodification__Turkmenistan owl:sameAs prosafe-core3:core__countryCodification__Turkmenistan .
+
+prosafe-core4:core__countryCodification__TurksandCaicosIslands owl:sameAs prosafe-core3:core__countryCodification__TurksandCaicosIslands .
+
+prosafe-core4:core__countryCodification__Tuvalu owl:sameAs prosafe-core3:core__countryCodification__Tuvalu .
+
+prosafe-core4:core__countryCodification__Uganda owl:sameAs prosafe-core3:core__countryCodification__Uganda .
+
+prosafe-core4:core__countryCodification__Ukraine owl:sameAs prosafe-core3:core__countryCodification__Ukraine .
+
+prosafe-core4:core__countryCodification__UnitedArabEmirates owl:sameAs prosafe-core3:core__countryCodification__UnitedArabEmirates .
+
+prosafe-core4:core__countryCodification__UnitedKingdom owl:sameAs prosafe-core3:core__countryCodification__UnitedKingdom .
+
+prosafe-core4:core__countryCodification__UnitedStates owl:sameAs prosafe-core3:core__countryCodification__UnitedStates .
+
+prosafe-core4:core__countryCodification__UnitedStatesMinorOutlyingIslands owl:sameAs prosafe-core3:core__countryCodification__UnitedStatesMinorOutlyingIslands .
+
+prosafe-core4:core__countryCodification__Uruguay owl:sameAs prosafe-core3:core__countryCodification__Uruguay .
+
+prosafe-core4:core__countryCodification__Uzbekistan owl:sameAs prosafe-core3:core__countryCodification__Uzbekistan .
+
+prosafe-core4:core__countryCodification__Vanuatu owl:sameAs prosafe-core3:core__countryCodification__Vanuatu .
+
+prosafe-core4:core__countryCodification__Venezuela owl:sameAs prosafe-core3:core__countryCodification__Venezuela .
+
+prosafe-core4:core__countryCodification__VietNam owl:sameAs prosafe-core3:core__countryCodification__VietNam .
+
+prosafe-core4:core__countryCodification__VirginIslandsBritish owl:sameAs prosafe-core3:core__countryCodification__VirginIslandsBritish .
+
+prosafe-core4:core__countryCodification__VirginIslandsUS owl:sameAs prosafe-core3:core__countryCodification__VirginIslandsUS .
+
+prosafe-core4:core__countryCodification__WallisandFutuna owl:sameAs prosafe-core3:core__countryCodification__WallisandFutuna .
+
+prosafe-core4:core__countryCodification__WesternSahara owl:sameAs prosafe-core3:core__countryCodification__WesternSahara .
+
+prosafe-core4:core__countryCodification__Yemen owl:sameAs prosafe-core3:core__countryCodification__Yemen .
+
+prosafe-core4:core__countryCodification__Zambia owl:sameAs prosafe-core3:core__countryCodification__Zambia .
+
+prosafe-core4:core__countryCodification__Zimbabwe owl:sameAs prosafe-core3:core__countryCodification__Zimbabwe .
+
+prosafe-core4:core__countryCodification__landIslands owl:sameAs prosafe-core3:core__countryCodification__landIslands .
+
+prosafe-core4:core__days__value owl:equivalentProperty prosafe-core3:core__days__value .
+
+prosafe-core4:core__decorsoClinico__value owl:equivalentProperty prosafe-core3:core__decorsoClinico__value .
+
+prosafe-core4:core__ehrIdAdmission__value owl:equivalentProperty prosafe-core3:core__ehrIdAdmission__value .
+
+prosafe-core4:core__ehrId__value owl:equivalentProperty prosafe-core3:core__ehrId__value .
+
+prosafe-core4:core__errorDetail__errorCrf owl:equivalentProperty prosafe-core3:core__errorDetail__errorCrf .
+
+prosafe-core4:core__errorDetail__errorCrfLabel owl:equivalentProperty prosafe-core3:core__errorDetail__errorCrfLabel .
+
+prosafe-core4:core__errorDetail__errorId owl:equivalentProperty prosafe-core3:core__errorDetail__errorId .
+
+prosafe-core4:core__errorList owl:equivalentProperty prosafe-core3:core__errorList .
+
+prosafe-core4:core__errorList__errorList owl:equivalentProperty prosafe-core3:core__errorList__errorList .
+
+prosafe-core4:core__expOutcome__value owl:equivalentProperty prosafe-core3:core__expOutcome__value .
+
+prosafe-core4:core__expecOutCodification__pallGrade1 owl:sameAs prosafe-core3:core__expecOutCodification__pallGrade1 .
+
+prosafe-core4:core__expecOutCodification__pallGrade2 owl:sameAs prosafe-core3:core__expecOutCodification__pallGrade2 .
+
+prosafe-core4:core__expecOutCodification__pallGrade3 owl:sameAs prosafe-core3:core__expecOutCodification__pallGrade3 .
+
+prosafe-core4:core__expecOutCodification__pallGrade4 owl:sameAs prosafe-core3:core__expecOutCodification__pallGrade4 .
+
+prosafe-core4:core__expecOutCodification__recovery owl:sameAs prosafe-core3:core__expecOutCodification__recovery .
+
+prosafe-core4:core__exportAdditionalPatientData__icuAfter owl:equivalentProperty prosafe-core3:core__exportAdditionalPatientData__icuAfter .
+
+prosafe-core4:core__exportAdditionalPatientData__icuStayDays owl:equivalentProperty prosafe-core3:core__exportAdditionalPatientData__icuStayDays .
+
+prosafe-core4:core__exportAge__months owl:equivalentProperty prosafe-core3:core__exportAge__months .
+
+prosafe-core4:core__exportAge__weeks owl:equivalentProperty prosafe-core3:core__exportAge__weeks .
+
+prosafe-core4:core__exportAge__years owl:equivalentProperty prosafe-core3:core__exportAge__years .
+
+prosafe-core4:core__exportCondAdm__infections owl:equivalentProperty prosafe-core3:core__exportCondAdm__infections .
+
+prosafe-core4:core__exportCondDuringStay__infectionsStay owl:equivalentProperty prosafe-core3:core__exportCondDuringStay__infectionsStay .
+
+prosafe-core4:core__exportFailures owl:equivalentProperty prosafe-core3:core__exportFailures .
+
+prosafe-core4:core__exportFailures__admFailures owl:equivalentProperty prosafe-core3:core__exportFailures__admFailures .
+
+prosafe-core4:core__exportFailures__stayFailures owl:equivalentProperty prosafe-core3:core__exportFailures__stayFailures .
+
+prosafe-core4:core__exportGcs__gcs owl:equivalentProperty prosafe-core3:core__exportGcs__gcs .
+
+prosafe-core4:core__exportGcs__gcs24 owl:equivalentProperty prosafe-core3:core__exportGcs__gcs24 .
+
+prosafe-core4:core__exportHospOutcome__value owl:equivalentProperty prosafe-core3:core__exportHospOutcome__value .
+
+prosafe-core4:core__exportIcuStayHours__value owl:equivalentProperty prosafe-core3:core__exportIcuStayHours__value .
+
+prosafe-core4:core__exportProceduresDetails__AdmNutrDays owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__AdmNutrDays .
+
+prosafe-core4:core__exportProceduresDetails__AdmpartNutrDays owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__AdmpartNutrDays .
+
+prosafe-core4:core__exportProceduresDetails__TracInvDays owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__TracInvDays .
+
+prosafe-core4:core__exportProceduresDetails__antibMedProphylDays owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__antibMedProphylDays .
+
+prosafe-core4:core__exportProceduresDetails__antibSurgProphylDays owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__antibSurgProphylDays .
+
+prosafe-core4:core__exportProceduresDetails__anyAntibiotic owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__anyAntibiotic .
+
+prosafe-core4:core__exportProceduresDetails__cvcDays owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__cvcDays .
+
+prosafe-core4:core__exportProceduresDetails__empAntTherDays owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__empAntTherDays .
+
+prosafe-core4:core__exportProceduresDetails__entNutrDays owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__entNutrDays .
+
+prosafe-core4:core__exportProceduresDetails__haemofDays owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__haemofDays .
+
+prosafe-core4:core__exportProceduresDetails__invVentDays owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__invVentDays .
+
+prosafe-core4:core__exportProceduresDetails__invVentilTimes owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__invVentilTimes .
+
+prosafe-core4:core__exportProceduresDetails__noInvVentDays owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__noInvVentDays .
+
+prosafe-core4:core__exportProceduresDetails__parentNutrDays owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__parentNutrDays .
+
+prosafe-core4:core__exportProceduresDetails__targAntTherDays owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__targAntTherDays .
+
+prosafe-core4:core__exportProceduresDetails__tracheostDatai owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__tracheostDatai .
+
+prosafe-core4:core__exportProceduresDetails__tracheostDays owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__tracheostDays .
+
+prosafe-core4:core__exportProceduresDetails__vasoactDrugsDays owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__vasoactDrugsDays .
+
+prosafe-core4:core__exportProceduresDetails__vasoactDrugsTimes owl:equivalentProperty prosafe-core3:core__exportProceduresDetails__vasoactDrugsTimes .
+
+prosafe-core4:core__exportProcedures__antiarrhyt owl:equivalentProperty prosafe-core3:core__exportProcedures__antiarrhyt .
+
+prosafe-core4:core__exportProcedures__antibMedProphyl owl:equivalentProperty prosafe-core3:core__exportProcedures__antibMedProphyl .
+
+prosafe-core4:core__exportProcedures__antibSurgProphyl owl:equivalentProperty prosafe-core3:core__exportProcedures__antibSurgProphyl .
+
+prosafe-core4:core__exportProcedures__artCath owl:equivalentProperty prosafe-core3:core__exportProcedures__artCath .
+
+prosafe-core4:core__exportProcedures__bloodTransf owl:equivalentProperty prosafe-core3:core__exportProcedures__bloodTransf .
+
+prosafe-core4:core__exportProcedures__centrVenCath owl:equivalentProperty prosafe-core3:core__exportProcedures__centrVenCath .
+
+prosafe-core4:core__exportProcedures__clearTechDurSep owl:equivalentProperty prosafe-core3:core__exportProcedures__clearTechDurSep .
+
+prosafe-core4:core__exportProcedures__contMonSc owl:equivalentProperty prosafe-core3:core__exportProcedures__contMonSc .
+
+prosafe-core4:core__exportProcedures__cpr owl:equivalentProperty prosafe-core3:core__exportProcedures__cpr .
+
+prosafe-core4:core__exportProcedures__dcShock owl:equivalentProperty prosafe-core3:core__exportProcedures__dcShock .
+
+prosafe-core4:core__exportProcedures__ecmo owl:equivalentProperty prosafe-core3:core__exportProcedures__ecmo .
+
+prosafe-core4:core__exportProcedures__empAntTher owl:equivalentProperty prosafe-core3:core__exportProcedures__empAntTher .
+
+prosafe-core4:core__exportProcedures__entNutr owl:equivalentProperty prosafe-core3:core__exportProcedures__entNutr .
+
+prosafe-core4:core__exportProcedures__fibro owl:equivalentProperty prosafe-core3:core__exportProcedures__fibro .
+
+prosafe-core4:core__exportProcedures__haemod owl:equivalentProperty prosafe-core3:core__exportProcedures__haemod .
+
+prosafe-core4:core__exportProcedures__haemof owl:equivalentProperty prosafe-core3:core__exportProcedures__haemof .
+
+prosafe-core4:core__exportProcedures__hepClearTech owl:equivalentProperty prosafe-core3:core__exportProcedures__hepClearTech .
+
+prosafe-core4:core__exportProcedures__hypotherm owl:equivalentProperty prosafe-core3:core__exportProcedures__hypotherm .
+
+prosafe-core4:core__exportProcedures__iap owl:equivalentProperty prosafe-core3:core__exportProcedures__iap .
+
+prosafe-core4:core__exportProcedures__iapb owl:equivalentProperty prosafe-core3:core__exportProcedures__iapb .
+
+prosafe-core4:core__exportProcedures__ino owl:equivalentProperty prosafe-core3:core__exportProcedures__ino .
+
+prosafe-core4:core__exportProcedures__intrDev owl:equivalentProperty prosafe-core3:core__exportProcedures__intrDev .
+
+prosafe-core4:core__exportProcedures__intrPres owl:equivalentProperty prosafe-core3:core__exportProcedures__intrPres .
+
+prosafe-core4:core__exportProcedures__invVentil owl:equivalentProperty prosafe-core3:core__exportProcedures__invVentil .
+
+prosafe-core4:core__exportProcedures__invasMonCardOut owl:equivalentProperty prosafe-core3:core__exportProcedures__invasMonCardOut .
+
+prosafe-core4:core__exportProcedures__massBloodTransf owl:equivalentProperty prosafe-core3:core__exportProcedures__massBloodTransf .
+
+prosafe-core4:core__exportProcedures__noInvVentil owl:equivalentProperty prosafe-core3:core__exportProcedures__noInvVentil .
+
+prosafe-core4:core__exportProcedures__oxygTher owl:equivalentProperty prosafe-core3:core__exportProcedures__oxygTher .
+
+prosafe-core4:core__exportProcedures__parentNutr owl:equivalentProperty prosafe-core3:core__exportProcedures__parentNutr .
+
+prosafe-core4:core__exportProcedures__patCont owl:equivalentProperty prosafe-core3:core__exportProcedures__patCont .
+
+prosafe-core4:core__exportProcedures__peritDialysis owl:equivalentProperty prosafe-core3:core__exportProcedures__peritDialysis .
+
+prosafe-core4:core__exportProcedures__plasmapher owl:equivalentProperty prosafe-core3:core__exportProcedures__plasmapher .
+
+prosafe-core4:core__exportProcedures__sdd owl:equivalentProperty prosafe-core3:core__exportProcedures__sdd .
+
+prosafe-core4:core__exportProcedures__surfTreat owl:equivalentProperty prosafe-core3:core__exportProcedures__surfTreat .
+
+prosafe-core4:core__exportProcedures__targAntTher owl:equivalentProperty prosafe-core3:core__exportProcedures__targAntTher .
+
+prosafe-core4:core__exportProcedures__tempPac owl:equivalentProperty prosafe-core3:core__exportProcedures__tempPac .
+
+prosafe-core4:core__exportProcedures__tracheost owl:equivalentProperty prosafe-core3:core__exportProcedures__tracheost .
+
+prosafe-core4:core__exportProcedures__vacuTher owl:equivalentProperty prosafe-core3:core__exportProcedures__vacuTher .
+
+prosafe-core4:core__exportProcedures__vasoactDrugs owl:equivalentProperty prosafe-core3:core__exportProcedures__vasoactDrugs .
+
+prosafe-core4:core__exportProcedures__ventrAss owl:equivalentProperty prosafe-core3:core__exportProcedures__ventrAss .
+
+prosafe-core4:core__exportSurgeryDetails owl:equivalentProperty prosafe-core3:core__exportSurgeryDetails .
+
+prosafe-core4:core__exportSurgeryDetails__nonSurgDuringStay owl:equivalentProperty prosafe-core3:core__exportSurgeryDetails__nonSurgDuringStay .
+
+prosafe-core4:core__exportSurgeryDetails__nonSurgOnAdm owl:equivalentProperty prosafe-core3:core__exportSurgeryDetails__nonSurgOnAdm .
+
+prosafe-core4:core__exportSurgeryDetails__surgDuringStay owl:equivalentProperty prosafe-core3:core__exportSurgeryDetails__surgDuringStay .
+
+prosafe-core4:core__exportSurgeryDetails__surgOnAdm owl:equivalentProperty prosafe-core3:core__exportSurgeryDetails__surgOnAdm .
+
+prosafe-core4:core__firstHospAdmDate__value owl:equivalentProperty prosafe-core3:core__firstHospAdmDate__value .
+
+prosafe-core4:core__firstName__firstName owl:equivalentProperty prosafe-core3:core__firstName__firstName .
+
+prosafe-core4:core__gcs24BestMotorResponsePed__value owl:equivalentProperty prosafe-core3:core__gcs24BestMotorResponsePed__value .
+
+prosafe-core4:core__gcs24BestMotorResponse__value owl:equivalentProperty prosafe-core3:core__gcs24BestMotorResponse__value .
+
+prosafe-core4:core__gcs24BestVerbalResponsePed__value owl:equivalentProperty prosafe-core3:core__gcs24BestVerbalResponsePed__value .
+
+prosafe-core4:core__gcs24BestVerbalResponse__value owl:equivalentProperty prosafe-core3:core__gcs24BestVerbalResponse__value .
+
+prosafe-core4:core__gcs24Coma__value owl:equivalentProperty prosafe-core3:core__gcs24Coma__value .
+
+prosafe-core4:core__gcs24EyesOpenPed__value owl:equivalentProperty prosafe-core3:core__gcs24EyesOpenPed__value .
+
+prosafe-core4:core__gcs24EyesOpen__value owl:equivalentProperty prosafe-core3:core__gcs24EyesOpen__value .
+
+prosafe-core4:core__gcs24PedComa__value owl:equivalentProperty prosafe-core3:core__gcs24PedComa__value .
+
+prosafe-core4:core__gcs24Ped__value owl:equivalentProperty prosafe-core3:core__gcs24Ped__value .
+
+prosafe-core4:core__gcs24Sedated__value owl:equivalentProperty prosafe-core3:core__gcs24Sedated__value .
+
+prosafe-core4:core__gcs24__value owl:equivalentProperty prosafe-core3:core__gcs24__value .
+
+prosafe-core4:core__gcsAdmSedatedEstimable__value owl:equivalentProperty prosafe-core3:core__gcsAdmSedatedEstimable__value .
+
+prosafe-core4:core__gcsAdmSedated__value owl:equivalentProperty prosafe-core3:core__gcsAdmSedated__value .
+
+prosafe-core4:core__gcsBestMotorResponsePed__value owl:equivalentProperty prosafe-core3:core__gcsBestMotorResponsePed__value .
+
+prosafe-core4:core__gcsBestMotorResponse__value owl:equivalentProperty prosafe-core3:core__gcsBestMotorResponse__value .
+
+prosafe-core4:core__gcsBestVerbalResponsePed__value owl:equivalentProperty prosafe-core3:core__gcsBestVerbalResponsePed__value .
+
+prosafe-core4:core__gcsBestVerbalResponse__value owl:equivalentProperty prosafe-core3:core__gcsBestVerbalResponse__value .
+
+prosafe-core4:core__gcsCodification__noneEyGcs owl:sameAs prosafe-core3:core__gcsCodification__noneEyGcs .
+
+prosafe-core4:core__gcsCodification__painGcs owl:sameAs prosafe-core3:core__gcsCodification__painGcs .
+
+prosafe-core4:core__gcsCodification__speeGcs owl:sameAs prosafe-core3:core__gcsCodification__speeGcs .
+
+prosafe-core4:core__gcsCodification__spontGcs owl:sameAs prosafe-core3:core__gcsCodification__spontGcs .
+
+prosafe-core4:core__gcsComa__value owl:equivalentProperty prosafe-core3:core__gcsComa__value .
+
+prosafe-core4:core__gcsEyesOpenPed__value owl:equivalentProperty prosafe-core3:core__gcsEyesOpenPed__value .
+
+prosafe-core4:core__gcsEyesOpen__value owl:equivalentProperty prosafe-core3:core__gcsEyesOpen__value .
+
+prosafe-core4:core__gcsForScoresPed__value owl:equivalentProperty prosafe-core3:core__gcsForScoresPed__value .
+
+prosafe-core4:core__gcsForScores__value owl:equivalentProperty prosafe-core3:core__gcsForScores__value .
+
+prosafe-core4:core__gcsMotorCodification__extPainGcs owl:sameAs prosafe-core3:core__gcsMotorCodification__extPainGcs .
+
+prosafe-core4:core__gcsMotorCodification__flexPainGcs owl:sameAs prosafe-core3:core__gcsMotorCodification__flexPainGcs .
+
+prosafe-core4:core__gcsMotorCodification__locPainGcs owl:sameAs prosafe-core3:core__gcsMotorCodification__locPainGcs .
+
+prosafe-core4:core__gcsMotorCodification__noMotGcs owl:sameAs prosafe-core3:core__gcsMotorCodification__noMotGcs .
+
+prosafe-core4:core__gcsMotorCodification__obComGcs owl:sameAs prosafe-core3:core__gcsMotorCodification__obComGcs .
+
+prosafe-core4:core__gcsMotorCodification__withPainGcs owl:sameAs prosafe-core3:core__gcsMotorCodification__withPainGcs .
+
+prosafe-core4:core__gcsNormal__value owl:equivalentProperty prosafe-core3:core__gcsNormal__value .
+
+prosafe-core4:core__gcsOption owl:equivalentProperty prosafe-core3:core__gcsOption .
+
+prosafe-core4:core__gcsOptionCodification__gcs24Normal owl:sameAs prosafe-core3:core__gcsOptionCodification__gcs24Normal .
+
+prosafe-core4:core__gcsOptionCodification__gcsSameAdm owl:sameAs prosafe-core3:core__gcsOptionCodification__gcsSameAdm .
+
+prosafe-core4:core__gcsOption__value owl:equivalentProperty prosafe-core3:core__gcsOption__value .
+
+prosafe-core4:core__gcsPedComa__value owl:equivalentProperty prosafe-core3:core__gcsPedComa__value .
+
+prosafe-core4:core__gcsPed__value owl:equivalentProperty prosafe-core3:core__gcsPed__value .
+
+prosafe-core4:core__gcsVerbCodification__confGcs owl:sameAs prosafe-core3:core__gcsVerbCodification__confGcs .
+
+prosafe-core4:core__gcsVerbCodification__inapWordGcs owl:sameAs prosafe-core3:core__gcsVerbCodification__inapWordGcs .
+
+prosafe-core4:core__gcsVerbCodification__incomSounGcs owl:sameAs prosafe-core3:core__gcsVerbCodification__incomSounGcs .
+
+prosafe-core4:core__gcsVerbCodification__noVerbGcs owl:sameAs prosafe-core3:core__gcsVerbCodification__noVerbGcs .
+
+prosafe-core4:core__gcsVerbCodification__orientGcs owl:sameAs prosafe-core3:core__gcsVerbCodification__orientGcs .
+
+prosafe-core4:core__gcsVerbCodification__unknownGcs owl:sameAs prosafe-core3:core__gcsVerbCodification__unknownGcs .
+
+prosafe-core4:core__gcs__value owl:equivalentProperty prosafe-core3:core__gcs__value .
+
+prosafe-core4:core__genderClear__value owl:equivalentProperty prosafe-core3:core__genderClear__value .
+
+prosafe-core4:core__gender__value owl:equivalentProperty prosafe-core3:core__gender__value .
+
+prosafe-core4:core__gestAge__value owl:equivalentProperty prosafe-core3:core__gestAge__value .
+
+prosafe-core4:core__height__value owl:equivalentProperty prosafe-core3:core__height__value .
+
+prosafe-core4:core__hepaticFailure__admissionValue owl:equivalentProperty prosafe-core3:core__hepaticFailure__admissionValue .
+
+prosafe-core4:core__hepaticFailure__stayValue owl:equivalentProperty prosafe-core3:core__hepaticFailure__stayValue .
+
+prosafe-core4:core__hospAdmDate__value owl:equivalentProperty prosafe-core3:core__hospAdmDate__value .
+
+prosafe-core4:core__hospDisDate__value owl:equivalentProperty prosafe-core3:core__hospDisDate__value .
+
+prosafe-core4:core__hospOutCodificationIT__disAss owl:sameAs prosafe-core3:core__hospOutCodificationIT__disAss .
+
+prosafe-core4:core__hospOutCodificationIT__disHome owl:sameAs prosafe-core3:core__hospOutCodificationIT__disHome .
+
+prosafe-core4:core__hospOutCodificationIT__disVol owl:sameAs prosafe-core3:core__hospOutCodificationIT__disVol .
+
+prosafe-core4:core__hospOutCodificationIT__hospDead owl:sameAs prosafe-core3:core__hospOutCodificationIT__hospDead .
+
+prosafe-core4:core__hospOutCodificationIT__otherHosp owl:sameAs prosafe-core3:core__hospOutCodificationIT__otherHosp .
+
+prosafe-core4:core__hospOutCodificationIT__otherTransf owl:sameAs prosafe-core3:core__hospOutCodificationIT__otherTransf .
+
+prosafe-core4:core__hospOutCodification__alive owl:sameAs prosafe-core3:core__hospOutCodification__alive .
+
+prosafe-core4:core__hospOutCodification__hospDead owl:sameAs prosafe-core3:core__hospOutCodification__hospDead .
+
+prosafe-core4:core__hospOutTransfCodification__dayHospOther owl:sameAs prosafe-core3:core__hospOutTransfCodification__dayHospOther .
+
+prosafe-core4:core__hospOutTransfCodification__dayHospSame owl:sameAs prosafe-core3:core__hospOutTransfCodification__dayHospSame .
+
+prosafe-core4:core__hospOutTransfCodification__rehabOther owl:sameAs prosafe-core3:core__hospOutTransfCodification__rehabOther .
+
+prosafe-core4:core__hospOutTransfCodification__rehabSame owl:sameAs prosafe-core3:core__hospOutTransfCodification__rehabSame .
+
+prosafe-core4:core__hospOutTransf__value owl:equivalentProperty prosafe-core3:core__hospOutTransf__value .
+
+prosafe-core4:core__hospOutcomeIT__value owl:equivalentProperty prosafe-core3:core__hospOutcomeIT__value .
+
+prosafe-core4:core__hospOutcomeLatest__value owl:equivalentProperty prosafe-core3:core__hospOutcomeLatest__value .
+
+prosafe-core4:core__hospOutcomeQuick__value owl:equivalentProperty prosafe-core3:core__hospOutcomeQuick__value .
+
+prosafe-core4:core__hospOutcome__value owl:equivalentProperty prosafe-core3:core__hospOutcome__value .
+
+prosafe-core4:core__hospTerminal__value owl:equivalentProperty prosafe-core3:core__hospTerminal__value .
+
+prosafe-core4:core__icuAdmDate__icuAdmDate owl:equivalentProperty prosafe-core3:core__icuAdmDate__icuAdmDate .
+
+prosafe-core4:core__icuAdmDate__icuAdmTime owl:equivalentProperty prosafe-core3:core__icuAdmDate__icuAdmTime .
+
+prosafe-core4:core__icuDisDate__value owl:equivalentProperty prosafe-core3:core__icuDisDate__value .
+
+prosafe-core4:core__icuDisTime__value owl:equivalentProperty prosafe-core3:core__icuDisTime__value .
+
+prosafe-core4:core__icuDiseases owl:equivalentProperty prosafe-core3:core__icuDiseases .
+
+prosafe-core4:core__icuDiseases__value owl:equivalentProperty prosafe-core3:core__icuDiseases__value .
+
+prosafe-core4:core__icuFailures owl:equivalentProperty prosafe-core3:core__icuFailures .
+
+prosafe-core4:core__icuFailures__value owl:equivalentProperty prosafe-core3:core__icuFailures__value .
+
+prosafe-core4:core__icuFirstBacteraemia__value owl:equivalentProperty prosafe-core3:core__icuFirstBacteraemia__value .
+
+prosafe-core4:core__icuFirstPneumonia__value owl:equivalentProperty prosafe-core3:core__icuFirstPneumonia__value .
+
+prosafe-core4:core__icuInfections owl:equivalentProperty prosafe-core3:core__icuInfections .
+
+prosafe-core4:core__icuInfections__value owl:equivalentProperty prosafe-core3:core__icuInfections__value .
+
+prosafe-core4:core__icuOutCodification__dead owl:sameAs prosafe-core3:core__icuOutCodification__dead .
+
+prosafe-core4:core__icuOutCodification__dischHome owl:sameAs prosafe-core3:core__icuOutCodification__dischHome .
+
+prosafe-core4:core__icuOutCodification__transfOthHosp owl:sameAs prosafe-core3:core__icuOutCodification__transfOthHosp .
+
+prosafe-core4:core__icuOutCodification__transfSameHosp owl:sameAs prosafe-core3:core__icuOutCodification__transfSameHosp .
+
+prosafe-core4:core__icuOutWhereCodification__dayHosp owl:sameAs prosafe-core3:core__icuOutWhereCodification__dayHosp .
+
+prosafe-core4:core__icuOutWhereCodification__highDepCareUnitTransf owl:sameAs prosafe-core3:core__icuOutWhereCodification__highDepCareUnitTransf .
+
+prosafe-core4:core__icuOutWhereCodification__icuTransfOut owl:sameAs prosafe-core3:core__icuOutWhereCodification__icuTransfOut .
+
+prosafe-core4:core__icuOutWhereCodification__rehab owl:sameAs prosafe-core3:core__icuOutWhereCodification__rehab .
+
+prosafe-core4:core__icuOutWhereCodification__wardIcuOut owl:sameAs prosafe-core3:core__icuOutWhereCodification__wardIcuOut .
+
+prosafe-core4:core__icuOutcomeOtherICU__value owl:equivalentProperty prosafe-core3:core__icuOutcomeOtherICU__value .
+
+prosafe-core4:core__icuOutcomeOther__value owl:equivalentProperty prosafe-core3:core__icuOutcomeOther__value .
+
+prosafe-core4:core__icuOutcome__value owl:equivalentProperty prosafe-core3:core__icuOutcome__value .
+
+prosafe-core4:core__icuSevInfections__value owl:equivalentProperty prosafe-core3:core__icuSevInfections__value .
+
+prosafe-core4:core__icuTypeCodification__generalAdult owl:sameAs prosafe-core3:core__icuTypeCodification__generalAdult .
+
+prosafe-core4:core__icuTypeCodification__neonaltal owl:sameAs prosafe-core3:core__icuTypeCodification__neonaltal .
+
+prosafe-core4:core__icuTypeCodification__other owl:sameAs prosafe-core3:core__icuTypeCodification__other .
+
+prosafe-core4:core__icuTypeCodification__paediatric owl:sameAs prosafe-core3:core__icuTypeCodification__paediatric .
+
+prosafe-core4:core__infectCodification__CathetNoBact owl:sameAs prosafe-core3:core__infectCodification__CathetNoBact .
+
+prosafe-core4:core__infectCodification__acHepat owl:sameAs prosafe-core3:core__infectCodification__acHepat .
+
+prosafe-core4:core__infectCodification__arterInf owl:sameAs prosafe-core3:core__infectCodification__arterInf .
+
+prosafe-core4:core__infectCodification__bacter owl:sameAs prosafe-core3:core__infectCodification__bacter .
+
+prosafe-core4:core__infectCodification__boneNoSurg owl:sameAs prosafe-core3:core__infectCodification__boneNoSurg .
+
+prosafe-core4:core__infectCodification__bonePostSurg owl:sameAs prosafe-core3:core__infectCodification__bonePostSurg .
+
+prosafe-core4:core__infectCodification__burnInf owl:sameAs prosafe-core3:core__infectCodification__burnInf .
+
+prosafe-core4:core__infectCodification__cathetBact owl:sameAs prosafe-core3:core__infectCodification__cathetBact .
+
+prosafe-core4:core__infectCodification__chole owl:sameAs prosafe-core3:core__infectCodification__chole .
+
+prosafe-core4:core__infectCodification__clinSepsis owl:sameAs prosafe-core3:core__infectCodification__clinSepsis .
+
+prosafe-core4:core__infectCodification__cmv owl:sameAs prosafe-core3:core__infectCodification__cmv .
+
+prosafe-core4:core__infectCodification__cnsNoSurg owl:sameAs prosafe-core3:core__infectCodification__cnsNoSurg .
+
+prosafe-core4:core__infectCodification__cnsPostSurg owl:sameAs prosafe-core3:core__infectCodification__cnsPostSurg .
+
+prosafe-core4:core__infectCodification__endocNoSurg owl:sameAs prosafe-core3:core__infectCodification__endocNoSurg .
+
+prosafe-core4:core__infectCodification__endocPostSurg owl:sameAs prosafe-core3:core__infectCodification__endocPostSurg .
+
+prosafe-core4:core__infectCodification__exRetAbs owl:sameAs prosafe-core3:core__infectCodification__exRetAbs .
+
+prosafe-core4:core__infectCodification__feverUnk owl:sameAs prosafe-core3:core__infectCodification__feverUnk .
+
+prosafe-core4:core__infectCodification__gastroent owl:sameAs prosafe-core3:core__infectCodification__gastroent .
+
+prosafe-core4:core__infectCodification__h1n1 owl:sameAs prosafe-core3:core__infectCodification__h1n1 .
+
+prosafe-core4:core__infectCodification__infPancre owl:sameAs prosafe-core3:core__infectCodification__infPancre .
+
+prosafe-core4:core__infectCodification__lepto owl:sameAs prosafe-core3:core__infectCodification__lepto .
+
+prosafe-core4:core__infectCodification__lowRespTractInf owl:sameAs prosafe-core3:core__infectCodification__lowRespTractInf .
+
+prosafe-core4:core__infectCodification__mediaNoSurg owl:sameAs prosafe-core3:core__infectCodification__mediaNoSurg .
+
+prosafe-core4:core__infectCodification__mediaPostSurg owl:sameAs prosafe-core3:core__infectCodification__mediaPostSurg .
+
+prosafe-core4:core__infectCodification__myocarditis owl:sameAs prosafe-core3:core__infectCodification__myocarditis .
+
+prosafe-core4:core__infectCodification__necrEnter owl:sameAs prosafe-core3:core__infectCodification__necrEnter .
+
+prosafe-core4:core__infectCodification__orthInf owl:sameAs prosafe-core3:core__infectCodification__orthInf .
+
+prosafe-core4:core__infectCodification__othFung owl:sameAs prosafe-core3:core__infectCodification__othFung .
+
+prosafe-core4:core__infectCodification__othIntrAbd owl:sameAs prosafe-core3:core__infectCodification__othIntrAbd .
+
+prosafe-core4:core__infectCodification__othPar owl:sameAs prosafe-core3:core__infectCodification__othPar .
+
+prosafe-core4:core__infectCodification__othViral owl:sameAs prosafe-core3:core__infectCodification__othViral .
+
+prosafe-core4:core__infectCodification__pericNoSurg owl:sameAs prosafe-core3:core__infectCodification__pericNoSurg .
+
+prosafe-core4:core__infectCodification__pericPostSurg owl:sameAs prosafe-core3:core__infectCodification__pericPostSurg .
+
+prosafe-core4:core__infectCodification__peritPostSurg owl:sameAs prosafe-core3:core__infectCodification__peritPostSurg .
+
+prosafe-core4:core__infectCodification__pleur owl:sameAs prosafe-core3:core__infectCodification__pleur .
+
+prosafe-core4:core__infectCodification__pneumonia owl:sameAs prosafe-core3:core__infectCodification__pneumonia .
+
+prosafe-core4:core__infectCodification__primPerit owl:sameAs prosafe-core3:core__infectCodification__primPerit .
+
+prosafe-core4:core__infectCodification__repSystNoSurg owl:sameAs prosafe-core3:core__infectCodification__repSystNoSurg .
+
+prosafe-core4:core__infectCodification__repSystPostSurg owl:sameAs prosafe-core3:core__infectCodification__repSystPostSurg .
+
+prosafe-core4:core__infectCodification__secPerit owl:sameAs prosafe-core3:core__infectCodification__secPerit .
+
+prosafe-core4:core__infectCodification__sinusitis owl:sameAs prosafe-core3:core__infectCodification__sinusitis .
+
+prosafe-core4:core__infectCodification__skinNoSurg owl:sameAs prosafe-core3:core__infectCodification__skinNoSurg .
+
+prosafe-core4:core__infectCodification__skinPostSurg owl:sameAs prosafe-core3:core__infectCodification__skinPostSurg .
+
+prosafe-core4:core__infectCodification__subAbs owl:sameAs prosafe-core3:core__infectCodification__subAbs .
+
+prosafe-core4:core__infectCodification__tertPerit owl:sameAs prosafe-core3:core__infectCodification__tertPerit .
+
+prosafe-core4:core__infectCodification__tetanus owl:sameAs prosafe-core3:core__infectCodification__tetanus .
+
+prosafe-core4:core__infectCodification__upRepsTractInf owl:sameAs prosafe-core3:core__infectCodification__upRepsTractInf .
+
+prosafe-core4:core__infectCodification__urinNoSurg owl:sameAs prosafe-core3:core__infectCodification__urinNoSurg .
+
+prosafe-core4:core__infectCodification__urinPostSurg owl:sameAs prosafe-core3:core__infectCodification__urinPostSurg .
+
+prosafe-core4:core__infectCodification__vascInf owl:sameAs prosafe-core3:core__infectCodification__vascInf .
+
+prosafe-core4:core__infectCodification__ventricul owl:sameAs prosafe-core3:core__infectCodification__ventricul .
+
+prosafe-core4:core__infections owl:equivalentProperty prosafe-core3:core__infections .
+
+prosafe-core4:core__infections__value owl:equivalentProperty prosafe-core3:core__infections__value .
+
+prosafe-core4:core__intervNonSurgNote__intervNonSurgNote owl:equivalentProperty prosafe-core3:core__intervNonSurgNote__intervNonSurgNote .
+
+prosafe-core4:core__intervNote__intervNote owl:equivalentProperty prosafe-core3:core__intervNote__intervNote .
+
+prosafe-core4:core__interventionNoneCodification__interventionNo owl:sameAs prosafe-core3:core__interventionNoneCodification__interventionNo .
+
+prosafe-core4:core__interventionNoneCodification__interventionYes owl:sameAs prosafe-core3:core__interventionNoneCodification__interventionYes .
+
+prosafe-core4:core__invMonDetailsCodification__lidco owl:sameAs prosafe-core3:core__invMonDetailsCodification__lidco .
+
+prosafe-core4:core__invMonDetailsCodification__othMonit owl:sameAs prosafe-core3:core__invMonDetailsCodification__othMonit .
+
+prosafe-core4:core__invMonDetailsCodification__picco owl:sameAs prosafe-core3:core__invMonDetailsCodification__picco .
+
+prosafe-core4:core__invMonDetailsCodification__swanGanz owl:sameAs prosafe-core3:core__invMonDetailsCodification__swanGanz .
+
+prosafe-core4:core__invMonDetailsCodification__vigileo owl:sameAs prosafe-core3:core__invMonDetailsCodification__vigileo .
+
+prosafe-core4:core__invasivePeriods__value owl:equivalentProperty prosafe-core3:core__invasivePeriods__value .
+
+prosafe-core4:core__invasiveVentilationOnAdmission__value owl:equivalentProperty prosafe-core3:core__invasiveVentilationOnAdmission__value .
+
+prosafe-core4:core__isAdmittedPostProcedure__value owl:equivalentProperty prosafe-core3:core__isAdmittedPostProcedure__value .
+
+prosafe-core4:core__isElective__value owl:equivalentProperty prosafe-core3:core__isElective__value .
+
+prosafe-core4:core__lastName__lastName owl:equivalentProperty prosafe-core3:core__lastName__lastName .
+
+prosafe-core4:core__metaFailCodification__baseMetaFail owl:sameAs prosafe-core3:core__metaFailCodification__baseMetaFail .
+
+prosafe-core4:core__metaFailCodification__noMetaFail owl:sameAs prosafe-core3:core__metaFailCodification__noMetaFail .
+
+prosafe-core4:core__metaFailCodification__phMetaFail owl:sameAs prosafe-core3:core__metaFailCodification__phMetaFail .
+
+prosafe-core4:core__metabolicFail__value owl:equivalentProperty prosafe-core3:core__metabolicFail__value .
+
+prosafe-core4:core__metabolicFailure__admissionValue owl:equivalentProperty prosafe-core3:core__metabolicFailure__admissionValue .
+
+prosafe-core4:core__metabolicFailure__stayValue owl:equivalentProperty prosafe-core3:core__metabolicFailure__stayValue .
+
+prosafe-core4:core__months__value owl:equivalentProperty prosafe-core3:core__months__value .
+
+prosafe-core4:core__nReadmCodification__greaterThan2 owl:sameAs prosafe-core3:core__nReadmCodification__greaterThan2 .
+
+prosafe-core4:core__nReadmCodification__lowerEqualThan2 owl:sameAs prosafe-core3:core__nReadmCodification__lowerEqualThan2 .
+
+prosafe-core4:core__nReadmCodification__none owl:sameAs prosafe-core3:core__nReadmCodification__none .
+
+prosafe-core4:core__nReadmCodification__unknown owl:sameAs prosafe-core3:core__nReadmCodification__unknown .
+
+prosafe-core4:core__neurologicalFailure__admissionValue owl:equivalentProperty prosafe-core3:core__neurologicalFailure__admissionValue .
+
+prosafe-core4:core__neurologicalFailure__stayValue owl:equivalentProperty prosafe-core3:core__neurologicalFailure__stayValue .
+
+prosafe-core4:core__newFailCodification__newAcSkinFail owl:sameAs prosafe-core3:core__newFailCodification__newAcSkinFail .
+
+prosafe-core4:core__newFailCodification__newAnaphShock owl:sameAs prosafe-core3:core__newFailCodification__newAnaphShock .
+
+prosafe-core4:core__newFailCodification__newCardShock owl:sameAs prosafe-core3:core__newFailCodification__newCardShock .
+
+prosafe-core4:core__newFailCodification__newCerComa owl:sameAs prosafe-core3:core__newFailCodification__newCerComa .
+
+prosafe-core4:core__newFailCodification__newCoagDis owl:sameAs prosafe-core3:core__newFailCodification__newCoagDis .
+
+prosafe-core4:core__newFailCodification__newHaemShock owl:sameAs prosafe-core3:core__newFailCodification__newHaemShock .
+
+prosafe-core4:core__newFailCodification__newHypShock owl:sameAs prosafe-core3:core__newFailCodification__newHypShock .
+
+prosafe-core4:core__newFailCodification__newMetComa owl:sameAs prosafe-core3:core__newFailCodification__newMetComa .
+
+prosafe-core4:core__newFailCodification__newNeedVentInt owl:sameAs prosafe-core3:core__newFailCodification__newNeedVentInt .
+
+prosafe-core4:core__newFailCodification__newNeedVentTypeI owl:sameAs prosafe-core3:core__newFailCodification__newNeedVentTypeI .
+
+prosafe-core4:core__newFailCodification__newNeedVentTypeII owl:sameAs prosafe-core3:core__newFailCodification__newNeedVentTypeII .
+
+prosafe-core4:core__newFailCodification__newNeurShock owl:sameAs prosafe-core3:core__newFailCodification__newNeurShock .
+
+prosafe-core4:core__newFailCodification__newOthShock owl:sameAs prosafe-core3:core__newFailCodification__newOthShock .
+
+prosafe-core4:core__newFailCodification__newPostanComa owl:sameAs prosafe-core3:core__newFailCodification__newPostanComa .
+
+prosafe-core4:core__newFailCodification__newRenFailMild owl:sameAs prosafe-core3:core__newFailCodification__newRenFailMild .
+
+prosafe-core4:core__newFailCodification__newRenFailMod owl:sameAs prosafe-core3:core__newFailCodification__newRenFailMod .
+
+prosafe-core4:core__newFailCodification__newRenFailSev owl:sameAs prosafe-core3:core__newFailCodification__newRenFailSev .
+
+prosafe-core4:core__newFailCodification__newSeptShock owl:sameAs prosafe-core3:core__newFailCodification__newSeptShock .
+
+prosafe-core4:core__nhsNumber__value owl:equivalentProperty prosafe-core3:core__nhsNumber__value .
+
+prosafe-core4:core__nonSurgInRange__value owl:equivalentProperty prosafe-core3:core__nonSurgInRange__value .
+
+prosafe-core4:core__nonSurgIntervCodification__intervCard owl:sameAs prosafe-core3:core__nonSurgIntervCodification__intervCard .
+
+prosafe-core4:core__nonSurgIntervCodification__intervEndo owl:sameAs prosafe-core3:core__nonSurgIntervCodification__intervEndo .
+
+prosafe-core4:core__nonSurgIntervCodification__intervNeuro owl:sameAs prosafe-core3:core__nonSurgIntervCodification__intervNeuro .
+
+prosafe-core4:core__nonSurgIntervCodification__intervRad owl:sameAs prosafe-core3:core__nonSurgIntervCodification__intervRad .
+
+prosafe-core4:core__nonSurgIntervCodification__missing owl:sameAs prosafe-core3:core__nonSurgIntervCodification__missing .
+
+prosafe-core4:core__nonSurgIntervCodification__none owl:sameAs prosafe-core3:core__nonSurgIntervCodification__none .
+
+prosafe-core4:core__nonSurgProcCodification__electNonSurgProc owl:sameAs prosafe-core3:core__nonSurgProcCodification__electNonSurgProc .
+
+prosafe-core4:core__nonSurgProcCodification__electNonSurgProcPed owl:sameAs prosafe-core3:core__nonSurgProcCodification__electNonSurgProcPed .
+
+prosafe-core4:core__nonSurgProcCodification__emergNonSurgProc owl:sameAs prosafe-core3:core__nonSurgProcCodification__emergNonSurgProc .
+
+prosafe-core4:core__nonSurgProcCodification__noNonSurgProc owl:sameAs prosafe-core3:core__nonSurgProcCodification__noNonSurgProc .
+
+prosafe-core4:core__nonSurgicalDetail owl:equivalentProperty prosafe-core3:core__nonSurgicalDetail .
+
+prosafe-core4:core__nonSurgicalDetail__nonSurgicalDate owl:equivalentProperty prosafe-core3:core__nonSurgicalDetail__nonSurgicalDate .
+
+prosafe-core4:core__nonSurgicalDetail__nonSurgicalId owl:equivalentProperty prosafe-core3:core__nonSurgicalDetail__nonSurgicalId .
+
+prosafe-core4:core__nonSurgicalList owl:equivalentProperty prosafe-core3:core__nonSurgicalList .
+
+prosafe-core4:core__nonSurgicalList__nonSurgicalList owl:equivalentProperty prosafe-core3:core__nonSurgicalList__nonSurgicalList .
+
+prosafe-core4:core__nonSurgicalNoneOption__value owl:equivalentProperty prosafe-core3:core__nonSurgicalNoneOption__value .
+
+prosafe-core4:core__orgFailCodification__cardFail owl:sameAs prosafe-core3:core__orgFailCodification__cardFail .
+
+prosafe-core4:core__orgFailCodification__coagFail owl:sameAs prosafe-core3:core__orgFailCodification__coagFail .
+
+prosafe-core4:core__orgFailCodification__hepFail owl:sameAs prosafe-core3:core__orgFailCodification__hepFail .
+
+prosafe-core4:core__orgFailCodification__metFail owl:sameAs prosafe-core3:core__orgFailCodification__metFail .
+
+prosafe-core4:core__orgFailCodification__neurFail owl:sameAs prosafe-core3:core__orgFailCodification__neurFail .
+
+prosafe-core4:core__orgFailCodification__noFail owl:sameAs prosafe-core3:core__orgFailCodification__noFail .
+
+prosafe-core4:core__orgFailCodification__renFail owl:sameAs prosafe-core3:core__orgFailCodification__renFail .
+
+prosafe-core4:core__orgFailCodification__respFail owl:sameAs prosafe-core3:core__orgFailCodification__respFail .
+
+prosafe-core4:core__orgFailCodification__skinFail owl:sameAs prosafe-core3:core__orgFailCodification__skinFail .
+
+prosafe-core4:core__outTreatCodification__outAntiep owl:sameAs prosafe-core3:core__outTreatCodification__outAntiep .
+
+prosafe-core4:core__outTreatCodification__outDial owl:sameAs prosafe-core3:core__outTreatCodification__outDial .
+
+prosafe-core4:core__outTreatCodification__outDiur owl:sameAs prosafe-core3:core__outTreatCodification__outDiur .
+
+prosafe-core4:core__outTreatCodification__outInotro owl:sameAs prosafe-core3:core__outTreatCodification__outInotro .
+
+prosafe-core4:core__outTreatCodification__outLimb owl:sameAs prosafe-core3:core__outTreatCodification__outLimb .
+
+prosafe-core4:core__outTreatCodification__outMotPhys owl:sameAs prosafe-core3:core__outTreatCodification__outMotPhys .
+
+prosafe-core4:core__outTreatCodification__outNasogast owl:sameAs prosafe-core3:core__outTreatCodification__outNasogast .
+
+prosafe-core4:core__outTreatCodification__outOstom owl:sameAs prosafe-core3:core__outTreatCodification__outOstom .
+
+prosafe-core4:core__outTreatCodification__outParentNutr owl:sameAs prosafe-core3:core__outTreatCodification__outParentNutr .
+
+prosafe-core4:core__outTreatCodification__outPost owl:sameAs prosafe-core3:core__outTreatCodification__outPost .
+
+prosafe-core4:core__outTreatCodification__outPsyc owl:sameAs prosafe-core3:core__outTreatCodification__outPsyc .
+
+prosafe-core4:core__outTreatCodification__outRespPhys owl:sameAs prosafe-core3:core__outTreatCodification__outRespPhys .
+
+prosafe-core4:core__outTreatCodification__outRespSuppInv owl:sameAs prosafe-core3:core__outTreatCodification__outRespSuppInv .
+
+prosafe-core4:core__outTreatCodification__outRespSuppNoInv owl:sameAs prosafe-core3:core__outTreatCodification__outRespSuppNoInv .
+
+prosafe-core4:core__outTreatCodification__outRespSuppOxy owl:sameAs prosafe-core3:core__outTreatCodification__outRespSuppOxy .
+
+prosafe-core4:core__outTreatCodification__outTracheo owl:sameAs prosafe-core3:core__outTreatCodification__outTracheo .
+
+prosafe-core4:core__patSed24Codification__notSed owl:sameAs prosafe-core3:core__patSed24Codification__notSed .
+
+prosafe-core4:core__patSed24Codification__sedNoWind owl:sameAs prosafe-core3:core__patSed24Codification__sedNoWind .
+
+prosafe-core4:core__patSed24Codification__sedWind owl:sameAs prosafe-core3:core__patSed24Codification__sedWind .
+
+prosafe-core4:core__pedGcsCodification__noEyeAbove1 owl:sameAs prosafe-core3:core__pedGcsCodification__noEyeAbove1 .
+
+prosafe-core4:core__pedGcsCodification__noEyeBelow1 owl:sameAs prosafe-core3:core__pedGcsCodification__noEyeBelow1 .
+
+prosafe-core4:core__pedGcsCodification__painAbove1 owl:sameAs prosafe-core3:core__pedGcsCodification__painAbove1 .
+
+prosafe-core4:core__pedGcsCodification__painBelow1 owl:sameAs prosafe-core3:core__pedGcsCodification__painBelow1 .
+
+prosafe-core4:core__pedGcsCodification__shoutBelow1 owl:sameAs prosafe-core3:core__pedGcsCodification__shoutBelow1 .
+
+prosafe-core4:core__pedGcsCodification__spontAbove1 owl:sameAs prosafe-core3:core__pedGcsCodification__spontAbove1 .
+
+prosafe-core4:core__pedGcsCodification__spontBelow1 owl:sameAs prosafe-core3:core__pedGcsCodification__spontBelow1 .
+
+prosafe-core4:core__pedGcsCodification__verbComAbove1 owl:sameAs prosafe-core3:core__pedGcsCodification__verbComAbove1 .
+
+prosafe-core4:core__pedMotorGcsCodification__extPainAbove1 owl:sameAs prosafe-core3:core__pedMotorGcsCodification__extPainAbove1 .
+
+prosafe-core4:core__pedMotorGcsCodification__extPainBelow1 owl:sameAs prosafe-core3:core__pedMotorGcsCodification__extPainBelow1 .
+
+prosafe-core4:core__pedMotorGcsCodification__flexPainAbove1 owl:sameAs prosafe-core3:core__pedMotorGcsCodification__flexPainAbove1 .
+
+prosafe-core4:core__pedMotorGcsCodification__flexPainBelow1 owl:sameAs prosafe-core3:core__pedMotorGcsCodification__flexPainBelow1 .
+
+prosafe-core4:core__pedMotorGcsCodification__locPainAbove1 owl:sameAs prosafe-core3:core__pedMotorGcsCodification__locPainAbove1 .
+
+prosafe-core4:core__pedMotorGcsCodification__locPainBelow1 owl:sameAs prosafe-core3:core__pedMotorGcsCodification__locPainBelow1 .
+
+prosafe-core4:core__pedMotorGcsCodification__noMotAbove1 owl:sameAs prosafe-core3:core__pedMotorGcsCodification__noMotAbove1 .
+
+prosafe-core4:core__pedMotorGcsCodification__noMotBelow1 owl:sameAs prosafe-core3:core__pedMotorGcsCodification__noMotBelow1 .
+
+prosafe-core4:core__pedMotorGcsCodification__obComAbove1 owl:sameAs prosafe-core3:core__pedMotorGcsCodification__obComAbove1 .
+
+prosafe-core4:core__pedVerbGcsCodification__appropBelow5 owl:sameAs prosafe-core3:core__pedVerbGcsCodification__appropBelow5 .
+
+prosafe-core4:core__pedVerbGcsCodification__criesBelow2 owl:sameAs prosafe-core3:core__pedVerbGcsCodification__criesBelow2 .
+
+prosafe-core4:core__pedVerbGcsCodification__criesBelow5 owl:sameAs prosafe-core3:core__pedVerbGcsCodification__criesBelow5 .
+
+prosafe-core4:core__pedVerbGcsCodification__disorAbove5 owl:sameAs prosafe-core3:core__pedVerbGcsCodification__disorAbove5 .
+
+prosafe-core4:core__pedVerbGcsCodification__gruntBelow2 owl:sameAs prosafe-core3:core__pedVerbGcsCodification__gruntBelow2 .
+
+prosafe-core4:core__pedVerbGcsCodification__gruntBelow5 owl:sameAs prosafe-core3:core__pedVerbGcsCodification__gruntBelow5 .
+
+prosafe-core4:core__pedVerbGcsCodification__inapAbove5 owl:sameAs prosafe-core3:core__pedVerbGcsCodification__inapAbove5 .
+
+prosafe-core4:core__pedVerbGcsCodification__inapBelow5 owl:sameAs prosafe-core3:core__pedVerbGcsCodification__inapBelow5 .
+
+prosafe-core4:core__pedVerbGcsCodification__inapCryBelow2 owl:sameAs prosafe-core3:core__pedVerbGcsCodification__inapCryBelow2 .
+
+prosafe-core4:core__pedVerbGcsCodification__incomprAbove5 owl:sameAs prosafe-core3:core__pedVerbGcsCodification__incomprAbove5 .
+
+prosafe-core4:core__pedVerbGcsCodification__noEyeBelow2 owl:sameAs prosafe-core3:core__pedVerbGcsCodification__noEyeBelow2 .
+
+prosafe-core4:core__pedVerbGcsCodification__noVerbAbove5 owl:sameAs prosafe-core3:core__pedVerbGcsCodification__noVerbAbove5 .
+
+prosafe-core4:core__pedVerbGcsCodification__noVerbBelow5 owl:sameAs prosafe-core3:core__pedVerbGcsCodification__noVerbBelow5 .
+
+prosafe-core4:core__pedVerbGcsCodification__orientAbove5 owl:sameAs prosafe-core3:core__pedVerbGcsCodification__orientAbove5 .
+
+prosafe-core4:core__pedVerbGcsCodification__smileBelow2 owl:sameAs prosafe-core3:core__pedVerbGcsCodification__smileBelow2 .
+
+prosafe-core4:core__pelodBP__value owl:equivalentProperty prosafe-core3:core__pelodBP__value .
+
+prosafe-core4:core__pelodCardScore__value owl:equivalentProperty prosafe-core3:core__pelodCardScore__value .
+
+prosafe-core4:core__pelodCreat__value owl:equivalentProperty prosafe-core3:core__pelodCreat__value .
+
+prosafe-core4:core__pelodCreatinineCodification__creatMin100 owl:sameAs prosafe-core3:core__pelodCreatinineCodification__creatMin100 .
+
+prosafe-core4:core__pelodCreatinineCodification__creatMin140 owl:sameAs prosafe-core3:core__pelodCreatinineCodification__creatMin140 .
+
+prosafe-core4:core__pelodCreatinineCodification__creatMin140Above12 owl:sameAs prosafe-core3:core__pelodCreatinineCodification__creatMin140Above12 .
+
+prosafe-core4:core__pelodCreatinineCodification__creatMin55 owl:sameAs prosafe-core3:core__pelodCreatinineCodification__creatMin55 .
+
+prosafe-core4:core__pelodCreatinineCodification__creatMore100 owl:sameAs prosafe-core3:core__pelodCreatinineCodification__creatMore100 .
+
+prosafe-core4:core__pelodCreatinineCodification__creatMore140 owl:sameAs prosafe-core3:core__pelodCreatinineCodification__creatMore140 .
+
+prosafe-core4:core__pelodCreatinineCodification__creatMore140Above12 owl:sameAs prosafe-core3:core__pelodCreatinineCodification__creatMore140Above12 .
+
+prosafe-core4:core__pelodCreatinineCodification__creatMore55 owl:sameAs prosafe-core3:core__pelodCreatinineCodification__creatMore55 .
+
+prosafe-core4:core__pelodGCSCodification__gcs1215 owl:sameAs prosafe-core3:core__pelodGCSCodification__gcs1215 .
+
+prosafe-core4:core__pelodGCSCodification__gcs3 owl:sameAs prosafe-core3:core__pelodGCSCodification__gcs3 .
+
+prosafe-core4:core__pelodGCSCodification__gcs46 owl:sameAs prosafe-core3:core__pelodGCSCodification__gcs46 .
+
+prosafe-core4:core__pelodGCSCodification__gcs711 owl:sameAs prosafe-core3:core__pelodGCSCodification__gcs711 .
+
+prosafe-core4:core__pelodHRCodification__min150Above12 owl:sameAs prosafe-core3:core__pelodHRCodification__min150Above12 .
+
+prosafe-core4:core__pelodHRCodification__min195Below12 owl:sameAs prosafe-core3:core__pelodHRCodification__min195Below12 .
+
+prosafe-core4:core__pelodHRCodification__more150Above12 owl:sameAs prosafe-core3:core__pelodHRCodification__more150Above12 .
+
+prosafe-core4:core__pelodHRCodification__more195Below12 owl:sameAs prosafe-core3:core__pelodHRCodification__more195Below12 .
+
+prosafe-core4:core__pelodHR__value owl:equivalentProperty prosafe-core3:core__pelodHR__value .
+
+prosafe-core4:core__pelodHemaScore__value owl:equivalentProperty prosafe-core3:core__pelodHemaScore__value .
+
+prosafe-core4:core__pelodHepScore__value owl:equivalentProperty prosafe-core3:core__pelodHepScore__value .
+
+prosafe-core4:core__pelodINRCodification__highINR owl:sameAs prosafe-core3:core__pelodINRCodification__highINR .
+
+prosafe-core4:core__pelodINRCodification__lowINR owl:sameAs prosafe-core3:core__pelodINRCodification__lowINR .
+
+prosafe-core4:core__pelodMechanical__value owl:equivalentProperty prosafe-core3:core__pelodMechanical__value .
+
+prosafe-core4:core__pelodNeuroScore__value owl:equivalentProperty prosafe-core3:core__pelodNeuroScore__value .
+
+prosafe-core4:core__pelodPACO2__value owl:equivalentProperty prosafe-core3:core__pelodPACO2__value .
+
+prosafe-core4:core__pelodPAFI__value owl:equivalentProperty prosafe-core3:core__pelodPAFI__value .
+
+prosafe-core4:core__pelodPDR__value owl:equivalentProperty prosafe-core3:core__pelodPDR__value .
+
+prosafe-core4:core__pelodPTINR__value owl:equivalentProperty prosafe-core3:core__pelodPTINR__value .
+
+prosafe-core4:core__pelodPaCo2Codification__paco2Min90 owl:sameAs prosafe-core3:core__pelodPaCo2Codification__paco2Min90 .
+
+prosafe-core4:core__pelodPaCo2Codification__paco2More90 owl:sameAs prosafe-core3:core__pelodPaCo2Codification__paco2More90 .
+
+prosafe-core4:core__pelodPao2Fio2Codification__pao2Min70 owl:sameAs prosafe-core3:core__pelodPao2Fio2Codification__pao2Min70 .
+
+prosafe-core4:core__pelodPao2Fio2Codification__pao2More70 owl:sameAs prosafe-core3:core__pelodPao2Fio2Codification__pao2More70 .
+
+prosafe-core4:core__pelodPlat__value owl:equivalentProperty prosafe-core3:core__pelodPlat__value .
+
+prosafe-core4:core__pelodPlateletsCodification__platMin35 owl:sameAs prosafe-core3:core__pelodPlateletsCodification__platMin35 .
+
+prosafe-core4:core__pelodPlateletsCodification__platMore35 owl:sameAs prosafe-core3:core__pelodPlateletsCodification__platMore35 .
+
+prosafe-core4:core__pelodPulScore__value owl:equivalentProperty prosafe-core3:core__pelodPulScore__value .
+
+prosafe-core4:core__pelodPupilCodification__bothFixed owl:sameAs prosafe-core3:core__pelodPupilCodification__bothFixed .
+
+prosafe-core4:core__pelodPupilCodification__bothReact owl:sameAs prosafe-core3:core__pelodPupilCodification__bothReact .
+
+prosafe-core4:core__pelodPupil__value owl:equivalentProperty prosafe-core3:core__pelodPupil__value .
+
+prosafe-core4:core__pelodRenalScore__value owl:equivalentProperty prosafe-core3:core__pelodRenalScore__value .
+
+prosafe-core4:core__pelodSBPCodification__min35Above1M owl:sameAs prosafe-core3:core__pelodSBPCodification__min35Above1M .
+
+prosafe-core4:core__pelodSBPCodification__min35Below1M owl:sameAs prosafe-core3:core__pelodSBPCodification__min35Below1M .
+
+prosafe-core4:core__pelodSBPCodification__min45Above1 owl:sameAs prosafe-core3:core__pelodSBPCodification__min45Above1 .
+
+prosafe-core4:core__pelodSBPCodification__min55Above12 owl:sameAs prosafe-core3:core__pelodSBPCodification__min55Above12 .
+
+prosafe-core4:core__pelodSBPCodification__min65Below1M owl:sameAs prosafe-core3:core__pelodSBPCodification__min65Below1M .
+
+prosafe-core4:core__pelodSBPCodification__min75Above1M owl:sameAs prosafe-core3:core__pelodSBPCodification__min75Above1M .
+
+prosafe-core4:core__pelodSBPCodification__min85Above1 owl:sameAs prosafe-core3:core__pelodSBPCodification__min85Above1 .
+
+prosafe-core4:core__pelodSBPCodification__min95Above12 owl:sameAs prosafe-core3:core__pelodSBPCodification__min95Above12 .
+
+prosafe-core4:core__pelodSBPCodification__more65Below1M owl:sameAs prosafe-core3:core__pelodSBPCodification__more65Below1M .
+
+prosafe-core4:core__pelodSBPCodification__more75Above1M owl:sameAs prosafe-core3:core__pelodSBPCodification__more75Above1M .
+
+prosafe-core4:core__pelodSBPCodification__more85Above1 owl:sameAs prosafe-core3:core__pelodSBPCodification__more85Above1 .
+
+prosafe-core4:core__pelodSBPCodification__more95Above12 owl:sameAs prosafe-core3:core__pelodSBPCodification__more95Above12 .
+
+prosafe-core4:core__pelodSGOT__value owl:equivalentProperty prosafe-core3:core__pelodSGOT__value .
+
+prosafe-core4:core__pelodScoreTotal__value owl:equivalentProperty prosafe-core3:core__pelodScoreTotal__value .
+
+prosafe-core4:core__pelodScore__value owl:equivalentProperty prosafe-core3:core__pelodScore__value .
+
+prosafe-core4:core__pelodSgotCodification__min950 owl:sameAs prosafe-core3:core__pelodSgotCodification__min950 .
+
+prosafe-core4:core__pelodSgotCodification__more950 owl:sameAs prosafe-core3:core__pelodSgotCodification__more950 .
+
+prosafe-core4:core__pelodWBC__value owl:equivalentProperty prosafe-core3:core__pelodWBC__value .
+
+prosafe-core4:core__pelodWbcCodification__wbcMin1 owl:sameAs prosafe-core3:core__pelodWbcCodification__wbcMin1 .
+
+prosafe-core4:core__pelodWbcCodification__wbcMin4 owl:sameAs prosafe-core3:core__pelodWbcCodification__wbcMin4 .
+
+prosafe-core4:core__pelodWbcCodification__wbcMore4 owl:sameAs prosafe-core3:core__pelodWbcCodification__wbcMore4 .
+
+prosafe-core4:core__pimBPCodification__cardiacArrest owl:sameAs prosafe-core3:core__pimBPCodification__cardiacArrest .
+
+prosafe-core4:core__pimBPCodification__shock owl:sameAs prosafe-core3:core__pimBPCodification__shock .
+
+prosafe-core4:core__pimBPCodification__unknown owl:sameAs prosafe-core3:core__pimBPCodification__unknown .
+
+prosafe-core4:core__pimBPCodification__value owl:sameAs prosafe-core3:core__pimBPCodification__value .
+
+prosafe-core4:core__pimBPReadonly__value owl:equivalentProperty prosafe-core3:core__pimBPReadonly__value .
+
+prosafe-core4:core__pimBPValue__value owl:equivalentProperty prosafe-core3:core__pimBPValue__value .
+
+prosafe-core4:core__pimBP__value owl:equivalentProperty prosafe-core3:core__pimBP__value .
+
+prosafe-core4:core__pimBaseExcessValue__value owl:equivalentProperty prosafe-core3:core__pimBaseExcessValue__value .
+
+prosafe-core4:core__pimBaseExcess__value owl:equivalentProperty prosafe-core3:core__pimBaseExcess__value .
+
+prosafe-core4:core__pimFIO2Value__value owl:equivalentProperty prosafe-core3:core__pimFIO2Value__value .
+
+prosafe-core4:core__pimFIO2__value owl:equivalentProperty prosafe-core3:core__pimFIO2__value .
+
+prosafe-core4:core__pimHighRiskCodification__hiv owl:sameAs prosafe-core3:core__pimHighRiskCodification__hiv .
+
+prosafe-core4:core__pimHighRiskCodification__hypoplastic owl:sameAs prosafe-core3:core__pimHighRiskCodification__hypoplastic .
+
+prosafe-core4:core__pimHighRiskCodification__none owl:sameAs prosafe-core3:core__pimHighRiskCodification__none .
+
+prosafe-core4:core__pimHighRiskReadonly__value owl:equivalentProperty prosafe-core3:core__pimHighRiskReadonly__value .
+
+prosafe-core4:core__pimHighRisk__value owl:equivalentProperty prosafe-core3:core__pimHighRisk__value .
+
+prosafe-core4:core__pimLowRiskCodification__apnoea owl:sameAs prosafe-core3:core__pimLowRiskCodification__apnoea .
+
+prosafe-core4:core__pimLowRiskCodification__asthma owl:sameAs prosafe-core3:core__pimLowRiskCodification__asthma .
+
+prosafe-core4:core__pimLowRiskCodification__bronchiolitis owl:sameAs prosafe-core3:core__pimLowRiskCodification__bronchiolitis .
+
+prosafe-core4:core__pimLowRiskCodification__croup owl:sameAs prosafe-core3:core__pimLowRiskCodification__croup .
+
+prosafe-core4:core__pimLowRiskCodification__ketoacidosis owl:sameAs prosafe-core3:core__pimLowRiskCodification__ketoacidosis .
+
+prosafe-core4:core__pimLowRiskCodification__none owl:sameAs prosafe-core3:core__pimLowRiskCodification__none .
+
+prosafe-core4:core__pimLowRiskReadonly__value owl:equivalentProperty prosafe-core3:core__pimLowRiskReadonly__value .
+
+prosafe-core4:core__pimLowRisk__value owl:equivalentProperty prosafe-core3:core__pimLowRisk__value .
+
+prosafe-core4:core__pimPAO2Value__value owl:equivalentProperty prosafe-core3:core__pimPAO2Value__value .
+
+prosafe-core4:core__pimPAO2__value owl:equivalentProperty prosafe-core3:core__pimPAO2__value .
+
+prosafe-core4:core__pimPupilsCodification__fixed owl:sameAs prosafe-core3:core__pimPupilsCodification__fixed .
+
+prosafe-core4:core__pimPupilsCodification__other owl:sameAs prosafe-core3:core__pimPupilsCodification__other .
+
+prosafe-core4:core__pimPupilsCodification__unknown owl:sameAs prosafe-core3:core__pimPupilsCodification__unknown .
+
+prosafe-core4:core__pimPupils__value owl:equivalentProperty prosafe-core3:core__pimPupils__value .
+
+prosafe-core4:core__pimTotal__value owl:equivalentProperty prosafe-core3:core__pimTotal__value .
+
+prosafe-core4:core__pimVAMReadonly__value owl:equivalentProperty prosafe-core3:core__pimVAMReadonly__value .
+
+prosafe-core4:core__pimVAM__value owl:equivalentProperty prosafe-core3:core__pimVAM__value .
+
+prosafe-core4:core__pimValueOrUnknownCodification__unknown owl:sameAs prosafe-core3:core__pimValueOrUnknownCodification__unknown .
+
+prosafe-core4:core__pimValueOrUnknownCodification__value owl:sameAs prosafe-core3:core__pimValueOrUnknownCodification__value .
+
+prosafe-core4:core__pimYesNoCodification__no owl:sameAs prosafe-core3:core__pimYesNoCodification__no .
+
+prosafe-core4:core__pimYesNoCodification__yes owl:sameAs prosafe-core3:core__pimYesNoCodification__yes .
+
+prosafe-core4:core__placeOfBirth__province owl:equivalentProperty prosafe-core3:core__placeOfBirth__province .
+
+prosafe-core4:core__placeOfBirth__town owl:equivalentProperty prosafe-core3:core__placeOfBirth__town .
+
+prosafe-core4:core__placeOfBirth__value owl:equivalentProperty prosafe-core3:core__placeOfBirth__value .
+
+prosafe-core4:core__postTranspCondAdm owl:equivalentProperty prosafe-core3:core__postTranspCondAdm .
+
+prosafe-core4:core__postTranspCondAdm__value owl:equivalentProperty prosafe-core3:core__postTranspCondAdm__value .
+
+prosafe-core4:core__pregnStatusCodification__currPregn owl:sameAs prosafe-core3:core__pregnStatusCodification__currPregn .
+
+prosafe-core4:core__pregnStatusCodification__notPregn owl:sameAs prosafe-core3:core__pregnStatusCodification__notPregn .
+
+prosafe-core4:core__pregnStatusCodification__postPartum owl:sameAs prosafe-core3:core__pregnStatusCodification__postPartum .
+
+prosafe-core4:core__pregnancy__value owl:equivalentProperty prosafe-core3:core__pregnancy__value .
+
+prosafe-core4:core__prevAdm owl:equivalentProperty prosafe-core3:core__prevAdm .
+
+prosafe-core4:core__prevAdmNumber__value owl:equivalentProperty prosafe-core3:core__prevAdmNumber__value .
+
+prosafe-core4:core__prevAdm__value owl:equivalentProperty prosafe-core3:core__prevAdm__value .
+
+prosafe-core4:core__problemi__value owl:equivalentProperty prosafe-core3:core__problemi__value .
+
+prosafe-core4:core__procTreatCodification__antiarrhyt owl:sameAs prosafe-core3:core__procTreatCodification__antiarrhyt .
+
+prosafe-core4:core__procTreatCodification__antibMedProphyl owl:sameAs prosafe-core3:core__procTreatCodification__antibMedProphyl .
+
+prosafe-core4:core__procTreatCodification__antibSurgProphyl owl:sameAs prosafe-core3:core__procTreatCodification__antibSurgProphyl .
+
+prosafe-core4:core__procTreatCodification__artCath owl:sameAs prosafe-core3:core__procTreatCodification__artCath .
+
+prosafe-core4:core__procTreatCodification__bloodTransf owl:sameAs prosafe-core3:core__procTreatCodification__bloodTransf .
+
+prosafe-core4:core__procTreatCodification__centrVenCath owl:sameAs prosafe-core3:core__procTreatCodification__centrVenCath .
+
+prosafe-core4:core__procTreatCodification__clearTechDurSep owl:sameAs prosafe-core3:core__procTreatCodification__clearTechDurSep .
+
+prosafe-core4:core__procTreatCodification__contMonSc owl:sameAs prosafe-core3:core__procTreatCodification__contMonSc .
+
+prosafe-core4:core__procTreatCodification__cpr owl:sameAs prosafe-core3:core__procTreatCodification__cpr .
+
+prosafe-core4:core__procTreatCodification__dcShock owl:sameAs prosafe-core3:core__procTreatCodification__dcShock .
+
+prosafe-core4:core__procTreatCodification__ecmo owl:sameAs prosafe-core3:core__procTreatCodification__ecmo .
+
+prosafe-core4:core__procTreatCodification__empAntTher owl:sameAs prosafe-core3:core__procTreatCodification__empAntTher .
+
+prosafe-core4:core__procTreatCodification__entNutr owl:sameAs prosafe-core3:core__procTreatCodification__entNutr .
+
+prosafe-core4:core__procTreatCodification__fibro owl:sameAs prosafe-core3:core__procTreatCodification__fibro .
+
+prosafe-core4:core__procTreatCodification__haemod owl:sameAs prosafe-core3:core__procTreatCodification__haemod .
+
+prosafe-core4:core__procTreatCodification__haemof owl:sameAs prosafe-core3:core__procTreatCodification__haemof .
+
+prosafe-core4:core__procTreatCodification__hepClearTech owl:sameAs prosafe-core3:core__procTreatCodification__hepClearTech .
+
+prosafe-core4:core__procTreatCodification__hypotherm owl:sameAs prosafe-core3:core__procTreatCodification__hypotherm .
+
+prosafe-core4:core__procTreatCodification__iap owl:sameAs prosafe-core3:core__procTreatCodification__iap .
+
+prosafe-core4:core__procTreatCodification__iapb owl:sameAs prosafe-core3:core__procTreatCodification__iapb .
+
+prosafe-core4:core__procTreatCodification__ino owl:sameAs prosafe-core3:core__procTreatCodification__ino .
+
+prosafe-core4:core__procTreatCodification__invVentil owl:sameAs prosafe-core3:core__procTreatCodification__invVentil .
+
+prosafe-core4:core__procTreatCodification__invasMonCardOut owl:sameAs prosafe-core3:core__procTreatCodification__invasMonCardOut .
+
+prosafe-core4:core__procTreatCodification__massBloodTransf owl:sameAs prosafe-core3:core__procTreatCodification__massBloodTransf .
+
+prosafe-core4:core__procTreatCodification__noInvVentil owl:sameAs prosafe-core3:core__procTreatCodification__noInvVentil .
+
+prosafe-core4:core__procTreatCodification__oxygTher owl:sameAs prosafe-core3:core__procTreatCodification__oxygTher .
+
+prosafe-core4:core__procTreatCodification__parentNutr owl:sameAs prosafe-core3:core__procTreatCodification__parentNutr .
+
+prosafe-core4:core__procTreatCodification__patCont owl:sameAs prosafe-core3:core__procTreatCodification__patCont .
+
+prosafe-core4:core__procTreatCodification__peritDialysis owl:sameAs prosafe-core3:core__procTreatCodification__peritDialysis .
+
+prosafe-core4:core__procTreatCodification__plasmapher owl:sameAs prosafe-core3:core__procTreatCodification__plasmapher .
+
+prosafe-core4:core__procTreatCodification__sdd owl:sameAs prosafe-core3:core__procTreatCodification__sdd .
+
+prosafe-core4:core__procTreatCodification__surfTreat owl:sameAs prosafe-core3:core__procTreatCodification__surfTreat .
+
+prosafe-core4:core__procTreatCodification__targAntTher owl:sameAs prosafe-core3:core__procTreatCodification__targAntTher .
+
+prosafe-core4:core__procTreatCodification__tempPac owl:sameAs prosafe-core3:core__procTreatCodification__tempPac .
+
+prosafe-core4:core__procTreatCodification__tracheost owl:sameAs prosafe-core3:core__procTreatCodification__tracheost .
+
+prosafe-core4:core__procTreatCodification__vacuTher owl:sameAs prosafe-core3:core__procTreatCodification__vacuTher .
+
+prosafe-core4:core__procTreatCodification__vasoactDrugs owl:sameAs prosafe-core3:core__procTreatCodification__vasoactDrugs .
+
+prosafe-core4:core__procTreatCodification__ventrAss owl:sameAs prosafe-core3:core__procTreatCodification__ventrAss .
+
+prosafe-core4:core__procedureDetail owl:equivalentProperty prosafe-core3:core__procedureDetail .
+
+prosafe-core4:core__procedureDetailIdOnly owl:equivalentProperty prosafe-core3:core__procedureDetailIdOnly .
+
+prosafe-core4:core__procedureDetailIdOnly__procedureId owl:equivalentProperty prosafe-core3:core__procedureDetailIdOnly__procedureId .
+
+prosafe-core4:core__procedureDetailIdOnly__procedureNote owl:equivalentProperty prosafe-core3:core__procedureDetailIdOnly__procedureNote .
+
+prosafe-core4:core__procedureDetailInvMon owl:equivalentProperty prosafe-core3:core__procedureDetailInvMon .
+
+prosafe-core4:core__procedureDetailInvMon__procedureAdmittedWith owl:equivalentProperty prosafe-core3:core__procedureDetailInvMon__procedureAdmittedWith .
+
+prosafe-core4:core__procedureDetailInvMon__procedureDetail owl:equivalentProperty prosafe-core3:core__procedureDetailInvMon__procedureDetail .
+
+prosafe-core4:core__procedureDetailInvMon__procedureDischargedWith owl:equivalentProperty prosafe-core3:core__procedureDetailInvMon__procedureDischargedWith .
+
+prosafe-core4:core__procedureDetailInvMon__procedureEndDate owl:equivalentProperty prosafe-core3:core__procedureDetailInvMon__procedureEndDate .
+
+prosafe-core4:core__procedureDetailInvMon__procedureId owl:equivalentProperty prosafe-core3:core__procedureDetailInvMon__procedureId .
+
+prosafe-core4:core__procedureDetailInvMon__procedureNote owl:equivalentProperty prosafe-core3:core__procedureDetailInvMon__procedureNote .
+
+prosafe-core4:core__procedureDetailInvMon__procedureStartDate owl:equivalentProperty prosafe-core3:core__procedureDetailInvMon__procedureStartDate .
+
+prosafe-core4:core__procedureDetailSDD owl:equivalentProperty prosafe-core3:core__procedureDetailSDD .
+
+prosafe-core4:core__procedureDetailSDD__procedureDetail owl:equivalentProperty prosafe-core3:core__procedureDetailSDD__procedureDetail .
+
+prosafe-core4:core__procedureDetailSDD__procedureId owl:equivalentProperty prosafe-core3:core__procedureDetailSDD__procedureId .
+
+prosafe-core4:core__procedureDetailSDD__procedureNote owl:equivalentProperty prosafe-core3:core__procedureDetailSDD__procedureNote .
+
+prosafe-core4:core__procedureDetailStartOnly owl:equivalentProperty prosafe-core3:core__procedureDetailStartOnly .
+
+prosafe-core4:core__procedureDetailStartOnly__procedureId owl:equivalentProperty prosafe-core3:core__procedureDetailStartOnly__procedureId .
+
+prosafe-core4:core__procedureDetailStartOnly__procedureNote owl:equivalentProperty prosafe-core3:core__procedureDetailStartOnly__procedureNote .
+
+prosafe-core4:core__procedureDetailStartOnly__procedureStartDate owl:equivalentProperty prosafe-core3:core__procedureDetailStartOnly__procedureStartDate .
+
+prosafe-core4:core__procedureDetailSurfactant owl:equivalentProperty prosafe-core3:core__procedureDetailSurfactant .
+
+prosafe-core4:core__procedureDetailSurfactant__procedureDetail owl:equivalentProperty prosafe-core3:core__procedureDetailSurfactant__procedureDetail .
+
+prosafe-core4:core__procedureDetailSurfactant__procedureId owl:equivalentProperty prosafe-core3:core__procedureDetailSurfactant__procedureId .
+
+prosafe-core4:core__procedureDetailSurfactant__procedureNote owl:equivalentProperty prosafe-core3:core__procedureDetailSurfactant__procedureNote .
+
+prosafe-core4:core__procedureDetailSurfactant__procedureStartDate owl:equivalentProperty prosafe-core3:core__procedureDetailSurfactant__procedureStartDate .
+
+prosafe-core4:core__procedureDetailTracheo owl:equivalentProperty prosafe-core3:core__procedureDetailTracheo .
+
+prosafe-core4:core__procedureDetailTracheo__procedureAdmittedWith owl:equivalentProperty prosafe-core3:core__procedureDetailTracheo__procedureAdmittedWith .
+
+prosafe-core4:core__procedureDetailTracheo__procedureDetail owl:equivalentProperty prosafe-core3:core__procedureDetailTracheo__procedureDetail .
+
+prosafe-core4:core__procedureDetailTracheo__procedureDischargedWith owl:equivalentProperty prosafe-core3:core__procedureDetailTracheo__procedureDischargedWith .
+
+prosafe-core4:core__procedureDetailTracheo__procedureEndDate owl:equivalentProperty prosafe-core3:core__procedureDetailTracheo__procedureEndDate .
+
+prosafe-core4:core__procedureDetailTracheo__procedureId owl:equivalentProperty prosafe-core3:core__procedureDetailTracheo__procedureId .
+
+prosafe-core4:core__procedureDetailTracheo__procedureNote owl:equivalentProperty prosafe-core3:core__procedureDetailTracheo__procedureNote .
+
+prosafe-core4:core__procedureDetailTracheo__procedureStartDate owl:equivalentProperty prosafe-core3:core__procedureDetailTracheo__procedureStartDate .
+
+prosafe-core4:core__procedureDetail__procedureAdmittedWith owl:equivalentProperty prosafe-core3:core__procedureDetail__procedureAdmittedWith .
+
+prosafe-core4:core__procedureDetail__procedureDischargedWith owl:equivalentProperty prosafe-core3:core__procedureDetail__procedureDischargedWith .
+
+prosafe-core4:core__procedureDetail__procedureEndDate owl:equivalentProperty prosafe-core3:core__procedureDetail__procedureEndDate .
+
+prosafe-core4:core__procedureDetail__procedureId owl:equivalentProperty prosafe-core3:core__procedureDetail__procedureId .
+
+prosafe-core4:core__procedureDetail__procedureNote owl:equivalentProperty prosafe-core3:core__procedureDetail__procedureNote .
+
+prosafe-core4:core__procedureDetail__procedureStartDate owl:equivalentProperty prosafe-core3:core__procedureDetail__procedureStartDate .
+
+prosafe-core4:core__procedureList owl:equivalentProperty prosafe-core3:core__procedureList .
+
+prosafe-core4:core__procedureList__procedureList owl:equivalentProperty prosafe-core3:core__procedureList__procedureList .
+
+prosafe-core4:core__procedureNoneOption__value owl:equivalentProperty prosafe-core3:core__procedureNoneOption__value .
+
+prosafe-core4:core__renFailCodification__renFailMild owl:sameAs prosafe-core3:core__renFailCodification__renFailMild .
+
+prosafe-core4:core__renFailCodification__renFailModerate owl:sameAs prosafe-core3:core__renFailCodification__renFailModerate .
+
+prosafe-core4:core__renFailCodification__renFailNone owl:sameAs prosafe-core3:core__renFailCodification__renFailNone .
+
+prosafe-core4:core__renFailCodification__renFailSevere owl:sameAs prosafe-core3:core__renFailCodification__renFailSevere .
+
+prosafe-core4:core__renalFail__value owl:equivalentProperty prosafe-core3:core__renalFail__value .
+
+prosafe-core4:core__renalFailure__admissionValue owl:equivalentProperty prosafe-core3:core__renalFailure__admissionValue .
+
+prosafe-core4:core__renalFailure__stayValue owl:equivalentProperty prosafe-core3:core__renalFailure__stayValue .
+
+prosafe-core4:core__respiratoryFailure__admissionValue owl:equivalentProperty prosafe-core3:core__respiratoryFailure__admissionValue .
+
+prosafe-core4:core__respiratoryFailure__stayValue owl:equivalentProperty prosafe-core3:core__respiratoryFailure__stayValue .
+
+prosafe-core4:core__sapsChronDisCodification__sapsAids owl:sameAs prosafe-core3:core__sapsChronDisCodification__sapsAids .
+
+prosafe-core4:core__sapsChronDisCodification__sapsMetCarc owl:sameAs prosafe-core3:core__sapsChronDisCodification__sapsMetCarc .
+
+prosafe-core4:core__sapsChronDisCodification__sapsNoChronDis owl:sameAs prosafe-core3:core__sapsChronDisCodification__sapsNoChronDis .
+
+prosafe-core4:core__sapsChronDisCodification__sapssHemMalig owl:sameAs prosafe-core3:core__sapsChronDisCodification__sapssHemMalig .
+
+prosafe-core4:core__sapsHRCodification__sapsHRMin120 owl:sameAs prosafe-core3:core__sapsHRCodification__sapsHRMin120 .
+
+prosafe-core4:core__sapsHRCodification__sapsHRMin160 owl:sameAs prosafe-core3:core__sapsHRCodification__sapsHRMin160 .
+
+prosafe-core4:core__sapsHRCodification__sapsHRMin40 owl:sameAs prosafe-core3:core__sapsHRCodification__sapsHRMin40 .
+
+prosafe-core4:core__sapsHRCodification__sapsHRMin70 owl:sameAs prosafe-core3:core__sapsHRCodification__sapsHRMin70 .
+
+prosafe-core4:core__sapsHRCodification__sapsHRMore160 owl:sameAs prosafe-core3:core__sapsHRCodification__sapsHRMore160 .
+
+prosafe-core4:core__sapsHco3Codification__sapsHco3Min15 owl:sameAs prosafe-core3:core__sapsHco3Codification__sapsHco3Min15 .
+
+prosafe-core4:core__sapsHco3Codification__sapsHco3Min20 owl:sameAs prosafe-core3:core__sapsHco3Codification__sapsHco3Min20 .
+
+prosafe-core4:core__sapsHco3Codification__sapsHco3More20 owl:sameAs prosafe-core3:core__sapsHco3Codification__sapsHco3More20 .
+
+prosafe-core4:core__sapsPotCodification__sapsPotMin3 owl:sameAs prosafe-core3:core__sapsPotCodification__sapsPotMin3 .
+
+prosafe-core4:core__sapsPotCodification__sapsPotMin5 owl:sameAs prosafe-core3:core__sapsPotCodification__sapsPotMin5 .
+
+prosafe-core4:core__sapsPotCodification__sapsPotMore5 owl:sameAs prosafe-core3:core__sapsPotCodification__sapsPotMore5 .
+
+prosafe-core4:core__sapsSerumCodification__sapsSerumMin180 owl:sameAs prosafe-core3:core__sapsSerumCodification__sapsSerumMin180 .
+
+prosafe-core4:core__sapsSerumCodification__sapsSerumMin60 owl:sameAs prosafe-core3:core__sapsSerumCodification__sapsSerumMin60 .
+
+prosafe-core4:core__sapsSerumCodification__sapsSerumMore180 owl:sameAs prosafe-core3:core__sapsSerumCodification__sapsSerumMore180 .
+
+prosafe-core4:core__sapsSodCodification__sapsSodMin125 owl:sameAs prosafe-core3:core__sapsSodCodification__sapsSodMin125 .
+
+prosafe-core4:core__sapsSodCodification__sapsSodMin145 owl:sameAs prosafe-core3:core__sapsSodCodification__sapsSodMin145 .
+
+prosafe-core4:core__sapsSodCodification__sapsSodMore145 owl:sameAs prosafe-core3:core__sapsSodCodification__sapsSodMore145 .
+
+prosafe-core4:core__sapsSofaAdm__value owl:equivalentProperty prosafe-core3:core__sapsSofaAdm__value .
+
+prosafe-core4:core__sapsSofaBP__value owl:equivalentProperty prosafe-core3:core__sapsSofaBP__value .
+
+prosafe-core4:core__sapsSofaBili__value owl:equivalentProperty prosafe-core3:core__sapsSofaBili__value .
+
+prosafe-core4:core__sapsSofaBilirCodification__sapsSofaBilirMin12 owl:sameAs prosafe-core3:core__sapsSofaBilirCodification__sapsSofaBilirMin12 .
+
+prosafe-core4:core__sapsSofaBilirCodification__sapsSofaBilirMin1dot2 owl:sameAs prosafe-core3:core__sapsSofaBilirCodification__sapsSofaBilirMin1dot2 .
+
+prosafe-core4:core__sapsSofaBilirCodification__sapsSofaBilirMin2 owl:sameAs prosafe-core3:core__sapsSofaBilirCodification__sapsSofaBilirMin2 .
+
+prosafe-core4:core__sapsSofaBilirCodification__sapsSofaBilirMin4 owl:sameAs prosafe-core3:core__sapsSofaBilirCodification__sapsSofaBilirMin4 .
+
+prosafe-core4:core__sapsSofaBilirCodification__sapsSofaBilirMin6 owl:sameAs prosafe-core3:core__sapsSofaBilirCodification__sapsSofaBilirMin6 .
+
+prosafe-core4:core__sapsSofaBilirCodification__sapsSofaBilirMore12 owl:sameAs prosafe-core3:core__sapsSofaBilirCodification__sapsSofaBilirMore12 .
+
+prosafe-core4:core__sapsSofaChronic__value owl:equivalentProperty prosafe-core3:core__sapsSofaChronic__value .
+
+prosafe-core4:core__sapsSofaCreat__value owl:equivalentProperty prosafe-core3:core__sapsSofaCreat__value .
+
+prosafe-core4:core__sapsSofaHCO3__value owl:equivalentProperty prosafe-core3:core__sapsSofaHCO3__value .
+
+prosafe-core4:core__sapsSofaHR__value owl:equivalentProperty prosafe-core3:core__sapsSofaHR__value .
+
+prosafe-core4:core__sapsSofaMAP__value owl:equivalentProperty prosafe-core3:core__sapsSofaMAP__value .
+
+prosafe-core4:core__sapsSofaPaFi__value owl:equivalentProperty prosafe-core3:core__sapsSofaPaFi__value .
+
+prosafe-core4:core__sapsSofaPao2Fio2Codification__sapsSofaPaO2Min100 owl:sameAs prosafe-core3:core__sapsSofaPao2Fio2Codification__sapsSofaPaO2Min100 .
+
+prosafe-core4:core__sapsSofaPao2Fio2Codification__sapsSofaPaO2Min200 owl:sameAs prosafe-core3:core__sapsSofaPao2Fio2Codification__sapsSofaPaO2Min200 .
+
+prosafe-core4:core__sapsSofaPao2Fio2Codification__sapsSofaPaO2Min300 owl:sameAs prosafe-core3:core__sapsSofaPao2Fio2Codification__sapsSofaPaO2Min300 .
+
+prosafe-core4:core__sapsSofaPao2Fio2Codification__sapsSofaPaO2Min400 owl:sameAs prosafe-core3:core__sapsSofaPao2Fio2Codification__sapsSofaPaO2Min400 .
+
+prosafe-core4:core__sapsSofaPao2Fio2Codification__sapsSofaPaO2More400 owl:sameAs prosafe-core3:core__sapsSofaPao2Fio2Codification__sapsSofaPaO2More400 .
+
+prosafe-core4:core__sapsSofaPlat__value owl:equivalentProperty prosafe-core3:core__sapsSofaPlat__value .
+
+prosafe-core4:core__sapsSofaPotassium__value owl:equivalentProperty prosafe-core3:core__sapsSofaPotassium__value .
+
+prosafe-core4:core__sapsSofaSodium__value owl:equivalentProperty prosafe-core3:core__sapsSofaSodium__value .
+
+prosafe-core4:core__sapsSofaTemp__value owl:equivalentProperty prosafe-core3:core__sapsSofaTemp__value .
+
+prosafe-core4:core__sapsSofaUrOutCodification__sapsSofaUOMin02 owl:sameAs prosafe-core3:core__sapsSofaUrOutCodification__sapsSofaUOMin02 .
+
+prosafe-core4:core__sapsSofaUrOutCodification__sapsSofaUOMin040 owl:sameAs prosafe-core3:core__sapsSofaUrOutCodification__sapsSofaUOMin040 .
+
+prosafe-core4:core__sapsSofaUrOutCodification__sapsSofaUOMin099 owl:sameAs prosafe-core3:core__sapsSofaUrOutCodification__sapsSofaUOMin099 .
+
+prosafe-core4:core__sapsSofaUrOutCodification__sapsSofaUOMore1 owl:sameAs prosafe-core3:core__sapsSofaUrOutCodification__sapsSofaUOMore1 .
+
+prosafe-core4:core__sapsSofaUrea__value owl:equivalentProperty prosafe-core3:core__sapsSofaUrea__value .
+
+prosafe-core4:core__sapsSofaUrine__value owl:equivalentProperty prosafe-core3:core__sapsSofaUrine__value .
+
+prosafe-core4:core__sapsSofaVaso__value owl:equivalentProperty prosafe-core3:core__sapsSofaVaso__value .
+
+prosafe-core4:core__sapsSofaVent__value owl:equivalentProperty prosafe-core3:core__sapsSofaVent__value .
+
+prosafe-core4:core__sapsSofaWBC__value owl:equivalentProperty prosafe-core3:core__sapsSofaWBC__value .
+
+prosafe-core4:core__sapsSystBlPrCodification__sapsBPMin200 owl:sameAs prosafe-core3:core__sapsSystBlPrCodification__sapsBPMin200 .
+
+prosafe-core4:core__sapsSystBlPrCodification__sapsBPMin70 owl:sameAs prosafe-core3:core__sapsSystBlPrCodification__sapsBPMin70 .
+
+prosafe-core4:core__sapsSystBlPrCodification__sapsBPMin90 owl:sameAs prosafe-core3:core__sapsSystBlPrCodification__sapsBPMin90 .
+
+prosafe-core4:core__sapsSystBlPrCodification__sapsBPMore200 owl:sameAs prosafe-core3:core__sapsSystBlPrCodification__sapsBPMore200 .
+
+prosafe-core4:core__sapsTempCodification__sapsTempMin39 owl:sameAs prosafe-core3:core__sapsTempCodification__sapsTempMin39 .
+
+prosafe-core4:core__sapsTempCodification__sapsTempMore39 owl:sameAs prosafe-core3:core__sapsTempCodification__sapsTempMore39 .
+
+prosafe-core4:core__sapsTotal__value owl:equivalentProperty prosafe-core3:core__sapsTotal__value .
+
+prosafe-core4:core__sapsTypeAdmCodification__sapsMed owl:sameAs prosafe-core3:core__sapsTypeAdmCodification__sapsMed .
+
+prosafe-core4:core__sapsTypeAdmCodification__sapsSchSurg owl:sameAs prosafe-core3:core__sapsTypeAdmCodification__sapsSchSurg .
+
+prosafe-core4:core__sapsTypeAdmCodification__sapsUnschSurg owl:sameAs prosafe-core3:core__sapsTypeAdmCodification__sapsUnschSurg .
+
+prosafe-core4:core__sapsWbcCodification__sapsWbcMin1 owl:sameAs prosafe-core3:core__sapsWbcCodification__sapsWbcMin1 .
+
+prosafe-core4:core__sapsWbcCodification__sapsWbcMin20 owl:sameAs prosafe-core3:core__sapsWbcCodification__sapsWbcMin20 .
+
+prosafe-core4:core__sapsWbcCodification__sapsWbcMore20 owl:sameAs prosafe-core3:core__sapsWbcCodification__sapsWbcMore20 .
+
+prosafe-core4:core__saps__value owl:equivalentProperty prosafe-core3:core__saps__value .
+
+prosafe-core4:core__scheduledYesNoCodification__no owl:sameAs prosafe-core3:core__scheduledYesNoCodification__no .
+
+prosafe-core4:core__scheduledYesNoCodification__yes owl:sameAs prosafe-core3:core__scheduledYesNoCodification__yes .
+
+prosafe-core4:core__sddDetailsCodification__topic owl:sameAs prosafe-core3:core__sddDetailsCodification__topic .
+
+prosafe-core4:core__sddDetailsCodification__topicSystem owl:sameAs prosafe-core3:core__sddDetailsCodification__topicSystem .
+
+prosafe-core4:core__sevInfections__value owl:equivalentProperty prosafe-core3:core__sevInfections__value .
+
+prosafe-core4:core__severInfectCodification__noSirs owl:sameAs prosafe-core3:core__severInfectCodification__noSirs .
+
+prosafe-core4:core__severInfectCodification__sepShock owl:sameAs prosafe-core3:core__severInfectCodification__sepShock .
+
+prosafe-core4:core__severInfectCodification__sevSepsis owl:sameAs prosafe-core3:core__severInfectCodification__sevSepsis .
+
+prosafe-core4:core__sexCodification__Female owl:sameAs prosafe-core3:core__sexCodification__Female .
+
+prosafe-core4:core__sexCodification__Male owl:sameAs prosafe-core3:core__sexCodification__Male .
+
+prosafe-core4:core__situazione__value owl:equivalentProperty prosafe-core3:core__situazione__value .
+
+prosafe-core4:core__skinFailure__admissionValue owl:equivalentProperty prosafe-core3:core__skinFailure__admissionValue .
+
+prosafe-core4:core__skinFailure__stayValue owl:equivalentProperty prosafe-core3:core__skinFailure__stayValue .
+
+prosafe-core4:core__sofaCreatCodification__sofaCreatMin12 owl:sameAs prosafe-core3:core__sofaCreatCodification__sofaCreatMin12 .
+
+prosafe-core4:core__sofaCreatCodification__sofaCreatMin1dot2 owl:sameAs prosafe-core3:core__sofaCreatCodification__sofaCreatMin1dot2 .
+
+prosafe-core4:core__sofaCreatCodification__sofaCreatMin2 owl:sameAs prosafe-core3:core__sofaCreatCodification__sofaCreatMin2 .
+
+prosafe-core4:core__sofaCreatCodification__sofaCreatMin6 owl:sameAs prosafe-core3:core__sofaCreatCodification__sofaCreatMin6 .
+
+prosafe-core4:core__sofaCreatCodification__sofaCreatMore12 owl:sameAs prosafe-core3:core__sofaCreatCodification__sofaCreatMore12 .
+
+prosafe-core4:core__sofaMAPCodification__sofaMAPLess70 owl:sameAs prosafe-core3:core__sofaMAPCodification__sofaMAPLess70 .
+
+prosafe-core4:core__sofaMAPCodification__sofaMAPMore70 owl:sameAs prosafe-core3:core__sofaMAPCodification__sofaMAPMore70 .
+
+prosafe-core4:core__sofaPlatCodification__sofaPlatMin100 owl:sameAs prosafe-core3:core__sofaPlatCodification__sofaPlatMin100 .
+
+prosafe-core4:core__sofaPlatCodification__sofaPlatMin150 owl:sameAs prosafe-core3:core__sofaPlatCodification__sofaPlatMin150 .
+
+prosafe-core4:core__sofaPlatCodification__sofaPlatMin20 owl:sameAs prosafe-core3:core__sofaPlatCodification__sofaPlatMin20 .
+
+prosafe-core4:core__sofaPlatCodification__sofaPlatMin50 owl:sameAs prosafe-core3:core__sofaPlatCodification__sofaPlatMin50 .
+
+prosafe-core4:core__sofaPlatCodification__sofaPlatMore150 owl:sameAs prosafe-core3:core__sofaPlatCodification__sofaPlatMore150 .
+
+prosafe-core4:core__sofaTotal__value owl:equivalentProperty prosafe-core3:core__sofaTotal__value .
+
+prosafe-core4:core__sofaVasCodification__sofaDopaMin5 owl:sameAs prosafe-core3:core__sofaVasCodification__sofaDopaMin5 .
+
+prosafe-core4:core__sofaVasCodification__sofaDopaMore5 owl:sameAs prosafe-core3:core__sofaVasCodification__sofaDopaMore5 .
+
+prosafe-core4:core__sofaVasCodification__sofaDopaMore5EpiMore01 owl:sameAs prosafe-core3:core__sofaVasCodification__sofaDopaMore5EpiMore01 .
+
+prosafe-core4:core__sofaVasCodification__sofaDopaNone owl:sameAs prosafe-core3:core__sofaVasCodification__sofaDopaNone .
+
+prosafe-core4:core__sofa__value owl:equivalentProperty prosafe-core3:core__sofa__value .
+
+prosafe-core4:core__sourceTypeCodification__otherHospital owl:sameAs prosafe-core3:core__sourceTypeCodification__otherHospital .
+
+prosafe-core4:core__sourceTypeCodification__sameHospital owl:sameAs prosafe-core3:core__sourceTypeCodification__sameHospital .
+
+prosafe-core4:core__statusCodification__electSurgical owl:sameAs prosafe-core3:core__statusCodification__electSurgical .
+
+prosafe-core4:core__statusCodification__electSurgicalPed owl:sameAs prosafe-core3:core__statusCodification__electSurgicalPed .
+
+prosafe-core4:core__statusCodification__emergSurgical owl:sameAs prosafe-core3:core__statusCodification__emergSurgical .
+
+prosafe-core4:core__statusCodification__nonSurgical owl:sameAs prosafe-core3:core__statusCodification__nonSurgical .
+
+prosafe-core4:core__supReasCodificationCardio__anaShock owl:sameAs prosafe-core3:core__supReasCodificationCardio__anaShock .
+
+prosafe-core4:core__supReasCodificationCardio__cardShock owl:sameAs prosafe-core3:core__supReasCodificationCardio__cardShock .
+
+prosafe-core4:core__supReasCodificationCardio__haemShock owl:sameAs prosafe-core3:core__supReasCodificationCardio__haemShock .
+
+prosafe-core4:core__supReasCodificationCardio__haemShockPed owl:sameAs prosafe-core3:core__supReasCodificationCardio__haemShockPed .
+
+prosafe-core4:core__supReasCodificationCardio__hypShock owl:sameAs prosafe-core3:core__supReasCodificationCardio__hypShock .
+
+prosafe-core4:core__supReasCodificationCardio__neuShock owl:sameAs prosafe-core3:core__supReasCodificationCardio__neuShock .
+
+prosafe-core4:core__supReasCodificationCardio__noShock owl:sameAs prosafe-core3:core__supReasCodificationCardio__noShock .
+
+prosafe-core4:core__supReasCodificationCardio__othShock owl:sameAs prosafe-core3:core__supReasCodificationCardio__othShock .
+
+prosafe-core4:core__supReasCodificationCardio__septShock owl:sameAs prosafe-core3:core__supReasCodificationCardio__septShock .
+
+prosafe-core4:core__supReasCodificationCardio__septShockPed owl:sameAs prosafe-core3:core__supReasCodificationCardio__septShockPed .
+
+prosafe-core4:core__supReasCodificationVen__maint owl:sameAs prosafe-core3:core__supReasCodificationVen__maint .
+
+prosafe-core4:core__supReasCodificationVen__typeI owl:sameAs prosafe-core3:core__supReasCodificationVen__typeI .
+
+prosafe-core4:core__supReasCodificationVen__typeII owl:sameAs prosafe-core3:core__supReasCodificationVen__typeII .
+
+prosafe-core4:core__surfTreatDetailsCodification__oneDos owl:sameAs prosafe-core3:core__surfTreatDetailsCodification__oneDos .
+
+prosafe-core4:core__surfTreatDetailsCodification__threeDos owl:sameAs prosafe-core3:core__surfTreatDetailsCodification__threeDos .
+
+prosafe-core4:core__surfTreatDetailsCodification__twoDos owl:sameAs prosafe-core3:core__surfTreatDetailsCodification__twoDos .
+
+prosafe-core4:core__surgInRange__value owl:equivalentProperty prosafe-core3:core__surgInRange__value .
+
+prosafe-core4:core__surgIntervCodification__HeartValSurg owl:sameAs prosafe-core3:core__surgIntervCodification__HeartValSurg .
+
+prosafe-core4:core__surgIntervCodification__abdVascSurg owl:sameAs prosafe-core3:core__surgIntervCodification__abdVascSurg .
+
+prosafe-core4:core__surgIntervCodification__bilTractSurg owl:sameAs prosafe-core3:core__surgIntervCodification__bilTractSurg .
+
+prosafe-core4:core__surgIntervCodification__bypass owl:sameAs prosafe-core3:core__surgIntervCodification__bypass .
+
+prosafe-core4:core__surgIntervCodification__entSurg owl:sameAs prosafe-core3:core__surgIntervCodification__entSurg .
+
+prosafe-core4:core__surgIntervCodification__gastroSurg owl:sameAs prosafe-core3:core__surgIntervCodification__gastroSurg .
+
+prosafe-core4:core__surgIntervCodification__gynaecSurg owl:sameAs prosafe-core3:core__surgIntervCodification__gynaecSurg .
+
+prosafe-core4:core__surgIntervCodification__hepSurg owl:sameAs prosafe-core3:core__surgIntervCodification__hepSurg .
+
+prosafe-core4:core__surgIntervCodification__maxilSurg owl:sameAs prosafe-core3:core__surgIntervCodification__maxilSurg .
+
+prosafe-core4:core__surgIntervCodification__missing owl:sameAs prosafe-core3:core__surgIntervCodification__missing .
+
+prosafe-core4:core__surgIntervCodification__nephroSurg owl:sameAs prosafe-core3:core__surgIntervCodification__nephroSurg .
+
+prosafe-core4:core__surgIntervCodification__neuroSurg owl:sameAs prosafe-core3:core__surgIntervCodification__neuroSurg .
+
+prosafe-core4:core__surgIntervCodification__none owl:sameAs prosafe-core3:core__surgIntervCodification__none .
+
+prosafe-core4:core__surgIntervCodification__obstetrSurg owl:sameAs prosafe-core3:core__surgIntervCodification__obstetrSurg .
+
+prosafe-core4:core__surgIntervCodification__ophthalmSurg owl:sameAs prosafe-core3:core__surgIntervCodification__ophthalmSurg .
+
+prosafe-core4:core__surgIntervCodification__orgDonation owl:sameAs prosafe-core3:core__surgIntervCodification__orgDonation .
+
+prosafe-core4:core__surgIntervCodification__orgTranspl owl:sameAs prosafe-core3:core__surgIntervCodification__orgTranspl .
+
+prosafe-core4:core__surgIntervCodification__orthoSurg owl:sameAs prosafe-core3:core__surgIntervCodification__orthoSurg .
+
+prosafe-core4:core__surgIntervCodification__othCardSurg owl:sameAs prosafe-core3:core__surgIntervCodification__othCardSurg .
+
+prosafe-core4:core__surgIntervCodification__othSurg owl:sameAs prosafe-core3:core__surgIntervCodification__othSurg .
+
+prosafe-core4:core__surgIntervCodification__pancSurg owl:sameAs prosafe-core3:core__surgIntervCodification__pancSurg .
+
+prosafe-core4:core__surgIntervCodification__periphVascSurg owl:sameAs prosafe-core3:core__surgIntervCodification__periphVascSurg .
+
+prosafe-core4:core__surgIntervCodification__plastSurg owl:sameAs prosafe-core3:core__surgIntervCodification__plastSurg .
+
+prosafe-core4:core__surgIntervCodification__splenectomy owl:sameAs prosafe-core3:core__surgIntervCodification__splenectomy .
+
+prosafe-core4:core__surgIntervCodification__thoracAortSurg owl:sameAs prosafe-core3:core__surgIntervCodification__thoracAortSurg .
+
+prosafe-core4:core__surgIntervCodification__thoracSurg owl:sameAs prosafe-core3:core__surgIntervCodification__thoracSurg .
+
+prosafe-core4:core__surgIntervCodification__thoracVascSurg owl:sameAs prosafe-core3:core__surgIntervCodification__thoracVascSurg .
+
+prosafe-core4:core__surgicalDetail owl:equivalentProperty prosafe-core3:core__surgicalDetail .
+
+prosafe-core4:core__surgicalDetail__surgicalDate owl:equivalentProperty prosafe-core3:core__surgicalDetail__surgicalDate .
+
+prosafe-core4:core__surgicalDetail__surgicalId owl:equivalentProperty prosafe-core3:core__surgicalDetail__surgicalId .
+
+prosafe-core4:core__surgicalList owl:equivalentProperty prosafe-core3:core__surgicalList .
+
+prosafe-core4:core__surgicalList__surgicalList owl:equivalentProperty prosafe-core3:core__surgicalList__surgicalList .
+
+prosafe-core4:core__surgicalNoneOption__value owl:equivalentProperty prosafe-core3:core__surgicalNoneOption__value .
+
+prosafe-core4:core__terapia__value owl:equivalentProperty prosafe-core3:core__terapia__value .
+
+prosafe-core4:core__timingScoresCompilation__value owl:equivalentProperty prosafe-core3:core__timingScoresCompilation__value .
+
+prosafe-core4:core__tiss28IntervCodification__tissMultiInterv owl:sameAs prosafe-core3:core__tiss28IntervCodification__tissMultiInterv .
+
+prosafe-core4:core__tiss28IntervCodification__tissNoInterv owl:sameAs prosafe-core3:core__tiss28IntervCodification__tissNoInterv .
+
+prosafe-core4:core__tiss28IntervCodification__tissSingleInterv owl:sameAs prosafe-core3:core__tiss28IntervCodification__tissSingleInterv .
+
+prosafe-core4:core__tiss28MedCodification__tissMultiMed owl:sameAs prosafe-core3:core__tiss28MedCodification__tissMultiMed .
+
+prosafe-core4:core__tiss28MedCodification__tissNoMed owl:sameAs prosafe-core3:core__tiss28MedCodification__tissNoMed .
+
+prosafe-core4:core__tiss28MedCodification__tissSingleMed owl:sameAs prosafe-core3:core__tiss28MedCodification__tissSingleMed .
+
+prosafe-core4:core__tiss28VasCodification__tissMultiVas owl:sameAs prosafe-core3:core__tiss28VasCodification__tissMultiVas .
+
+prosafe-core4:core__tiss28VasCodification__tissNoVas owl:sameAs prosafe-core3:core__tiss28VasCodification__tissNoVas .
+
+prosafe-core4:core__tiss28VasCodification__tissSingleVas owl:sameAs prosafe-core3:core__tiss28VasCodification__tissSingleVas .
+
+prosafe-core4:core__tiss28VentCodification__tissMechVent owl:sameAs prosafe-core3:core__tiss28VentCodification__tissMechVent .
+
+prosafe-core4:core__tiss28VentCodification__tissNoVent owl:sameAs prosafe-core3:core__tiss28VentCodification__tissNoVent .
+
+prosafe-core4:core__tiss28VentCodification__tissSuppVent owl:sameAs prosafe-core3:core__tiss28VentCodification__tissSuppVent .
+
+prosafe-core4:core__tiss28__tiss28Artif owl:equivalentProperty prosafe-core3:core__tiss28__tiss28Artif .
+
+prosafe-core4:core__tiss28__tiss28AtriumMonit owl:equivalentProperty prosafe-core3:core__tiss28__tiss28AtriumMonit .
+
+prosafe-core4:core__tiss28__tiss28CardRes owl:equivalentProperty prosafe-core3:core__tiss28__tiss28CardRes .
+
+prosafe-core4:core__tiss28__tiss28Cathet owl:equivalentProperty prosafe-core3:core__tiss28__tiss28Cathet .
+
+prosafe-core4:core__tiss28__tiss28Diure owl:equivalentProperty prosafe-core3:core__tiss28__tiss28Diure .
+
+prosafe-core4:core__tiss28__tiss28Drains owl:equivalentProperty prosafe-core3:core__tiss28__tiss28Drains .
+
+prosafe-core4:core__tiss28__tiss28Dress owl:equivalentProperty prosafe-core3:core__tiss28__tiss28Dress .
+
+prosafe-core4:core__tiss28__tiss28DressFreq owl:equivalentProperty prosafe-core3:core__tiss28__tiss28DressFreq .
+
+prosafe-core4:core__tiss28__tiss28EnterFeed owl:equivalentProperty prosafe-core3:core__tiss28__tiss28EnterFeed .
+
+prosafe-core4:core__tiss28__tiss28Hemof owl:equivalentProperty prosafe-core3:core__tiss28__tiss28Hemof .
+
+prosafe-core4:core__tiss28__tiss28Interv owl:equivalentProperty prosafe-core3:core__tiss28__tiss28Interv .
+
+prosafe-core4:core__tiss28__tiss28IntervOut owl:equivalentProperty prosafe-core3:core__tiss28__tiss28IntervOut .
+
+prosafe-core4:core__tiss28__tiss28IntrHyper owl:equivalentProperty prosafe-core3:core__tiss28__tiss28IntrHyper .
+
+prosafe-core4:core__tiss28__tiss28IntrPress owl:equivalentProperty prosafe-core3:core__tiss28__tiss28IntrPress .
+
+prosafe-core4:core__tiss28__tiss28Intrav owl:equivalentProperty prosafe-core3:core__tiss28__tiss28Intrav .
+
+prosafe-core4:core__tiss28__tiss28Labor owl:equivalentProperty prosafe-core3:core__tiss28__tiss28Labor .
+
+prosafe-core4:core__tiss28__tiss28Lung owl:equivalentProperty prosafe-core3:core__tiss28__tiss28Lung .
+
+prosafe-core4:core__tiss28__tiss28Medic owl:equivalentProperty prosafe-core3:core__tiss28__tiss28Medic .
+
+prosafe-core4:core__tiss28__tiss28MetabAcid owl:equivalentProperty prosafe-core3:core__tiss28__tiss28MetabAcid .
+
+prosafe-core4:core__tiss28__tiss28Monit owl:equivalentProperty prosafe-core3:core__tiss28__tiss28Monit .
+
+prosafe-core4:core__tiss28__tiss28SupplVent owl:equivalentProperty prosafe-core3:core__tiss28__tiss28SupplVent .
+
+prosafe-core4:core__tiss28__tiss28Urine owl:equivalentProperty prosafe-core3:core__tiss28__tiss28Urine .
+
+prosafe-core4:core__tiss28__tiss28VasoMed owl:equivalentProperty prosafe-core3:core__tiss28__tiss28VasoMed .
+
+prosafe-core4:core__tiss28__tiss28VenousLine owl:equivalentProperty prosafe-core3:core__tiss28__tiss28VenousLine .
+
+prosafe-core4:core__tiss28__tiss28Vent owl:equivalentProperty prosafe-core3:core__tiss28__tiss28Vent .
+
+prosafe-core4:core__tracheoDetailsCodification__ciagliaTracheo owl:sameAs prosafe-core3:core__tracheoDetailsCodification__ciagliaTracheo .
+
+prosafe-core4:core__tracheoDetailsCodification__fantoniTracheo owl:sameAs prosafe-core3:core__tracheoDetailsCodification__fantoniTracheo .
+
+prosafe-core4:core__tracheoDetailsCodification__griggsTracheo owl:sameAs prosafe-core3:core__tracheoDetailsCodification__griggsTracheo .
+
+prosafe-core4:core__tracheoDetailsCodification__monodilTracheo owl:sameAs prosafe-core3:core__tracheoDetailsCodification__monodilTracheo .
+
+prosafe-core4:core__tracheoDetailsCodification__othTracheo owl:sameAs prosafe-core3:core__tracheoDetailsCodification__othTracheo .
+
+prosafe-core4:core__tracheoDetailsCodification__percuTracheo owl:sameAs prosafe-core3:core__tracheoDetailsCodification__percuTracheo .
+
+prosafe-core4:core__tracheoDetailsCodification__surgTracheo owl:sameAs prosafe-core3:core__tracheoDetailsCodification__surgTracheo .
+
+prosafe-core4:core__transfReasCodification__contNoSpec owl:sameAs prosafe-core3:core__transfReasCodification__contNoSpec .
+
+prosafe-core4:core__transfReasCodification__contTreat owl:sameAs prosafe-core3:core__transfReasCodification__contTreat .
+
+prosafe-core4:core__transfReasCodification__higComplex owl:sameAs prosafe-core3:core__transfReasCodification__higComplex .
+
+prosafe-core4:core__transfReasCodification__specExp owl:sameAs prosafe-core3:core__transfReasCodification__specExp .
+
+prosafe-core4:core__transplantCodification__bilLungTransp owl:sameAs prosafe-core3:core__transplantCodification__bilLungTransp .
+
+prosafe-core4:core__transplantCodification__boneMarTransp owl:sameAs prosafe-core3:core__transplantCodification__boneMarTransp .
+
+prosafe-core4:core__transplantCodification__gastricTransp owl:sameAs prosafe-core3:core__transplantCodification__gastricTransp .
+
+prosafe-core4:core__transplantCodification__heartTransp owl:sameAs prosafe-core3:core__transplantCodification__heartTransp .
+
+prosafe-core4:core__transplantCodification__intestTransp owl:sameAs prosafe-core3:core__transplantCodification__intestTransp .
+
+prosafe-core4:core__transplantCodification__islTransp owl:sameAs prosafe-core3:core__transplantCodification__islTransp .
+
+prosafe-core4:core__transplantCodification__liverTransp owl:sameAs prosafe-core3:core__transplantCodification__liverTransp .
+
+prosafe-core4:core__transplantCodification__lungTransp owl:sameAs prosafe-core3:core__transplantCodification__lungTransp .
+
+prosafe-core4:core__transplantCodification__pancTransp owl:sameAs prosafe-core3:core__transplantCodification__pancTransp .
+
+prosafe-core4:core__transplantCodification__renTransp owl:sameAs prosafe-core3:core__transplantCodification__renTransp .
+
+prosafe-core4:core__transplantCodification__skinTransp owl:sameAs prosafe-core3:core__transplantCodification__skinTransp .
+
+prosafe-core4:core__transplantCodification__spleenTransp owl:sameAs prosafe-core3:core__transplantCodification__spleenTransp .
+
+prosafe-core4:core__traumaCodification__abdomVess owl:sameAs prosafe-core3:core__traumaCodification__abdomVess .
+
+prosafe-core4:core__traumaCodification__aortRupt owl:sameAs prosafe-core3:core__traumaCodification__aortRupt .
+
+prosafe-core4:core__traumaCodification__axonInjNoOed owl:sameAs prosafe-core3:core__traumaCodification__axonInjNoOed .
+
+prosafe-core4:core__traumaCodification__axonInjOed owl:sameAs prosafe-core3:core__traumaCodification__axonInjOed .
+
+prosafe-core4:core__traumaCodification__bowTrans owl:sameAs prosafe-core3:core__traumaCodification__bowTrans .
+
+prosafe-core4:core__traumaCodification__burns owl:sameAs prosafe-core3:core__traumaCodification__burns .
+
+prosafe-core4:core__traumaCodification__cardTrau owl:sameAs prosafe-core3:core__traumaCodification__cardTrau .
+
+prosafe-core4:core__traumaCodification__cavaRupt owl:sameAs prosafe-core3:core__traumaCodification__cavaRupt .
+
+prosafe-core4:core__traumaCodification__cerContLacer owl:sameAs prosafe-core3:core__traumaCodification__cerContLacer .
+
+prosafe-core4:core__traumaCodification__cerSpinDef owl:sameAs prosafe-core3:core__traumaCodification__cerSpinDef .
+
+prosafe-core4:core__traumaCodification__cerSpinNoDef owl:sameAs prosafe-core3:core__traumaCodification__cerSpinNoDef .
+
+prosafe-core4:core__traumaCodification__crushAmpLimbs owl:sameAs prosafe-core3:core__traumaCodification__crushAmpLimbs .
+
+prosafe-core4:core__traumaCodification__diaphFract owl:sameAs prosafe-core3:core__traumaCodification__diaphFract .
+
+prosafe-core4:core__traumaCodification__dorsSpinDef owl:sameAs prosafe-core3:core__traumaCodification__dorsSpinDef .
+
+prosafe-core4:core__traumaCodification__dorsSpinNoDef owl:sameAs prosafe-core3:core__traumaCodification__dorsSpinNoDef .
+
+prosafe-core4:core__traumaCodification__extrCompSyn owl:sameAs prosafe-core3:core__traumaCodification__extrCompSyn .
+
+prosafe-core4:core__traumaCodification__extraHaem owl:sameAs prosafe-core3:core__traumaCodification__extraHaem .
+
+prosafe-core4:core__traumaCodification__flailChest owl:sameAs prosafe-core3:core__traumaCodification__flailChest .
+
+prosafe-core4:core__traumaCodification__haemPneum owl:sameAs prosafe-core3:core__traumaCodification__haemPneum .
+
+prosafe-core4:core__traumaCodification__inhalInj owl:sameAs prosafe-core3:core__traumaCodification__inhalInj .
+
+prosafe-core4:core__traumaCodification__kydnMasRupt owl:sameAs prosafe-core3:core__traumaCodification__kydnMasRupt .
+
+prosafe-core4:core__traumaCodification__limbsVess owl:sameAs prosafe-core3:core__traumaCodification__limbsVess .
+
+prosafe-core4:core__traumaCodification__liverMasLac owl:sameAs prosafe-core3:core__traumaCodification__liverMasLac .
+
+prosafe-core4:core__traumaCodification__liverModLac owl:sameAs prosafe-core3:core__traumaCodification__liverModLac .
+
+prosafe-core4:core__traumaCodification__longBonFract owl:sameAs prosafe-core3:core__traumaCodification__longBonFract .
+
+prosafe-core4:core__traumaCodification__lumbSpinDef owl:sameAs prosafe-core3:core__traumaCodification__lumbSpinDef .
+
+prosafe-core4:core__traumaCodification__lumbSpinNoDef owl:sameAs prosafe-core3:core__traumaCodification__lumbSpinNoDef .
+
+prosafe-core4:core__traumaCodification__massHaem owl:sameAs prosafe-core3:core__traumaCodification__massHaem .
+
+prosafe-core4:core__traumaCodification__maxFac owl:sameAs prosafe-core3:core__traumaCodification__maxFac .
+
+prosafe-core4:core__traumaCodification__minInjAbd owl:sameAs prosafe-core3:core__traumaCodification__minInjAbd .
+
+prosafe-core4:core__traumaCodification__multFractPelv owl:sameAs prosafe-core3:core__traumaCodification__multFractPelv .
+
+prosafe-core4:core__traumaCodification__neckVess owl:sameAs prosafe-core3:core__traumaCodification__neckVess .
+
+prosafe-core4:core__traumaCodification__oesoRupt owl:sameAs prosafe-core3:core__traumaCodification__oesoRupt .
+
+prosafe-core4:core__traumaCodification__othInjChest owl:sameAs prosafe-core3:core__traumaCodification__othInjChest .
+
+prosafe-core4:core__traumaCodification__pancTrans owl:sameAs prosafe-core3:core__traumaCodification__pancTrans .
+
+prosafe-core4:core__traumaCodification__sevFractPelv owl:sameAs prosafe-core3:core__traumaCodification__sevFractPelv .
+
+prosafe-core4:core__traumaCodification__sevLungCont owl:sameAs prosafe-core3:core__traumaCodification__sevLungCont .
+
+prosafe-core4:core__traumaCodification__skullFract owl:sameAs prosafe-core3:core__traumaCodification__skullFract .
+
+prosafe-core4:core__traumaCodification__spleenMasRupt owl:sameAs prosafe-core3:core__traumaCodification__spleenMasRupt .
+
+prosafe-core4:core__traumaCodification__spleenModLac owl:sameAs prosafe-core3:core__traumaCodification__spleenModLac .
+
+prosafe-core4:core__traumaCodification__stomRupt owl:sameAs prosafe-core3:core__traumaCodification__stomRupt .
+
+prosafe-core4:core__traumaCodification__tensPneum owl:sameAs prosafe-core3:core__traumaCodification__tensPneum .
+
+prosafe-core4:core__traumaCodification__thorVess owl:sameAs prosafe-core3:core__traumaCodification__thorVess .
+
+prosafe-core4:core__traumaCodification__trachLac owl:sameAs prosafe-core3:core__traumaCodification__trachLac .
+
+prosafe-core4:core__traumaCodification__traumIntraBleed owl:sameAs prosafe-core3:core__traumaCodification__traumIntraBleed .
+
+prosafe-core4:core__traumaCodification__traumSubHaem owl:sameAs prosafe-core3:core__traumaCodification__traumSubHaem .
+
+prosafe-core4:core__traumaCodification__traumSubdHaem owl:sameAs prosafe-core3:core__traumaCodification__traumSubdHaem .
+
+prosafe-core4:core__traumaCodification__vertFract owl:sameAs prosafe-core3:core__traumaCodification__vertFract .
+
+prosafe-core4:core__traumaCondAdm owl:equivalentProperty prosafe-core3:core__traumaCondAdm .
+
+prosafe-core4:core__traumaCondAdm__value owl:equivalentProperty prosafe-core3:core__traumaCondAdm__value .
+
+prosafe-core4:core__traumaYesNoCodification__no owl:sameAs prosafe-core3:core__traumaYesNoCodification__no .
+
+prosafe-core4:core__traumaYesNoCodification__yes owl:sameAs prosafe-core3:core__traumaYesNoCodification__yes .
+
+prosafe-core4:core__treatNote__treatNote owl:equivalentProperty prosafe-core3:core__treatNote__treatNote .
+
+prosafe-core4:core__treatOutcome owl:equivalentProperty prosafe-core3:core__treatOutcome .
+
+prosafe-core4:core__treatOutcome__value owl:equivalentProperty prosafe-core3:core__treatOutcome__value .
+
+prosafe-core4:core__trueFalseCodification__False owl:sameAs prosafe-core3:core__trueFalseCodification__False .
+
+prosafe-core4:core__trueFalseCodification__True owl:sameAs prosafe-core3:core__trueFalseCodification__True .
+
+prosafe-core4:core__typeAdmission__value owl:equivalentProperty prosafe-core3:core__typeAdmission__value .
+
+prosafe-core4:core__typeNonSurgical__value owl:equivalentProperty prosafe-core3:core__typeNonSurgical__value .
+
+prosafe-core4:core__typeStatus__value owl:equivalentProperty prosafe-core3:core__typeStatus__value .
+
+prosafe-core4:core__typeTrauma__value owl:equivalentProperty prosafe-core3:core__typeTrauma__value .
+
+prosafe-core4:core__vapExposure__value owl:equivalentProperty prosafe-core3:core__vapExposure__value .
+
+prosafe-core4:core__vap__value owl:equivalentProperty prosafe-core3:core__vap__value .
+
+prosafe-core4:core__vasoactiveDays__value owl:equivalentProperty prosafe-core3:core__vasoactiveDays__value .
+
+prosafe-core4:core__ventilationOnAdmission__value owl:equivalentProperty prosafe-core3:core__ventilationOnAdmission__value .
+
+prosafe-core4:core__wardTypeCodification__emergRoom owl:sameAs prosafe-core3:core__wardTypeCodification__emergRoom .
+
+prosafe-core4:core__wardTypeCodification__highDep owl:sameAs prosafe-core3:core__wardTypeCodification__highDep .
+
+prosafe-core4:core__wardTypeCodification__medicalWard owl:sameAs prosafe-core3:core__wardTypeCodification__medicalWard .
+
+prosafe-core4:core__wardTypeCodification__neonatology owl:sameAs prosafe-core3:core__wardTypeCodification__neonatology .
+
+prosafe-core4:core__wardTypeCodification__otherIcu owl:sameAs prosafe-core3:core__wardTypeCodification__otherIcu .
+
+prosafe-core4:core__wardTypeCodification__surgicalWard owl:sameAs prosafe-core3:core__wardTypeCodification__surgicalWard .
+
+prosafe-core4:core__warningDetail__accepted owl:equivalentProperty prosafe-core3:core__warningDetail__accepted .
+
+prosafe-core4:core__warningDetail__warningCrf owl:equivalentProperty prosafe-core3:core__warningDetail__warningCrf .
+
+prosafe-core4:core__warningDetail__warningCrfLabel owl:equivalentProperty prosafe-core3:core__warningDetail__warningCrfLabel .
+
+prosafe-core4:core__warningDetail__warningId owl:equivalentProperty prosafe-core3:core__warningDetail__warningId .
+
+prosafe-core4:core__warningList owl:equivalentProperty prosafe-core3:core__warningList .
+
+prosafe-core4:core__warningList__warningList owl:equivalentProperty prosafe-core3:core__warningList__warningList .
+
+prosafe-core4:core__weight__value owl:equivalentProperty prosafe-core3:core__weight__value .
+
+prosafe-core4:core__yesNoCodificationBypass__no owl:sameAs prosafe-core3:core__yesNoCodificationBypass__no .
+
+prosafe-core4:core__yesNoCodificationBypass__yes owl:sameAs prosafe-core3:core__yesNoCodificationBypass__yes .
+
+prosafe-core4:core__yesNoCodificationPost__no owl:sameAs prosafe-core3:core__yesNoCodificationPost__no .
+
+prosafe-core4:core__yesNoCodificationPost__yes owl:sameAs prosafe-core3:core__yesNoCodificationPost__yes .
+
+prosafe-core4:core__yesNoCodification__no owl:sameAs prosafe-core3:core__yesNoCodification__no .
+
+prosafe-core4:core__yesNoCodification__yes owl:sameAs prosafe-core3:core__yesNoCodification__yes .
+
+prosafe-core4:core__yesNoOperTheatreCodification__no owl:sameAs prosafe-core3:core__yesNoOperTheatreCodification__no .
+
+prosafe-core4:core__yesNoOperTheatreCodification__yes owl:sameAs prosafe-core3:core__yesNoOperTheatreCodification__yes .
+
+prosafe-core4:core__yesNoUnknownCodification__no owl:sameAs prosafe-core3:core__yesNoUnknownCodification__no .
+
+prosafe-core4:core__yesNoUnknownCodification__unknown owl:sameAs prosafe-core3:core__yesNoUnknownCodification__unknown .
+
+prosafe-core4:core__yesNoUnknownCodification__yes owl:sameAs prosafe-core3:core__yesNoUnknownCodification__yes .
+

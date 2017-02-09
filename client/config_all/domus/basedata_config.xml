@@ -1,0 +1,27 @@
+<crf description="PROSAFE DOMUS Basedata" name="domus" basedata="1" version="1.0.0">
+  <classes>
+    <class description="Patient name" dataStorage="patient" name="name">
+      <attribute description="Patient first name" dataType="string" name="firstName" label="Nome"/>
+      <attribute description="Patient last name" dataType="string" name="lastName" label="Cognome"/>
+    </class>
+    <class description="Patient sex" dataStorage="patient" name="sex">
+      <attribute description="Patient sex" dataType="codingset" codingSet="domus.domus.sexCodification" name="sex" label="Sesso"/>
+    </class>
+    <class description="Patient date of birth yyyy-mm-dd" dataStorage="patient" name="birthDate">
+      <attribute description="Patient date of birth yyyy-mm-dd" dataType="datetime" name="birthDate" label="Data di nascita"/>
+    </class>
+    <class description="Admission date yyyy-mm-dd" dataStorage="admission" name="admissionDate">
+      <attribute description="Admission date yyyy-mm-dd" dataType="datetime" name="admissionDate" label="Data di ammissione"/>
+    </class>
+  </classes>
+
+  <codingSets>
+    <codingSet description="Patient sex codification" name="sexCodification">
+      <codingSetValue description="Male" positionWeight="1" value="Maschio" name="male"/>
+      <codingSetValue description="Female" positionWeight="0" value="Femmina" name="female"/>
+    </codingSet>
+  </codingSets>
+
+  <errors>
+  </errors>
+</crf>

@@ -1,0 +1,38 @@
+<languages crf="domus" version="1.0.0">
+  <language name="English">
+    <translations>
+      <translation textId="1001" text="Almeno una indicazione alla NAD deve essere selezionata"/>
+      <translation textId="1002" text="Stadio tumorale non disponibile"/>
+      <translation textId="1003" text="Albumina fuori range"/>
+      <translation textId="1004" text="Prealbumina fuori range"/>
+      <translation textId="1005" text="Transferrina fuori range"/>
+      <translation textId="1006" text="PCR fuori range"/>
+      <translation textId="1011" text="Paziente in trattamento attivo o palliativo con stadio tumorale inferiore al III"/>
+    </translations>
+  </language>
+  <language name="Italiano">
+    <translations>
+    </translations>
+    <formats>
+      <format class="name" label="Nome" expression="result = '%s, %s' % (|lastName|,|firstName|)"/>
+      <format class="birthDate" label="Data di nascita" expression="result = |birthDate|"/>
+      <format class="age" label="Età" expression="result = '%s' % |age|"/>
+      <format class="sex" label="Sesso" expression="result = |sex|"/>
+      <format class="placeOfBirth" label="Luogo di nascita" expression="result = '%s (%s), %s' % (|town|,|province|,|country|)"/>
+      <format class="address" label="Indirizzo" expression="result = '%s, %s %s (%s), %s' % (|street|,|postalCode|,|town|,|province|,|country|)"/>
+      <format class="habitualWeight" label="Peso abituale" expression="result = '%s kg' % |habitualWeight|"/>
+      <format class="currentWeight" label="Peso attuale" expression="result = '%s kg' % |habitualWeight|"/>
+      <format class="height" label="Altezza" expression="result = '%s m' % |height|"/>
+      <format class="admissionDate" label="Data di presa in carico" expression="result = |admissionDate|"/>
+      <format class="pdnPrescription" label="Prescrizione" expression="'''
+          text = ''
+          text += 'Calorie per infusione: %s kcal\n' % |caloriesPerInfusion|
+          text += 'Aminoacidi per infusione: %s g\n' % |aminoacidsPerInfusion|
+          text += 'Numero di infusioni a settimana: %s \n' % |infusionsPerWeek|
+          text += 'Data di inizio: %s \n' % |startDate|
+          result = text
+      '''"/>
+    </formats>
+  </language>
+</languages>
+

@@ -1,0 +1,818 @@
+
+_:mapping1000 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:????????
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Angina" ;
+          ] . 
+
+
+_:mapping1001 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:????????
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Cardiopatia congestizia" ;
+          ] . 
+
+
+_:mapping1002 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:????????
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Valvulopatia" ;
+          ] . 
+
+
+_:mapping1003 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.brainMalf
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "????????" ;
+          ] . 
+
+
+_:mapping1004 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.perVascDis
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Vasculopatia" ;
+          ] . 
+
+
+_:mapping1005 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.neuro
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "????????" ;
+          ] . 
+
+
+_:mapping1006 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.congHeartDis
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Cardiopatia congenita" ;
+          ] . 
+
+
+_:mapping1007 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:????????
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Patologia infiammatoria" ;
+          ] . 
+
+
+_:mapping1008 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.cerDis
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Vasculopatia cerebrale" ;
+          ] . 
+
+
+_:mapping1009 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.restLunDis
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "????????" ;
+          ] . 
+
+
+_:mapping1010 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:????????
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Pneumopatia cronica lieve" ;
+          ] . 
+
+
+_:mapping1011 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.modCOPD
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Pneumopatia cronica moderata" ;
+          ] . 
+
+
+_:mapping1012 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.sevCOPD
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Pneumopatia cronica grave" ;
+          ] . 
+
+
+_:mapping1013 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.hydrocephalus
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "????????" ;
+          ] . 
+
+
+_:mapping1014 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.diab2NoIns
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Diabete complicato (????)" ;
+          ] . 
+
+
+_:mapping1015 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.diab1
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Diabete non complicato" ;
+          ] . 
+
+
+_:mapping1016 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.diab2Ins
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Diabete complicato" ;
+          ] . 
+
+
+_:mapping1017 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.hemiParaQuadr
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Emiplegia o paraplegia o tetraplegia" ;
+          ] . 
+
+
+_:mapping1018 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.retinopathy
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "????????" ;
+          ] . 
+
+
+_:mapping1019 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.bonMarApl
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Aplasia midollare" ;
+          ] . 
+
+
+_:mapping1020 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.drugIndCoag
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Coagulopatie (????)" ;
+          ] . 
+
+
+_:mapping1021 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.sevMaln
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "????????" ;
+          ] . 
+
+
+_:mapping1022 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.lungMalf
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "????????" ;
+          ] . 
+
+
+_:mapping1023 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.skelMalf
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "????????" ;
+          ] . 
+
+
+_:mapping1024 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.heartFail2
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Scompenso cardiaco classe NYHA 1,2,3" ;
+          ] . 
+
+
+_:mapping1025 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.heartFail4
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Scompenso cardiaco classe NYHA 4" ;
+          ] . 
+
+
+_:mapping1026 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.notCongValv
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Valvulopatia  non congenita" ;
+          ] . 
+
+
+_:mapping1027 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.pulmHyper
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Ipertensione polmonare" ;
+          ] . 
+
+
+_:mapping1028 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.sysHyper
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Ipertensione sistemica" ;
+          ] . 
+
+
+_:mapping1029 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.brPulmDys
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Broncodisplasia" ;
+          ] . 
+
+
+_:mapping1030 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.none
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Nessuno" ;
+          ] . 
+
+
+_:mapping1031 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.lowAirway
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Anomalie basse vie respiratorie" ;
+          ] . 
+
+
+_:mapping1032 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.upAirway
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Anomalie alte vie respiratorie" ;
+          ] . 
+
+
+_:mapping1033 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.encephalopathy
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Encefalopatia" ;
+          ] . 
+
+
+_:mapping1034 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.hypertension
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Ipertensione" ;
+          ] . 
+
+
+_:mapping1035 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.dementia
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Demenza" ;
+          ] . 
+
+
+_:mapping1036 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.mildLiver
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Epatopatia lieve" ;
+          ] . 
+
+
+_:mapping1037 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.modLiver
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Epatopatia moderata o grave" ;
+          ] . 
+
+
+_:mapping1038 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.myocardInf
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Infarto" ;
+          ] . 
+
+
+_:mapping1039 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.asthma
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Asma" ;
+          ] . 
+
+
+_:mapping1040 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.arrhythmia
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Aritmia" ;
+          ] . 
+
+
+_:mapping1041 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.myocarditis
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Miocardite" ;
+          ] . 
+
+
+_:mapping1042 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.myocard
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Miocardiopatia" ;
+          ] . 
+
+
+_:mapping1043 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:????????
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Insuff. Renale lieve" ;
+          ] . 
+
+
+_:mapping1044 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:????????
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Insuff. Renale grave" ;
+          ] . 
+
+
+_:mapping1045 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.modRenal
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Insuff. Renale moderata" ;
+          ] . 
+
+
+_:mapping1046 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.endRenal
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Insuff. Renale terminale" ;
+          ] . 
+
+
+_:mapping1047 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.necEnter
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Enterocolite necrotizzante" ;
+          ] . 
+
+
+_:mapping1048 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.congImm
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Immunodeficienza congenita" ;
+          ] . 
+
+
+_:mapping1049 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.peptUlc
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Ulcera peptica" ;
+          ] . 
+
+
+_:mapping1050 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.gastrMalf
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Malformazioni gastroenteriche" ;
+          ] . 
+
+
+_:mapping1051 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.gastrMalfSurg
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Malformazioni gastroenteriche operate" ;
+          ] . 
+
+
+_:mapping1052 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.myopathy
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Miopatia" ;
+          ] . 
+
+
+_:mapping1053 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.malignHaemDis
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Malattie ematologiche maligne" ;
+          ] . 
+
+
+_:mapping1054 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.metCancer
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Tumore metastatizzato" ;
+          ] . 
+
+
+_:mapping1055 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.anyTumour
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Tumore" ;
+          ] . 
+
+
+_:mapping1056 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.automDis
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Malattie autoimmuni" ;
+          ] . 
+
+
+_:mapping1057 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.chromAnom
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Anomalia cromosomica" ;
+          ] . 
+
+
+_:mapping1058 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.endMetDis
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Malattie endocrino-metaboliche" ;
+          ] . 
+
+
+_:mapping1059 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.coagDis
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Coagulopatie" ;
+          ] . 
+
+
+_:mapping1060 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.genDis
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Malattie genetiche" ;
+          ] . 
+
+
+_:mapping1061 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.immunosuppression
+ ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "Immunosoppressione" ;
+          ] . 
+
+
+_:mapping1062 a owl:Class;
+     owl:equivalentClass
+          [ a owl:Restriction ;
+            owl:onProperty prosafe-core3:core_comorbidities_value ;
+            owl:hasValue prosafe-core3:core.comorbidities.aids ;
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty m2:patologieCoesistenti_patologiecoesistentivalore ;
+            owl:hasValue "AIDS" ;
+          ] . 
+

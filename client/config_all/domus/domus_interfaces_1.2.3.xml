@@ -1,0 +1,2911 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<interfaces crf="domus" version="1.2.3">
+
+  <interface class="infoPatientType" name="default">
+    <row>
+      <readonly width="200" visible="result = |domus.patientType.patientType|"
+      expression="'''
+        result=""
+        if |domus.patientType.patientType| and |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.oncologicType':
+            result='TIPOLOGIA PAZIENTE: ONCOLOGICO'
+        elif |domus.patientType.patientType| and |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.iicbType':
+          result='TIPOLOGIA PAZIENTE: IICB'
+        elif |domus.patientType.patientType| and |domus.patientType.patientType|[0] == 'domus.patientTypeCodification.nedType':
+          result='TIPOLOGIA PAZIENTE: NED'
+      '''"/>
+      
+    </row>
+  </interface>
+  
+<!-- Anagrafica -->
+  <interface class="patientType" name="default">
+    <row> 
+      <column><label valuefrom="domus.patientType.patientType"></label></column>
+      <column n="3" type="Grid">
+        <input type="radio" confirm="1" confirmtext="Conferma modifica tipo paziente?" width="100" attribute="patientType" />
+      </column>
+    </row>  
+  </interface>
+  
+  <!--<interface class="patientTypeModify" name="default">
+    <row> 
+      <input type="simplecheckbox" attribute="patientTypeModify"/>
+    </row>
+  </interface>-->
+  
+  <interface class="totalLastWeekCaloricOralNutritionNotAvailable" name="default">
+    <row>
+      <input type="simplecheckbox" attribute="totalLastWeekCaloricOralNutritionNotAvailable"/>
+    </row>
+  </interface>
+
+  <interface class="name" name="default">
+    <row>
+      <column><label valuefrom="domus.name.firstName"></label></column>
+      <column><input type="textbox" size="150" attribute="firstName"/></column>
+    </row>
+    <row>
+      <column><label valuefrom="domus.name.lastName"></label></column>
+      <column><input type="textbox" size="150" attribute="lastName"/></column>
+    </row>
+    <!-- example of readonly with expression calling a crf expression
+    <readonly expression="result = @domus.foo@(1,2)"/>
+    -->
+    <readonly expression="'''
+        print all($domus.dynPage.dynPage$)
+        result = None
+    '''"/>
+  </interface>
+
+  <interface class="sex" name="default">
+    <row> 
+      <column><label valuefrom="domus.sex.sex"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="sex" width="100" />
+      </column>
+    </row>  
+  </interface>
+ 
+  <interface class="birthDate" name="default">
+    <row> 
+      <column><label valuefrom="domus.birthDate.birthDate"></label></column>
+      <column><input type="date" attribute="birthDate"/></column>
+    </row>  
+  </interface>
+
+  <interface class="age" name="default">
+    <row> 
+      <column><label valuefrom="domus.age.age"></label></column>
+      <column>
+        <readonly evaluate="domus.age.age"/>
+      </column>
+    </row>  
+  </interface>
+  
+  <interface class="placeOfBirth" name="default">
+    <column>
+      <label color="blue" valuefrom="domus.placeOfBirth"></label>
+    </column>
+    <row>
+      <column><label valuefrom="domus.placeOfBirth.town"></label></column>
+      <column><input type="textbox" size="300" attribute="town"/></column>
+    </row>
+    <row>
+      <column><label valuefrom="domus.placeOfBirth.province"></label></column>
+      <column><input type="textbox" size="300" attribute="province"/></column>
+    </row>
+    <row>
+      <column><label valuefrom="domus.placeOfBirth.country"></label></column>
+      <column>
+        <input type="select" attribute="country"/>
+      </column>
+    </row> 
+  </interface>
+
+  <interface class="address" name="default">
+    <column>
+      <label color="blue" valuefrom="domus.address"></label>
+    </column>
+    <row> 
+      <column><label valuefrom="domus.address.street"></label></column>
+      <column><input type="textbox" size="300" height="50" attribute="street"/></column>
+    </row>  
+    <row> 
+      <column><label valuefrom="domus.address.postalCode"></label></column>
+      <column><input type="textbox" size="150" attribute="postalCode"/></column>
+    </row>  
+    <row> 
+      <column><label valuefrom="domus.address.town"></label></column>
+      <column><input type="textbox" size="300" attribute="town"/></column>
+    </row>  
+    <row> 
+      <column><label valuefrom="domus.address.province"></label></column>
+      <column><input type="textbox" size="300" attribute="province"/></column>
+    </row>
+    <row> 
+      <column><label valuefrom="domus.address.country"></label></column>
+      <column><input type="select" size="300" attribute="country"/></column>
+    </row>
+  </interface>
+
+  <interface class="phone" name="default">
+    <column>
+      <label color="blue" valuefrom="domus.phone"></label>
+    </column>
+    <row>
+      <column><label valuefrom="domus.phone.homePhone"></label></column>
+      <column><input type="textbox" size="150" attribute="homePhone"/></column>
+    </row>
+    <row>
+      <column><label valuefrom="domus.phone.mobilePhone"></label></column>
+      <column><input type="textbox" size="150" attribute="mobilePhone"/></column>
+    </row>
+  </interface>
+  
+  <interface class="asl" name="default">
+    <row>
+      <column><label valuefrom="domus.asl.asl"></label></column>
+      <column><input type="textbox" size="150" attribute="asl"/></column>
+    </row>
+  </interface>
+
+  <interface class="gpName" name="default">
+    <column>
+      <label color="blue" valuefrom="domus.gpName"></label>
+    </column>
+    <row>
+      <column><label valuefrom="domus.gpName.gpFirstName"></label></column>
+      <column><input type="textbox" size="150" attribute="gpFirstName"/></column>
+    </row>
+    <row>
+      <column><label valuefrom="domus.gpName.gpLastName"></label></column>
+      <column><input type="textbox" size="150" attribute="gpLastName"/></column>
+    </row>
+  </interface>
+
+  <interface class="fiscalCode" name="default">
+    <row>
+      <column><label valuefrom="domus.fiscalCode.fiscalCode"></label></column>
+      <column><input type="textbox" size="150" attribute="fiscalCode"/></column>
+    </row>
+  </interface>
+
+  <interface class="nhsNumber" name="default">
+    <row>
+      <column><label valuefrom="domus.nhsNumber.nhsNumber"></label></column>
+      <column><input type="textbox" size="150" attribute="nhsNumber"/></column>
+    </row>
+  </interface>
+
+  <interface class="exemptionNumber" name="default">
+    <row>
+      <column><label valuefrom="domus.exemptionNumber.exemptionNumber"></label></column>
+      <column><input type="textbox" size="150" attribute="exemptionNumber"/></column>
+    </row>
+  </interface>
+
+  <interface class="crnNumber" name="default">
+    <row>
+      <column><label valuefrom="domus.crnNumber.crnNumber"></label></column>
+      <column><input type="textbox" size="150" attribute="crnNumber"/></column>
+    </row>
+  </interface>
+  
+  <interface class="sedeErogazioneNED" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.sedeErogazioneNED.sedeErogazioneNED"></label></column>
+      <column n="2" type="Grid" >
+        <input type="radio" size="200" attribute="sedeErogazioneNED"/>
+      </column>
+    </row>
+  </interface>
+  
+<!-- Scheda ingresso -->  
+  <interface class="oncologicForNEDtype" name="default">
+    <row> 
+      <column><label color="blue" width="200" valuefrom="domus.oncologicForNEDtype.oncologicForNEDtype"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="oncologicForNEDtype" width="50"/>
+      </column>
+    </row>  
+  </interface>
+  
+  <interface class="oncologicForNEDtypeList" name="default">
+    <row>
+      <column><label width="200" ></label></column>
+      <column>
+        <input type="radio" attribute="oncologicForNEDtypeList" />
+      </column>
+    </row>
+    <spacer/>
+  </interface>
+  
+  <interface class="admissionDate" name="default">
+    <row> 
+      <column><label color="blue" width="150" valuefrom="domus.admissionDate.admissionDate"></label></column>
+      <column><input type="date" attribute="admissionDate"/></column>
+    </row>  
+  </interface>
+
+  <interface class="oncologicPatientType" name="default">
+    <row> 
+      <column><label color="blue" width="200" valuefrom="domus.oncologicPatientType.oncologicPatientType"></label></column>
+      <column>
+        <input type="radio" attribute="oncologicPatientType"/>
+      </column>
+    </row>  
+  </interface>
+
+  <interface class="tumorPrimitiveSite" name="default">
+    <row> 
+      <column><label color="blue" width="200" valuefrom="domus.tumorPrimitiveSite.tumorPrimitiveSite"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="tumorPrimitiveSite" width="200"/>
+      </column>
+    </row>  
+  </interface>
+  
+    <interface class="otherTumorPrimitiveSite" name="default">
+    <row>
+      <column width="204"/>
+      <column>
+        <input type="textbox" size="400" attribute="otherTumorPrimitiveSite" visible="result = bool(|domus.tumorPrimitiveSite.tumorPrimitiveSite  == other|)"/>
+      </column>
+    </row>
+  </interface>
+
+  <interface class="metastasis" name="default">
+    <row> 
+      <column><label color="blue" width="200" valuefrom="domus.metastasis.metastasis"></label></column>
+      <column n="2" type="Grid">
+        <row><input type="radio" width="50" attribute="metastasis"/></row>
+      </column>
+    </row>  
+  </interface>
+
+  <interface class="peritonealCarcinomatosis" name="default">
+    <row> 
+      <column><label color="blue" width="200" valuefrom="domus.peritonealCarcinomatosis.peritonealCarcinomatosis"></label></column>
+      <column n="2" type="Grid">
+        <row><input type="radio" width="50" attribute="peritonealCarcinomatosis"/></row>
+      </column>
+    </row>  
+  </interface>
+
+  <interface class="tumorStage" name="default">
+    <row> 
+      <column><label color="blue" width="200" valuefrom="domus.tumorStage.tumorStage"></label></column>
+      <column>
+        <input type="radio" attribute="tumorStage"/>
+      </column>
+    </row>  
+  </interface>
+
+  <interface class="tumorStageNotAvailable" name="default">
+    <row> 
+      <column><label color="blue" width="200" valuefrom="domus.tumorStageNotAvailable.tumorStageNotAvailable"></label></column>
+      <column>
+        <input type="simplecheckbox" attribute="tumorStageNotAvailable"/>
+      </column>
+    </row>  
+  </interface>
+
+  <interface class="karnofsky" name="default">
+    <row> 
+      <column><label color="blue" valuefrom="domus.karnofsky.karnofsky"></label></column>
+      <column n="10" type="Grid">
+        <row><input type="radio" width="50" attribute="karnofsky"/></row>
+      </column>
+    </row>  
+  </interface>
+
+  <interface class="organInsufficiency" name="default">
+    <row><column><label color="blue">Insufficienze d'organo</label></column></row>
+    <row>
+      <column><label width="200" valuefrom="domus.organInsufficiency.organInsufficiencyCardiac"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="organInsufficiencyCardiac"/>
+      </column>
+    </row>  
+    <row> 
+      <column><label width="200" valuefrom="domus.organInsufficiency.organInsufficiencyRespiratory"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="organInsufficiencyRespiratory"/>
+      </column>
+    </row>  
+    <row> 
+      <column><label width="200" valuefrom="domus.organInsufficiency.organInsufficiencyHepatic"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="organInsufficiencyHepatic"/>
+      </column>
+    </row>  
+    <row> 
+      <column><label width="200" valuefrom="domus.organInsufficiency.organInsufficiencyRenal"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="organInsufficiencyRenal"/>
+      </column>
+    </row>  
+  </interface>
+  
+  <interface class="presenzaLesioniDaDecubito" name="default">
+    <row> 
+      <column><label color="blue" width="200" valuefrom="domus.presenzaLesioniDaDecubito.presenzaLesioniDaDecubito"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="presenzaLesioniDaDecubito" width="50"/>
+      </column>
+    </row>  
+  </interface>
+  
+  <interface class="listaLesioniDaDecubito" name="default">
+    <row>
+      <column><label width="200" ></label></column>
+      <column>
+        <input type="radio" attribute="listaLesioniDaDecubito" />
+      </column>
+    </row>
+    <spacer/>
+  </interface>
+  
+  <interface class="episodioPolmoniteAbIngestis" name="default">
+    <row> 
+      <column><label color="blue" width="200" valuefrom="domus.episodioPolmoniteAbIngestis.episodioPolmoniteAbIngestis"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="episodioPolmoniteAbIngestis" width="50"/>
+      </column>
+    </row>  
+  </interface>
+  
+  <interface class="esamiDiLaboratorioLabel" name="default">
+    <row><column><label color="blue" valuefrom="domus.esamiDiLaboratorioLabel.esamiDiLaboratorioLabel"></label></column></row>
+  </interface>
+
+   <interface class="esamiDiLaboratorioNEDLabel" name="default">
+    <row><column><label color="blue" valuefrom="domus.esamiDiLaboratorioNEDLabel.esamiDiLaboratorioNEDLabel"></label></column></row>
+  </interface>
+
+
+  <interface class="terapiaAttivaLabel" name="default" >
+    <column><spacer/>
+    <label width="400" color="blue" valuefrom="domus.terapiaAttivaLabel.terapiaAttivaLabel"></label></column>
+  </interface>
+
+  <interface class="chemotherapy" name="default">
+    <row> 
+      <column><label width="200" valuefrom="domus.chemotherapy.chemotherapy"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="chemotherapy"/>
+      </column>
+    </row>  
+  </interface>
+
+  <interface class="radiotherapy" name="default">
+    <row> 
+      <column><label width="200" valuefrom="domus.radiotherapy.radiotherapy"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="radiotherapy"/>
+      </column>
+    </row>  
+  </interface>
+  
+  <interface class="vieDiNutrizione" name="default">
+    <row> 
+      <column><label width="200" color="blue" valuefrom="domus.vieDiNutrizione.vieDiNutrizione"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="200" attribute="vieDiNutrizione"/>
+      </column>
+    </row>  
+    <spacer size="10"/>
+  </interface>
+  
+<!-- Stato nutrizionale -->
+  <interface class="weight" name="default">
+    <row> 
+      <column><label width="300" valuefrom="domus.weight.weight"></label></column>
+      <column>
+        <input type="textbox" attribute="weight"/>
+      </column>
+    </row>  
+  </interface>
+  
+  <interface class="height" name="default">
+    <row> 
+      <column><label width="300" valuefrom="domus.height.height"></label></column>
+      <column>
+        <input type="textbox" attribute="height"/>
+      </column>
+    </row>  
+  </interface>
+
+  <interface class="bmi" name="default">
+    <row> 
+      <column><label width="300" valuefrom="domus.bmi.bmi"></label></column>
+      <column>
+        <readonly evaluate="domus.bmi.bmi"/>
+      </column>
+    </row>
+  </interface>
+
+  <interface class="habitualWeightOncologicLabel" name="default">
+    <column><label width="305" valuefrom="domus.habitualWeightOncologicLabel.habitualWeightOncologicLabel"></label></column>
+  </interface>
+  
+  <interface class="habitualWeightIICBLabel" name="default">
+    <column><label width="305" valuefrom="domus.habitualWeightIICBLabel.habitualWeightIICBLabel"></label></column>
+  </interface>
+  
+  <interface class="habitualWeight" name="default">
+    <input type="textbox" attribute="habitualWeight"/>  
+  </interface>
+
+  <!--<interface class="habitualWeightIICB" name="default">
+    <row> 
+      <column><label width="300" valuefrom="domus.habitualWeightIICB.habitualWeight"></label></column>
+      <column>
+        <input type="textbox" attribute="habitualWeight"/>
+      </column>
+    </row>  
+  </interface>-->
+
+  <interface class="weightLoss" name="default">
+    <row> 
+      <column><label width="300" valuefrom="domus.weightLoss.weightLoss"></label></column>
+      <column>
+        <readonly evaluate="domus.weightLoss.weightLoss"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="weightLossRate" name="default">
+    <row> 
+      <column><label width="300" valuefrom="domus.weightLossRate.weightLossRate"></label></column>
+      <column>
+        <!--<readonly evaluate="domus.weightLoss.weightLoss"/>-->
+        <input type="radio" attribute="weightLossRate"/>
+      </column>
+    </row>
+  </interface>
+
+  <interface class="punteggioScreeningLabel" name="default">
+    <column><label width="305" color="blue" valuefrom="domus.punteggioScreeningLabel.punteggioScreeningLabel"></label></column>
+  </interface>
+
+  <interface class="malnutritionGrade" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.malnutritionGrade.malnutritionGrade"></label></column>
+      <column>
+        <!--<input type="radio" attribute="malnutritionGrade"/>-->
+        <readonly evaluate="domus.malnutritionGrade.malnutritionGrade"/>
+      </column>
+    </row>  
+  </interface>
+
+  <interface class="sinpeNutritionalEvaluation" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.sinpeNutritionalEvaluation.sinpeNutritionalEvaluation"></label></column>
+      <column>
+        <readonly evaluate="domus.sinpeNutritionalEvaluation.sinpeNutritionalEvaluation"/>
+      </column>
+    </row>  
+  </interface>
+
+  <interface class="clinicalConditionsSeverity" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.clinicalConditionsSeverity.clinicalConditionsSeverity"></label></column>
+      <column n="2" type="Grid" >
+        <input type="radio" width="200" attribute="clinicalConditionsSeverity"/>
+      </column>
+    </row>
+  </interface>
+
+  <interface class="nrs" name="default">
+    <row> 
+      <column><label width="300" valuefrom="domus.nrs.nrs"></label></column>
+      <column>
+        <readonly evaluate="domus.nrs.nrs"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="fabbisogniLabel" name="default">
+    <row>
+      <column><label width="300" color="blue" valuefrom="domus.fabbisogniLabel.fabbisogniLabel"></label></column>
+    </row>
+  </interface>
+
+  <interface class="estimatedNutritionalNeeds" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.estimatedNutritionalNeeds.caloricNutritionalNeeds"></label></column>
+      <column>
+        <input type="textbox" attribute="caloricNutritionalNeeds"/>
+      </column>
+    </row>    
+    <row>
+      <column><label width="300" valuefrom="domus.estimatedNutritionalNeeds.proteicNutritionalNeeds"></label></column>
+      <column>
+        <input type="textbox" attribute="proteicNutritionalNeeds"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="fabbisognoIdricoGiornaliero" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.fabbisognoIdricoGiornaliero.fabbisognoIdricoGiornaliero"></label></column>
+      <column>
+        <input type="textbox" attribute="fabbisognoIdricoGiornaliero"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="totalLastWeekCaloricOralNutritionLabel" name="default">
+    <row>
+      <column><label width="300" color="blue" valuefrom="domus.totalLastWeekCaloricOralNutritionLabel.totalLastWeekCaloricOralNutritionLabel"></label></column>
+    </row>
+  </interface>
+
+  <interface class="nutritionalNeeds" name="default">
+    <!--<row> 
+      <column><label valuefrom="domus.nutritionalNeeds"></label></column>
+    </row>
+    <row>
+      <column><label width="300" valuefrom="domus.nutritionalNeeds.caloricNutritionalNeeds"></label></column>
+      <column>
+        <input type="textbox" attribute="caloricNutritionalNeeds"/>
+      </column>
+    </row>-->
+    <row> 
+      <column><label width="300" valuefrom="domus.nutritionalNeeds.caloricNutritionalNeedsComputed"></label></column>
+      <column>
+        <readonly evaluate="domus.nutritionalNeeds.caloricNutritionalNeedsComputed"/>
+      </column>
+    </row>
+    <row> 
+      <column><label width="300" valuefrom="domus.nutritionalNeeds.caloricNutritionalNeedsCorrectionFactor"></label></column>
+      <column>
+        <readonly evaluate="domus.nutritionalNeeds.caloricNutritionalNeedsCorrectionFactor"/>
+      </column>
+    </row>
+    <row>
+      <column><label width="300" valuefrom="domus.nutritionalNeeds.proteicNutritionalNeeds"></label></column>
+      <column>
+        <readonly evaluate="domus.nutritionalNeeds.proteicNutritionalNeeds"/>
+      </column>
+    </row>
+    <row>
+      <column><label width="300" valuefrom="domus.nutritionalNeeds.proteicNutritionalNeedsForNeurologic"></label></column>
+      <column>
+        <readonly evaluate="domus.nutritionalNeeds.proteicNutritionalNeedsForNeurologic"/>
+      </column>
+    </row>
+    <row>
+      <column><label width="300" valuefrom="domus.nutritionalNeeds.idricNeeds"></label></column>
+      <column>
+        <readonly evaluate="domus.nutritionalNeeds.idricNeeds"/>
+      </column>
+    </row>
+    <spacer size="15" />
+  </interface>
+
+  <interface class="totalLastWeekCaloricOralNutrition" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.totalLastWeekCaloricOralNutrition.totalLastWeekCaloricOralNutrition"></label></column>
+      <column><row>
+        <input type="textbox" attribute="totalLastWeekCaloricOralNutrition"/>
+      </row></column>
+    </row>
+  </interface>
+
+  <interface class="totalLastWeekCaloricOralNutritionNotAvailable" name="default">
+    <row>
+      <input type="simplecheckbox" attribute="totalLastWeekCaloricOralNutritionNotAvailable"/>
+    </row>
+  </interface>
+
+  <interface class="totalLastWeekProteicOralNutrition" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.totalLastWeekProteicOralNutrition.totalLastWeekProteicOralNutrition"></label></column>
+      <column><row>
+        <input type="textbox" attribute="totalLastWeekProteicOralNutrition"/>
+      </row></column>
+    </row>
+  </interface>
+
+  <interface class="totalLastWeekProteicOralNutritionNotAvailable" name="default">
+    <row>
+      <input type="simplecheckbox" attribute="totalLastWeekProteicOralNutritionNotAvailable"/>
+    </row>
+  </interface>
+
+  <interface class="percentLastWeekOralNutrition" name="default">
+    <row>
+    <column><label width="300" valuefrom="domus.percentLastWeekOralNutrition.percentLastWeekCaloricOralNutrition"></label></column>
+    <column>
+      <input type="radio" attribute="percentLastWeekCaloricOralNutrition"/>
+    </column>
+    </row>
+  </interface>
+  
+  <interface class="oralNutritionToNutritionalNeedsRatio" name="default">
+    <row> 
+      <column><label valuefrom="domus.oralNutritionToNutritionalNeedsRatio"></label></column>
+    </row>  
+    <row>
+      <column><label valuefrom="domus.oralNutritionToNutritionalNeedsRatio.oralNutritionToCaloricNutritionalNeedsRatio"></label></column>
+      <column>
+        <readonly evaluate="domus.oralNutritionToNutritionalNeedsRatio.oralNutritionToCaloricNutritionalNeedsRatio"/>
+      </column>
+    </row>
+    <row>
+      <column><label valuefrom="domus.oralNutritionToNutritionalNeedsRatio.oralNutritionToProteicNutritionalNeedsRatio"></label></column>
+      <column>
+        <readonly evaluate="domus.oralNutritionToNutritionalNeedsRatio.oralNutritionToProteicNutritionalNeedsRatio"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="nutrizioneOraleResiduaLabel" name="default">
+    <row>
+      <column><label width="300" color="blue" valuefrom="domus.nutrizioneOraleResiduaLabel.nutrizioneOraleResiduaLabel"></label></column>
+    </row>
+  </interface>
+  
+  <interface class="nutrizioneOraleResidua" name="default">
+    <row>
+    <column><label width="300" valuefrom="domus.nutrizioneOraleResidua.nutrizioneOraleResidua"></label></column>
+    <column n="2" type="Grid" >
+      <input type="radio" width="50" attribute="nutrizioneOraleResidua"/>
+    </column>
+    </row>
+  </interface>
+  
+  <interface class="calorieResidue" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.calorieResidue.calorieResidue"></label></column>
+      <column><row>
+        <input type="textbox" attribute="calorieResidue"/>
+      </row></column>
+    </row>
+  </interface>
+  
+  <interface class="proteineResidue" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.proteineResidue.proteineResidue"></label></column>
+      <column><row>
+        <input type="textbox" attribute="proteineResidue"/>
+      </row></column>
+    </row>
+  </interface>
+  
+<!-- -->  
+  <interface class="glicemia" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.glicemia.glicemia"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="glicemia"/>
+          <column n="2" type="Grid">
+            <readonly evaluate="domus.glicemia.glicemiaUnits"/>
+          </column>
+        </row>
+      </column>
+    </row>
+    <spacer size="8" />
+  </interface>
+  
+  <interface class="glicemiaNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="glicemiaNotAvailable"/>
+  </interface>
+  
+  <interface class="creatinina" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.creatinina.creatinina"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="creatinina"/>
+          <column n="2" type="Grid">
+            <readonly evaluate="domus.creatinina.creatininaUnits"/>
+          </column>
+        </row>
+      </column>
+    </row>
+    <spacer size="8" />
+  </interface>
+  
+  <interface class="creatininaNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="creatininaNotAvailable"/>
+  </interface>
+  
+  <interface class="azotemia" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.azotemia.azotemia"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="azotemia"/>
+          <column n="2" type="Grid">
+            <readonly evaluate="domus.azotemia.azotemiaUnits"/>
+          </column>
+        </row>
+      </column>
+    </row>
+    <spacer size="8" />
+  </interface>
+  
+  <interface class="azotemiaNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="azotemiaNotAvailable"/>
+  </interface>
+  
+  <interface class="albumin" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.albumin.albumin"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="albumin"/>
+          <column n="2" type="Grid">
+            <input type="radio" width="80" attribute="albuminUnits"/>
+          </column>
+        </row>
+        <row>
+          <column width="100"/>
+          <readonly expression="'''
+            result = ""
+            if |domus.albumin.albumin| and |domus.albumin.albuminUnits|:
+                if |domus.albumin.albuminUnits|[0] == 'domus.albuminUnitsCodification.gdL':
+                    result = "%.2f g/L" % (|domus.albumin.albumin|[0] / 0.1)
+                elif |domus.albumin.albuminUnits|[0] == 'domus.albuminUnitsCodification.gL':
+                    result = "%.2f g/dL" % (|domus.albumin.albumin|[0] * 0.1)
+          '''"/>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="albuminNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="albuminNotAvailable"/>
+  </interface>
+
+  <interface class="prealbumin" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.prealbumin.prealbumin"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="prealbumin"/>
+          <column n="2" type="Grid">
+            <readonly evaluate="domus.prealbumin.prealbuminUnits"/>
+          </column>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="prealbuminNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="prealbuminNotAvailable"/>
+  </interface>
+
+  <interface class="transferrin" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.transferrin.transferrin"></label></column>
+      <column>
+      <row>
+        <input type="textbox" attribute="transferrin"/>
+        <column n="2" type="Grid" >
+          <input type="radio" width="80" attribute="transferrinUnits"/>
+        </column>
+      </row>
+      <row>
+        <column width="100"/>
+        <readonly expression="'''
+          result = ""
+          if |domus.transferrin.transferrin| and |domus.transferrin.transferrinUnits|:
+              if |domus.transferrin.transferrinUnits|[0] == 'domus.transferrinUnitsCodification.mgdL':
+                  result = "%.2f g/L" % (|domus.transferrin.transferrin|[0] / 100.0)
+              elif |domus.transferrin.transferrinUnits|[0] == 'domus.transferrinUnitsCodification.gL':
+                  result = "%.2f mg/dL" % (|domus.transferrin.transferrin|[0] * 100.0)
+        '''"/>
+      </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="transferrinNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="transferrinNotAvailable"/>
+  </interface>
+
+  <interface class="crp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.crp.crp"></label></column>
+      <column>
+      <row>
+        <input type="textbox" attribute="crp"/>
+        <column n="2" type="Grid">
+          <input type="radio" width="80" attribute="crpUnits"/>
+        </column>
+      </row>
+      <row>
+        <column width="100"/>
+        <readonly expression="'''
+          result = ""
+          if |domus.crp.crp| and |domus.crp.crpUnits|:
+              if |domus.crp.crpUnits|[0] == 'domus.crpUnitsCodification.mgdL':
+                  result = "%.2f mg/L" % (|domus.crp.crp|[0] * 10.0)
+              elif |domus.crp.crpUnits|[0] == 'domus.crpUnitsCodification.mgL':
+                  result = "%.2f mg/dL" % (|domus.crp.crp|[0] / 10.0)
+        '''"/>
+      </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="crpNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="crpNotAvailable"/>
+  </interface>
+  
+  <interface class="sodio" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.sodio.sodio"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="sodio"/>
+          <column n="2" type="Grid">
+            <readonly evaluate="domus.sodio.sodioUnits"/>
+          </column>
+        </row>
+      </column>
+    </row>
+    <spacer size="8" />
+  </interface>
+  
+  <interface class="sodioNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="sodioNotAvailable"/>
+  </interface>
+
+  <interface class="potassio" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.potassio.potassio"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="potassio"/>
+          <column n="2" type="Grid">
+            <readonly evaluate="domus.potassio.potassioUnits"/>
+          </column>
+        </row>
+      </column>
+    </row>
+    <spacer size="8" />
+  </interface>
+  
+  <interface class="potassioNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="potassioNotAvailable"/>
+  </interface>
+
+  <interface class="pesoSpecificoUrine" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.pesoSpecificoUrine.pesoSpecificoUrine"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="pesoSpecificoUrine"/>
+          <column n="2" type="Grid">
+            <readonly evaluate="domus.pesoSpecificoUrine.unitaPesoSpecificoUrine"/>
+          </column>
+        </row>
+      </column>
+    </row>
+    <spacer size="8" />
+  </interface>
+  
+  <interface class="pesoSpecificoUrineNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="pesoSpecificoUrineNotAvailable"/>
+  </interface>
+
+  <interface class="cvc" name="default">
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.cvc.cvc"></label></column>
+      <column n="2" type="Grid" >
+        <input type="radio" attribute="cvc" width="250"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="indicazioneAllaNED" name="default">
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.indicazioneAllaNED.indicazioneAllaNED"></label></column>
+      <column>
+        <input type="radio" attribute="indicazioneAllaNED" width="650"/>
+      </column>
+    </row>
+  </interface>
+
+  <interface class="prescrizioneDellaNEDLabel" name="default">
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.prescrizioneDellaNEDLabel.prescrizioneDellaNEDLabel"></label></column>
+    </row>
+  </interface>
+
+  <interface class="prescrizioneDellaNED" name="default">
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.prescrizioneDellaNED.prescrizioneDellaNED"></label></column>
+      <column>
+        <input type="radio" attribute="prescrizioneDellaNED" width="250"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="caloriePrescrizione" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.caloriePrescrizione.caloriePrescrizione"></label></column>
+      <column><row>
+        <input type="textbox" attribute="caloriePrescrizione"/>
+      </row></column>
+    </row>
+  </interface>
+
+  <interface class="proteinePrescrizione" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.proteinePrescrizione.proteinePrescrizione"></label></column>
+      <column><row>
+        <input type="textbox" attribute="proteinePrescrizione"/>
+      </row></column>
+    </row>
+  </interface>
+
+  <interface class="acquaPrescrizione" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.acquaPrescrizione.acquaPrescrizione"></label></column>
+      <column><row>
+        <input type="textbox" attribute="acquaPrescrizione"/>
+      </row></column>
+    </row>
+  </interface>
+
+  <interface class="intestinalInsufficiency" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.intestinalInsufficiency.intestinalInsufficiency"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="intestinalInsufficiency"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="intestinalInsufficiencyDetail" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.intestinalInsufficiencyDetail.intestinalInsufficiencyDetail"></label></column>
+      <column>
+        <input type="checkbox" attribute="intestinalInsufficiencyDetail"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="enteralNutritionIntolerance" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.enteralNutritionIntolerance.enteralNutritionIntolerance"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="enteralNutritionIntolerance"/>
+      </column>
+    </row>
+  </interface>
+
+  <interface class="enteralNutritionRefusal" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.enteralNutritionRefusal.enteralNutritionRefusal"></label></column>
+      <column>
+        <row><input type="radio" attribute="enteralNutritionRefusal"/></row>
+      </column>
+    </row>
+  </interface>
+  
+<!--  <interface class="danOtherIndications" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.danOtherIndications.danOtherIndications"></label></column>
+      <column>
+        <input type="simplecheckbox" attribute="danOtherIndications"/>
+      </column>
+    </row>    
+  </interface> -->
+
+  <interface class="danOtherIndicationsDetail" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.danOtherIndicationsDetail.danOtherIndicationsDetail"></label></column>
+      <column>
+        <input type="textbox" attribute="danOtherIndicationsDetail" expandable="1" size="300" height="50"/>
+      </column>
+    </row>    
+  </interface>
+  
+  <interface class="pdnPrescription" name="default">
+    <column><label color="blue" valuefrom="domus.pdnPrescription"></label></column>
+    <row>
+      <column><label width="300" valuefrom="domus.pdnPrescription.volumePerInfusion"></label></column>
+      <column>
+        <input type="textbox" attribute="volumePerInfusion"/>
+      </column>
+    </row>
+    <row>
+      <column><label width="300" valuefrom="domus.pdnPrescription.caloriesPerInfusion"></label></column>
+      <column>
+        <input type="textbox" attribute="caloriesPerInfusion"/>
+      </column>
+    </row>
+    <row>
+      <column><label width="300" valuefrom="domus.pdnPrescription.aminoacidsPerInfusion"></label></column>
+      <column>
+        <input type="textbox" attribute="aminoacidsPerInfusion"/>
+      </column>
+    </row>
+    <row>
+      <column><label width="300" valuefrom="domus.pdnPrescription.infusionsPerWeek"></label></column>
+      <column>
+        <input type="textbox" attribute="infusionsPerWeek"/>
+      </column>
+    </row>
+<!--    <row>
+      <column><label width="300" valuefrom="domus.pdnPrescription.startDate"></label></column>
+      <column>
+        <input type="date" attribute="startDate"/>
+      </column>
+    </row>-->    
+  </interface>
+  
+  <interface class="pdnStartDatePrescription" name="default">
+    <row>
+      <column><label color="blue" width="300" valuefrom="domus.pdnStartDatePrescription.pdnStartDatePrescription"></label></column>
+      <column>
+        <input type="date" attribute="pdnStartDatePrescription"/>
+      </column>
+    </row>    
+  </interface>
+  
+  <interface class="nedStartDatePrescription" name="default">
+    <row>
+      <column><label color="blue" width="300" valuefrom="domus.nedStartDatePrescription.nedStartDatePrescription"></label></column>
+      <column>
+        <input type="date" attribute="nedStartDatePrescription"/>
+      </column>
+    </row>    
+  </interface>
+  
+  <!-- Scheda follow-up -->
+  <interface class="visitDate" name="default">
+    <row>
+      <column><label color="blue" width="300" valuefrom="domus.visitDate.visitDate"></label></column>
+      <column>
+        <input type="date" attribute="visitDate"/>
+      </column>
+    </row>    
+    <row>    
+      <column><label width="300">Contatto precedente</label></column>
+      <column><readonly expression="'''
+      $domus.timeStamp.timeStamp$
+      if |domus.timeStamp.timeStamp|[0] > 2:
+      #if at($domus.visitDate.visitDate$,-1):
+          result = decodevalue(at($domus.visitDate.visitDate$,-1)[0])
+      else:
+          result = decodevalue(|domus.admissionDate.admissionDate|[0])
+       '''" /></column>
+    </row>    
+  </interface>
+
+  <interface class="pdnStartDate" name="default">
+    <row>
+      <column><label color="blue" width="300" valuefrom="domus.pdnStartDate.pdnStartDate"></label></column>
+      <column>
+        <input type="date" attribute="pdnStartDate"/>
+      </column>
+    </row>    
+  </interface>
+  
+  <interface class="nedStartDate" name="default">
+    <row>
+      <column><label color="blue" width="300" valuefrom="domus.nedStartDate.nedStartDate"></label></column>
+      <column>
+        <input type="date" attribute="nedStartDate"/>
+      </column>
+    </row>    
+  </interface>
+
+  <interface class="contactType" name="default">
+    <row>
+      <column><label color="blue" width="300" valuefrom="domus.contactType.contactType"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="200" attribute="contactType"/>
+      </column>
+    </row>    
+  </interface>
+
+  <!--<interface class="pdnDuration" name="default">
+    <row>
+      <column><label valuefrom="domus.pdnDuration"></label></column>
+    </row>
+    <row>
+      <column><label valuefrom="domus.pdnDuration.pdnStartDate"></label></column>
+      <column>
+        <input type="date" attribute="pdnStartDate"/>
+      </column>
+    </row>    
+    <row>
+      <column><label valuefrom="domus.pdnDuration.pdnEndDate"></label></column>
+      <column>
+        <input type="date" attribute="pdnEndDate"/>
+      </column>
+    </row>    
+  </interface>-->
+
+  <interface class="karnofskyFollowUp" name="default">
+    <row>
+      <column><label color="blue" width="300" valuefrom="domus.karnofskyFollowUp.karnofskyFollowUp"></label></column>
+      <column n="10" type="Grid" >
+        <row><input type="radio" width="50" attribute="karnofskyFollowUp"/></row>
+      </column>
+      <column>
+        <readonly basevalue="Variazione: " linebreaks="0" evaluate="domus.karnofskyFollowUp.karnofskyChange"/>
+      </column>
+    </row>    
+  </interface>
+  
+  <interface class="pdnPrescriptionChanged" name="default">
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.pdnPrescriptionChanged.pdnPrescriptionChanged"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="pdnPrescriptionChanged"/>
+      </column>
+    </row>
+  </interface>
+
+  <interface class="pdnPrescriptionFollowUp" name="default">
+    <column><label color="blue" valuefrom="domus.pdnPrescriptionFollowUp"></label></column>
+    <row>
+      <column><label width="300" valuefrom="domus.pdnPrescriptionFollowUp.volumePerInfusion"></label></column>
+      <column>
+        <input type="textbox" attribute="volumePerInfusion"/>
+      </column>
+    </row>
+    <row>
+      <column><label width="300" valuefrom="domus.pdnPrescriptionFollowUp.caloriesPerInfusion"></label></column>
+      <column>
+        <input type="textbox" attribute="caloriesPerInfusion"/>
+      </column>
+    </row>
+    <row>
+      <column><label width="300" valuefrom="domus.pdnPrescriptionFollowUp.aminoacidsPerInfusion"></label></column>
+      <column>
+        <input type="textbox" attribute="aminoacidsPerInfusion"/>
+      </column>
+    </row>
+    <row>
+      <column><label width="300" valuefrom="domus.pdnPrescriptionFollowUp.infusionsPerWeek"></label></column>
+      <column>
+        <input type="textbox" attribute="infusionsPerWeek"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="organInsufficiencyFollowUp" name="default">
+    <row><column><label color="blue">Insufficienze d'organo</label></column></row>
+    <row> 
+      <column><label width="200" valuefrom="domus.organInsufficiencyFollowUp.organInsufficiencyCardiac"></label></column>
+      <column n="2" type="Grid">
+        <row><input type="radio" width="50" attribute="organInsufficiencyCardiac"/></row>
+      </column>
+    </row>  
+    <row> 
+      <column><label width="200" valuefrom="domus.organInsufficiencyFollowUp.organInsufficiencyRespiratory"></label></column>
+      <column n="2" type="Grid">
+        <row><input type="radio" width="50" attribute="organInsufficiencyRespiratory"/></row>
+      </column>
+    </row>  
+    <row> 
+      <column><label width="200" valuefrom="domus.organInsufficiencyFollowUp.organInsufficiencyHepatic"></label></column>
+      <column n="2" type="Grid">
+        <row><input type="radio" width="50" attribute="organInsufficiencyHepatic"/></row>
+      </column>
+    </row>  
+    <row> 
+      <column><label width="200" valuefrom="domus.organInsufficiencyFollowUp.organInsufficiencyRenal"></label></column>
+      <column n="2" type="Grid">
+        <row><input type="radio" width="50" attribute="organInsufficiencyRenal"/></row>
+      </column>
+    </row>  
+  </interface>
+  
+  <interface class="activeTreatmentResponseFollowUp" name="default">
+    <row>
+      <column><label color="blue" width="300" valuefrom="domus.activeTreatmentResponseFollowUp.activeTreatmentResponseFollowUp"></label></column>
+      <column n="2" type="Grid" >
+        <input type="radio" width="150" attribute="activeTreatmentResponseFollowUp"/>
+      </column>
+    </row>    
+  </interface>
+
+  <interface class="weightFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.weightFollowUp.weightFollowUp"></label></column>
+      <column>
+        <input type="textbox" attribute="weightFollowUp"/>
+      </column>
+      <column>
+        <readonly basevalue="Variazione (kg): " linebreaks="0" evaluate="domus.weightFollowUp.weightChange"/>
+      </column>
+    </row>    
+  </interface>
+  
+  <interface class="heightFollowUp" name="default">
+    <row> 
+      <column><label width="200" valuefrom="domus.heightFollowUp.heightFollowUp"></label></column>
+      <column>
+        <input type="textbox" attribute="heightFollowUp"/>
+      </column>
+    </row>  
+  </interface>
+
+  <interface class="bmiFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.bmiFollowUp.bmiFollowUp"></label></column>
+      <column>
+        <readonly evaluate="domus.bmiFollowUp.bmiFollowUp"/>
+      </column>
+      <column>
+        <readonly basevalue="Variazione: " linebreaks="0" evaluate="domus.bmiFollowUp.bmiChange"/>
+      </column>
+    </row>    
+  </interface>
+  <!--
+  <interface class="lastWeekOralNutritionFollowUp" name="default">
+    <row> 
+      <column><label color="blue" valuefrom="domus.lastWeekOralNutrition"></label></column>
+    </row>
+    <row>
+      <column><label width="200" valuefrom="domus.lastWeekOralNutrition.totalLastWeekCaloricOralNutrition"></label></column>
+      <column><row>
+        <input type="textbox" attribute="totalLastWeekCaloricOralNutrition"/>
+        <input type="simplecheckbox" attribute="totalLastWeekCaloricOralNutritionNotAvailable"/>
+      </row></column>
+    </row>
+    <row>
+      <column><label width="200" valuefrom="domus.lastWeekOralNutrition.totalLastWeekProteicOralNutrition"></label></column>
+      <column><row>
+        <input type="textbox" attribute="totalLastWeekProteicOralNutrition"/>
+        <input type="simplecheckbox" attribute="totalLastWeekProteicOralNutritionNotAvailable"/>
+      </row></column>
+    </row>
+  </interface>
+  -->
+  
+  <interface class="totalLastWeekCaloricOralNutritionFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.totalLastWeekCaloricOralNutritionFollowUp.totalLastWeekCaloricOralNutritionFollowUp"></label></column>
+      <column><row>
+        <input type="textbox" attribute="totalLastWeekCaloricOralNutritionFollowUp"/>
+      </row></column>
+    </row>
+  </interface>
+
+  <interface class="totalLastWeekCaloricOralNutritionFollowUpNotAvailable" name="default">
+    <row>
+      <input type="simplecheckbox" attribute="totalLastWeekCaloricOralNutritionFollowUpNotAvailable"/>
+    </row>
+  </interface>
+
+  <interface class="totalLastWeekProteicOralNutritionFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.totalLastWeekProteicOralNutritionFollowUp.totalLastWeekProteicOralNutritionFollowUp"></label></column>
+      <column><row>
+        <input type="textbox" attribute="totalLastWeekProteicOralNutritionFollowUp"/>
+      </row></column>
+    </row>
+  </interface>
+
+  <interface class="totalLastWeekProteicOralNutritionFollowUpNotAvailable" name="default">
+    <row>
+      <input type="simplecheckbox" attribute="totalLastWeekProteicOralNutritionFollowUpNotAvailable"/>
+    </row>
+  </interface>
+  
+  <interface class="glicemiaFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.glicemiaFollowUp.glicemiaFollowUp"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="glicemiaFollowUp"/>
+          <column n="2" type="Grid">
+            <readonly evaluate="domus.glicemiaFollowUp.glicemiaUnits"/>
+          </column>
+        </row>
+        <row>
+          <column width="100"/>
+          <readonly expression="'''
+            if |domus.glicemiaFollowUp.glicemiaFollowUp|:
+              result = 'Variazione: %.2f' % |domus.glicemiaFollowUp.glicemiaChange|[0]  
+          '''"/>
+        </row>
+      </column>
+    </row>
+    <spacer size="8" />
+  </interface>
+  
+  <interface class="glicemiaFollowUpNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="glicemiaFollowUpNotAvailable"/>
+  </interface>
+  
+  <interface class="creatininaFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.creatininaFollowUp.creatininaFollowUp"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="creatininaFollowUp"/>
+          <column n="2" type="Grid">
+            <readonly evaluate="domus.creatininaFollowUp.creatininaUnits"/>
+          </column>
+        </row>
+        <row>
+          <column width="100"/>
+          <readonly expression="'''
+            if |domus.creatininaFollowUp.creatininaFollowUp|:
+              result = 'Variazione: %.2f' % |domus.creatininaFollowUp.creatininaChange|[0]  
+          '''"/>
+        </row>
+      </column>
+    </row>
+    <spacer size="8" />
+  </interface>
+  
+  <interface class="creatininaFollowUpNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="creatininaFollowUpNotAvailable"/>
+  </interface>
+
+  <interface class="azotemiaFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.azotemiaFollowUp.azotemiaFollowUp"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="azotemiaFollowUp"/>
+          <column n="2" type="Grid">
+            <readonly evaluate="domus.azotemiaFollowUp.azotemiaUnits"/>
+          </column>
+        </row>
+        <row>
+          <column width="100"/>
+          <readonly expression="'''
+            if |domus.azotemiaFollowUp.azotemiaFollowUp|:
+              result = 'Variazione: %.2f' % |domus.azotemiaFollowUp.azotemiaChange|[0]  
+          '''"/>
+        </row>
+      </column>
+    </row>
+    <spacer size="8" />
+  </interface>
+  
+  <interface class="azotemiaFollowUpNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="azotemiaFollowUpNotAvailable"/>
+  </interface>
+
+  <interface class="albuminFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.albuminFollowUp.albuminFollowUp"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="albuminFollowUp"/>
+            <column n="2" type="Grid">
+            <input type="radio" width ="80" attribute="albuminUnits"/>
+          </column>
+        </row>
+        <row>
+          <column width="100"/>
+          <readonly expression="'''
+            result = ""
+            if |domus.albuminFollowUp.albuminFollowUp| and |domus.albuminFollowUp.albuminUnits|:
+                if |domus.albuminFollowUp.albuminUnits|[0] == 'domus.albuminUnitsCodification.gdL':
+                    result = "%.2f g/L" % (|domus.albuminFollowUp.albuminFollowUp|[0] / 0.1)
+                elif |domus.albuminFollowUp.albuminUnits|[0] == 'domus.albuminUnitsCodification.gL':
+                    result = "%.2f g/dL" % (|domus.albuminFollowUp.albuminFollowUp|[0] * 0.1)
+          '''"/>
+        </row>
+        <row>
+          <column width="100"/>
+          <readonly expression="'''
+          if |domus.albuminFollowUp.albuminUnits|[0] == 'domus.albuminUnitsCodification.gdL':
+              result = "Variazione: %.2f g/dL" % |domus.albuminFollowUp.albuminChange|[0]
+          elif |domus.albuminFollowUp.albuminUnits|[0] == 'domus.albuminUnitsCodification.gL':
+              result = "Variazione: %.2f g/L" % |domus.albuminFollowUp.albuminChange|[0]
+          '''"/>
+        </row>
+      </column>
+    </row>    
+  </interface>
+
+  <interface class="albuminFollowUpNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="albuminFollowUpNotAvailable"/>
+  </interface>
+
+  <interface class="prealbuminFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.prealbuminFollowUp.prealbuminFollowUp"></label></column>
+      <column>
+      <row>
+        <input type="textbox" attribute="prealbuminFollowUp"/>
+        <column n="2" type="Grid">
+            <readonly evaluate="domus.prealbuminFollowUp.prealbuminUnits"/>
+          </column>
+      </row>
+      <row>
+        <column width="100"/>
+        <readonly expression="'''
+        result = 'Variazione: %.2f mg/dL' % |domus.prealbuminFollowUp.prealbuminChange|[0]
+        '''"/>
+      </row>
+      </column>
+    </row>    
+  </interface>
+
+  <interface class="prealbuminFollowUpNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="prealbuminFollowUpNotAvailable"/>
+  </interface>
+
+  <interface class="transferrinFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.transferrinFollowUp.transferrinFollowUp"></label></column>
+      <column>
+      <row>
+        <input type="textbox" attribute="transferrinFollowUp"/>
+        <column n="2" type="Grid">
+          <input type="radio" width ="80" attribute="transferrinUnits"/>
+        </column>
+      </row>
+      <row>
+        <column width="100"/>
+        <readonly expression="'''
+          result = ""
+          if |domus.transferrinFollowUp.transferrinFollowUp| and |domus.transferrinFollowUp.transferrinUnits|:
+              if |domus.transferrinFollowUp.transferrinUnits|[0] == 'domus.transferrinUnitsCodification.mgdL':
+                  result = "%.2f g/L" % (|domus.transferrinFollowUp.transferrinFollowUp|[0] / 100.0)
+              elif |domus.transferrinFollowUp.transferrinUnits|[0] == 'domus.transferrinUnitsCodification.gL':
+                  result = "%.2f mg/dL" % (|domus.transferrinFollowUp.transferrinFollowUp|[0] * 100.0)
+        '''"/>
+      </row>
+      <row>
+        <column width="100"/>
+        <readonly expression="'''
+        if |domus.transferrinFollowUp.transferrinUnits|[0] == 'domus.transferrinUnitsCodification.mgdL':
+            result = "Variazione: %.2f mg/dL" % |domus.transferrinFollowUp.transferrinChange|[0]
+        elif |domus.transferrinFollowUp.transferrinUnits|[0] == 'domus.transferrinUnitsCodification.gL':
+            result = "Variazione: %.2f g/L" % |domus.transferrinFollowUp.transferrinChange|[0]
+        '''"/>
+      </row>
+      </column>
+    </row>    
+  </interface>
+        
+  <interface class="transferrinFollowUpNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="transferrinFollowUpNotAvailable"/>
+  </interface>
+
+  <interface class="crpFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.crpFollowUp.crpFollowUp"></label></column>
+      <column>
+      <row>
+        <input type="textbox" attribute="crpFollowUp"/>
+        <column n="2" type="Grid">
+          <input type="radio" width ="80" attribute="crpUnits"/>
+        </column>
+      </row>
+      <row>
+        <column width="100"/>
+        <readonly expression="'''
+          result = ""
+          if |domus.crpFollowUp.crpFollowUp| and |domus.crpFollowUp.crpUnits|:
+              if |domus.crpFollowUp.crpUnits|[0] == 'domus.crpUnitsCodification.mgdL':
+                  result = "%.2f mg/L" % (|domus.crpFollowUp.crpFollowUp|[0] * 10.0)
+              elif |domus.crpFollowUp.crpUnits|[0] == 'domus.crpUnitsCodification.mgL':
+                  result = "%.2f mg/dL" % (|domus.crpFollowUp.crpFollowUp|[0] / 10.0)
+        '''"/>
+      </row>
+      <row>
+        <column width="100"/>
+        <readonly expression="'''
+        if |domus.crpFollowUp.crpUnits|[0] == 'domus.crpUnitsCodification.mgdL':
+            result = "Variazione: %.2f mg/dL" % |domus.crpFollowUp.crpChange|[0]
+        elif |domus.crpFollowUp.crpUnits|[0] == 'domus.crpUnitsCodification.mgL':
+            result = "Variazione: %.2f mg/L" % |domus.crpFollowUp.crpChange|[0]
+        '''"/>
+      </row>
+      </column>
+    </row>    
+  </interface>
+  
+  <interface class="crpFollowUpNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="crpFollowUpNotAvailable"/>
+  </interface>
+  
+  <interface class="sodioFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.sodioFollowUp.sodioFollowUp"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="sodioFollowUp"/>
+          <column n="2" type="Grid">
+            <readonly evaluate="domus.sodioFollowUp.sodioUnits"/>
+          </column>
+        </row>
+        <row>
+          <column width="100"/>
+          <readonly expression="'''
+            if |domus.sodioFollowUp.sodioFollowUp|:
+              result = 'Variazione: %.2f' % |domus.sodioFollowUp.sodioChange|[0]  
+          '''"/>
+        </row>
+      </column>
+    </row>
+    <spacer size="8" />
+  </interface>
+  
+  <interface class="sodioFollowUpNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="sodioFollowUpNotAvailable"/>
+  </interface>
+
+  <interface class="potassioFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.potassioFollowUp.potassioFollowUp"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="potassioFollowUp"/>
+          <column n="2" type="Grid">
+            <readonly evaluate="domus.potassioFollowUp.potassioUnits"/>
+          </column>
+        </row>
+        <row>
+          <column width="100"/>
+          <readonly expression="'''
+            if |domus.potassioFollowUp.potassioFollowUp|:
+              result = 'Variazione: %.2f' % |domus.potassioFollowUp.potassioChange|[0]  
+          '''"/>
+        </row>
+      </column>
+    </row>
+    <spacer size="8" />
+  </interface>
+  
+  <interface class="potassioFollowUpNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="potassioFollowUpNotAvailable"/>
+  </interface>
+  
+  <interface class="pesoSpecificoUrineFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.pesoSpecificoUrineFollowUp.pesoSpecificoUrineFollowUp"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="pesoSpecificoUrineFollowUp"/>
+          <column n="2" type="Grid">
+            <readonly evaluate="domus.pesoSpecificoUrineFollowUp.unitaPesoSpecificoUrine"/>
+          </column>
+        </row>
+        <row>
+          <column width="100"/>
+          <readonly expression="'''
+            if |domus.pesoSpecificoUrineFollowUp.pesoSpecificoUrineFollowUp|:
+              result = 'Variazione: %.2f' % |domus.pesoSpecificoUrineFollowUp.pesoSpecificoUrineChange|[0]  
+          '''"/>
+        </row>
+      </column>
+    </row>
+    <spacer size="8" />
+  </interface>
+  
+  <interface class="pesoSpecificoUrineFollowUpNotAvailable" name="default">
+    <input type="simplecheckbox" attribute="pesoSpecificoUrineFollowUpNotAvailable"/>
+  </interface>
+  
+  
+  <interface class="nutritionalNeedsCoverage" name="default">
+    <row>
+      <column><label valuefrom="domus.nutritionalNeedsCoverage"></label></column>
+    </row>
+    <row>
+      <column><label valuefrom="domus.nutritionalNeedsCoverage.caloricNutritionalNeedsCoverage"></label></column>
+      <column>
+        <readonly evaluate="domus.nutritionalNeedsCoverage.caloricNutritionalNeedsCoverage"/>
+      </column>
+    </row>
+    <row>
+      <column><label valuefrom="domus.nutritionalNeedsCoverage.proteicNutritionalNeedsCoverage"></label></column>
+      <column>
+        <readonly evaluate="domus.nutritionalNeedsCoverage.proteicNutritionalNeedsCoverage"/>
+      </column>
+    </row>
+  </interface>  
+  
+  <interface class="cvcComplications" name="default">
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.cvcComplications.cvcComplications"></label></column>
+      <column>
+        <input type="checkbox" attribute="cvcComplications"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="cvcRemoval" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.cvcRemoval.cvcRemoval"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="cvcRemoval" />
+      </column>
+    </row>
+  </interface>
+
+  <interface class="anyPDNHospitalizations" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.anyPDNHospitalizations.anyPDNHospitalizations"></label></column>
+      <column>
+        <row><input type="radio" width="50" attribute="anyPDNHospitalizations"/></row>
+      </column>
+    </row>
+  </interface>
+
+  <interface class="numberOfPDNHospitalizations" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.numberOfPDNHospitalizations.numberOfPDNHospitalizations"></label></column>
+      <column>
+        <input type="textbox" attribute="numberOfPDNHospitalizations"/>
+      </column>
+    </row>
+  </interface>
+
+  <interface item="pdnHospitalizationList" name="default" >
+    <row>
+        <column><label color="blue" width="200" valuefrom="domus.pdnHospitalizationList"></label></column>
+    </row>
+    <spacer size="10"/>
+    <row>
+      <label width="30"/>
+      <label width="100"/>
+      <readonly width="100" expression="result = 'Data inizio'" visible="result = bool(|domus.pdnHospitalizationList.pdnHospitalizationList|)"/> 
+      <readonly width="100" expression="result = 'Data fine'" visible="result = bool(|domus.pdnHospitalizationList.pdnHospitalizationList|)"/>
+      <readonly width="150" expression="result = 'Motivo del ricovero'" visible="result = bool(|domus.pdnHospitalizationList.pdnHospitalizationList|)"/>
+    </row>
+    <dyninterface class="pdnHospitalizationList" attribute="pdnHospitalizationList" interfacename="default"/>
+  </interface>
+
+  <interface class="pdnHospitalizationDetail" name="default">
+    <row>
+      <column>
+        <row>
+          <label width="30"/>
+          <readonly width="100" basevalue="Ricovero " evaluate="domus.pdnHospitalizationDetail.pdnHospitalizationPeriodId" targetinstance="self" linebreaks="0"/>
+          <input type="date" width="100" attribute="pdnHospitalizationStartDate"/> 
+          <input type="date" width="100" attribute="pdnHospitalizationEndDate"/>
+        </row>
+      </column>
+      <column>
+        <input type="radio" attribute="causaRicovero"/>
+        <spacer size="15"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="anyAbIngestisHospitalizations" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.anyAbIngestisHospitalizations.anyAbIngestisHospitalizations"></label></column>
+      <column>
+        <row><input type="radio" width="50" attribute="anyAbIngestisHospitalizations"/></row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="numberOfAbIngestisHospitalizations" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.numberOfAbIngestisHospitalizations.numberOfAbIngestisHospitalizations"></label></column>
+      <column>
+        <input type="textbox" attribute="numberOfAbIngestisHospitalizations"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface item="abIngestisHospitalizationList" name="default" >
+    <row>
+        <column><label color="blue" width="200" valuefrom="domus.abIngestisHospitalizationList"></label></column>
+    </row>
+    <spacer size="10"/>
+    <row>
+      <label width="30"/>
+      <label width="100"/>
+      <readonly width="100" expression="result = 'Data inizio'" visible="result = bool(|domus.abIngestisHospitalizationList.abIngestisHospitalizationList|)"/> 
+      <readonly width="100" expression="result = 'Data fine'" visible="result = bool(|domus.abIngestisHospitalizationList.abIngestisHospitalizationList|)"/>
+    </row>
+    <dyninterface class="abIngestisHospitalizationList" attribute="abIngestisHospitalizationList" interfacename="default"/>
+  </interface>
+  
+  <interface class="abIngestisHospitalizationDetail" name="default">
+    <row>
+      <column>
+        <row>
+          <label width="30"/>
+          <readonly width="100" basevalue="Ricovero per ab ingestis " evaluate="domus.abIngestisHospitalizationDetail.abIngestisHospitalizationPeriodId" targetinstance="self" linebreaks="0"/>
+          <input type="date" width="100" attribute="abIngestisHospitalizationStartDate"/> 
+          <input type="date" width="100" attribute="abIngestisHospitalizationEndDate"/>
+        </row>
+      </column>
+    </row>
+  </interface>
+
+  <interface class="allInfusionsAdministered" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.allInfusionsAdministered.allInfusionsAdministered"></label></column>
+      <column><row>
+        <input type="radio" width="50" attribute="allInfusionsAdministered"/>
+      </row></column>
+    </row>
+  </interface>
+
+  <interface class="numberOfNonAdministeredInfusions" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.numberOfNonAdministeredInfusions.numberOfNonAdministeredInfusions"></label></column>
+      <column>
+        <input type="textbox" attribute="numberOfNonAdministeredInfusions"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="numberOfNonAdministeredInfusionsNotAvailable" name="default">
+    <row> 
+      <column>
+        <input type="simplecheckbox" attribute="numberOfNonAdministeredInfusionsNotAvailable"/>
+      </column>
+    </row>  
+  </interface>
+
+  <!--<interface class="anyPeriodSuspensions" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.anyPeriodSuspensions.anyPeriodSuspensions"></label></column>
+      <column>
+        <row><input type="radio" attribute="anyPeriodSuspensions"/></row>
+      </column>
+    </row>
+  </interface>-->
+
+  <!--<interface class="numberOfPeriodSuspensions" name="default">
+    <row>
+      <column><label width="300" valuefrom="domus.numberOfPeriodSuspensions.numberOfPeriodSuspensions"></label></column>
+      <column>
+        <input type="textbox" attribute="numberOfPeriodSuspensions"/>
+      </column>
+    </row>
+  </interface>-->
+
+  <!--<interface item="periodSuspensionList" name="default" >
+    <row>
+        <column><label color="blue" width="200" valuefrom="domus.periodSuspensionList"></label></column>
+    </row>
+    <spacer size="10"/>
+    <row>
+      <label width="30"/>
+      <label width="100"/>
+      <readonly width="100" expression="result = 'Data inizio'" visible="result = bool(|domus.periodSuspensionList.periodSuspensionList|)"/> 
+      <readonly width="100" expression="result = 'Data fine'" visible="result = bool(|domus.periodSuspensionList.periodSuspensionList|)"/>
+    </row>
+    <dyninterface class="periodSuspensionList" attribute="periodSuspensionList" interfacename="default"/>
+  </interface>-->
+  
+  <!--<interface class="periodSuspensionDetail" name="default">
+    <row>
+      <label width="30"/>      
+      <readonly width="100" basevalue="Periodo " evaluate="domus.periodSuspensionDetail.periodSuspensionPeriodId" targetinstance="self" linebreaks="0"/>
+      <input type="date" width="100" attribute="periodSuspensionStartDate"/> 
+      <input type="date" width="100" attribute="periodSuspensionEndDate"/> 
+    </row>
+  </interface>-->
+
+<!-- Scheda finale -->
+
+  <!--<interface class="pdnSuspensionDate" name="default">
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.pdnSuspensionDate.pdnSuspensionDate"></label></column>
+      <column>
+        <input type="date" attribute="pdnSuspensionDate"/>
+      </column>
+    </row>    
+  </interface>-->
+
+  <interface class="pdnSuspensionDateLabel" name="default" >
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.pdnSuspensionDateLabel.pdnSuspensionDateLabel"></label></column>
+    </row>
+  </interface>
+  
+  <interface class="pdnSuspensionDateLabelNED" name="default" >
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.pdnSuspensionDateLabelNED.pdnSuspensionDateLabelNED"></label></column>
+    </row>
+  </interface>
+  
+  <interface class="pdnSuspensionDate" name="default">
+    <row>
+        <input type="date" attribute="pdnSuspensionDate"/>
+    </row>    
+  </interface>
+  
+  <interface class="pdnSuspensionReasonLabel" name="default" >
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.pdnSuspensionReasonLabel.pdnSuspensionReasonLabel"></label></column>
+    </row>
+  </interface>
+  
+  <interface class="pdnSuspensionReasonLabelNED" name="default" >
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.pdnSuspensionReasonLabelNED.pdnSuspensionReasonLabelNED"></label></column>
+    </row>
+  </interface>
+  
+  <interface class="pdnSuspensionReason" name="default">
+    <row>
+      <column>
+        <input type="radio" attribute="pdnSuspensionReason"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="karnofskySuspension" name="default">
+    <row> 
+      <column><label color="blue" valuefrom="domus.karnofskySuspension.karnofskySuspension"></label></column>
+      <column>
+        <row><input type="radio" size="100" attribute="karnofskySuspension"/></row>
+      </column>
+    </row>  
+  </interface>
+
+  <interface class="deathDate" name="default">
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.deathDate.deathDate"></label></column>
+      <column>
+        <input type="date" attribute="deathDate"/>
+      </column>
+    </row>    
+  </interface>
+
+  <interface class="deathDateNotAvailable" name="default">
+    <row> 
+      <column>
+        <input type="simplecheckbox" attribute="deathDateNotAvailable"/>
+      </column>
+    </row>  
+  </interface>
+
+  <interface class="deathCause" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.deathCause.deathCause"></label></column>
+      <column>
+        <input type="radio" attribute="deathCause"/>
+      </column>
+    </row>
+  </interface>
+
+  <interface class="transferralDestination" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.transferralDestination.transferralDestination"></label></column>
+      <column>
+        <input type="textbox" expandable="1" size="300" height="50" attribute="transferralDestination"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="deathForNEDRelatedReason" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.deathForNEDRelatedReason.deathForNEDRelatedReason"></label></column>
+      <column>
+        <input type="radio" attribute="deathForNEDRelatedReason" width="80" />
+      </column>
+    </row>
+    <spacer/>
+  </interface>
+  
+  <interface class="indicazioneTrapianto" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.indicazioneTrapianto.indicazioneTrapianto"></label></column>
+      <column>
+        <input type="radio" attribute="indicazioneTrapianto" width="200" />
+      </column>
+    </row>
+    <spacer/>
+  </interface>
+  
+  <interface class="indicazioneTrapiantoComplicanzaNPD" name="default" >
+    <row>
+      <column><label width="250"></label></column>
+      <column>
+        <input type="radio" attribute="indicazioneTrapiantoComplicanzaNPD" width="300" />
+      </column>
+    </row>
+    <spacer/>
+  </interface>
+  
+  <interface class="indicazioneTrapiantoMalattiaGastrointestinale" name="default" >
+    <row>
+      <column><label width="250"></label></column>
+      <column>
+        <input type="radio" attribute="indicazioneTrapiantoMalattiaGastrointestinale" width="300" />
+      </column>
+    </row>
+    <spacer/>
+  </interface>
+  
+  <interface class="tipoTrapianto" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.tipoTrapianto.tipoTrapianto"></label></column>
+      <column>
+        <input type="radio" attribute="tipoTrapianto" width="300" />
+      </column>
+    </row>
+    <spacer/>
+  </interface>
+  
+<!-- Organi e sistemi -->
+  <interface class="funzioneEpatica" name="default" >
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.funzioneEpatica.funzioneEpatica"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="funzioneEpatica" width="300" />
+      </column>
+    </row>
+  </interface>
+
+  <interface class="colecisti" name="default" >
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.colecisti.colecisti"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="colecisti" width="300" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="funzioneRenale" name="default" >
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.funzioneRenale.funzioneRenale"></label></column>
+      <column n="2" type="Grid" >
+        <input type="checkbox" width="302" attribute="funzioneRenale" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="litiasiRenale" name="default" >
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.litiasiRenale.litiasiRenale"></label></column>
+      <column n="2" type="Grid" >
+        <input type="radio" width="50" attribute="litiasiRenale" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="densitaMineraleOsseaLabel" name="default">
+    <column><label width="305" valuefrom="domus.densitaMineraleOsseaLabel.densitaMineraleOsseaLabel"></label></column>
+  </interface>
+  
+  <interface class="densitaMineraleOsseaTscore" name="default" >
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.densitaMineraleOsseaTscore"></label></column>
+      <column>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaTscore.densitaMineraleOsseaLombareTscore"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaLombareTscore" width="100"/>
+        </row>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaTscore.densitaMineraleOsseaColloDelFemoreTscore"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaColloDelFemoreTscore" width="100"/>
+        </row>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaTscore.densitaMineraleOsseaFemoreInTotoTscore"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaFemoreInTotoTscore" width="100"/>
+        </row>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaTscore.densitaMineraleOsseaTotalBodyTscore"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaTotalBodyTscore" width="100"/>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="densitaMineraleOsseaZscore" name="default" >
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.densitaMineraleOsseaZscore"></label></column>
+      <column>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaZscore.densitaMineraleOsseaLombareZscore"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaLombareZscore" width="100"/>
+        </row>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaZscore.densitaMineraleOsseaColloDelFemoreZscore"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaColloDelFemoreZscore" width="100"/>
+        </row>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaZscore.densitaMineraleOsseaFemoreInTotoZscore"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaFemoreInTotoZscore" width="100"/>
+        </row>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaZscore.densitaMineraleOsseaTotalBodyZscore"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaTotalBodyZscore" width="100"/>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="trombosiVenosaProfonda" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.trombosiVenosaProfonda.trombosiVenosaProfonda"></label></column>
+      <column n="2" type="Grid" >
+        <input type="checkbox" width="300" attribute="trombosiVenosaProfonda" />
+      </column>
+    </row>
+  </interface>
+  
+<!-- Dati relativi alla NED -->
+  <interface class="malattiaDiBase" name="default">
+    <row> 
+      <column><label color="blue" width="200" valuefrom="domus.malattiaDiBase.malattiaDiBase"></label></column>
+      <column n="2" type="Grid" color="blue">
+        <input type="radio" attribute="malattiaDiBase" width="300"/>
+      </column>
+    </row>
+  </interface>
+   
+<interface class="altraMalattiaDiBase" name="default">
+    <row>
+      <column width="204"/>
+      <column>
+        <input type="textbox" size="400" attribute="altraMalattiaDiBase" />
+      </column>
+    </row>
+  </interface>
+   
+<interface class="dataDiagnosiMalattiaDiBase" name="default">
+    <row> 
+      <column><label color ="blue" width="200" valuefrom="domus.dataDiagnosiMalattiaDiBase.dataDiagnosiMalattiaDiBase"></label></column>
+      <column>
+        <input type="date" attribute="dataDiagnosiMalattiaDiBase"/>
+      </column>
+    </row>  
+  </interface>
+  
+  <interface class="etaAllaDiagnosiMalattiaDiBase" name="default">
+    <row> 
+      <column><label color="blue" width="200" valuefrom="domus.etaAllaDiagnosiMalattiaDiBase.etaAllaDiagnosiMalattiaDiBase"></label></column>
+      <column>
+        <readonly evaluate="domus.etaAllaDiagnosiMalattiaDiBase.etaAllaDiagnosiMalattiaDiBase" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="causaPrincipaleInsuffIntestinale" name="default" >
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.causaPrincipaleInsuffIntestinale.causaPrincipaleInsuffIntestinale"></label></column>
+      <column n="2" type="Grid" >
+        <input type="radio" width="300" attribute="causaPrincipaleInsuffIntestinale" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="tipoIntestinoCorto" name="default" >
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.tipoIntestinoCorto.tipoIntestinoCorto"></label></column>
+      <column>
+        <image path='config_master/intestinoCorto.png' />
+        <row>
+          <column n="2" type="Grid" >
+            <input type="radio" width="300" attribute="tipoIntestinoCorto" />
+          </column>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="lunghezzaTenueResiduo" name="default" >
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.lunghezzaTenueResiduo.lunghezzaTenueResiduo"></label>
+      </column>
+      <column>
+        <input type="textbox" attribute="lunghezzaTenueResiduo"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="modalitaMisurazione" name="default" >
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.modalitaMisurazione.modalitaMisurazione"></label></column>
+      <column n="2" type="Grid" >
+        <input type="radio" width="300" attribute="modalitaMisurazione" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="%ColonResiduo" name="default" >
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.%ColonResiduo.%ColonResiduo"></label></column>
+      <column>
+        <row>
+          <image path='config_master/colonResiduo.png' />
+        </row>
+        <row>
+          <column n="2" type="Grid">
+            <input type="radio" attribute="%ColonResiduo" width="100" />
+          </column>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="presenzaStomia" name="default" >
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.presenzaStomia.presenzaStomia"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="presenzaStomia" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="sedeStomia" name="default" >
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.sedeStomia.sedeStomia"></label></column>
+      <column n="2" type="Grid">
+        <input type="checkbox" width ="200" attribute="sedeStomia" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="presenzaDiControindicazioniLabel" name="default" >
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.presenzaDiControindicazioniLabel.presenzaDiControindicazioniLabel"></label></column>
+    </row>
+  </interface>
+  
+  <interface class="nessunaControindicazione" name="default">
+    <input type="simplecheckbox" attribute="nessunaControindicazione"/>
+  </interface>
+  
+  <interface class="controindicazioniAssoluteTrapianto" name="default">
+    <row>
+      <column>
+        <row><label color="blue" valuefrom="domus.controindicazioniAssoluteTrapianto.controindicazioniAssoluteTrapianto"></label>
+        </row>
+        <row><column>
+          <input type="checkbox" attribute="controindicazioniAssoluteTrapianto"  /></column>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="controindicazioniRelativeTrapianto" name="default">
+    <row>
+      <column>
+        <row><label color="blue" valuefrom="domus.controindicazioniRelativeTrapianto.controindicazioniRelativeTrapianto"></label>
+        </row>
+        <row><column>
+          <input type="checkbox" attribute="controindicazioniRelativeTrapianto"  /></column>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+<!-- Riabilitazione socio-lavorativa-familiare -->
+  <interface class="statoCivile" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.statoCivile.statoCivile"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="250" attribute="statoCivile" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="figliDopoInizioNPD" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.figliDopoInizioNPD.figliDopoInizioNPD"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="figliDopoInizioNPD" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="attivitaLavorativa" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.attivitaLavorativa.attivitaLavorativa"></label></column>
+      <column n="2" type="Grid" >
+        <input type="radio" attribute="attivitaLavorativa" width="250" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="gradoDiAutonomia" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.gradoDiAutonomia.gradoDiAutonomia"></label></column>
+      <column>
+        <input type="radio" attribute="gradoDiAutonomia" width="500" />
+      </column>
+    </row>
+  </interface>
+  
+<!-- Stato nutrizionale addition -->
+  <interface class="diuresiDelle24Ore" name="default">
+    <row>
+      <column><label width="300" color="blue" valuefrom="domus.diuresiDelle24Ore.diuresiDelle24Ore"></label></column>
+      <column>
+        <!--<row>-->
+          <input type="textbox" attribute="diuresiDelle24Ore"/>
+        <!--</row>-->
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="diuresiDelle24OreNonDisponibile" name="default">
+  <row><column>
+    <input type="simplecheckbox" attribute="diuresiDelle24OreNonDisponibile"/>
+  </column></row>
+  </interface>
+  
+  <interface class="presenzaLesioniDaDecubitoFollowUp" name="default">
+    <row> 
+      <column><label color="blue" width="200" valuefrom="domus.presenzaLesioniDaDecubitoFollowUp.presenzaLesioniDaDecubitoFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="presenzaLesioniDaDecubitoFollowUp" width="50"/>
+      </column>
+    </row>  
+  </interface>
+  
+  <interface class="listaLesioniDaDecubitoFollowUp" name="default">
+    <row>
+      <column><label width="200" ></label></column>
+      <column>
+        <input type="radio" attribute="listaLesioniDaDecubitoFollowUp" />
+      </column>
+    </row>
+    <spacer/>
+  </interface>
+
+
+
+
+
+  
+<!-- Riabilitazione socio-lavorativa-familiare al follow up -->
+  <interface class="statoCivileFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.statoCivileFollowUp.statoCivileFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="250" attribute="statoCivileFollowUp" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="figliDopoInizioNPDFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.figliDopoInizioNPDFollowUp.figliDopoInizioNPDFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="figliDopoInizioNPDFollowUp" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="attivitaLavorativaFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.attivitaLavorativaFollowUp.attivitaLavorativaFollowUp"></label></column>
+      <column n="2" type="Grid" >
+        <input type="radio" attribute="attivitaLavorativaFollowUp" width="250" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="gradoDiAutonomiaFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.gradoDiAutonomiaFollowUp.gradoDiAutonomiaFollowUp"></label></column>
+      <column>
+        <input type="radio" attribute="gradoDiAutonomiaFollowUp" width="500" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="eventiAbIngestis" name="default" >
+    <row>
+      <column><label width="300" valuefrom="domus.eventiAbIngestis.eventiAbIngestis"></label></column>
+      <column n="2" type="Grid">
+        <row><input type="radio" attribute="eventiAbIngestis" width="50" /></row>
+      </column>
+    </row>
+    <spacer size="10"/>
+  </interface>
+  
+  <interface class="numeroAbIngestis" name="default" >
+    <row>
+      <column><label width="300" valuefrom="domus.numeroAbIngestis.numeroAbIngestis"></label></column>
+      <column>
+        <row><input type="textbox" attribute="numeroAbIngestis" width="50" /></row>
+      </column>
+    </row>
+    <spacer size="10"/>
+  </interface>
+  
+  <interface class="vacanzeLontanoDaCasaFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.vacanzeLontanoDaCasaFollowUp.vacanzeLontanoDaCasaFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="vacanzeLontanoDaCasaFollowUp" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="attivitaSportivaFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.attivitaSportivaFollowUp.attivitaSportivaFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="attivitaSportivaFollowUp" />
+      </column>
+    </row>
+  </interface>
+  
+<!-- Complicanze metaboliche -->
+  <interface class="funzioneEpaticaFollowUp" name="default" >
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.funzioneEpaticaFollowUp.funzioneEpaticaFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="funzioneEpaticaFollowUp" width="300" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="colecistiFollowUp" name="default" >
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.colecistiFollowUp.colecistiFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="colecistiFollowUp" width="300" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="funzioneRenaleFollowUp" name="default" >
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.funzioneRenaleFollowUp.funzioneRenaleFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="checkbox" attribute="funzioneRenaleFollowUp" width="300" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="litiasiRenaleFollowUp" name="default" >
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.litiasiRenaleFollowUp.litiasiRenaleFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="litiasiRenaleFollowUp" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="densitaMineraleOsseaTscoreFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.densitaMineraleOsseaTscoreFollowUp" color="blue"></label></column>
+      <column>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaTscoreFollowUp.densitaMineraleOsseaLombareTscoreFollowUp"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaLombareTscoreFollowUp" width="100"/>
+        </row>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaTscoreFollowUp.densitaMineraleOsseaColloDelFemoreTscoreFollowUp"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaColloDelFemoreTscoreFollowUp" width="100"/>
+        </row>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaTscoreFollowUp.densitaMineraleOsseaFemoreInTotoTscoreFollowUp"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaFemoreInTotoTscoreFollowUp" width="100"/>
+        </row>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaTscoreFollowUp.densitaMineraleOsseaTotalBodyTscoreFollowUp"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaTotalBodyTscoreFollowUp" width="100"/>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="densitaMineraleOsseaZscoreFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.densitaMineraleOsseaZscoreFollowUp" color="blue"></label></column>
+      <column>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaZscoreFollowUp.densitaMineraleOsseaLombareZscoreFollowUp"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaLombareZscoreFollowUp" width="100"/>
+        </row>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaZscoreFollowUp.densitaMineraleOsseaColloDelFemoreZscoreFollowUp"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaColloDelFemoreZscoreFollowUp" width="100"/>
+        </row>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaZscoreFollowUp.densitaMineraleOsseaFemoreInTotoZscoreFollowUp"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaFemoreInTotoZscoreFollowUp" width="100"/>
+        </row>
+        <row>
+        	<column width="120"><label valuefrom="domus.densitaMineraleOsseaZscoreFollowUp.densitaMineraleOsseaTotalBodyZscoreFollowUp"></label></column>
+          <input type="radio" attribute="densitaMineraleOsseaTotalBodyZscoreFollowUp" width="100"/>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="doloriOsseiFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.doloriOsseiFollowUp.doloriOsseiFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="doloriOsseiFollowUp" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="fratturaOsseaSpontaneaFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.fratturaOsseaSpontaneaFollowUp.fratturaOsseaSpontaneaFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="checkbox" width="300" attribute="fratturaOsseaSpontaneaFollowUp" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="deficitIntossicazioneDiMicronutrientiClinicamenteRilevanteFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.deficitIntossicazioneDiMicronutrientiClinicamenteRilevanteFollowUp.deficitIntossicazioneDiMicronutrientiClinicamenteRilevanteFollowUp"></label></column>
+      <column><input type="textbox" size="300" height="50" attribute="deficitIntossicazioneDiMicronutrientiClinicamenteRilevanteFollowUp"/></column>
+    </row>
+  </interface>
+  
+<!-- Complicanze da CVC -->
+  <interface class="complicanzaMeccanicaNPFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.complicanzaMeccanicaNPFollowUp.complicanzaMeccanicaNPFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="300" attribute="complicanzaMeccanicaNPFollowUp" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="infezioneCVCFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.infezioneCVCFollowUp.infezioneCVCFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="300" attribute="infezioneCVCFollowUp" />
+      </column>
+    </row>
+  </interface>
+
+<!-- Dati relativi al programma nutrizionale -->
+  <interface class="dataInizioNPD" name="default">
+    <row> 
+      <column><label width="200" valuefrom="domus.dataInizioNPD.dataInizioNPD"></label></column>
+      <column>
+        <input type="date" attribute="dataInizioNPD"/>
+      </column>
+    </row>  
+  </interface>
+  
+  <interface class="etaAllaDataInizioNPD" name="default">
+    <row> 
+      <column><label width="200" valuefrom="domus.etaAllaDataInizioNPD.etaAllaDataInizioNPD"></label></column>
+      <column>
+        <readonly evaluate="domus.etaAllaDataInizioNPD.etaAllaDataInizioNPD" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="tipoAlimentazioneOrale" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.tipoAlimentazioneOrale.tipoAlimentazioneOrale"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="302" attribute="tipoAlimentazioneOrale" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="assistenzaDomiciliareASL" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.assistenzaDomiciliareASL.assistenzaDomiciliareASL"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="assistenzaDomiciliareASL" width="50" />
+      </column>
+    </row>
+    <spacer/>
+  </interface>
+  
+  <interface class="latoAccessoVenosoCV" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.latoAccessoVenosoCV.latoAccessoVenosoCV"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="latoAccessoVenosoCV" width="100" />
+      </column>
+    </row>
+    <spacer/>
+  </interface>
+  
+  <interface class="alimentazioneEnterale" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.alimentazioneEnterale.alimentazioneEnterale"></label></column>
+      <column n="2" type="Grid" >
+        <input type="radio" width="50" attribute="alimentazioneEnterale" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="energiaTotale%BEE" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.energiaTotale%BEE.energiaTotale%BEE"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="200" attribute="energiaTotale%BEE" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="accessoVenosoCV" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.accessoVenosoCV.accessoVenosoCV"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="200" attribute="accessoVenosoCV" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="tipoMiscelaPerNP" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.tipoMiscelaPerNP.tipoMiscelaPerNP"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="200" attribute="tipoMiscelaPerNP" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="gestioneNPD" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.gestioneNPD.gestioneNPD"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="200" attribute="gestioneNPD" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="volumeDellaMiscela" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.volumeDellaMiscela.volumeDellaMiscela"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="volumeDellaMiscela"/>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="energiaTotale" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.energiaTotale.energiaTotale"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="energiaTotale"/>
+          <input type="radio" attribute="unitaMisuraEnergiaTotale" width="60"/>
+        </row>
+        <row>
+          <column width="100"/>
+          <readonly expression="'''
+          result = ""
+          if |domus.energiaTotale.energiaTotale| and |domus.energiaTotale.unitaMisuraEnergiaTotale|:
+            if |domus.energiaTotale.unitaMisuraEnergiaTotale|[0] == 'domus.codificaUnitaMisuraEnergiaTotale.kcal':
+              result = "%.2f KJ" % (|domus.energiaTotale.energiaTotale|[0]*4.1819)
+            elif |domus.energiaTotale.unitaMisuraEnergiaTotale|[0] == 'domus.codificaUnitaMisuraEnergiaTotale.kJ':
+              result = "%.2f Kcal" % (|domus.energiaTotale.energiaTotale|[0]/4.1819)
+          '''"/>
+        </row>
+      </column>
+    </row>
+  </interface>
+
+  <interface class="frequenzaSettimanaleInfusione" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.frequenzaSettimanaleInfusione.frequenzaSettimanaleInfusione"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="frequenzaSettimanaleInfusione"/>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="frequenzaSettimanaleInfusioneLipidi" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.frequenzaSettimanaleInfusioneLipidi.frequenzaSettimanaleInfusioneLipidi"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="frequenzaSettimanaleInfusioneLipidi"/>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="volumeTotaleSettimanale" name="default">
+    <row> 
+      <column><label width="200" valuefrom="domus.volumeTotaleSettimanale.volumeTotaleSettimanale"></label></column>
+      <column>
+        <readonly evaluate="domus.volumeTotaleSettimanale.volumeTotaleSettimanale"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="energiaTotaleSettimanale" name="default">
+    <row> 
+      <column><label width="200" valuefrom="domus.energiaTotaleSettimanale.energiaTotaleSettimanale"></label></column>
+      <column>
+        <row>
+          <readonly evaluate="domus.energiaTotaleSettimanale.energiaTotaleSettimanale"/>
+          <readonly visible="result=|domus.energiaTotaleSettimanale.energiaTotaleSettimanale|"  expression="'''
+          result=""
+          if |domus.energiaTotale.unitaMisuraEnergiaTotale| and |domus.energiaTotale.unitaMisuraEnergiaTotale|[0] == 'domus.codificaUnitaMisuraEnergiaTotale.kJ':
+                result='KJ'
+          '''" /> 
+          <readonly
+          visible="result=|domus.energiaTotaleSettimanale.energiaTotaleSettimanale|" expression="'''
+          result=""
+          if |domus.energiaTotale.unitaMisuraEnergiaTotale| and |domus.energiaTotale.unitaMisuraEnergiaTotale|[0] == 'domus.codificaUnitaMisuraEnergiaTotale.kcal':
+                result='Kcal'
+          '''" /> 
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="energiaTotaleSettimanale%BEE" name="default">
+    <row> 
+      <column><label width="200" valuefrom="domus.energiaTotaleSettimanale%BEE.energiaTotaleSettimanale%BEE"></label></column>
+      <column>
+        <readonly evaluate="domus.energiaTotaleSettimanale%BEE.energiaTotaleSettimanale%BEE"/>
+      </column>
+    </row>  
+  </interface>
+  
+<!-- Stato nutrizionale follow up -->
+  <interface class="diuresiDelle24OreFollowUp" name="default">
+    <row>
+      <column><label width="200" color="blue" valuefrom="domus.diuresiDelle24OreFollowUp.diuresiDelle24OreFollowUp"></label></column>
+      <column>
+        <!--<row>-->
+          <input type="textbox" attribute="diuresiDelle24OreFollowUp"/>
+        <!--</row>-->
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="diuresiDelle24OreFollowUpNonDisponibile" name="default">
+  <row><column>
+    <input type="simplecheckbox" attribute="diuresiDelle24OreFollowUpNonDisponibile"/>
+  </column></row>
+  </interface>
+  
+<!-- Dati relativi al programma nutrizionale al follow up -->
+  <interface class="tipoAlimentazioneOraleFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.tipoAlimentazioneOraleFollowUp.tipoAlimentazioneOraleFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="tipoAlimentazioneOraleFollowUp" width="302" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="assistenzaDomiciliareASLFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.assistenzaDomiciliareASLFollowUp.assistenzaDomiciliareASLFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="assistenzaDomiciliareASLFollowUp" width="50" />
+      </column>
+    </row>
+    <spacer/>
+  </interface>
+  
+  <interface class="latoAccessoVenosoCVFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.latoAccessoVenosoCVFollowUp.latoAccessoVenosoCVFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="latoAccessoVenosoCVFollowUp" width="100" />
+      </column>
+    </row>
+    <spacer/>
+  </interface>
+  
+  <interface class="alimentazioneEnteraleFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.alimentazioneEnteraleFollowUp.alimentazioneEnteraleFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="50" attribute="alimentazioneEnteraleFollowUp" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="energiaTotale%BEEFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.energiaTotale%BEEFollowUp.energiaTotale%BEEFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="energiaTotale%BEEFollowUp" width="300" />
+      </column>
+    </row>
+  </interface>
+  
+<!-- CVC -->
+  <interface class="accessoVenosoCVFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.accessoVenosoCVFollowUp.accessoVenosoCVFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="accessoVenosoCVFollowUp" width="300" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="tipoMiscelaPerNPFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.tipoMiscelaPerNPFollowUp.tipoMiscelaPerNPFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="tipoMiscelaPerNPFollowUp" width="200" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="gestioneNPDFollowUp" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.gestioneNPDFollowUp.gestioneNPDFollowUp"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" width="200" attribute="gestioneNPDFollowUp" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="volumeDellaMiscelaFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.volumeDellaMiscelaFollowUp.volumeDellaMiscelaFollowUp"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="volumeDellaMiscelaFollowUp"/>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="energiaTotaleFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.energiaTotaleFollowUp.energiaTotaleFollowUp"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="energiaTotaleFollowUp"/>
+          <input type="radio" attribute="unitaMisuraEnergiaTotaleFollowUp" width="60"/>
+        </row>
+        <row>
+          <column width="100"/>
+          <readonly expression="'''
+          result = ""
+          if |domus.energiaTotaleFollowUp.energiaTotaleFollowUp| and |domus.energiaTotaleFollowUp.unitaMisuraEnergiaTotaleFollowUp|:
+            if |domus.energiaTotaleFollowUp.unitaMisuraEnergiaTotaleFollowUp|[0] == 'domus.codificaUnitaMisuraEnergiaTotale.kcal':
+              result = "%.2f KJ" % (|domus.energiaTotaleFollowUp.energiaTotaleFollowUp|[0]*4.1819)
+            elif |domus.energiaTotaleFollowUp.unitaMisuraEnergiaTotaleFollowUp|[0] == 'domus.codificaUnitaMisuraEnergiaTotale.kJ':
+              result = "%.2f Kcal" % (|domus.energiaTotaleFollowUp.energiaTotaleFollowUp|[0]/4.1819)
+          '''"/>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="frequenzaSettimanaleInfusioneFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.frequenzaSettimanaleInfusioneFollowUp.frequenzaSettimanaleInfusioneFollowUp"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="frequenzaSettimanaleInfusioneFollowUp"/>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="frequenzaSettimanaleInfusioneLipidiFollowUp" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.frequenzaSettimanaleInfusioneLipidiFollowUp.frequenzaSettimanaleInfusioneLipidiFollowUp"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="frequenzaSettimanaleInfusioneLipidiFollowUp"/>
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="volumeTotaleSettimanaleFollowUp" name="default">
+    <row> 
+      <column><label width="200" valuefrom="domus.volumeTotaleSettimanaleFollowUp.volumeTotaleSettimanaleFollowUp"></label></column>
+      <column>
+        <readonly evaluate="domus.volumeTotaleSettimanaleFollowUp.volumeTotaleSettimanaleFollowUp"/>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="energiaTotaleSettimanaleFollowUp" name="default">
+    <row> 
+      <column><label width="200" valuefrom="domus.energiaTotaleSettimanaleFollowUp.energiaTotaleSettimanaleFollowUp"></label></column>
+      <column>
+        <row>
+          <readonly evaluate="domus.energiaTotaleSettimanaleFollowUp.energiaTotaleSettimanaleFollowUp"/>
+          <readonly visible="result=|domus.energiaTotaleSettimanaleFollowUp.energiaTotaleSettimanaleFollowUp|"  expression="'''
+          result=""
+          if |domus.energiaTotaleFollowUp.unitaMisuraEnergiaTotaleFollowUp| and |domus.energiaTotaleFollowUp.unitaMisuraEnergiaTotaleFollowUp|[0] == 'domus.codificaUnitaMisuraEnergiaTotale.kJ':
+                result='KJ'
+          '''" /> 
+          <readonly
+          visible="result=|domus.energiaTotaleSettimanaleFollowUp.energiaTotaleSettimanaleFollowUp|" expression="'''
+          result=""
+          if |domus.energiaTotaleFollowUp.unitaMisuraEnergiaTotaleFollowUp| and |domus.energiaTotaleFollowUp.unitaMisuraEnergiaTotaleFollowUp|[0] == 'domus.codificaUnitaMisuraEnergiaTotale.kcal':
+                result='Kcal'
+          '''" /> 
+        </row>
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="energiaTotaleSettimanale%BEEFollowUp" name="default">
+    <row> 
+      <column><label width="200" valuefrom="domus.energiaTotaleSettimanale%BEEFollowUp.energiaTotaleSettimanale%BEEFollowUp"></label></column>
+      <column>
+        <readonly evaluate="domus.energiaTotaleSettimanale%BEEFollowUp.energiaTotaleSettimanale%BEEFollowUp"/>
+      </column>
+    </row>  
+  </interface>
+  
+<!-- Indicatori di esito -->
+  <interface class="dataAggiornamento" name="default" >
+    <row>
+      <column><label width="200" valuefrom="domus.dataAggiornamento.dataAggiornamento"></label></column>
+      <column >
+        <input type="date" attribute="dataAggiornamento" width="150" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="statoNutrizioneNPD" name="default" >
+    <row>
+      <column width="203"></column>
+      <column>
+        <input type="simplecheckbox" attribute="statoNutrizioneNPD" width="150" />
+      </column>
+    </row>
+  </interface>
+  
+  <interface class="indicatoriEfficaciaLabel" name="default" >
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.indicatoriEfficaciaLabel.indicatoriEfficaciaLabel"></label></column>
+    </row>
+  </interface>
+  
+  <interface class="durataNED" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.durataNED.durataNED"></label></column>
+      <column>
+        <row>
+          <input type="textbox" attribute="durataNED" />
+          <column n="3" type="Grid">
+            <input type="radio" width="80" attribute="unitaDurataNED" />
+          </column>
+        </row>
+      </column>
+    </row>
+    <spacer/>
+  </interface>
+  
+  <interface class="indicatoriSicurezzaLabel" name="default" >
+    <row>
+      <column><label color="blue" width="200" valuefrom="domus.indicatoriSicurezzaLabel.indicatoriSicurezzaLabel"></label></column>
+    </row>
+  </interface>
+  
+  <interface class="complicanzeSonda" name="default">
+    <row>
+      <column><label width="200" valuefrom="domus.complicanzeSonda.complicanzeSonda"></label></column>
+      <column n="2" type="Grid">
+        <input type="radio" attribute="complicanzeSonda" width="50" />
+      </column>
+    </row>
+    <spacer/>
+  </interface>
+
+  <interface class="listaComplicanzeSonda" name="default">
+    <row>
+      <column><label width="200" ></label></column>
+      <column>
+        <input type="radio" attribute="listaComplicanzeSonda" />
+      </column>
+    </row>
+    <spacer/>
+  </interface>
+
+</interfaces>
+

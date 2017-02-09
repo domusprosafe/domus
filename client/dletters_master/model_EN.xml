@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<richtext version="1.0.0.0" xmlns="http://www.wxwidgets.org">
+  <paragraphlayout textcolor="#000000" fontsize="13" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial" alignment="1" parspacingafter="10" parspacingbefore="0" linespacing="10">
+    <paragraph alignment="2">
+      <text fontsize="14" fontstyle="90" fontweight="92" fontunderlined="0" fontface="Arial">SINTESI di DECORSO CLINICO</text>
+    </paragraph>
+    <paragraph>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial"></text>
+    </paragraph>
+    <paragraph>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">Cognome e nome: |domus.name|, sesso |domus.sex|.</text>
+    </paragraph>
+    <paragraph>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">Nato/a a: |domus.placeOfBirth| il: |domus.birthDate.birthDate| (anni: |domus.age|).</text>
+    </paragraph>
+    <paragraph>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">Residente a: |domus.address|.</text>
+    </paragraph>
+    <paragraph>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="1" fontface="Arial">Presa in carico</text>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">:</text>
+    </paragraph>
+    <paragraph>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">Data presa in carico |domus.admissionDate|.</text>
+    </paragraph>
+    <paragraph>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">Altezza |domus.height|.</text>
+    </paragraph>
+    <paragraph>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">Peso abituale |domus.habitualWeight|.</text>
+    </paragraph>
+    <paragraph>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">Peso attuale |domus.currentWeight|.</text>
+    </paragraph>
+    <paragraph>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="1" fontface="Arial">Prescrizione</text>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">:</text>
+    </paragraph>
+    <paragraph>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">|domus.pdnPrescription|</text>
+    </paragraph>
+    <paragraph>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial"></text>
+    </paragraph>
+    <paragraph>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial"></text>
+    </paragraph>
+    <paragraph>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">Data</text>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">Il medico curante</text>
+    </paragraph>
+    <paragraph>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+      <symbol fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial">9</symbol>
+    </paragraph>
+    <paragraph>
+      <text fontsize="12" fontstyle="90" fontweight="90" fontunderlined="0" fontface="Arial"></text>
+    </paragraph>
+  </paragraphlayout>
+</richtext>

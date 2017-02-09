@@ -1,0 +1,151 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix prosafe-core4: <http://giviti.marionegri.it/knowledgebase/prosafe-core4#> .
+@prefix prosafe-core3: <http://giviti.marionegri.it/knowledgebase/prosafe-core3#> .
+
+_:mapping1 a owl:Class;
+     owl:equivalentClass
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core4:core__admSource__value ;
+            owl:hasValue prosafe-core4:core__sourceTypeCodification__otherHospital ;
+          ] ,
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core3:core__admSource__value ;
+            owl:hasValue prosafe-core3:core__sourceTypeCodification__otherHospital ;
+		  ] .
+
+_:mapping2 a owl:Class;
+     owl:equivalentClass
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core4:core__admSource__value ;
+            owl:hasValue prosafe-core4:core__sourceTypeCodification__rsa ;
+          ] ,
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core3:core__admSource__value ;
+            owl:hasValue prosafe-core3:core__sourceTypeCodification__otherHospital ;
+		  ] .
+
+_:mapping3 a owl:Class;
+     owl:equivalentClass
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core4:core__admSource__value ;
+            owl:hasValue prosafe-core4:core__sourceTypeCodification__territorial ;
+          ] ,
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core3:core__admSource__value ;
+            owl:hasValue prosafe-core3:core__sourceTypeCodification__sameHospital ;
+          ] .
+           
+_:mapping42 a owl:Class;
+     owl:equivalentClass
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core4:core__admSource__value ;
+            owl:hasValue prosafe-core4:core__sourceTypeCodification__territorial ;
+          ] ,
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core3:core__admWard__value ;
+            owl:hasValue prosafe-core3:core__wardTypeCodification__emergRoom;
+          ] .
+           
+_:mapping4 a owl:Class;
+     owl:equivalentClass
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core4:core__nonSurgicalDetail__nonSurgicalId ;
+            owl:hasValue prosafe-core4:core__nonSurgIntervCodification__intervEndoPed ;
+          ] ,
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core3:core__nonSurgicalDetail__nonSurgicalId ;
+            owl:hasValue prosafe-core3:core__nonSurgIntervCodification__intervEndo ;
+		  ] .
+		  
+_:mapping5 a owl:Class;
+     owl:equivalentClass
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core4:core__nonSurgicalDetail__nonSurgicalId ;
+            owl:hasValue prosafe-core4:core__nonSurgIntervCodification__intervBroncoPed ;
+          ] ,
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core3:core__nonSurgicalDetail__nonSurgicalId ;
+            owl:hasValue prosafe-core3:core__nonSurgIntervCodification__intervEndo ;
+		  ] .
+
+_:mapping6 a owl:Class;
+     owl:equivalentClass
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core4:core__nonSurgicalDetail__nonSurgicalId ;
+            owl:hasValue prosafe-core4:core__nonSurgIntervCodification__intervBroncoPedOnAdm ;
+          ] ,
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core3:core__nonSurgicalDetail__nonSurgicalId ;
+            owl:hasValue prosafe-core3:core__nonSurgIntervCodification__intervEndo ;
+		  ] .
+
+_:mapping7 a owl:Class;
+     owl:equivalentClass
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core4:core__exportSurgeryDetails__nonSurgOnAdm ;
+            owl:hasValue prosafe-core4:core__nonSurgIntervCodification__intervEndoPed ;
+          ] ,
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core3:core__exportSurgeryDetails__nonSurgOnAdm ;
+            owl:hasValue prosafe-core3:core__nonSurgIntervCodification__intervEndo ;
+		  ] .
+		  
+_:mapping8 a owl:Class;
+     owl:equivalentClass
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core4:core__exportSurgeryDetails__nonSurgOnAdm ;
+            owl:hasValue prosafe-core4:core__nonSurgIntervCodification__intervBroncoPed ;
+          ] ,
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core3:core__exportSurgeryDetails__nonSurgOnAdm ;
+            owl:hasValue prosafe-core3:core__nonSurgIntervCodification__intervEndo ;
+		  ] .
+
+_:mapping9 a owl:Class;
+     owl:equivalentClass
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core4:core__exportSurgeryDetails__nonSurgOnAdm ;
+            owl:hasValue prosafe-core4:core__nonSurgIntervCodification__intervBroncoPedOnAdm ;
+          ] ,
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core3:core__exportSurgeryDetails__nonSurgOnAdm ;
+            owl:hasValue prosafe-core3:core__nonSurgIntervCodification__intervEndo ;
+		  ] .
+
+_:mapping10 a owl:Class;
+     owl:equivalentClass
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core4:core__exportSurgeryDetails__nonSurgDuringStay ;
+            owl:hasValue prosafe-core4:core__nonSurgIntervCodification__intervEndoPed ;
+          ] ,
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core3:core__exportSurgeryDetails__nonSurgDuringStay ;
+            owl:hasValue prosafe-core3:core__nonSurgIntervCodification__intervEndo ;
+		  ] .
+		  
+_:mapping11 a owl:Class;
+     owl:equivalentClass
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core4:core__exportSurgeryDetails__nonSurgDuringStay ;
+            owl:hasValue prosafe-core4:core__nonSurgIntervCodification__intervBroncoPed ;
+          ] ,
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core3:core__exportSurgeryDetails__nonSurgDuringStay ;
+            owl:hasValue prosafe-core3:core__nonSurgIntervCodification__intervEndo ;
+		  ] .
+
+_:mapping12 a owl:Class;
+     owl:equivalentClass
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core4:core__exportSurgeryDetails__nonSurgDuringStay ;
+            owl:hasValue prosafe-core4:core__nonSurgIntervCodification__intervBroncoPedOnAdm ;
+          ] ,
+          [ rdf:type owl:Restriction ;
+            owl:onProperty prosafe-core3:core__exportSurgeryDetails__nonSurgDuringStay ;
+            owl:hasValue prosafe-core3:core__nonSurgIntervCodification__intervEndo ;
+		  ] .
+
+

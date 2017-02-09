@@ -1,0 +1,34 @@
+@prefix prosafe-core: <http://giviti.marionegri.it/knowledgebase/prosafe-core#> .
+@prefix prosafe-core4: <http://giviti.marionegri.it/knowledgebase/prosafe-core4#> .
+
+prosafe-core:A-IT999-2 prosafe-core:core__admissionKey__value "prosafe-core#A-IT999-2";
+    prosafe-core:core__patientKey__value "prosafe-core#P-IT999-2";
+    prosafe-core4:core__exportAge__years "72";
+    prosafe-core4:core__exportCondAdm__infections <http://giviti.marionegri.it/knowledgebase/prosafe-core4#core__yesNoCodification__no>;
+    prosafe-core4:core__exportCondDuringStay__infectionsStay <http://giviti.marionegri.it/knowledgebase/prosafe-core4#core__yesNoCodification__no>;
+    prosafe-core4:core__exportProceduresDetails__AdmNutrDays "0";
+    prosafe-core4:core__exportProceduresDetails__AdmpartNutrDays "0";
+    prosafe-core4:core__exportProceduresDetails__TracInvDays "0";
+    prosafe-core4:core__exportProceduresDetails__antibMedProphylDays "0";
+    prosafe-core4:core__exportProceduresDetails__antibSurgProphylDays "0";
+    prosafe-core4:core__exportProceduresDetails__anyAntibiotic <http://giviti.marionegri.it/knowledgebase/prosafe-core4#core__yesNoCodification__no>;
+    prosafe-core4:core__exportProceduresDetails__cvcDays "0";
+    prosafe-core4:core__exportProceduresDetails__empAntTherDays "0";
+    prosafe-core4:core__exportProceduresDetails__entNutrDays "0";
+    prosafe-core4:core__exportProceduresDetails__haemofDays "0";
+    prosafe-core4:core__exportProceduresDetails__invVentDays "0";
+    prosafe-core4:core__exportProceduresDetails__invVentilTimes "0";
+    prosafe-core4:core__exportProceduresDetails__noInvVentDays "0";
+    prosafe-core4:core__exportProceduresDetails__parentNutrDays "0";
+    prosafe-core4:core__exportProceduresDetails__targAntTherDays "0";
+    prosafe-core4:core__exportProceduresDetails__tracheostDatai "";
+    prosafe-core4:core__exportProceduresDetails__tracheostDays "0";
+    prosafe-core4:core__exportProceduresDetails__vasoactDrugsDays "0";
+    prosafe-core4:core__exportProceduresDetails__vasoactDrugsTimes "0";
+    prosafe-core4:core__exportSurgeryDetails__nonSurgDuringStay <http://giviti.marionegri.it/knowledgebase/prosafe-core4#core__surgIntervCodification__missing>;
+    prosafe-core4:core__exportSurgeryDetails__nonSurgOnAdm <http://giviti.marionegri.it/knowledgebase/prosafe-core4#core__surgIntervCodification__missing>;
+    prosafe-core4:core__exportSurgeryDetails__surgDuringStay <http://giviti.marionegri.it/knowledgebase/prosafe-core4#core__surgIntervCodification__missing>;
+    prosafe-core4:core__exportSurgeryDetails__surgOnAdm <http://giviti.marionegri.it/knowledgebase/prosafe-core4#core__surgIntervCodification__missing>;
+    prosafe-core4:core__genderClear__value <http://giviti.marionegri.it/knowledgebase/prosafe-core4#core__sexCodification__Female>;
+    prosafe-core4:core__icuAdmDate__icuAdmDate "2012-06-06" .
+
